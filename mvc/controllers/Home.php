@@ -2,7 +2,11 @@
     class Home extends Controller{
         function SayHi(){
             $teo = $this->model("SinhVienModel");
-            echo $teo->GetSV();
+            //echo $teo->GetSV();
+
+            //View
+            $this->view("main-template", ["Page"=>"news",
+            "SV" => $teo->SinhVien()]);
         }
         function Show($a, $b){
             //Model
@@ -10,7 +14,7 @@
             $tong = $teo->Tong($a,$b);
 
             //View
-            $this->view("aodep", ["Page"=>"news","Number"=>$tong,
+            $this->view("main-template", ["Page"=>"news","Number"=>$tong,
             "Mau"=>"red",
             "SoThich"=>["A", "B", "C"],
             "SV" => $teo->SinhVien()]);
