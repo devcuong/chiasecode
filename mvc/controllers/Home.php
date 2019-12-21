@@ -5,7 +5,7 @@
             //echo $teo->GetSV();
 
             //View
-            $this->view("main-template", ["Page"=>"news",
+            $this->view("main-template", ["Page"=>"main-home",
             "SV" => $teo->SinhVien()]);
         }
         function Show($a, $b){

@@ -3312,7 +3312,7 @@ span.notify-right {
 
 .display-product-option li.selected span,
 .display-product-option li:hover span {
-    background-color: #84c52c;
+    background-color: #f40;
     background-position: 0 -30px;
 }
 
