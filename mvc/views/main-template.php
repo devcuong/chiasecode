@@ -1,14 +1,12 @@
 
 <!DOCTYPE html>
 <html lang="vi" xml:lang="vi" xmlns="http://www.w3.org/1999/xhtml">
-
-<!-- Mirrored from sharecode.vn/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Dec 2019 00:52:47 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head><title>
 	Cộng đồng chia sẻ và download source code, mã nguồn, đồ án miễn phí
 </title><link rel="shortcut icon" href="assets/images/sharecode.ico" type="image/x-icon" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="robots" content="noodp,index,follow" /><meta name="revisit-after" content="1 days" /><meta content="sharecode.vn" name="author" /><meta content="Global" name="distribution" /><meta content="sharecode.vn" name="copyright" /><meta name="dc.creator" content="ShareCode" /><meta name="generator" content="Sharecode.vn" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="twitter:card" value="summary" /><meta property="og:site_name" content="Sharecode.vn" />
-<link rel="stylesheet" type="text/css" href="/abc/xxx/yyy/mvc/public/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="/abc/mvc/public/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="mvc/public/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="mvc/public/css/font-awesome.min.css" />
 <link rel="stylesheet" type="text/css" href="mvc/public/css/select2.min.css" />
 <link rel="stylesheet" type="text/css" href="mvc/public/css/owl.carousel.css" />
 <link rel="stylesheet" type="text/css" href="mvc/public/css/jquery-ui.min.css" />
@@ -23,28 +21,10 @@
 <meta property="og:url" content="index.html" />
 <meta property="og:description" content="Thư viện chia sẻ và download source code, upload code kiếm tiền, tổng hợp các mã nguồn và đồ án, kiến thức lập trình chuyên nghành công nghệ thông tin" />
 <link href="index.html" rel="canonical" />
-<link rel="stylesheet" type="text/css" href="assets/lib/jquery.bxslider/jquery.bxslider.css" />
-<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" /></head>
+<link rel="stylesheet" type="text/css" href="mvc/public/css/jquery.bxslider.css" />
+<link rel="stylesheet" type="text/css" href="mvc/public/css/responsive.css" /></head>
 <body class="home">
     <div id="fb-root"></div>
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                appId: '1938824166400762',
-                cookie: true,
-                xfbml: true,
-                version: 'v2.8'
-            });
-            FB.AppEvents.logPageView();
-        };
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id;
-            js.src = "../connect.facebook.net/en_US/sdk.js";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
     <form method="post" action="https://sharecode.vn/" id="form1">
 </div>
 <script type="text/javascript">
@@ -62,46 +42,14 @@ function __doPostBack(eventTarget, eventArgument) {
 }
 //]]>
 </script>
-<script src="WebResourceff49.js?d=4tr1Waa2lqWuDL2xCqZjqATnGYCYw-7QFp9p2sy9Q82qOlGB3GgyIhJNwg3vO5XJaxZ0qo_JOKu0Jd9b0KmQcEl_zD81&amp;t=636765715264470882" type="text/javascript"></script>
-<script src="ScriptResourced91d.js?d=a_-K4BP6F81AF4AlELsPa7lvM_4itleYw1pyZPzJD0wKt1J8HYL0WX0uA_DmmH_92tdtYo914bPIH1Nm1TjwgqQmZh3Lcfij2Amt3qLSfdzyfaWvMLtvRKoGZjATVeqCjPO_176R-Ek7622bS-sekFkDP2UAo_L8wL3fObwtOOZXbCCc0&amp;t=ffffffff999c3159" type="text/javascript"></script>
-<script src="ScriptResource079d.js?d=uCGKHSCzPFeHshXIcZclyX70LMk_YI0TU5TP0JKHzNFKfNhpu-utLvjeN0zxlzMNEhNOtMGMSVEHEK55r1ENJlDTG69-_GhWHpT-kter_0Ub4YQt2tyIgq1ZKyecCtgiLqiDeiKfVZAmA-7xe6KVhwtePb_dpdQc1r1JBrDduTJB4L4O0&amp;t=ffffffff999c3159" type="text/javascript"></script>
-<script type="text/javascript">
-//<![CDATA[
-Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['tctl00$mainbody$upPannel','mainbody_upPannel','tctl00$ctl24','ctl24'], [], [], 90, 'ctl00');
-//]]>
-</script>
-        <div class="row-fluid">
-            <div id="myCarousel" class="carousel slide vertical">
-                <div class="carousel-inner">
-                    <div class="active item" style="background: #86bd3b;">
-                        
-                        <a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" title="UPLOAD source code KIẾM TIỀN cùng Sharecode.vn">
-                            <img src="assets/images/code-hay-upload-kiem-tien.jpg" />
-                        </a>
-                        
-                    </div>
-                     <div class="item" style="background: #2175ba;">
-                        <a href="kien-thuc-lap-trinh/dich-vu-thiet-ke-website-chuyen-nghiep-voi-gia-cuc-re-va-nhieu-uu-dai-tai-sharecodevn-880.html" title="Dịch vụ thiết kế website" target="_blank">
-                            <img src="assets/images/thiet-ke-website.jpg" />
-                        </a>
-                    </div>
-                   <div class="item" style="background: #34a5cd;">
-                                <a href="vps-may-chu-ao.html" title="Đăng kí CLOULD VPS NGAY!">
-                                <img src="assets/images/share-code-clould-vps.jpg" /> </a>
-                            </div>
-                          
-                   
-                </div>
-            </div>
-        </div>
         <div id="header" class="header">
             <div class="top-header">
                 <div class="container">                    
                     <div class="nav-top-links">
                         <a class="first-item" href="tel:+84981282756" title="Click gọi ngay!">
-                            <img alt="hotline" src="assets/images/phone.png" />0981.282.756</a>
+                            <img alt="hotline" src="https://sharecode.vn/assets/images/phone.png" />0981.282.756</a>
                         <a href="mailto:hotro.sharecode@gmail.com" title="Click để gửi email!">
-                            <img alt="email sharecode" src="assets/images/email.png" />Hotro.sharecode@gmail.com</a>
+                            <img alt="email sharecode" src="https://sharecode.vn/assets/images/email.png" />Hotro.sharecode@gmail.com</a>
                         <a href="kien-thuc-lap-trinh.html">Kiến thức lập trình</a>
                         <a href="su-kien/%5bsharecodevn%5d-nang-cap-server-moi-cai-tien-tinh-nang-ho-tro-nguoi-dung--13.html">Sự kiện</a>
                     </div>
@@ -126,7 +74,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
                 <div class="row">
                     <div class="col-xs-12 col-sm-3 col-md-3 logo">
                         <a href="index.html">
-                            <img alt="Trang chủ sharecode.vn" title="Sharecode.vn" src="assets/images/logo.png" /></a>
+                            <img alt="Trang chủ sharecode.vn" title="Sharecode.vn" src="https://sharecode.vn/assets/images/logo.png" /></a>
                     </div>
                     <div class="col-xs-7 col-sm-7 col-md-6 header-search-box">
                         <div class="form-inline search-h">
@@ -198,7 +146,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
                                     <ul class="vertical-menu-list">
                                         <li>
                                             <a class="parent" href="#">
-                                                <img class="icon-menu" alt="Thể loại code" src="assets/images/2.png" />PHÂN LOẠI CODE</a>
+                                                <img class="icon-menu" alt="Thể loại code" src="https://sharecode.vn/assets/images/2.png" />PHÂN LOẠI CODE</a>
                                             <div class="vertical-dropdown-menu">
                                                 <div class="vertical-groups col-sm-6 col-md-4">
                                                     <div class="mega-group col-sm-12">
@@ -229,49 +177,49 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
                                             </div>
                                         </li>
                                                 <li class=""><a href='ngon-ngu-lap-trinh/android-15.html'>
-                                                    <img class="icon-menu" alt="Android" src="assets/images/3.png">Android</a></li>
+                                                    <img class="icon-menu" alt="Android" src="https://sharecode.vn/assets/images/3.png">Android</a></li>
                                             
                                                 <li class=""><a href='ngon-ngu-lap-trinh/ios-23.html'>
-                                                    <img class="icon-menu" alt="iOS" src="assets/images/3.png">iOS</a></li>
+                                                    <img class="icon-menu" alt="iOS" src="https://sharecode.vn/assets/images/3.png">iOS</a></li>
                                             
                                                 <li class=""><a href='ngon-ngu-lap-trinh/windows-phone-26.html'>
-                                                    <img class="icon-menu" alt="Windows phone" src="assets/images/3.png">Windows phone</a></li>
+                                                    <img class="icon-menu" alt="Windows phone" src="https://sharecode.vn/assets/images/3.png">Windows phone</a></li>
                                             
                                                 <li class=""><a href='ngon-ngu-lap-trinh/php-mysql-21.html'>
-                                                    <img class="icon-menu" alt="PHP & MySQL" src="assets/images/3.png">PHP & MySQL</a></li>
+                                                    <img class="icon-menu" alt="PHP & MySQL" src="https://sharecode.vn/assets/images/3.png">PHP & MySQL</a></li>
                                             
                                                 <li class=""><a href='ngon-ngu-lap-trinh/wordpress-29.html'>
-                                                    <img class="icon-menu" alt="WordPress" src="assets/images/3.png">WordPress</a></li>
+                                                    <img class="icon-menu" alt="WordPress" src="https://sharecode.vn/assets/images/3.png">WordPress</a></li>
                                             
                                                 <li class=""><a href='ngon-ngu-lap-trinh/joomla-28.html'>
-                                                    <img class="icon-menu" alt="Joomla" src="assets/images/3.png">Joomla</a></li>
+                                                    <img class="icon-menu" alt="Joomla" src="https://sharecode.vn/assets/images/3.png">Joomla</a></li>
                                             
                                                 <li class=""><a href='ngon-ngu-lap-trinh/visual-c-17.html'>
-                                                    <img class="icon-menu" alt="Visual C#" src="assets/images/3.png">Visual C#</a></li>
+                                                    <img class="icon-menu" alt="Visual C#" src="https://sharecode.vn/assets/images/3.png">Visual C#</a></li>
                                             
                                                 <li class=""><a href='ngon-ngu-lap-trinh/aspaspnet-16.html'>
-                                                    <img class="icon-menu" alt="Asp/Asp.Net" src="assets/images/3.png">Asp/Asp.Net</a></li>
+                                                    <img class="icon-menu" alt="Asp/Asp.Net" src="https://sharecode.vn/assets/images/3.png">Asp/Asp.Net</a></li>
                                             
                                                 <li class=""><a href='ngon-ngu-lap-trinh/javajsp-20.html'>
-                                                    <img class="icon-menu" alt="Java/JSP" src="assets/images/3.png">Java/JSP</a></li>
+                                                    <img class="icon-menu" alt="Java/JSP" src="https://sharecode.vn/assets/images/3.png">Java/JSP</a></li>
                                             
                                                 <li class=""><a href='ngon-ngu-lap-trinh/visual-basic-19.html'>
-                                                    <img class="icon-menu" alt="Visual Basic" src="assets/images/3.png">Visual Basic</a></li>
+                                                    <img class="icon-menu" alt="Visual Basic" src="https://sharecode.vn/assets/images/3.png">Visual Basic</a></li>
                                             
                                                 <li class="cat-link-orther"><a href='ngon-ngu-lap-trinh/cocos2d-24.html'>
-                                                    <img class="icon-menu" alt="Cocos2D" src="assets/images/3.png">Cocos2D</a></li>
+                                                    <img class="icon-menu" alt="Cocos2D" src="https://sharecode.vn/assets/images/3.png">Cocos2D</a></li>
                                             
                                                 <li class="cat-link-orther"><a href='ngon-ngu-lap-trinh/unity-27.html'>
-                                                    <img class="icon-menu" alt="Unity" src="assets/images/3.png">Unity</a></li>
+                                                    <img class="icon-menu" alt="Unity" src="https://sharecode.vn/assets/images/3.png">Unity</a></li>
                                             
                                                 <li class="cat-link-orther"><a href='ngon-ngu-lap-trinh/visual-c-18.html'>
-                                                    <img class="icon-menu" alt="Visual C++" src="assets/images/3.png">Visual C++</a></li>
+                                                    <img class="icon-menu" alt="Visual C++" src="https://sharecode.vn/assets/images/3.png">Visual C++</a></li>
                                             
                                                 <li class="cat-link-orther"><a href='ngon-ngu-lap-trinh/html-template-25.html'>
-                                                    <img class="icon-menu" alt="Html & Template" src="assets/images/3.png">Html & Template</a></li>
+                                                    <img class="icon-menu" alt="Html & Template" src="https://sharecode.vn/assets/images/3.png">Html & Template</a></li>
                                             
                                                 <li class="cat-link-orther"><a href='ngon-ngu-lap-trinh/khac-22.html'>
-                                                    <img class="icon-menu" alt="Khác" src="assets/images/3.png">Khác</a></li>
+                                                    <img class="icon-menu" alt="Khác" src="https://sharecode.vn/assets/images/3.png">Khác</a></li>
                                             
                                     </ul>
                                     <div class="all-category"><span class="open-cate">Xem tất cả</span></div>
@@ -322,82 +270,6 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
                 </div>
             </div>
         </div>
-        
-        <script type="text/javascript">
-            function fosp_login() {
-                jQuery('#login_error').html('');
-                jQuery('input[type="text"], input[type="password"]').removeClass('validation-failed');
-                email = jQuery('#log_username').val();
-                pass = jQuery('#log_password').val();
-                if (email == '') {
-                    jQuery('#log_username').addClass('validation-failed');
-                    jQuery('#login_error').html('Vui lòng nhập địa chỉ email.');
-                    jQuery('#log_username').focus();
-                    return false;
-                }
-                email_pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-                if (!email.match(email_pattern)) {
-                    jQuery('#log_username').addClass('validation-failed');
-                    jQuery('#login_error').html('Địa chỉ email không hợp lệ.');
-                    jQuery('#log_username').focus();
-                    return false;
-                }
-                if (pass == '') {
-                    jQuery('#log_password').addClass('validation-failed');
-                    jQuery('#login_error').html('Vui lòng nhập mật khẩu đăng nhập.');
-                    jQuery('#log_password').focus();
-                    return false;
-                }
-                captcha = jQuery('#txtCaptcha').val();
-        if (captcha == '') {
-            jQuery('#txtCaptcha').addClass('validation-failed');
-            jQuery('#login_error').html('Chưa nhập mã xác nhận.');
-            jQuery('#txtCaptcha').focus();
-            return false;
-        }
-                jQuery.ajax({
-                    type: "POST",
-                    url: "/Ajax/CheckAccount.aspx/CheckAccountLogin",
-                    data: '{email: "' + email + '", password: "' + pass + '", captcha: "' + captcha + '" }',
-                    contentType: "application/json; charset=utf-8",
-                    dataType: "json",
-                    async: false,
-                    success: function (data) {
-                        if (data.d == '1') {
-                            jQuery('#login_error').html('Mật khẩu không đúng.');
-                            jQuery('#log_password').addClass('validation-failed');
-                            jQuery('#log_password').focus();
-                        }
-                        else if (data.d == '2') {
-                            jQuery('#login_error').html('Email không tồn tại vui lòng nhập lại.');
-                            jQuery('#log_username').addClass('validation-failed');
-                            jQuery('#log_username').focus();
-                        }
-                        else if (data.d == '3') {
-                            jQuery('#login_error').html('Tài khoản chưa kích hoạt: KÍCH HOẠT (or dùng) QUÊN MẬT KHẨU?.');
-                            jQuery('#log_username').addClass('validation-failed');
-                            jQuery('#log_username').focus();
-                        }
-                        else if (data.d == '4') {
-                            jQuery('#login_error').html('Tài khoản đã bị khóa! Liên hệ với BQT để được hỗ trợ.');
-                            jQuery('#log_username').addClass('validation-failed');
-                            jQuery('#log_username').focus();
-                        }
-                        else if (data.d == '-1') {
-                            jQuery('#login_error').html('Mã xác nhận không đúng.');
-                            jQuery('#txtCaptcha').addClass('validation-failed');
-                            jQuery('#txtCaptcha').focus();
-                        }
-                    }
-                });
-                if (jQuery('#login_error').html() != '') {
-                    return false;
-                } else {
-                    return true;
-                }
-            }
-        </script>
-        
         <div class="modal fade" id="LoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -434,26 +306,6 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
                                  <div class="form-group">
                                     <div class="col-sm-offset-4 col-sm-6">
                                          <input name="ctl00$txtCaptcha" type="text" maxlength="4" id="txtCaptcha" class="form-control alignleft" placeholder="Xác nhận" style="width:90px;" />
-                                                
-<script type="text/javascript">
-    function createCaptcha() {
-        jQuery.ajax({
-            type: "POST",
-            url: "/Ajax/CreateCaptcha.aspx/CaptchaUrl",
-            data: '{}',
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
-            async: false,
-            success: function (data) {
-                if (data.d != '') {
-                    $('.imgCaptcha').attr('src', data.d);
-                }
-                else
-                    $('.imgCaptcha').attr('src', 'Image/captcha.jpg');
-            }
-        });
-    }
-</script>
 <div style="height: 30px; width: 140px; float: left; margin-left: 10px;">
     <img src="assets/images/captcha.jpg" alt="captcha" class="imgCaptcha" height="30" width="80" />
     <div class="aorange" style="float: right; width: 60px; margin-top: 6px; padding-left: 5px;"
@@ -461,8 +313,6 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
         Mã khác
     </div>
 </div>
-
-
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -482,8 +332,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    
+                        </div>   
 </div>
                     <div class="line_orn"></div>
                     <div class="modal-footer">
@@ -492,9 +341,6 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
                 </div>
             </div>
         </div>
-
-        
-    
     <div id="home-slider" class="page-home">
         <div class="container">
             <div class="row">
@@ -504,17 +350,15 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
                         <div class="content-slide">
                             <ul id="contenhomeslider">
                                 <li>
-                                    <img alt="sharecode cộng đồng download source code" src="assets/images/share-code-1.jpg" title="Thư viện download code hàng đầu Việt Nam - Upload mỗi ngày!" /></li>
+                                    <img alt="sharecode cộng đồng download source code" src="https://sharecode.vn/assets/images/share-code-1.jpg" title="Thư viện download code hàng đầu Việt Nam - Upload mỗi ngày!" /></li>
                               
                                 <li>
-                                    <img alt="Phân biệt sharecode.vn và topcode.vn" src="assets/images/Sharecode-vs-topcode.jpg" title="Sharecode.vn thư viện code tham khảo và Topcode.vn sàn code chất lượng cao" /></li>
+                                    <img alt="Phân biệt sharecode.vn và topcode.vn" src="https://sharecode.vn/assets/images/Sharecode-vs-topcode.jpg" title="Sharecode.vn thư viện code tham khảo và Topcode.vn sàn code chất lượng cao" /></li>
                                 
                             </ul>
                         </div>
                     </div>
                     <div class="header-banner banner-opacity">
-                        
-
 <style>
     /*Hoạt động gần đây*/
     .action {
@@ -681,19 +525,16 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
         </ul>
     </div>
 </div>
-
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
     <div class="container">
         <div class="service ">
             <div class="col-xs-6 col-sm-3 service-item service-line ">
                 <div class="icon">
-                    <img alt="services" src="assets/images/s1.png" />
+                    <img alt="services" src="https://sharecode.vn/assets/images/s1.png" />
                 </div>
                 <div class="info">
                     <span class="title3 orange">CODE PHONG PHÚ</span>
@@ -702,7 +543,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
             </div>
             <div class="col-xs-6 col-sm-3 service-item service-line">
                 <div class="icon">
-                    <img alt="services" src="assets/images/s2.png" />
+                    <img alt="services" src="https://sharecode.vn/assets/images/s2.png" />
                 </div>
                 <div class="info">
                     <span class="title3 orange">CODE CHẤT LƯỢNG</span>
@@ -711,7 +552,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
             </div>
             <div class="col-xs-6 col-sm-3 service-item service-line">
                 <div class="icon">
-                    <img alt="services" src="assets/images/s3.png" />
+                    <img alt="services" src="https://sharecode.vn/assets/images/s3.png" />
                 </div>
 
                 <div class="info">
@@ -721,7 +562,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
             </div>
             <div class="col-xs-6 col-sm-3 service-item service-line">
                 <div class="icon">
-                    <img alt="services" src="assets/images/s4.png" />
+                    <img alt="services" src="https://sharecode.vn/assets/images/s4.png" />
                 </div>
                 <div class="info">
                     <span class="title3 orange">THANH TOÁN</span>
@@ -730,28 +571,13 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
             </div>
         </div>
     </div>
-    <div class="container">
-    <div class="row banner-bottom">
-            <div class="col-sm-6">
-                <div class="banner-boder-zoom">
-                    <a href="dang-ki-ten-mien.html"><img alt="Kiểm tra và đăng kí tên miền" class="img-responsive" src="assets/images/banner-domain.jpg" /></a>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="banner-boder-zoom">
-                    <a href="hosting-ssd.html"><img alt="Đăng kí hosting ssd chất lượng cao" class="img-responsive" src="assets/images/banner-hosting.jpg" /></a>
-                </div>
-            </div>
-        </div></div>
     <div class="container" id="columns">
         <div id="mainbody_upPannel">
-	
                 <div class="row" itemscope itemtype="http://schema.org/ItemList">
-                    <a id="mainbody_btnViewBase" href="javascript:__doPostBack(&#39;ctl00$mainbody$btnViewBase&#39;,&#39;&#39;)"></a>
-                    <a id="mainbody_bntViewDetail" href="javascript:__doPostBack(&#39;ctl00$mainbody$bntViewDetail&#39;,&#39;&#39;)"></a>
-                    <div class="center_column col-xs-12 col-sm-9" id="center_column">
+                    <div class="center_column col-xs-12 col-sm-12" id="center_column">
                         <div id="view-product-list" class="view-product-list">
                             <h1 class="page-heading">
+                                <img alt="services" src="https://cdn3.iconfinder.com/data/icons/security-double-color-red-black-vol-2/52/flame__extinguisher__fire__burning__hot__heat__fireplace-512.png" width="20px">
                                 <span class="page-heading-title" itemprop="name">SOURCE CODE</span>
                             </h1>
                             <link itemprop="url" href="index.html" />
@@ -767,15 +593,13 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
                                         </li>
                             </ul>
                             <!-- PRODUCT LIST -->
-                            
                                 <ul class="row product-list style2 grid">
-                                    
                                             <li class="col-sx-12 col-sm-3" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
                                                 <div class="product-container">
                                                     <div class="left-block">
                                                         <a href='source-code/share-code-tin-tuc-wordpress-giong-quantrimangcom-25266.html'>
                                                             <div class="img-box">
-                                                                <img class="img-responsive" itemprop="image" src="FilesUpload/Code/share-code-tin-tuc-wordpress-giong-quantrimang.com-152153.jpg" alt="Share code tin tức wordpress giống Quantrimang.com" title="Download Share code tin tức wordpress giống Quantrimang.com" />
+                                                                <img class="img-responsive" itemprop="image" src="https://sharecode.vn/FilesUpload/Code/code-ban-du-lieu-tai-lieu-tu-dong---articart-v1.5.0.0-192142.jpg" alt="Share code tin tức wordpress giống Quantrimang.com" title="Download Share code tin tức wordpress giống Quantrimang.com" />
                                                             </div>
                                                         </a>
                                                         <div class="quick-view">
@@ -815,7 +639,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
                                                     <div class="left-block">
                                                         <a href='source-code/phan-mem-quan-ly-benh-vien-c-mo-hinh-3-lopdatabase-mysql-25259.html'>
                                                             <div class="img-box">
-                                                                <img class="img-responsive" itemprop="image" src="FilesUpload/Code/phan-mem-quan-ly-benh-vien-c-mo-hinh-3-lopfull-bao-cao-14337.jpg" alt="Phần mềm quản lý bệnh viện c# + mô hình 3 lớp+full báo cáo" title="Download Phần mềm quản lý bệnh viện c# + mô hình 3 lớp+full báo cáo" />
+                                                                <img class="img-responsive" itemprop="image" src="https://sharecode.vn/FilesUpload/Code/source-code-ung-dung-ban-do-nhu-cho-tot-do-an-android-144550.jpg" alt="Phần mềm quản lý bệnh viện c# + mô hình 3 lớp+full báo cáo" title="Download Phần mềm quản lý bệnh viện c# + mô hình 3 lớp+full báo cáo" />
                                                             </div>
                                                         </a>
                                                         <div class="quick-view">
@@ -855,7 +679,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
                                                     <div class="left-block">
                                                         <a href='source-code/full-source-code-asm-java-3-sql-_-cao-dang-fpt-25258.html'>
                                                             <div class="img-box">
-                                                                <img class="img-responsive" itemprop="image" src="FilesUpload/Code/full-source-code-asm-java-3-sql-_-cao-dang-fpt-221557.jpg" alt="Full source code ASM JAVA 3 + SQL _ CAO ĐẲNG FPT" title="Download Full source code ASM JAVA 3 + SQL _ CAO ĐẲNG FPT" />
+                                                                <img class="img-responsive" itemprop="image" src="https://sharecode.vn/FilesUpload/Code/code-do-an-website-quan-ly-nhan-su-php-105132.jpg" alt="Full source code ASM JAVA 3 + SQL _ CAO ĐẲNG FPT" title="Download Full source code ASM JAVA 3 + SQL _ CAO ĐẲNG FPT" />
                                                             </div>
                                                         </a>
                                                         <div class="quick-view">
@@ -895,7 +719,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
                                                     <div class="left-block">
                                                         <a href='source-code/sourcecode-danh-ba-android-25253.html'>
                                                             <div class="img-box">
-                                                                <img class="img-responsive" itemprop="image" src="FilesUpload/Code/source-code-danh-ba-android-112457.jpg" alt="Source code danh bạ android" title="Download Source code danh bạ android" />
+                                                                <img class="img-responsive" itemprop="image" src="https://sharecode.vn/FilesUpload/Code/code-ban-du-lieu-tai-lieu-tu-dong---articart-v1.5.0.0-192142.jpg" alt="Source code danh bạ android" title="Download Source code danh bạ android" />
                                                             </div>
                                                         </a>
                                                         <div class="quick-view">
@@ -1252,583 +1076,14 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
                                         
                                 </ul>
                         </div>
-                        <div class="sortPagiBar">
-                            <div class="bottom-pagination">
-                                <nav id="mainbody_PaggingBottom"><ul class='pagination'><li class='active'><a href=index2679.html?page=1>1</a></li><li><a href=index4658.html?page=2>2</a></li><li><a href=index9ba9.html?page=3>3</a></li><li><a href=indexfdb0.html?page=4>4</a></li><li><a href=indexaf4d.html?page=5>5</a></li><li><a href=indexc575.html?page=6>6</a></li><li><a href=index4658.html?page=2>&raquo;</a></li><li><a href=index4b01.html?page=767> Trang Cuối </a></li></ul></nav>
-                            </div>
-                            <div class="sort-product">
-                                <select name="ctl00$mainbody$ddlSort" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$mainbody$ddlSort\&#39;,\&#39;\&#39;)&#39;, 0)" id="mainbody_ddlSort">
-		<option selected="selected" value="New">Mới nhất</option>
-		<option value="View">Xem nhiều</option>
-		<option value="Down">Tải nhiều</option>
-
-	</select>
-                                <div class="sort-product-icon">
-                                    <i class="fa fa-sort-alpha-asc"></i>
-                                </div>
-                            </div>
-                        </div>
                         <div class="clearfix"></div>
                         <div>
-                            
-                                    <div id="view-product-list" class="view-product-list">
-                                        <h2 class="page-heading">
-                                            <span class="page-heading-title">Website NỔI BẬT</span>
-                                        </h2>
-                                        <ul class="row product-list style2 grid">
-                                            
-                                                    <li class="col-sx-12 col-sm-3">
-                                                        <div class="product-container">
-                                                            <div class="left-block">
-                                                                <a href='source-code/giao-dien-website-blog-ve-game-mien-phi-template-free-blog-about-game-24049.html'>
-                                                                    <div class="img-box">
-                                                                        <img class="img-responsive" src="FilesUpload/Code/giao-dien-website-blog-ve-game-mien-phi---template-free-blog-about-game-113243.jpg" alt="Giao diện website blog về game miễn phí - Template free blog about game" title="Download Giao diện website blog về game miễn phí - Template free blog about game" />
-                                                                    </div>
-                                                                </a>
-                                                                <div class="quick-view">
-                                                                    <a title="Download code" class="search" href='source-code/giao-dien-website-blog-ve-game-mien-phi-template-free-blog-about-game-24049.html#Download'></a>
-                                                                    <a id="mainbody_rptHot_dtlCode_0_Button4_0" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl00$dtlCode$ctl00$Button4&#39;,&#39;&#39;)"></a>
-                                                                    <a onclick="createCaptcha();" id="mainbody_rptHot_dtlCode_0_Button5_0" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl00$dtlCode$ctl00$Button5&#39;,&#39;&#39;)"></a>
-                                                                    
-                                                                </div>
-                                                                <div class="downview">
-                                                                    <span class="view-count2">1065</span>
-                                                                    <span class="down-count2">180</span>
-                                                                </div>
-                                                                <a class="cate" href='ngon-ngu-lap-trinh/html-template-25.html'>Html & Template</a>
-                                                            </div>
-                                                            <div class="right-block">
-                                                                <a href='source-code/giao-dien-website-blog-ve-game-mien-phi-template-free-blog-about-game-24049.html'>
-                                                                    <h3 class="product-name bold" title="Download Giao diện website blog về game miễn phí - Template free blog about game">Giao diện website blog về game miễn phí - Template free blog about game</h3>
-                                                                </a>
-                                                              <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/></div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                
-                                                    <li class="col-sx-12 col-sm-3">
-                                                        <div class="product-container">
-                                                            <div class="left-block">
-                                                                <a href='source-code/30-source-code-ma-nguon-wordpress-phong-phu-load-nhe-chuan-seo-24078.html'>
-                                                                    <div class="img-box">
-                                                                        <img class="img-responsive" src="FilesUpload/Code/%5bvui-long-kiem-tra-lai-link-download-khong-chinh-xac%5d-30-source-code-ma-nguon-wordpress-phong-phu-load-nhe-chuan-seo-112922.jpg" alt="30 Source code mã nguồn WordPress phong phú load nhẹ chuẩn SEO" title="Download 30 Source code mã nguồn WordPress phong phú load nhẹ chuẩn SEO" />
-                                                                    </div>
-                                                                </a>
-                                                                <div class="quick-view">
-                                                                    <a title="Download code" class="search" href='source-code/30-source-code-ma-nguon-wordpress-phong-phu-load-nhe-chuan-seo-24078.html#Download'></a>
-                                                                    <a id="mainbody_rptHot_dtlCode_0_Button4_1" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl00$dtlCode$ctl01$Button4&#39;,&#39;&#39;)"></a>
-                                                                    <a onclick="createCaptcha();" id="mainbody_rptHot_dtlCode_0_Button5_1" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl00$dtlCode$ctl01$Button5&#39;,&#39;&#39;)"></a>
-                                                                    
-                                                                </div>
-                                                                <div class="downview">
-                                                                    <span class="view-count2">575</span>
-                                                                    <span class="down-count2">0</span>
-                                                                </div>
-                                                                <a class="cate" href='ngon-ngu-lap-trinh/wordpress-29.html'>WordPress</a>
-                                                            </div>
-                                                            <div class="right-block">
-                                                                <a href='source-code/30-source-code-ma-nguon-wordpress-phong-phu-load-nhe-chuan-seo-24078.html'>
-                                                                    <h3 class="product-name bold" title="Download 30 Source code mã nguồn WordPress phong phú load nhẹ chuẩn SEO">30 Source code mã nguồn WordPress phong phú load nhẹ chuẩn SEO</h3>
-                                                                </a>
-                                                              <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/></div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                
-                                                    <li class="col-sx-12 col-sm-3">
-                                                        <div class="product-container">
-                                                            <div class="left-block">
-                                                                <a href='source-code/chia-se-source-code-web-ban-hang-dien-thoai-php-thuan-day-la-code-web-hay-hoan-chinh-rat-tot-cho-cac-ban-tham-khao-code-da-test-va-chay-rat-tot-24071.html'>
-                                                                    <div class="img-box">
-                                                                        <img class="img-responsive" src="FilesUpload/Code/full-code-web-ban-hang-dien-thoai-php-thuan-chuan-83812.jpg" alt="Full code web bán hàng điện thoại php thuần chuẩn " title="Download Full code web bán hàng điện thoại php thuần chuẩn " />
-                                                                    </div>
-                                                                </a>
-                                                                <div class="quick-view">
-                                                                    <a title="Download code" class="search" href='source-code/chia-se-source-code-web-ban-hang-dien-thoai-php-thuan-day-la-code-web-hay-hoan-chinh-rat-tot-cho-cac-ban-tham-khao-code-da-test-va-chay-rat-tot-24071.html#Download'></a>
-                                                                    <a id="mainbody_rptHot_dtlCode_0_Button4_2" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl00$dtlCode$ctl02$Button4&#39;,&#39;&#39;)"></a>
-                                                                    <a onclick="createCaptcha();" id="mainbody_rptHot_dtlCode_0_Button5_2" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl00$dtlCode$ctl02$Button5&#39;,&#39;&#39;)"></a>
-                                                                    
-                                                                </div>
-                                                                <div class="downview">
-                                                                    <span class="view-count2">452</span>
-                                                                    <span class="down-count2">3</span>
-                                                                </div>
-                                                                <a class="cate" href='ngon-ngu-lap-trinh/php-mysql-21.html'>PHP & MySQL</a>
-                                                            </div>
-                                                            <div class="right-block">
-                                                                <a href='source-code/chia-se-source-code-web-ban-hang-dien-thoai-php-thuan-day-la-code-web-hay-hoan-chinh-rat-tot-cho-cac-ban-tham-khao-code-da-test-va-chay-rat-tot-24071.html'>
-                                                                    <h3 class="product-name bold" title="Download Full code web bán hàng điện thoại php thuần chuẩn ">Full code web bán hàng điện thoại php thuần chuẩn </h3>
-                                                                </a>
-                                                              <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/></div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                
-                                                    <li class="col-sx-12 col-sm-3">
-                                                        <div class="product-container">
-                                                            <div class="left-block">
-                                                                <a href='source-code/code-web-phim-online-ovoo-phien-ban-306-full-code-web-phim-2019-ban-quyen-25179.html'>
-                                                                    <div class="img-box">
-                                                                        <img class="img-responsive" src="FilesUpload/Code/code-web-phim-online-ovoo-phien-ban-3.1.0---full-code-web-phim-2019-ban-quyen-11053.jpg" alt="Code Web Phim Online OVOO Phiên Bản 3.1.0 - Full Code Web Phim 2019 Bản Quyền" title="Download Code Web Phim Online OVOO Phiên Bản 3.1.0 - Full Code Web Phim 2019 Bản Quyền" />
-                                                                    </div>
-                                                                </a>
-                                                                <div class="quick-view">
-                                                                    <a title="Download code" class="search" href='source-code/code-web-phim-online-ovoo-phien-ban-306-full-code-web-phim-2019-ban-quyen-25179.html#Download'></a>
-                                                                    <a id="mainbody_rptHot_dtlCode_0_Button4_3" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl00$dtlCode$ctl03$Button4&#39;,&#39;&#39;)"></a>
-                                                                    <a onclick="createCaptcha();" id="mainbody_rptHot_dtlCode_0_Button5_3" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl00$dtlCode$ctl03$Button5&#39;,&#39;&#39;)"></a>
-                                                                    
-                                                                </div>
-                                                                <div class="downview">
-                                                                    <span class="view-count2">363</span>
-                                                                    <span class="down-count2">2</span>
-                                                                </div>
-                                                                <a class="cate" href='ngon-ngu-lap-trinh/php-mysql-21.html'>PHP & MySQL</a>
-                                                            </div>
-                                                            <div class="right-block">
-                                                                <a href='source-code/code-web-phim-online-ovoo-phien-ban-306-full-code-web-phim-2019-ban-quyen-25179.html'>
-                                                                    <h3 class="product-name bold" title="Download Code Web Phim Online OVOO Phiên Bản 3.1.0 - Full Code Web Phim 2019 Bản Quyền">Code Web Phim Online OVOO Phiên Bản 3.1.0 - Full Code Web Phim 2019 Bản Quyền</h3>
-                                                                </a>
-                                                              <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/></div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                
-                                        </ul>
-                                    </div>
-                                
-                                    <div id="view-product-list" class="view-product-list">
-                                        <h2 class="page-heading">
-                                            <span class="page-heading-title">Phần mềm - Ứng dụng NỔI BẬT</span>
-                                        </h2>
-                                        <ul class="row product-list style2 grid">
-                                            
-                                                    <li class="col-sx-12 col-sm-3">
-                                                        <div class="product-container">
-                                                            <div class="left-block">
-                                                                <a href='source-code/app-nghe-nhac-mp3-truc-tiep-tu-app-co-huong-dan-gan-ad-24040.html'>
-                                                                    <div class="img-box">
-                                                                        <img class="img-responsive" src="FilesUpload/Code/app-nghe-nhac-mp3-truc-tiep-tu-app-co-huong-dan-gan-ad-19240.jpg" alt="App Nghe nhạc MP3 trực tiếp từ app ( có hướng dẫn gắn Ad)" title="Download App Nghe nhạc MP3 trực tiếp từ app ( có hướng dẫn gắn Ad)" />
-                                                                    </div>
-                                                                </a>
-                                                                <div class="quick-view">
-                                                                    <a title="Download code" class="search" href='source-code/app-nghe-nhac-mp3-truc-tiep-tu-app-co-huong-dan-gan-ad-24040.html#Download'></a>
-                                                                    <a id="mainbody_rptHot_dtlCode_1_Button4_0" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl01$dtlCode$ctl00$Button4&#39;,&#39;&#39;)"></a>
-                                                                    <a onclick="createCaptcha();" id="mainbody_rptHot_dtlCode_1_Button5_0" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl01$dtlCode$ctl00$Button5&#39;,&#39;&#39;)"></a>
-                                                                    
-                                                                </div>
-                                                                <div class="downview">
-                                                                    <span class="view-count2">3064</span>
-                                                                    <span class="down-count2">1</span>
-                                                                </div>
-                                                                <a class="cate" href='ngon-ngu-lap-trinh/android-15.html'>Android</a>
-                                                            </div>
-                                                            <div class="right-block">
-                                                                <a href='source-code/app-nghe-nhac-mp3-truc-tiep-tu-app-co-huong-dan-gan-ad-24040.html'>
-                                                                    <h3 class="product-name bold" title="Download App Nghe nhạc MP3 trực tiếp từ app ( có hướng dẫn gắn Ad)">App Nghe nhạc MP3 trực tiếp từ app ( có hướng dẫn gắn Ad)</h3>
-                                                                </a>
-                                                              <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/></div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                
-                                                    <li class="col-sx-12 col-sm-3">
-                                                        <div class="product-container">
-                                                            <div class="left-block">
-                                                                <a href='source-code/c-devexpress-do-an-quan-ly-thu-vien-uneti-library-system-managerment-24048.html'>
-                                                                    <div class="img-box">
-                                                                        <img class="img-responsive" src="FilesUpload/Code/c---devexpress---do-an-quan-ly-thu-vien---uneti-library-system-managerment-11228.jpg" alt="C# - DevExpress - Đồ án quản lý thư viện - UNETI Library System Managerment" title="Download C# - DevExpress - Đồ án quản lý thư viện - UNETI Library System Managerment" />
-                                                                    </div>
-                                                                </a>
-                                                                <div class="quick-view">
-                                                                    <a title="Download code" class="search" href='source-code/c-devexpress-do-an-quan-ly-thu-vien-uneti-library-system-managerment-24048.html#Download'></a>
-                                                                    <a id="mainbody_rptHot_dtlCode_1_Button4_1" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl01$dtlCode$ctl01$Button4&#39;,&#39;&#39;)"></a>
-                                                                    <a onclick="createCaptcha();" id="mainbody_rptHot_dtlCode_1_Button5_1" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl01$dtlCode$ctl01$Button5&#39;,&#39;&#39;)"></a>
-                                                                    
-                                                                </div>
-                                                                <div class="downview">
-                                                                    <span class="view-count2">872</span>
-                                                                    <span class="down-count2">189</span>
-                                                                </div>
-                                                                <a class="cate" href='ngon-ngu-lap-trinh/visual-c-17.html'>Visual C#</a>
-                                                            </div>
-                                                            <div class="right-block">
-                                                                <a href='source-code/c-devexpress-do-an-quan-ly-thu-vien-uneti-library-system-managerment-24048.html'>
-                                                                    <h3 class="product-name bold" title="Download C# - DevExpress - Đồ án quản lý thư viện - UNETI Library System Managerment">C# - DevExpress - Đồ án quản lý thư viện - UNETI Library System Managerment</h3>
-                                                                </a>
-                                                              <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/></div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                
-                                                    <li class="col-sx-12 col-sm-3">
-                                                        <div class="product-container">
-                                                            <div class="left-block">
-                                                                <a href='source-code/phan-mem-quan-ly-hoc-phi-cua-cac-cau-lac-bo-clb-ngoai-khoa-cua-truong-mau-giao-bach-khoa-kem-bao-cao-24097.html'>
-                                                                    <div class="img-box">
-                                                                        <img class="img-responsive" src="FilesUpload/Code/free-code-phan-mem-quan-ly-hoc-phi-cac-cau-lac-bo-clb-ngoai-khoa-cua-truong-mau-giao-bach-khoa---kem-bao-cao-9535.jpg" alt="FREE CODE Phần Mềm quản lý học phí các câu lạc bộ (CLB) ngoại khóa của trường mẫu giáo Bách Khoa - kèm Báo cáo" title="Download FREE CODE Phần Mềm quản lý học phí các câu lạc bộ (CLB) ngoại khóa của trường mẫu giáo Bách Khoa - kèm Báo cáo" />
-                                                                    </div>
-                                                                </a>
-                                                                <div class="quick-view">
-                                                                    <a title="Download code" class="search" href='source-code/phan-mem-quan-ly-hoc-phi-cua-cac-cau-lac-bo-clb-ngoai-khoa-cua-truong-mau-giao-bach-khoa-kem-bao-cao-24097.html#Download'></a>
-                                                                    <a id="mainbody_rptHot_dtlCode_1_Button4_2" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl01$dtlCode$ctl02$Button4&#39;,&#39;&#39;)"></a>
-                                                                    <a onclick="createCaptcha();" id="mainbody_rptHot_dtlCode_1_Button5_2" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl01$dtlCode$ctl02$Button5&#39;,&#39;&#39;)"></a>
-                                                                    
-                                                                </div>
-                                                                <div class="downview">
-                                                                    <span class="view-count2">718</span>
-                                                                    <span class="down-count2">91</span>
-                                                                </div>
-                                                                <a class="cate" href='ngon-ngu-lap-trinh/visual-c-17.html'>Visual C#</a>
-                                                            </div>
-                                                            <div class="right-block">
-                                                                <a href='source-code/phan-mem-quan-ly-hoc-phi-cua-cac-cau-lac-bo-clb-ngoai-khoa-cua-truong-mau-giao-bach-khoa-kem-bao-cao-24097.html'>
-                                                                    <h3 class="product-name bold" title="Download FREE CODE Phần Mềm quản lý học phí các câu lạc bộ (CLB) ngoại khóa của trường mẫu giáo Bách Khoa - kèm Báo cáo">FREE CODE Phần Mềm quản lý học phí các câu lạc bộ (CLB) ngoại khóa của trường mẫu giáo Bách Khoa - kèm Báo cáo</h3>
-                                                                </a>
-                                                              <div class="rateit" data-rateit-value="3"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="3"/><meta itemprop="reviewCount" content="2"/></div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                
-                                                    <li class="col-sx-12 col-sm-3">
-                                                        <div class="product-container">
-                                                            <div class="left-block">
-                                                                <a href='source-code/bai-toan-reader-writer-java-source-bao-cao-24110.html'>
-                                                                    <div class="img-box">
-                                                                        <img class="img-responsive" src="FilesUpload/Code/bai-toan-reader---writer-java-source-bao-cao-115043.jpg" alt="Bài toán Reader - Writer Java (source + Báo cáo)" title="Download Bài toán Reader - Writer Java (source + Báo cáo)" />
-                                                                    </div>
-                                                                </a>
-                                                                <div class="quick-view">
-                                                                    <a title="Download code" class="search" href='source-code/bai-toan-reader-writer-java-source-bao-cao-24110.html#Download'></a>
-                                                                    <a id="mainbody_rptHot_dtlCode_1_Button4_3" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl01$dtlCode$ctl03$Button4&#39;,&#39;&#39;)"></a>
-                                                                    <a onclick="createCaptcha();" id="mainbody_rptHot_dtlCode_1_Button5_3" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl01$dtlCode$ctl03$Button5&#39;,&#39;&#39;)"></a>
-                                                                    
-                                                                </div>
-                                                                <div class="downview">
-                                                                    <span class="view-count2">411</span>
-                                                                    <span class="down-count2">0</span>
-                                                                </div>
-                                                                <a class="cate" href='ngon-ngu-lap-trinh/javajsp-20.html'>Java/JSP</a>
-                                                            </div>
-                                                            <div class="right-block">
-                                                                <a href='source-code/bai-toan-reader-writer-java-source-bao-cao-24110.html'>
-                                                                    <h3 class="product-name bold" title="Download Bài toán Reader - Writer Java (source + Báo cáo)">Bài toán Reader - Writer Java (source + Báo cáo)</h3>
-                                                                </a>
-                                                              <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/></div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                
-                                        </ul>
-                                    </div>
-                                
-                                    <div id="view-product-list" class="view-product-list">
-                                        <h2 class="page-heading">
-                                            <span class="page-heading-title">Game NỔI BẬT</span>
-                                        </h2>
-                                        <ul class="row product-list style2 grid">
-                                            
-                                                    <li class="col-sx-12 col-sm-3">
-                                                        <div class="product-container">
-                                                            <div class="left-block">
-                                                                <a href='source-code/share-code-game-mario-bang-html-javascript-23396.html'>
-                                                                    <div class="img-box">
-                                                                        <img class="img-responsive" src="FilesUpload/Code/share-code-game-mario-bang-html-javascript-175523.jpg" alt="Share Code Game Mario Bằng HTML Javascript" title="Download Share Code Game Mario Bằng HTML Javascript" />
-                                                                    </div>
-                                                                </a>
-                                                                <div class="quick-view">
-                                                                    <a title="Download code" class="search" href='source-code/share-code-game-mario-bang-html-javascript-23396.html#Download'></a>
-                                                                    <a id="mainbody_rptHot_dtlCode_2_Button4_0" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl02$dtlCode$ctl00$Button4&#39;,&#39;&#39;)"></a>
-                                                                    <a onclick="createCaptcha();" id="mainbody_rptHot_dtlCode_2_Button5_0" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl02$dtlCode$ctl00$Button5&#39;,&#39;&#39;)"></a>
-                                                                    
-                                                                </div>
-                                                                <div class="downview">
-                                                                    <span class="view-count2">2277</span>
-                                                                    <span class="down-count2">699</span>
-                                                                </div>
-                                                                <a class="cate" href='ngon-ngu-lap-trinh/html-template-25.html'>Html & Template</a>
-                                                            </div>
-                                                            <div class="right-block">
-                                                                <a href='source-code/share-code-game-mario-bang-html-javascript-23396.html'>
-                                                                    <h3 class="product-name bold" title="Download Share Code Game Mario Bằng HTML Javascript">Share Code Game Mario Bằng HTML Javascript</h3>
-                                                                </a>
-                                                              <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/></div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                
-                                                    <li class="col-sx-12 col-sm-3">
-                                                        <div class="product-container">
-                                                            <div class="left-block">
-                                                                <a href='thong-bao.html'>
-                                                                    <div class="img-box">
-                                                                        <img class="img-responsive" src="FilesUpload/Code/%5bxac-nhan-nguon-chinh-thong-phan-hoi-qua-email%5d-rabbit-skater-unity-game-source-code-92744.jpg" alt="Rabbit Skater Unity Game Source Code" title="Download Rabbit Skater Unity Game Source Code" />
-                                                                    </div>
-                                                                </a>
-                                                                <div class="quick-view">
-                                                                    <a title="Download code" class="search" href='thong-bao.html#Download'></a>
-                                                                    <a id="mainbody_rptHot_dtlCode_2_Button4_1" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl02$dtlCode$ctl01$Button4&#39;,&#39;&#39;)"></a>
-                                                                    <a onclick="createCaptcha();" id="mainbody_rptHot_dtlCode_2_Button5_1" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl02$dtlCode$ctl01$Button5&#39;,&#39;&#39;)"></a>
-                                                                    
-                                                                </div>
-                                                                <div class="downview">
-                                                                    <span class="view-count2">1508</span>
-                                                                    <span class="down-count2">1</span>
-                                                                </div>
-                                                                <a class="cate" href='ngon-ngu-lap-trinh/unity-27.html'>Unity</a>
-                                                            </div>
-                                                            <div class="right-block">
-                                                                <a href='thong-bao.html'>
-                                                                    <h3 class="product-name bold" title="Download Rabbit Skater Unity Game Source Code">Rabbit Skater Unity Game Source Code</h3>
-                                                                </a>
-                                                              <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/></div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                
-                                                    <li class="col-sx-12 col-sm-3">
-                                                        <div class="product-container">
-                                                            <div class="left-block">
-                                                                <a href='source-code/share-code-word-stacks-unity-23218.html'>
-                                                                    <div class="img-box">
-                                                                        <img class="img-responsive" src="FilesUpload/Code/share-code-word-stacks-unity-231840.jpg" alt="Share code Word Stacks Unity" title="Download Share code Word Stacks Unity" />
-                                                                    </div>
-                                                                </a>
-                                                                <div class="quick-view">
-                                                                    <a title="Download code" class="search" href='source-code/share-code-word-stacks-unity-23218.html#Download'></a>
-                                                                    <a id="mainbody_rptHot_dtlCode_2_Button4_2" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl02$dtlCode$ctl02$Button4&#39;,&#39;&#39;)"></a>
-                                                                    <a onclick="createCaptcha();" id="mainbody_rptHot_dtlCode_2_Button5_2" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl02$dtlCode$ctl02$Button5&#39;,&#39;&#39;)"></a>
-                                                                    
-                                                                </div>
-                                                                <div class="downview">
-                                                                    <span class="view-count2">1296</span>
-                                                                    <span class="down-count2">221</span>
-                                                                </div>
-                                                                <a class="cate" href='ngon-ngu-lap-trinh/unity-27.html'>Unity</a>
-                                                            </div>
-                                                            <div class="right-block">
-                                                                <a href='source-code/share-code-word-stacks-unity-23218.html'>
-                                                                    <h3 class="product-name bold" title="Download Share code Word Stacks Unity">Share code Word Stacks Unity</h3>
-                                                                </a>
-                                                              <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/></div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                
-                                                    <li class="col-sx-12 col-sm-3">
-                                                        <div class="product-container">
-                                                            <div class="left-block">
-                                                                <a href='source-code/dua-pokemon-pokemon-crossing-23691.html'>
-                                                                    <div class="img-box">
-                                                                        <img class="img-responsive" src="FilesUpload/Code/dua-pokemon---pokemon-crossing-162321.jpg" alt="Đua Pokemon - Pokemon Crossing" title="Download Đua Pokemon - Pokemon Crossing" />
-                                                                    </div>
-                                                                </a>
-                                                                <div class="quick-view">
-                                                                    <a title="Download code" class="search" href='source-code/dua-pokemon-pokemon-crossing-23691.html#Download'></a>
-                                                                    <a id="mainbody_rptHot_dtlCode_2_Button4_3" title="Yêu thích code này" class="heart LikeSuccess" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl02$dtlCode$ctl03$Button4&#39;,&#39;&#39;)"></a>
-                                                                    <a onclick="createCaptcha();" id="mainbody_rptHot_dtlCode_2_Button5_3" title="Lưu code lại cho tôi" class="compare" data-toggle="modal" data-target="#LoginForm" role="button" href="javascript:__doPostBack(&#39;ctl00$mainbody$rptHot$ctl02$dtlCode$ctl03$Button5&#39;,&#39;&#39;)"></a>
-                                                                    
-                                                                </div>
-                                                                <div class="downview">
-                                                                    <span class="view-count2">1215</span>
-                                                                    <span class="down-count2">264</span>
-                                                                </div>
-                                                                <a class="cate" href='ngon-ngu-lap-trinh/android-15.html'>Android</a>
-                                                            </div>
-                                                            <div class="right-block">
-                                                                <a href='source-code/dua-pokemon-pokemon-crossing-23691.html'>
-                                                                    <h3 class="product-name bold" title="Download Đua Pokemon - Pokemon Crossing">Đua Pokemon - Pokemon Crossing</h3>
-                                                                </a>
-                                                              <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true" itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating"><meta itemprop="ratingValue" content="5"/><meta itemprop="reviewCount" content="1"/></div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                
-                                        </ul>
-                                    </div>
-                                
                         </div>
-                    </div>
-                    <div class="column col-xs-12 col-sm-3" id="left_column" style="margin-top: 15px;">
-                        
-<div class="block left-module">
-    <p class="title_block">CODE NỔI BẬT</p>
-    <div class="block_content">
-        <ul class="products-block best-sell">
-            
-                    <li>
-                        <div class="products-block-left">
-                            <a href='source-code/%5bserverclient%5d-vo-lam-truyen-ky-mobile-19-phai-day-du-web-api-25167.html'>
-                                <img src="FilesUpload/Code/%5bserverclient%5d-vo-lam-truyen-ky-mobile-19-phai-day-du-web-api-214535.jpg" alt="võ lâm truyền kỳ mobile,server võ lâm truyền kỳ mobi,võ lâm mobile" title="Download [Server+Client] Võ Lâm Truyền Kỳ Mobile 19 phái đầy đủ Web, API">
-                            </a>
-                        </div>
-                        <div class="products-block-right">
-                            <p class="product-name">
-                                <a href='source-code/%5bserverclient%5d-vo-lam-truyen-ky-mobile-19-phai-day-du-web-api-25167.html'>
-                                    <h3 class="title2 bold" title="Download [Server+Client] Võ Lâm Truyền Kỳ Mobile 19 phái đầy đủ Web, API">[Server+Client] Võ Lâm Truyền Kỳ Mobile 19 phái đầy đủ Web, API</h3>
-                                </a>
-                            </p>
-                            <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true"></div>
-                            
-                        </div>
-                        <div class="products-block-bottom">
-                            <div><a class="cate" href='ngon-ngu-lap-trinh/android-15.html'>Android</a>
-                                <span class="alignright view-count">769</span>
-                                <span class="alignright down-count">6</span>
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li>
-                        <div class="products-block-left">
-                            <a href='source-code/bai-toan-reader-writer-java-source-bao-cao-24110.html'>
-                                <img src="FilesUpload/Code/bai-toan-reader---writer-java-source-bao-cao-115043.jpg" alt="bài toán reader writer,bài toán reader writer java,reader writer,bài toán reader writer giao diện,reader writer problem" title="Download Bài toán Reader - Writer Java (source + Báo cáo)">
-                            </a>
-                        </div>
-                        <div class="products-block-right">
-                            <p class="product-name">
-                                <a href='source-code/bai-toan-reader-writer-java-source-bao-cao-24110.html'>
-                                    <h3 class="title2 bold" title="Download Bài toán Reader - Writer Java (source + Báo cáo)">Bài toán Reader - Writer Java (source + Báo cáo)</h3>
-                                </a>
-                            </p>
-                            <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true"></div>
-                            
-                        </div>
-                        <div class="products-block-bottom">
-                            <div><a class="cate" href='ngon-ngu-lap-trinh/javajsp-20.html'>Java/JSP</a>
-                                <span class="alignright view-count">411</span>
-                                <span class="alignright down-count">0</span>
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li>
-                        <div class="products-block-left">
-                            <a href='source-code/code-web-phim-online-ovoo-phien-ban-306-full-code-web-phim-2019-ban-quyen-25179.html'>
-                                <img src="FilesUpload/Code/code-web-phim-online-ovoo-phien-ban-3.1.0---full-code-web-phim-2019-ban-quyen-11053.jpg" alt="code phim,web phim,web phim online,code phim online,ovoo movie,code ovoo" title="Download Code Web Phim Online OVOO Phiên Bản 3.1.0 - Full Code Web Phim 2019 Bản Quyền">
-                            </a>
-                        </div>
-                        <div class="products-block-right">
-                            <p class="product-name">
-                                <a href='source-code/code-web-phim-online-ovoo-phien-ban-306-full-code-web-phim-2019-ban-quyen-25179.html'>
-                                    <h3 class="title2 bold" title="Download Code Web Phim Online OVOO Phiên Bản 3.1.0 - Full Code Web Phim 2019 Bản Quyền">Code Web Phim Online OVOO Phiên Bản 3.1.0 - Full Code Web Phim 2019 Bản Quyền</h3>
-                                </a>
-                            </p>
-                            <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true"></div>
-                            
-                        </div>
-                        <div class="products-block-bottom">
-                            <div><a class="cate" href='ngon-ngu-lap-trinh/php-mysql-21.html'>PHP & MySQL</a>
-                                <span class="alignright view-count">363</span>
-                                <span class="alignright down-count">2</span>
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li>
-                        <div class="products-block-left">
-                            <a href='source-code/source-code-mang-xa-hoi-sngine-v261-24108.html'>
-                                <img src="FilesUpload/Code/source-code-mang-xa-hoi-sngine-v2.6.1-17452.jpg" alt="Sngine v2.6.1,Mạng Xã Hội Sngine v2.6.1,Sngine v2.6,Code Mạng Xã Hội Giống FaceBook,Mạng Xã Hội Sngine v2.6,TC Social Network" title="Download Source Code Mạng Xã Hội Sngine v2.6.1">
-                            </a>
-                        </div>
-                        <div class="products-block-right">
-                            <p class="product-name">
-                                <a href='source-code/source-code-mang-xa-hoi-sngine-v261-24108.html'>
-                                    <h3 class="title2 bold" title="Download Source Code Mạng Xã Hội Sngine v2.6.1">Source Code Mạng Xã Hội Sngine v2.6.1</h3>
-                                </a>
-                            </p>
-                            <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true"></div>
-                            
-                        </div>
-                        <div class="products-block-bottom">
-                            <div><a class="cate" href='ngon-ngu-lap-trinh/php-mysql-21.html'>PHP & MySQL</a>
-                                <span class="alignright view-count">360</span>
-                                <span class="alignright down-count">1</span>
-                            </div>
-                        </div>
-                    </li>
-                
-                    <li>
-                        <div class="products-block-left">
-                            <a href='source-code/source-code-game-kiem-vu-h5-dang-cuc-hot-25229.html'>
-                                <img src="FilesUpload/Code/%5bbat-buoc-bo-sung-video-cai-dat-file-trong-code-den-khi-chay%5d-source-code-game-kiem-vu-h5-dang-cuc-hot-105012.jpg" alt="kiếm vũ h5,game h5,tiên vũ h5,game Kiếm Vũ H5" title="Download Source code game Kiếm Vũ H5 đang cực hot">
-                            </a>
-                        </div>
-                        <div class="products-block-right">
-                            <p class="product-name">
-                                <a href='source-code/source-code-game-kiem-vu-h5-dang-cuc-hot-25229.html'>
-                                    <h3 class="title2 bold" title="Download Source code game Kiếm Vũ H5 đang cực hot">Source code game Kiếm Vũ H5 đang cực hot</h3>
-                                </a>
-                            </p>
-                            <div class="rateit" data-rateit-value="5"  data-rateit-readonly="true"></div>
-                            
-                        </div>
-                        <div class="products-block-bottom">
-                            <div><a class="cate" href='ngon-ngu-lap-trinh/html-template-25.html'>Html & Template</a>
-                                <span class="alignright view-count">297</span>
-                                <span class="alignright down-count">3</span>
-                            </div>
-                        </div>
-                    </li>
-                
-        </ul>
-    </div>
-</div>
-
-                        
-<div class="block left-module">
-    <p class="title_block">THÔNG BÁO</p>
-    <div class="block_content">
-        <div class="layered layered-category">
-            <div class="layered-content">
-                <ul class="tree-menu">
-                    
-                            <li><a href='cau-hoi/cach-upload-code-hieu-qua-va-toi-uu-seo-10.html' title='Cách UPLOAD code hiệu quả và tối ưu SEO - FAQ'>
-                                <h3 class="title2 bullet">Cách UPLOAD code hiệu quả và tối ưu SEO<span class='ic_hot'></span></h3>
-                            </a></li>
-                        
-                            <li><a href='cau-hoi/meo-giup-ban-tang-doanh-thu-ban-source-code-9.html' title='Mẹo giúp bạn TĂNG DOANH THU bán source code - FAQ'>
-                                <h3 class="title2 bullet">Mẹo giúp bạn TĂNG DOANH THU bán source code<span class='ic_hot'></span></h3>
-                            </a></li>
-                        
-                            <li><a href='cau-hoi/huong-dan-nap-tien-vao-tai-khoan-8.html' title='Hướng dẫn NẠP TIỀN vào tài khoản - FAQ'>
-                                <h3 class="title2 bullet">Hướng dẫn NẠP TIỀN vào tài khoản<span class=''></span></h3>
-                            </a></li>
-                        
-                            <li><a href='cau-hoi/huong-dan-rut-tien-tu-tai-khoan-7.html' title='Hướng dẫn RÚT TIỀN từ tài khoản - FAQ'>
-                                <h3 class="title2 bullet">Hướng dẫn RÚT TIỀN từ tài khoản<span class=''></span></h3>
-                            </a></li>
-                        
-                            <li><a href='cau-hoi/huong-dan-cach-chay-website-aspnet-tren-localhost-2.html' title='Hướng dẫn cách chạy website ASP.Net trên Localhost - FAQ'>
-                                <h3 class="title2 bullet">Hướng dẫn cách chạy website ASP.Net trên Localhost<span class=''></span></h3>
-                            </a></li>
-                        
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-                        <div id="mainbody_ucBanner_divBanner" class="col-left-slide left-module">
-    <ul class="owl-carousel owl-style2" data-loop="true" data-nav="false" data-margin="30" data-autoplaytimeout="1000" data-autoplayhoverpause="true" data-items="1" data-autoplay="true">
-        
-                <li><a href="code-mien-phi.html" rel="nofollow" target="_blank">
-                    <img src="FilesUpload/Banner/14_11_43_download%20source%20code%2c%20do%20an%2c%20ma%20nguon%20mien%20phi.jpg" alt="Download source code, download mã nguồn, đồ án miễn phí, thư viện chi sẻ source code" title="Download source code, mã nguồn miễn phí"></a></li>
-            
-                <li><a href="cau-hoi/meo-giup-ban-tang-doanh-thu-ban-source-code-9.html" rel="nofollow" target="_blank">
-                    <img src="FilesUpload/Banner/9_49_20_meo%20tang%20doanh%20thu%20ban%20code2.jpg" alt="Doanh thu, tăng doanh thu, lợi nhuận, bán code" title="Mẹo giúp tăng DOANH THU bán CODE cho bạn"></a></li>
-            
-                <li><a href="thong-bao.html" rel="nofollow" target="_blank">
-                    <img src="FilesUpload/Banner/0_21_40_sharecode%20tang%20thuong%202.jpg" alt="sự kiện, event, tặng thưởng, upload code" title="Sự kiện: Mừng ngày giỗ tổ 10/3 - Tặng thưởng khi upload code đạt mốc"></a></li>
-            
-    </ul>
-</div>
                     </div>
                 </div>
             
 </div>
     </div>
-
-        
 <script src="assets/js/floater_xlib.js"></script>
 <script type="text/javascript">
 
@@ -1889,14 +1144,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
             <img src="assets/images/Ra-mat-topcode.jpg" border="0" width="120" alt="" /></a><br />
     </div>
 </div>
-  <script>
-
-      pepsi_floating_init();
-
-</script>
-
         <div id="ctl24">
-	
                 <!-- Footer -->
                 <footer id="footer">
                     <div class="container">
@@ -1905,7 +1153,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
                             <div class="col-md-3">
                                 <div id="address-box">
                                     <a href="index.html">
-                                        <img src="assets/images/logo.png" alt="Sharecode.vn" /></a>
+                                        <img src="https://sharecode.vn/assets/images/logo.png" alt="Sharecode.vn" /></a>
                                     <div id="address-list">
                                         <div class="tit-name">Hotline:</div>
                                         <div class="tit-contain"><a href="tel:+84981282756" title="Click gọi ngay!">0981.282.756</a></div>
@@ -1976,28 +1224,28 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
                                 <ul id="trademark-list">
                                     <li id="payment-methods">Thanh toán đảm bảo</li>
                                     <li>
-                                        <img src="assets/images/b1.png" alt="ngan luong" />
+                                        <img src="https://sharecode.vn/assets/images/b1.png" alt="ngan luong" />
                                     </li>
                                     <li>
-                                        <img src="assets/images/b10.png" alt="bao kim" />
+                                        <img src="https://sharecode.vn/assets/images/b10.png" alt="bao kim" />
                                     </li>
                                     <li>
-                                        <img src="assets/images/b11.png" alt="momo" />
+                                        <img src="https://sharecode.vn/assets/images/b11.png" alt="momo" />
                                     </li>
                                     <li>
-                                        <img src="assets/images/b8.png" alt="paypal" />
+                                        <img src="https://sharecode.vn/assets/images/b8.png" alt="paypal" />
                                     </li>
                                     <li>
-                                        <img src="assets/images/b5.png" alt="vietcombank" />
+                                        <img src="https://sharecode.vn/assets/images/b5.png" alt="vietcombank" />
                                     </li>
                                     <li>
-                                        <img src="assets/images/b9.png" alt="vietin bank" />
+                                        <img src="https://sharecode.vn/assets/images/b9.png" alt="vietin bank" />
                                     </li>
                                     <li>
-                                        <img src="assets/images/b6.png" alt="agribank" />
+                                        <img src="https://sharecode.vn/assets/images/b6.png" alt="agribank" />
                                     </li>
                                     <li>
-                                        <img src="assets/images/b7.png" alt="bidv" />
+                                        <img src="https://sharecode.vn/assets/images/b7.png" alt="bidv" />
                                     </li>
                                     
                                 </ul>
@@ -2016,12 +1264,7 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
                             </div>
                         </div>
                         <div id="footer-menu-box">
-                            <p class="text-center">
-                                Copyrights &#169; 2014 Sharecode.vn - Nội dung đã được bảo vệ bản quyền
-                                <a href="http://www.dmca.com/Protection/Status.aspx?ID=e3cfb854-1733-4462-a9e8-0ef4661d6600" title="DMCA.com Protection Status" class="dmca-badge">
-                                    <img src="../images.dmca.com/Badges/dmca-badge-w150-5x1-095c56.png?ID=e3cfb854-1733-4462-a9e8-0ef4661d6600" alt="DMCA.com Protection Status"></a>
-                                <script src="../images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
-                            </p>
+                           
                         </div>
                     </div>
                 </footer>
@@ -2031,18 +1274,13 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
 
     <a href="#" class="scroll_top" title="Lên đầu" style="display: inline;"></a>
     <!-- Script-->
-    <script type="text/javascript" src="assets/lib/jquery/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="assets/lib/select2/js/select2.min.js"></script>
-    <script type="text/javascript" src="assets/lib/owl.carousel/owl.carousel.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.actual.min.js"></script>
-    <script type="text/javascript" src="assets/js/theme-script.js"></script>
-    <script type="text/javascript" src="assets/lib/jquery-ui/jquery-ui.min.js"></script>
-    <script type="text/javascript">
-        $('#slSearch').on('change', function () {
-            $('#hdLangFilter').val($("#slSearch").val());
-        });
-    </script>
+    <script type="text/javascript" src="mvc/public/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="mvc/public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="mvc/public/js/select2.min.js"></script>
+    <script type="text/javascript" src="mvc/public/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="mvc/public/js/jquery.actual.min.js"></script>
+    <script type="text/javascript" src="mvc/public/js/theme-script.js"></script>
+    <script type="text/javascript" src="mvc/public/js/jquery-ui.min.js"></script>
     
     <script type="text/javascript">
         $('.carousel').carousel({
@@ -2086,45 +1324,6 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
                 }
             });
         }
-        //fix đường dẫn khi login bằng facebook
-        if (window.location.hash == '#_=_') {
-            history.replaceState
-                ? history.replaceState(null, null, window.location.href.split('#')[0])
-                : window.location.hash = '';
-        }
-        function KeepSessionAlive() {
-            url = "/KeepSessionAlive.ashx?";
-            var xmlHttp = new XMLHttpRequest();
-            xmlHttp.open("GET.html", url, true);
-            xmlHttp.send();
-        }
-        function fosp_cmt() {
-            jQuery('#errCmt').html('');
-            jQuery('#errCmt').removeClass();
-            jQuery('#txtComment').removeClass('validation-failed');
-            if (jQuery('#txtComment').val() == '') {
-                jQuery('#errCmt').addClass('text-error');
-                jQuery('#txtComment').addClass('validation-failed');
-                jQuery('#errCmt').html('Vui lòng nhập nội dung và email của bạn.');
-                jQuery('#txtComment').focus();
-                return false;
-            }
-        }
-    </script>
-    
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', '../www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-52977022-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <!-- Đặt thẻ này vào phần đầu hoặc ngay trước thẻ đóng phần nội dung của bạn. -->
-    <script src="../apis.google.com/js/platform.js" async defer>
-  {lang: 'vi'}
     </script>
     <script type="application/ld+json">
 { "@context" : "http://schema.org",
@@ -2149,39 +1348,6 @@ Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'form1', ['t
             <div id="hisella-facebook" class='fb-page' data-adapt-container-width='true' data-height='350' data-hide-cover='false' data-href='https://www.facebook.com/sharecode.vn' data-show-facepile='true' data-show-posts='false' data-small-header='false' data-tabs='messages' data-width='250'></div>
         </div>
     </div>
-    
-    
-    <script src="assets/js/jquery.easy-ticker.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            var dd = $('.action_box').easyTicker({
-                direction: 'down',
-                easing: 'easeInOutBack',
-                speed: 'slow',
-                interval: 5000,
-                height: 'auto',
-                visible: 0,
-                mousePause: 0,
-                controls: {
-                    up: '.up',
-                    down: '.down',
-                    toggle: '.toggle',
-                    stopText: 'Stop !!!'
-                }
-            }).data('easyTicker');
-        });
-        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(function (evt, args) {
-            $('.rateit').rateit({ max: 5, step: 1 });
-        });
-    </script>
-    
-    <link href="assets/css/iosOverlay.css" rel="stylesheet" />
-    <script src="assets/js/iosOverlay.js"></script>
-    <script type="text/javascript" src="assets/lib/jquery.bxslider/jquery.bxslider.min.js"></script>
-     <link href="assets/lib/rateit/rateit.css" rel="stylesheet" />
-    <script src="assets/lib/rateit/jquery.rateit.min.js"></script>
-
+    <script type="text/javascript" src="mvc/public/js/jquery.bxslider.min.js"></script>
 </body>
-
-<!-- Mirrored from sharecode.vn/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 Dec 2019 00:54:24 GMT -->
 </html>
