@@ -1086,49 +1086,11 @@ function __doPostBack(eventTarget, eventArgument) {
     </div>
 <script src="assets/js/floater_xlib.js"></script>
 <script type="text/javascript">
-
     var slideTime = 600;
     var floatAtBottom = false;
-    function pepsi_floating_init() {
-        xMoveTo('floating_banner_right', 887 - (1024 - screen.width), 0);
-
-        winOnResize(); // set initial position
-        xAddEventListener(window, 'resize', winOnResize, false);
-        xAddEventListener(window, 'scroll', winOnScroll, false);
-    }
     function winOnResize() {
         checkScreenWidth();
         winOnScroll(); // initial slide
-    }
-    function winOnScroll() {
-        var y = xScrollTop();
-        if (floatAtBottom) {
-            y += xClientHeight() - xHeight('floating_banner_left');
-        }
-        document.getElementById('floating_banner_left').style.position = 'fixed';
-        document.getElementById('floating_banner_right').style.position = 'fixed';
-            if (y >= 185) {
-                xSlideTo('floating_banner_left', (document.body.clientWidth - 20 - 1170) / 2 - 150, 60, slideTime);
-                xSlideTo('floating_banner_right', (document.body.clientWidth - 20 + 1170) / 2 +50, 60, slideTime);
-            }
-            else {
-                xSlideTo('floating_banner_left', (document.body.clientWidth - 20 - 1170) / 2 - 150, 300 - y, slideTime);
-                xSlideTo('floating_banner_right', (document.body.clientWidth - 20 + 1170) / 2 +50, 300 - y, slideTime);
-            }
-    }
-    function checkScreenWidth() {
-        if (document.body.clientWidth < (1530)) {
-            document.getElementById('floating_banner_left').style.display = 'none';
-            document.getElementById('floating_banner_right').style.display = 'none';
-            if (document.getElementById('bannerCenter')!=null)
-            document.getElementById('bannerCenter').style.display = 'block';
-        }
-        else {
-            document.getElementById('floating_banner_left').style.display = '';
-            document.getElementById('floating_banner_right').style.display = '';
-            if (document.getElementById('bannerCenter') != null)
-            document.getElementById('bannerCenter').style.display = 'none';
-        }
     }
 
 </script>
@@ -1294,36 +1256,10 @@ function __doPostBack(eventTarget, eventArgument) {
                 minLength: 2,
                 html: true
             });
-            //chat face
-            $('.hisella-messages').animate({ bottom: '-350px' }).animate({ right: '-30px' }, 400, function () { $('#hisella-facebook').css('opacity', 0) }); $('#hisella-minimize').click(function () { if ($('#hisella-facebook').css('opacity') == 0) { $('#hisella-facebook').css('opacity', 1); $('.hisella-messages').animate({ right: '0' }).animate({ bottom: '0' }); } else { $('.hisella-messages').animate({ bottom: '-350px' }).animate({ right: '-30px' }, 400, function () { $('#hisella-facebook').css('opacity', 0) }); } })
         });
         //auto
         (function ($) { var proto = $.ui.autocomplete.prototype, initSource = proto._initSource; function filter(array, term) { var matcher = new RegExp($.ui.autocomplete.escapeRegex(term), "i"); return $.grep(array, function (value) { return matcher.test($("<div>").html(value.label || value.value || value).text()); }); } $.extend(proto, { _initSource: function () { if (this.options.html && $.isArray(this.options.source)) { this.source = function (request, response) { response(filter(this.options.source, request.term)); }; } else { initSource.call(this); } }, _renderItem: function (ul, item) { return $("<li></li>").data("item.autocomplete", item).append($("<a></a>")[this.options.html ? "html" : "text"](item.label)).appendTo(ul); } }); })(jQuery);
         var cache = {};
-        function TagSuggest(request, response) {
-            var term = request.term.toLowerCase();
-            if (term in cache) { response(cache[term]); return; }
-            $.ajax({
-                type: "POST",
-                url: "/Ajax/TagSuggest.aspx/TagAutocomplete",
-                data: '{tagname: "' + term + '"}',
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                async: false,
-                success: function (data) {
-                    var suggestions = [];
-                    var results = data.d;
-                    $.each(results, function (index, item) {
-                        try {
-                            var s = item.toLowerCase();
-                            suggestions.push({ label: s.replace(term, '<b>' + term + '</b>'), value: s });
-                        } catch (e) { }
-                    });
-                    cache[term] = suggestions;
-                    response(suggestions);
-                }
-            });
-        }
     </script>
     <script type="application/ld+json">
 { "@context" : "http://schema.org",

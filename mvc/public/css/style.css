@@ -1343,14 +1343,13 @@ span.notify-right {
     text-align: center;
     display: block;
     cursor: pointer;
-    background: url(/assets/images/bt_title_popup.jpg) #84c52c;
-    border: 1px solid #84c52c;
-    border-radius: 5px;
+    background: url(/assets/images/bt_title_popup.jpg) #f40;
+    border: 1px solid #f40;
     color: white;
 }
 
 .box-vertical-megamenus .all-category span:hover {
-    background: #84c52c;
+    background: #f40;
 }
 
 .box-vertical-megamenus .all-category span:after {
