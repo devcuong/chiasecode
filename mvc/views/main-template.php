@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="vi" xml:lang="vi" xmlns="http://www.w3.org/1999/xhtml">
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
@@ -576,18 +575,7 @@
     }
 
 </script>
-<div id="floating_banner_left" style="text-align: right; position: absolute; overflow: hidden; width: 120px; z-index: 99999">
-    <div id="floating_banner_left_content">
-        <a href="kien-thuc-lap-trinh/dich-vu-thiet-ke-website-chuyen-nghiep-voi-gia-cuc-re-va-nhieu-uu-dai-tai-sharecodevn-880.html" target="_blank">
-            <img src="assets/images/thiet-ke-web-gia-re.jpg" border="0" width="120" alt="" /></a><br />
-    </div>
-</div>
-<div id="floating_banner_right" style="text-align: left; position: absolute; overflow: hidden; width: 120px; z-index: 99999">
-    <div id="Div2">
-        <a href="https://topcode.vn/" target="_blank">
-            <img src="assets/images/Ra-mat-topcode.jpg" border="0" width="120" alt="" /></a><br />
-    </div>
-</div>
+
         <div id="ctl24">
                 <!-- Footer -->
                 <footer id="footer">

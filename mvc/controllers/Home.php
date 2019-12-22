@@ -1,12 +1,13 @@
 <?php
     class Home extends Controller{
         function SayHi(){
-            $teo = $this->model("SinhVienModel");
+            $code = $this->model("CodeModel");
             //echo $teo->GetSV();
 
             //View
             $this->view("main-template", ["Page"=>"main-home",
-            "SV" => $teo->SinhVien()]);
+            "CodeMoiNhat" => $code->CodeMoiNhat(),
+            "WebsiteMoiNhat" => $code->WebsiteMoiNhat()]);
         }
         function Show($a, $b){
             //Model
