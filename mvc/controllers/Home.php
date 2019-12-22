@@ -7,7 +7,9 @@
             //View
             $this->view("main-template", ["Page"=>"main-home",
             "CodeMoiNhat" => $code->CodeMoiNhat(),
-            "WebsiteMoiNhat" => $code->WebsiteMoiNhat()]);
+            "WebsiteMoiNhat" => $code->WebsiteMoiNhat(),
+            "UngDungMoiNhat" => $code->UngDungMoiNhat(),
+            "GameMoiNhat" => $code->GameMoiNhat() ]);
         }
         function Show($a, $b){
             //Model

@@ -1912,7 +1912,7 @@ span.notify-right {
 
 .header-top-right .homeslider .bx-controls-direction .bx-prev,
 .header-top-right .homeslider .bx-controls-direction .bx-next {
-    background: #84c52c;
+    background: #f40;
     text-indent: 0px!important;
     color: #fff;
     font-size: 15px;
@@ -1997,7 +1997,7 @@ span.notify-right {
 
 .header-top-right .homeslider .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .header-top-right .homeslider .bx-wrapper .bx-pager.bx-default-pager a.active {
-    background: #84c52c;
+    background: #f40;
     color: #fff;
     border: 1px solid #fff;
 }
@@ -2759,7 +2759,8 @@ span.notify-right {
 /** #footer-menu-box **/
 
 #footer {
-    background: #f0ecdd;
+    background: #eeeeee;
+    color: #333333;
 }
 
 #footer-menu-box {
@@ -4061,7 +4062,6 @@ span.notify-right {
     position: relative;
     padding: 8px 15px 8px 46px;
     color: #FFF;
-    border-radius: 5px;
     white-space: nowrap;
 }
 
