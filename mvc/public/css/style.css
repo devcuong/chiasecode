@@ -1188,7 +1188,7 @@ span.notify-right {
  */
 
 .nav-top-menu {
-    background: #0094da;
+    background: rgb(24, 158, 255);
 }
 
 
@@ -1205,7 +1205,7 @@ span.notify-right {
 }
 
 .box-vertical-megamenus .title {
-    background: #0279b1;
+    background: rgb(29, 113, 171);
     color: #fff;
     height: 50px;
     line-height: 50px;
@@ -1229,7 +1229,6 @@ span.notify-right {
 }
 
 .box-vertical-megamenus .vertical-menu-content {
-    border-top: 3px solid #0279b1;
     background: #fff;
     display: none;
     padding-bottom: 15px;
@@ -1240,14 +1239,14 @@ span.notify-right {
 }
 
 .box-vertical-megamenus .vertical-menu-list {
-    border-left: 1px solid #e2d8c7;
-    border-right: 1px solid #e2d8c7;
-    background: #f0ecdd;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    background: #fff;
 }
 
 .box-vertical-megamenus .vertical-menu-list li:nth-child(2n+1) {
-    background: #faf8f1;
-    border-left: 1px solid #e2d8c7;
+    background: #fff;
+    border-left: 1px solid #000;
 }
 
 .box-vertical-megamenus .vertical-menu-list li {
@@ -1258,12 +1257,12 @@ span.notify-right {
 }
 
 .box-vertical-megamenus .vertical-menu-list>li:hover {
-    background: #cbf592;
+    background: rgb(24, 158, 255);
 }
 
 .box-vertical-megamenus .vertical-menu-list>li:hover>a {
-    color: #648d03;
-    border-color: #84c52c;
+    color: #fff;
+    border-color: #f40;
 }
 
 .box-vertical-megamenus .vertical-menu-list>li:hover>a.parent:before {
@@ -1275,7 +1274,7 @@ span.notify-right {
     line-height: 35px;
     display: block;
     font-weight: bold;
-    border-bottom: 1px dotted #d5c6ae;
+    border-bottom: 1px dashed #000;
 }
 
 .box-vertical-megamenus .vertical-menu-content ul>li>a.parent:before {
@@ -1453,7 +1452,7 @@ span.notify-right {
 #main-menu {
     padding: 0;
     margin-left: -15px;
-    background-color: #0094da;
+    background-color: rgb(24, 158, 255);
 }
 
 #main-menu .container-fluid {
@@ -1883,7 +1882,6 @@ span.notify-right {
 .header-top-right {
     margin-left: -15px;
     padding: 0;
-    border-top: 3px solid #0279b1;
 }
 
 .header-top-right .homeslider {
@@ -2017,14 +2015,13 @@ span.notify-right {
 */
 
 .service {
-    background: #faf8f1;
+    background: #fff;
     border: 1px solid #e2d8c7;
     padding: 19px 0;
     font-size: 12px;
     margin-top: 20px;
     float: left;
     width: 100%;
-    border-radius: 4px;
 }
 
 .service .service-item {
@@ -5885,4 +5882,13 @@ i.BAB {
     border-radius: 3px;
     background: #faf8f1;
     font-weight: bold;
+}
+.code-pricing {
+    position: absolute;
+    left: 5px;
+    bottom: 20px;
+    background: #f40;
+    color: #fff;
+    padding: 8px 15px;
+	filter: drop-shadow(2px 0px 1px rgba(0, 0, 0, 0.5));
 }

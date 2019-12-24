@@ -28,6 +28,7 @@
                                                 echo to_slug($row["tencode"]) ?>'>
                                                     <div class="img-box">
                                                         <img class="img-responsive" itemprop="image" src="<?php echo $row["anhdemo"] ?>" alt="<?php echo $row["tencode"] ?>" title="<?php echo $row["tencode"] ?>" />
+                                                    <p class="code-pricing"><span class="code-price"><b>Phí tải:</b> <?php echo $row["phitai"] ?>&nbsp;xu </span></p>
                                                     </div>
                                                 </a>
                                                 <div class="quick-view">
@@ -84,6 +85,7 @@
                                                 <a href='source-code/share-code-tin-tuc-wordpress-giong-quantrimangcom-25266.html'>
                                                     <div class="img-box">
                                                         <img class="img-responsive" itemprop="image" src="<?php echo $row["anhdemo"] ?>" alt="<?php echo $row["tencode"] ?>" title="<?php echo $row["tencode"] ?>" />
+                                                    <p class="code-pricing"><span class="code-price"><b>Phí tải:</b> <?php echo $row["phitai"] ?>&nbsp;xu </span></p>
                                                     </div>
                                                 </a>
                                                 <div class="quick-view">
@@ -141,6 +143,7 @@
                                                 <a href='source-code/share-code-tin-tuc-wordpress-giong-quantrimangcom-25266.html'>
                                                     <div class="img-box">
                                                         <img class="img-responsive" itemprop="image" src="<?php echo $row["anhdemo"] ?>" alt="<?php echo $row["tencode"] ?>" title="<?php echo $row["tencode"] ?>" />
+                                                    <p class="code-pricing"><span class="code-price"><b>Phí tải:</b> <?php echo $row["phitai"] ?>&nbsp;xu </span></p>
                                                     </div>
                                                 </a>
                                                 <div class="quick-view">
@@ -172,7 +175,7 @@
                          <!--Game noi bat-->
                          <div id="view-product-list" class="view-product-list">
                             <h1 class="page-heading">
-                                <img alt="services" src="mvc/public/images/hot-icon.png" width="20px">
+                                <img alt="services" src="<?php echo $servername ?>/mvc/public/images/hot-icon.png" width="20px">
                                 <span class="page-heading-title" itemprop="name">ỨNG DỤNG NỔI BẬT</span>
                             </h1>
                             <link itemprop="url" href="index.html" />
@@ -198,6 +201,7 @@
                                                 <a href='source-code/share-code-tin-tuc-wordpress-giong-quantrimangcom-25266.html'>
                                                     <div class="img-box">
                                                         <img class="img-responsive" itemprop="image" src="<?php echo $row["anhdemo"] ?>" alt="<?php echo $row["tencode"] ?>" title="<?php echo $row["tencode"] ?>" />
+                                                    	<p class="code-pricing"><span class="code-price"><b>Phí tải:</b> <?php echo $row["phitai"] ?>&nbsp;xu </span></p>
                                                     </div>
                                                 </a>
                                                 <div class="quick-view">

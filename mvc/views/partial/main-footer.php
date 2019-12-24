@@ -80,3 +80,39 @@
                 </footer>
 
 </div>
+  <a href="#" class="scroll_top" title="Lên đầu" style="display: inline;"></a>
+    <!-- Script-->
+    <script type="text/javascript" src="<?php echo $servername ?>/mvc/public/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="<?php echo $servername ?>/mvc/public/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?php echo $servername ?>/mvc/public/js/select2.min.js"></script>
+    <script type="text/javascript" src="<?php echo $servername ?>/mvc/public/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="<?php echo $servername ?>/mvc/public/js/jquery.actual.min.js"></script>
+    <script type="text/javascript" src="<?php echo $servername ?>/mvc/public/js/theme-script.js"></script>
+    <script type="text/javascript" src="<?php echo $servername ?>/mvc/public/js/jquery-ui.min.js"></script>
+
+    <script type="text/javascript">
+        $('.carousel').carousel({
+            interval: 5000
+        })
+        $(document).ready(function () {
+            //duy tri alive: 5 minutes
+            setInterval("KeepSessionAlive()", 300000);
+            $('.txt-auto').autocomplete({
+                source: TagSuggest,
+                minLength: 2,
+                html: true
+            });
+        });
+        //auto
+        (function ($) { var proto = $.ui.autocomplete.prototype, initSource = proto._initSource; function filter(array, term) { var matcher = new RegExp($.ui.autocomplete.escapeRegex(term), "i"); return $.grep(array, function (value) { return matcher.test($("<div>").html(value.label || value.value || value).text()); }); } $.extend(proto, { _initSource: function () { if (this.options.html && $.isArray(this.options.source)) { this.source = function (request, response) { response(filter(this.options.source, request.term)); }; } else { initSource.call(this); } }, _renderItem: function (ul, item) { return $("<li></li>").data("item.autocomplete", item).append($("<a></a>")[this.options.html ? "html" : "text"](item.label)).appendTo(ul); } }); })(jQuery);
+        var cache = {};
+    </script>
+    <div class="hisella-messages">
+        <div class="hisella-messages-outer">
+            <div id="hisella-minimize">&nbsp;HỖ TRỢ TRỰC TUYẾN</div>
+            <div id="hisella-facebook" class='fb-page' data-adapt-container-width='true' data-height='350' data-hide-cover='false' data-href='https://www.facebook.com/sharecode.vn' data-show-facepile='true' data-show-posts='false' data-small-header='false' data-tabs='messages' data-width='250'></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="<?php echo $servername ?>/mvc/public/js/jquery.bxslider.min.js"></script>
+</body>
+</html>

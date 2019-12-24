@@ -1,6 +1,6 @@
 <?php require_once 'mvc/views/partial/head-html.php'; ?>
 <body class="home">
-<?php require_once 'mvc/views/partial/main-header.php'; ?>
+<?php require_once 'mvc/views/partial/cat-header.php'; ?>
     
     <div class="container" id="columns">
         <div id="mainbody_upPannel">
@@ -26,3 +26,4 @@
     <?php require_once 'mvc/views/partial/main-footer.php'; ?>
 
   
+
