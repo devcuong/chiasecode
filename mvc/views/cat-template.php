@@ -1,143 +1,13 @@
 <?php require_once 'mvc/views/partial/head-html.php'; ?>
 <body class="category-page">
-
 	<div id="fb-root"></div>
-	<form method="post"
-		action="https://sharecode.vn/ngon-ngu-lap-trinh/android-15.htm"
-		id="form1">
 		<div id="header" class="header">
 			<?php require_once 'mvc/views/partial/top-header.php'; ?>
 			<div id="nav-top-menu" class="nav-top-menu">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-3" id="box-vertical-megamenus">
-							<div class="box-vertical-megamenus">
-								<h4 class="title">
-									<span class="title-menu">Danh mục</span> <span
-										class="btn-open-mobile pull-right home-page"><i
-										class="fa fa-bars"></i></span>
-								</h4>
-								<div class="vertical-menu-content is-home">
-									<ul class="vertical-menu-list">
-										<li><a class="parent" href="#"> <img class="icon-menu"
-												alt="Thể loại code" src="../assets/images/2.png" />PHÂN LOẠI
-												CODE
-										</a>
-											<div class="vertical-dropdown-menu">
-												<div class="vertical-groups col-sm-6 col-md-4">
-													<div class="mega-group col-sm-12">
-														<span class="mega-group-header"><span>THỂ LOẠI CODE</span></span>
-														<ul class="group-link-default">
-
-															<li><a class="bold"
-																href='../the-loai-source-code/website-1.html'>Website</a></li>
-
-															<li><a class="bold"
-																href='../the-loai-source-code/phan-mem-ung-dung-2.html'>Phần
-																	mềm - Ứng dụng</a></li>
-
-															<li><a class="bold"
-																href='../the-loai-source-code/game-3.html'>Game</a></li>
-
-															<li><a class="bold"
-																href='../the-loai-source-code/khac-4.html'>Khác</a></li>
-
-														</ul>
-													</div>
-												</div>
-												<div class="vertical-groups col-sm-6 col-md-5">
-													<div class="mega-group col-sm-12">
-														<span class="mega-group-header"><span>SOURCE CODE</span></span>
-														<ul class="group-link-default">
-															<li><a href="../code-chat-luong.html"><strong>Code chất
-																		lượng</strong> (>= 100 Xu)</a></li>
-															<li><a href="../code-tham-khao.html"><strong>Code tham
-																		khảo</strong> (2 Xu - 99 Xu)</a></li>
-															<li><a href="../code-mien-phi.html"><strong>Code miễn phí</strong>
-																	(0 Xu)</a></li>
-
-
-														</ul>
-													</div>
-
-												</div>
-											</div></li>
-
-										<li class=""><a href='android-15.html'> <img class="icon-menu"
-												alt="Android" src="../assets/images/3.png">Android
-										</a></li>
-
-										<li class=""><a href='ios-23.html'> <img class="icon-menu"
-												alt="iOS" src="../assets/images/3.png">iOS
-										</a></li>
-
-										<li class=""><a href='windows-phone-26.html'> <img
-												class="icon-menu" alt="Windows phone"
-												src="../assets/images/3.png">Windows phone
-										</a></li>
-
-										<li class=""><a href='php-mysql-21.html'> <img
-												class="icon-menu" alt="PHP & MySQL"
-												src="../assets/images/3.png">PHP & MySQL
-										</a></li>
-
-										<li class=""><a href='wordpress-29.html'> <img
-												class="icon-menu" alt="WordPress"
-												src="../assets/images/3.png">WordPress
-										</a></li>
-
-										<li class=""><a href='joomla-28.html'> <img class="icon-menu"
-												alt="Joomla" src="../assets/images/3.png">Joomla
-										</a></li>
-
-										<li class=""><a href='visual-c-17.html'> <img
-												class="icon-menu" alt="Visual C#"
-												src="../assets/images/3.png">Visual C#
-										</a></li>
-
-										<li class=""><a href='aspaspnet-16.html'> <img
-												class="icon-menu" alt="Asp/Asp.Net"
-												src="../assets/images/3.png">Asp/Asp.Net
-										</a></li>
-
-										<li class=""><a href='javajsp-20.html'> <img class="icon-menu"
-												alt="Java/JSP" src="../assets/images/3.png">Java/JSP
-										</a></li>
-
-										<li class=""><a href='visual-basic-19.html'> <img
-												class="icon-menu" alt="Visual Basic"
-												src="../assets/images/3.png">Visual Basic
-										</a></li>
-
-										<li class="cat-link-orther"><a href='cocos2d-24.html'> <img
-												class="icon-menu" alt="Cocos2D" src="../assets/images/3.png">Cocos2D
-										</a></li>
-
-										<li class="cat-link-orther"><a href='unity-27.html'> <img
-												class="icon-menu" alt="Unity" src="../assets/images/3.png">Unity
-										</a></li>
-
-										<li class="cat-link-orther"><a href='visual-c-18.html'> <img
-												class="icon-menu" alt="Visual C++"
-												src="../assets/images/3.png">Visual C++
-										</a></li>
-
-										<li class="cat-link-orther"><a href='html-template-25.html'> <img
-												class="icon-menu" alt="Html & Template"
-												src="../assets/images/3.png">Html & Template
-										</a></li>
-
-										<li class="cat-link-orther"><a href='khac-22.html'> <img
-												class="icon-menu" alt="Khác" src="../assets/images/3.png">Khác
-										</a></li>
-
-									</ul>
-									<div class="all-category">
-										<span class="open-cate">Xem tất cả</span>
-									</div>
-								</div>
-							</div>
-						</div>
+<!-- 					vertical menu -->
+						<?php require_once 'mvc/views/partial/vertical-menu.php'; ?>
 						<div id="main-menu" class="col-sm-9 main-menu">
 							<nav class="navbar navbar-default">
 								<div class="container-fluid">
@@ -195,82 +65,6 @@
 				</div>
 			</div>
 		</div>
-
-		<script type="text/javascript">
-            function fosp_login() {
-                jQuery('#login_error').html('');
-                jQuery('input[type="text"], input[type="password"]').removeClass('validation-failed');
-                email = jQuery('#log_username').val();
-                pass = jQuery('#log_password').val();
-                if (email == '') {
-                    jQuery('#log_username').addClass('validation-failed');
-                    jQuery('#login_error').html('Vui lòng nhập địa chỉ email.');
-                    jQuery('#log_username').focus();
-                    return false;
-                }
-                email_pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-                if (!email.match(email_pattern)) {
-                    jQuery('#log_username').addClass('validation-failed');
-                    jQuery('#login_error').html('Địa chỉ email không hợp lệ.');
-                    jQuery('#log_username').focus();
-                    return false;
-                }
-                if (pass == '') {
-                    jQuery('#log_password').addClass('validation-failed');
-                    jQuery('#login_error').html('Vui lòng nhập mật khẩu đăng nhập.');
-                    jQuery('#log_password').focus();
-                    return false;
-                }
-                captcha = jQuery('#txtCaptcha').val();
-        if (captcha == '') {
-            jQuery('#txtCaptcha').addClass('validation-failed');
-            jQuery('#login_error').html('Chưa nhập mã xác nhận.');
-            jQuery('#txtCaptcha').focus();
-            return false;
-        }
-                jQuery.ajax({
-                    type: "POST",
-                    url: "/Ajax/CheckAccount.aspx/CheckAccountLogin",
-                    data: '{email: "' + email + '", password: "' + pass + '", captcha: "' + captcha + '" }',
-                    contentType: "application/json; charset=utf-8",
-                    dataType: "json",
-                    async: false,
-                    success: function (data) {
-                        if (data.d == '1') {
-                            jQuery('#login_error').html('Mật khẩu không đúng.');
-                            jQuery('#log_password').addClass('validation-failed');
-                            jQuery('#log_password').focus();
-                        }
-                        else if (data.d == '2') {
-                            jQuery('#login_error').html('Email không tồn tại vui lòng nhập lại.');
-                            jQuery('#log_username').addClass('validation-failed');
-                            jQuery('#log_username').focus();
-                        }
-                        else if (data.d == '3') {
-                            jQuery('#login_error').html('Tài khoản chưa kích hoạt: KÍCH HOẠT (or dùng) QUÊN MẬT KHẨU?.');
-                            jQuery('#log_username').addClass('validation-failed');
-                            jQuery('#log_username').focus();
-                        }
-                        else if (data.d == '4') {
-                            jQuery('#login_error').html('Tài khoản đã bị khóa! Liên hệ với BQT để được hỗ trợ.');
-                            jQuery('#log_username').addClass('validation-failed');
-                            jQuery('#log_username').focus();
-                        }
-                        else if (data.d == '-1') {
-                            jQuery('#login_error').html('Mã xác nhận không đúng.');
-                            jQuery('#txtCaptcha').addClass('validation-failed');
-                            jQuery('#txtCaptcha').focus();
-                        }
-                    }
-                });
-                if (jQuery('#login_error').html() != '') {
-                    return false;
-                } else {
-                    return true;
-                }
-            }
-        </script>
-
 		<div class="modal fade" id="LoginForm" tabindex="-1" role="dialog"
 			aria-labelledby="myModalLabel">
 			<div class="modal-dialog" role="document">
@@ -335,25 +129,7 @@
 											maxlength="4" id="txtCaptcha" class="form-control alignleft"
 											placeholder="Xác nhận" style="width: 90px;" />
 
-										<script type="text/javascript">
-    function createCaptcha() {
-        jQuery.ajax({
-            type: "POST",
-            url: "/Ajax/CreateCaptcha.aspx/CaptchaUrl",
-            data: '{}',
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
-            async: false,
-            success: function (data) {
-                if (data.d != '') {
-                    $('.imgCaptcha').attr('src', data.d);
-                }
-                else
-                    $('.imgCaptcha').attr('src', '../Image/captcha.jpg');
-            }
-        });
-    }
-</script>
+										
 										<div
 											style="height: 30px; width: 140px; float: left; margin-left: 10px;">
 											<img src="../assets/images/captcha.jpg" alt="captcha"
@@ -403,41 +179,11 @@
 
 		<div class="columns-container">
 			<div class="container" id="columns">
-				<div class="breadcrumb clearfix" itemscope
-					itemtype="http://schema.org/BreadcrumbList">
-					<span itemprop="itemListElement" itemscope
-						itemtype="http://schema.org/ListItem"> <a itemprop="item"
-						class="agreen" href="../index.html" title="Trở lại trang chủ">Trang
-							chủ
-							<meta itemprop="name" content="sharecode.vn" />
-					</a>
-						<meta itemprop="position" content="1" />
-					</span> <span class="navigation-pipe">&nbsp;</span> <span
-						itemprop="itemListElement" itemscope
-						itemtype="http://schema.org/ListItem"> <a href="android-15.html"
-						id="mainbody_breadcrumb_breadpage_PathCategoryLink"
-						itemprop="item" class="agreen" title="Danh mục Android">
-							<h2 id="mainbody_breadcrumb_breadpage_PathTitle" class="abread"
-								itemprop="name">
-								Danh mục <b>Android</b>
-							</h2>
-					</a>
-						<meta itemprop="position" content="2" />
-					</span>
-
-
-				</div>
-
 				<div class="row">
 					<div class="center_column col-xs-12 col-sm-12" id="center_column">
 
 						<div itemscope itemtype="http://schema.org/ItemList">
-							<link itemprop="url" href="android-15.html" />
-							<meta itemprop="description"
-								content="Thư viện code ứng dụng hay cho android miễn phí , tổng hợp nhiều game hay cho android, hướng dẫn lập trình android, phần mềm hay cho android, ứng dụng android" />
 							<div id="mainbody_contentbody_contentpage_upPannel">
-
-
 								<a id="mainbody_contentbody_contentpage_btnViewBase"
 									href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$btnViewBase&#39;,&#39;&#39;)"></a>
 								<a id="mainbody_contentbody_contentpage_bntViewDetail"
@@ -452,56 +198,8 @@
 			</div>
 		</div>
 
-
-
 		<script src="../assets/js/floater_xlib.js"></script>
-		<script type="text/javascript">
-
-    var slideTime = 600;
-    var floatAtBottom = false;
-    function pepsi_floating_init() {
-        xMoveTo('floating_banner_right', 887 - (1024 - screen.width), 0);
-
-        winOnResize(); // set initial position
-        xAddEventListener(window, 'resize', winOnResize, false);
-        xAddEventListener(window, 'scroll', winOnScroll, false);
-    }
-    function winOnResize() {
-        checkScreenWidth();
-        winOnScroll(); // initial slide
-    }
-    function winOnScroll() {
-        var y = xScrollTop();
-        if (floatAtBottom) {
-            y += xClientHeight() - xHeight('floating_banner_left');
-        }
-        document.getElementById('floating_banner_left').style.position = 'fixed';
-        document.getElementById('floating_banner_right').style.position = 'fixed';
-            if (y >= 185) {
-                xSlideTo('floating_banner_left', (document.body.clientWidth - 20 - 1170) / 2 - 150, 60, slideTime);
-                xSlideTo('floating_banner_right', (document.body.clientWidth - 20 + 1170) / 2 +50, 60, slideTime);
-            }
-            else {
-                xSlideTo('floating_banner_left', (document.body.clientWidth - 20 - 1170) / 2 - 150, 300 - y, slideTime);
-                xSlideTo('floating_banner_right', (document.body.clientWidth - 20 + 1170) / 2 +50, 300 - y, slideTime);
-            }
-    }
-    function checkScreenWidth() {
-        if (document.body.clientWidth < (1530)) {
-            document.getElementById('floating_banner_left').style.display = 'none';
-            document.getElementById('floating_banner_right').style.display = 'none';
-            if (document.getElementById('bannerCenter')!=null)
-            document.getElementById('bannerCenter').style.display = 'block';
-        }
-        else {
-            document.getElementById('floating_banner_left').style.display = '';
-            document.getElementById('floating_banner_right').style.display = '';
-            if (document.getElementById('bannerCenter') != null)
-            document.getElementById('bannerCenter').style.display = 'none';
-        }
-    }
-
-</script>
+		
 		<div id="floating_banner_left"
 			style="text-align: right; position: absolute; overflow: hidden; width: 120px; z-index: 99999">
 			<div id="floating_banner_left_content">
@@ -520,11 +218,6 @@
 					alt="" /></a><br />
 			</div>
 		</div>
-		<script>
-
-      pepsi_floating_init();
-
-</script>
 
 		<?php require_once 'mvc/views/partial/main-footer.php'; ?>
 
