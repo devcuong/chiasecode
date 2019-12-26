@@ -58,71 +58,71 @@
 											</div></li>
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/android-15'> <img class="icon-menu"
-												alt="Android" src="<?php echo $servername ?>/mvc/public/images/android.png">Android
+												alt="Android" src="<?php echo $servername ?>/mvc/public/images/computer.png">Máy tính
 										</a></li>
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/ios-23'> <img class="icon-menu"
-												alt="iOS" src="<?php echo $servername ?>/mvc/public/images/ios.png">iOS
+												alt="iOS" src="<?php echo $servername ?>/mvc/public/images/phone.png">Điện thoại, viễn thông
 										</a></li>
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/windows-phone-26'> <img
 												class="icon-menu" alt="Windows phone"
-												src="<?php echo $servername ?>/mvc/public/images/windowphone.png">Windows phone
+												src="<?php echo $servername ?>/mvc/public/images/mebe.png">Mẹ và Bé
 										</a></li>
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/php-mysql-21'> <img
 												class="icon-menu" alt="PHP & MySQL"
-												src="<?php echo $servername ?>/mvc/public/images/php.png">PHP & MySQL
+												src="<?php echo $servername ?>/mvc/public/images/fashion.png">Thời Trang - Trang Sức
 										</a></li>
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/wordpress-29'> <img
 												class="icon-menu" alt="WordPress"
-												src="<?php echo $servername ?>/mvc/public/images/wordpress.png">WordPress
+												src="<?php echo $servername ?>/mvc/public/images/car.png">Ôtô, xe máy, xe đạp
 										</a></li>
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/joomla-28'> <img class="icon-menu"
-												alt="Joomla" src="<?php echo $servername ?>/mvc/public/images/joomla.png">Joomla
+												alt="Joomla" src="<?php echo $servername ?>/mvc/public/images/spa.png">Làm đẹp, sức khỏe
 										</a></li>
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/visual-c-17'> <img
 												class="icon-menu" alt="Visual C#"
-												src="<?php echo $servername ?>/mvc/public/images/csharp.png">Visual C#
+												src="<?php echo $servername ?>/mvc/public/images/office.png">Đồ văn phòng
 										</a></li>
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/aspaspnet-16'> <img
 												class="icon-menu" alt="Asp/Asp.Net"
-												src="<?php echo $servername ?>/mvc/public/images/aspx.png">Asp/Asp.Net
+												src="<?php echo $servername ?>/mvc/public/images/toys.png">Hoa, Quà tặng, Đồ chơi
 										</a></li>
 
 										<li class=""><a href='javajsp-20.html'> <img class="icon-menu"
-												alt="Java/JSP" src="<?php echo $servername ?>/mvc/public/images/java.png">Java/JSP
+												alt="Java/JSP" src="<?php echo $servername ?>/mvc/public/images/bds.png">Bất Động Sản
 										</a></li>
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/visual-basic-19'> <img
 												class="icon-menu" alt="Visual Basic"
-												src="<?php echo $servername ?>/mvc/public/images/visualstudio.png">Visual Basic
+												src="<?php echo $servername ?>/mvc/public/images/sport.png">Thể Thao
 										</a></li>
 
 										<li class="cat-link-orther"><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/cocos2d-24'> <img
-												class="icon-menu" alt="Cocos2D" src="<?php echo $servername ?>/mvc/public/images/cocos2d.png">Cocos2D
+												class="icon-menu" alt="Cocos2D" src="<?php echo $servername ?>/mvc/public/images/agri.png">Nông nghiệp, Lâm nghiệp
 										</a></li>
 
 										<li class="cat-link-orther"><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/unity-27'> <img
-												class="icon-menu" alt="Unity" src="<?php echo $servername ?>/mvc/public/images/unity.png">Unity
+												class="icon-menu" alt="Unity" src="<?php echo $servername ?>/mvc/public/images/cn.png">Công nghiệp
 										</a></li>
 
 										<li class="cat-link-orther"><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/visual-c-18'> <img
 												class="icon-menu" alt="Visual C++"
-												src="<?php echo $servername ?>/mvc/public/images/cplusplus.png">Visual C++
+												src="<?php echo $servername ?>/mvc/public/images/tcmn.png">Thủ Công Mỹ Nghệ
 										</a></li>
 
 										<li class="cat-link-orther"><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/html-template-25'> <img
 												class="icon-menu" alt="Html & Template"
-												src="<?php echo $servername ?>/mvc/public/images/html.png">Html & Template
+												src="<?php echo $servername ?>/mvc/public/images/food.png">Thực Phẩm, Đồ Uống
 										</a></li>
 
 										<li class="cat-link-orther"><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/khac-22'> <img
-												class="icon-menu" alt="Khác" src="<?php echo $servername ?>/mvc/public/images/khac.png">Khác
+												class="icon-menu" alt="Khác" src="<?php echo $servername ?>/mvc/public/images/other.png">Khác
 										</a></li>
 
 									</ul>

@@ -2,7 +2,7 @@
 <div id="view-product-list" class="view-product-list">
                             <h1 class="page-heading">
                                 <img alt="services" src="mvc/public/images/hot-icon.png" width="20px">
-                                <span class="page-heading-title" itemprop="name">SOURCE CODE MỚI NHẤT</span>
+                                <span class="page-heading-title" itemprop="name">MẪU WEB SHOP MỚI NHẤT</span>
                             </h1>
                             <link itemprop="url" href="index.html" />
                             <meta itemprop="description" content="Thư viện chia sẻ và download source code, upload code kiếm tiền, tổng hợp các mã nguồn và đồ án, kiến thức lập trình chuyên nghành công nghệ thông tin" />
