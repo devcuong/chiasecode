@@ -7,7 +7,7 @@
 								</h4>
 								<div class="vertical-menu-content is-home">
 									<ul class="vertical-menu-list">
-										<li><a class="parent" href="#"> <img class="icon-menu"
+										<!--  <li><a class="parent" href="#"> <img class="icon-menu"
 												alt="Thể loại code" src="<?php echo $servername ?>/mvc/public/images/menu.png"/>PHÂN LOẠI
 												CODE
 										</a>
@@ -55,7 +55,7 @@
 													</div>
 
 												</div>
-											</div></li>
+											</div></li>-->
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/android-15'> <img class="icon-menu"
 												alt="Android" src="<?php echo $servername ?>/mvc/public/images/computer.png">Máy tính

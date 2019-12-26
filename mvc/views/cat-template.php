@@ -1,6 +1,5 @@
 <?php require_once 'mvc/views/partial/head-html.php'; ?>
 <body class="category-page">
-	<div id="fb-root"></div>
 		<div id="header" class="header">
 			<?php require_once 'mvc/views/partial/top-header.php'; ?>
 			<div id="nav-top-menu" class="nav-top-menu">
@@ -181,8 +180,6 @@
 			<div class="container" id="columns">
 				<div class="row">
 					<div class="center_column col-xs-12 col-sm-12" id="center_column">
-
-						<div itemscope itemtype="http://schema.org/ItemList">
 							<div id="mainbody_contentbody_contentpage_upPannel">
 								<a id="mainbody_contentbody_contentpage_btnViewBase"
 									href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$btnViewBase&#39;,&#39;&#39;)"></a>
@@ -190,32 +187,9 @@
 									href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$bntViewDetail&#39;,&#39;&#39;)"></a>
 								<?php require_once "./mvc/views/pages/" . $data["Page"] . ".php"?>
 							</div>
-						</div>
-						
 					</div>
 				</div>
 
-			</div>
-		</div>
-
-		<script src="../assets/js/floater_xlib.js"></script>
-		
-		<div id="floating_banner_left"
-			style="text-align: right; position: absolute; overflow: hidden; width: 120px; z-index: 99999">
-			<div id="floating_banner_left_content">
-				<a
-					href="../kien-thuc-lap-trinh/dich-vu-thiet-ke-website-chuyen-nghiep-voi-gia-cuc-re-va-nhieu-uu-dai-tai-sharecodevn-880.html"
-					target="_blank"> <img
-					src="../assets/images/thiet-ke-web-gia-re.jpg" border="0"
-					width="120" alt="" /></a><br />
-			</div>
-		</div>
-		<div id="floating_banner_right"
-			style="text-align: left; position: absolute; overflow: hidden; width: 120px; z-index: 99999">
-			<div id="Div2">
-				<a href="https://topcode.vn/" target="_blank"> <img
-					src="../assets/images/Ra-mat-topcode.jpg" border="0" width="120"
-					alt="" /></a><br />
 			</div>
 		</div>
 

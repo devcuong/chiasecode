@@ -2,7 +2,7 @@
 <div id="view-product-list" class="view-product-list">
                             <h1 class="page-heading">
                                 <img alt="services" src="mvc/public/images/hot-icon.png" width="20px">
-                                <span class="page-heading-title" itemprop="name">MẪU WEB SHOP MỚI NHẤT</span>
+                                <span class="page-heading-title" itemprop="name">SHOP MỚI NHẤT</span>
                             </h1>
                             <link itemprop="url" href="index.html" />
                             <meta itemprop="description" content="Thư viện chia sẻ và download source code, upload code kiếm tiền, tổng hợp các mã nguồn và đồ án, kiến thức lập trình chuyên nghành công nghệ thông tin" />
@@ -19,7 +19,7 @@
                             <!-- PRODUCT LIST -->
                                 <ul class="row product-list style2 grid">
                                 <?php 
-                                    while($row = mysqli_fetch_array($data["CodeMoiNhat"])){
+                                    while($row = mysqli_fetch_array($data["ShopMoiNhat"])){
                                         ?>
                                         <li class="col-sx-12 col-sm-3" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
                                         <div class="product-container">
@@ -60,7 +60,7 @@
                         <div id="view-product-list" class="view-product-list">
                             <h1 class="page-heading">
                                 <img alt="services" src="https://cdn3.iconfinder.com/data/icons/security-double-color-red-black-vol-2/52/flame__extinguisher__fire__burning__hot__heat__fireplace-512.png" width="20px">
-                                <span class="page-heading-title" itemprop="name">WEBSITE NỔI BẬT</span>
+                                <span class="page-heading-title" itemprop="name">SHOP NỔI BẬT</span>
                             </h1>
                             <link itemprop="url" href="index.html" />
                             <meta itemprop="description" content="Thư viện chia sẻ và download source code, upload code kiếm tiền, tổng hợp các mã nguồn và đồ án, kiến thức lập trình chuyên nghành công nghệ thông tin" />
@@ -118,7 +118,7 @@
                         <div id="view-product-list" class="view-product-list">
                             <h1 class="page-heading">
                                 <img alt="services" src="mvc/public/images/hot-icon.png" width="20px">
-                                <span class="page-heading-title" itemprop="name">ỨNG DỤNG NỔI BẬT</span>
+                                <span class="page-heading-title" itemprop="name">SHOP ĐANG HOẠT ĐỘNG</span>
                             </h1>
                             <link itemprop="url" href="index.html" />
                             <meta itemprop="description" content="Thư viện chia sẻ và download source code, upload code kiếm tiền, tổng hợp các mã nguồn và đồ án, kiến thức lập trình chuyên nghành công nghệ thông tin" />

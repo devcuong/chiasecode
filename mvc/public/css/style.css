@@ -73,6 +73,7 @@ body {
     font-family: 'Tahoma', 'Arial', sans-serif;
     font-size: 14px;
     overflow-x: hidden;
+	color: #000;
 }
 
 body.is-ontop {
@@ -3225,6 +3226,11 @@ span.notify-right {
 
 .view-product-list {
     margin-top: 20px;
+    position: relative;
+}
+
+.view-content-page{
+	margin-top: 20px;
     position: relative;
 }
 

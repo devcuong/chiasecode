@@ -1,15 +1,15 @@
 <?php
     class Home extends Controller{
         function SayHi(){
-            $code = $this->model("CodeModel");
+            $shop = $this->model("ShopModel");
             //echo $teo->GetSV();
 
             //View
             $this->view("main-template", ["Page"=>"main-home",
-            "CodeMoiNhat" => $code->CodeMoiNhat(),
-            "WebsiteMoiNhat" => $code->WebsiteMoiNhat(),
-            "UngDungMoiNhat" => $code->UngDungMoiNhat(),
-            "GameMoiNhat" => $code->GameMoiNhat() ]);
+            "ShopMoiNhat" => $shop->ShopMoiNhat(),
+                "WebsiteMoiNhat" => $shop->WebsiteMoiNhat(),
+                "UngDungMoiNhat" => $shop->UngDungMoiNhat(),
+                "GameMoiNhat" => $shop->GameMoiNhat() ]);
         }
         function Show($a, $b){
             //Model
