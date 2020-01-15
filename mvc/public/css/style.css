@@ -1340,13 +1340,13 @@ span.notify-right {
     text-align: center;
     display: block;
     cursor: pointer;
-    background: url(/assets/images/bt_title_popup.jpg) #f40;
-    border: 1px solid #f40;
+    background: url(/assets/images/bt_title_popup.jpg) #C00;
+    border: 1px solid #C00;
     color: white;
 }
 
 .box-vertical-megamenus .all-category span:hover {
-    background: #f40;
+    background: #C00;
 }
 
 .box-vertical-megamenus .all-category span:after {
@@ -5889,9 +5889,9 @@ i.BAB {
 .code-pricing {
     position: absolute;
     left: 5px;
-    bottom: 20px;
+    bottom: 40px;
     background: #f40;
     color: #fff;
-    padding: 8px 15px;
+    padding: 8px 5px;
 	filter: drop-shadow(2px 0px 1px rgba(0, 0, 0, 0.5));
 }

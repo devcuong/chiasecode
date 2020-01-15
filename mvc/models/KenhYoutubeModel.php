@@ -1,8 +1,8 @@
 <?php
-    class ShopModel extends DB{
+    class KenhYoutubeModel extends DB{
 
-        public function ShopMoiNhat(){
-            $qr = "SELECT tencode, anhdemo, luotxem, luottai, theloai, phitai FROM shop INNER JOIN danhmuc ON shop.danhmuc = danhmuc.id  ORDER BY shop.id DESC LIMIT 8";
+        public function KenhMoiNhat(){
+            $qr = "SELECT tencode, anhdemo, luotxem, luottai, theloai, phitai FROM kenhyoutube INNER JOIN danhmuc ON kenhyoutube.danhmuc = danhmuc.id  ORDER BY kenhyoutube.id DESC LIMIT 8";
             return mysqli_query($this->con, $qr);
         }
 
