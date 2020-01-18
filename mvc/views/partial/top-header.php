@@ -4,8 +4,7 @@
                         <a class="first-item" href="tel:+84981282756" title="Click gọi ngay!">
                             <img alt="hotline" src="https://sharecode.vn/assets/images/phone.png" />0981.282.756</a>
                         <a href="mailto:viettxt@gmail.com" title="Click để gửi email!">
-                            <img alt="email sharecode" src="https://sharecode.vn/assets/images/email.png" />Hotro.sharecode@gmail.com</a>
-                        <a href="kien-thuc-lap-trinh.html">Kiến thức lập trình</a>
+                            <img alt="email sharecode" src="https://sharecode.vn/assets/images/email.png" />viettxt@gmail.com</a>
                         <a href="su-kien/%5bsharecodevn%5d-nang-cap-server-moi-cai-tien-tinh-nang-ho-tro-nguoi-dung--13.html">Sự kiện</a>
                     </div>
                     <div id="LoginBox" class="support-link">
@@ -22,7 +21,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+</div>
             <div class="container main-header">
                 <div class="row">
                     <div class="col-xs-12 col-sm-3 col-md-3 logo">

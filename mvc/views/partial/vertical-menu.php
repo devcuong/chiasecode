@@ -58,35 +58,35 @@
 											</div></li>-->
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/android-15'> <img class="icon-menu"
-												alt="Android" src="<?php echo $servername ?>/mvc/public/images/computer.png">Máy tính
+												alt="Android" src="<?php echo $servername ?>/mvc/public/images/review.png">Review Sản phẩm
 										</a></li>
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/ios-23'> <img class="icon-menu"
-												alt="iOS" src="<?php echo $servername ?>/mvc/public/images/phone.png">Điện thoại, viễn thông
+												alt="iOS" src="<?php echo $servername ?>/mvc/public/images/vlog.png">Vlog
 										</a></li>
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/windows-phone-26'> <img
 												class="icon-menu" alt="Windows phone"
-												src="<?php echo $servername ?>/mvc/public/images/mebe.png">Mẹ và Bé
+												src="<?php echo $servername ?>/mvc/public/images/amthuc.png">Ẩm thực
 										</a></li>
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/php-mysql-21'> <img
 												class="icon-menu" alt="PHP & MySQL"
-												src="<?php echo $servername ?>/mvc/public/images/fashion.png">Thời Trang - Trang Sức
+												src="<?php echo $servername ?>/mvc/public/images/cover.png">Cover
 										</a></li>
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/wordpress-29'> <img
 												class="icon-menu" alt="WordPress"
-												src="<?php echo $servername ?>/mvc/public/images/car.png">Ôtô, xe máy, xe đạp
+												src="<?php echo $servername ?>/mvc/public/images/gym.png">Gym, thể thao, fitness
 										</a></li>
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/joomla-28'> <img class="icon-menu"
-												alt="Joomla" src="<?php echo $servername ?>/mvc/public/images/spa.png">Làm đẹp, sức khỏe
+												alt="Joomla" src="<?php echo $servername ?>/mvc/public/images/parody.png">Hài - Parody
 										</a></li>
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/visual-c-17'> <img
 												class="icon-menu" alt="Visual C#"
-												src="<?php echo $servername ?>/mvc/public/images/office.png">Đồ văn phòng
+												src="<?php echo $servername ?>/mvc/public/images/nguoinoitieng.png">Người nổi tiếng
 										</a></li>
 
 										<li class=""><a href='<?php echo $servername ?>/ngon-ngu-lap-trinh/aspaspnet-16'> <img

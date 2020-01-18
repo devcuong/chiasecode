@@ -63,14 +63,12 @@
 27.
 28. Detail
 -------------------------------------------------------------------*/
-
-
 /* ----------------
  [1. Common styles]
- */
+*/
 
 body {
-    font-family: 'Tahoma', 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     overflow-x: hidden;
 	color: #000;
@@ -1189,7 +1187,7 @@ span.notify-right {
  */
 
 .nav-top-menu {
-    background: rgb(24, 158, 255);
+    background: #cf131f;
 }
 
 
@@ -1206,7 +1204,7 @@ span.notify-right {
 }
 
 .box-vertical-megamenus .title {
-    background: rgb(29, 113, 171);
+    background: #9e0b0f;
     color: #fff;
     height: 50px;
     line-height: 50px;
@@ -1450,7 +1448,7 @@ span.notify-right {
 #main-menu {
     padding: 0;
     margin-left: -15px;
-    background-color: rgb(24, 158, 255);
+    background-color: #cf131f;
 }
 
 #main-menu .container-fluid {

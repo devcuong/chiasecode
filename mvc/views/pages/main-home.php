@@ -28,7 +28,7 @@
                                                 echo to_slug($row["tencode"]) ?>'>
                                                     <div class="img-box">
                                                         <img class="img-responsive" itemprop="image" src="<?php echo $row["anhdemo"] ?>" alt="<?php echo $row["tencode"] ?>" title="<?php echo $row["tencode"] ?>" />
-                                                    <p class="code-pricing"><span class="code-price"><b>Phí quảng cáo:</b> <?php echo $row["phitai"] ?>&nbsp;đ </span></p>
+                                                    <p class="code-pricing"><span class="code-price"><b>Phí Ads:</b> <?php echo $row["phitai"] ?>&nbsp;đ </span></p>
                                                     </div>
                                                 </a>
                                             
