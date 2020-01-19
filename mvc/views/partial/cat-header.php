@@ -28,7 +28,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-3 col-md-3 logo">
                         <a href="index.html">
-                            <img alt="Trang chủ sharecode.vn" title="Sharecode.vn" src="https://sharecode.vn/assets/images/logo.png" /></a>
+                            <img alt="Trang chủ sharecode.vn" title="Sharecode.vn" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png" /></a>
                     </div>
                     <div class="col-xs-7 col-sm-7 col-md-6 header-search-box">
                         <div class="form-inline search-h">
@@ -37,7 +37,7 @@
                                 <div class="form-group form-category">
                                     <input type="hidden" name="ctl00$hdLangFilter" id="hdLangFilter" />
                                     <select class="select-category" id="slSearch">
-                                        <option value="0">TẤT CẢ CODE</option>
+                                        <option value="0">TẤT CẢ KÊNH</option>
 
                                                 <option value="15">Android</option>
 

@@ -5,7 +5,7 @@
                                 <span class="page-heading-title" itemprop="name">KÊNH MỚI NHẤT</span>
                             </h1>
                             <link itemprop="url" href="index.html" />
-                            <meta itemprop="description" content="Thư viện chia sẻ và download source code, upload code kiếm tiền, tổng hợp các mã nguồn và đồ án, kiến thức lập trình chuyên nghành công nghệ thông tin" />
+                            <meta itemprop="description" content="Nền tảng hỗ trợ kết nối quảng cáo video và doanh nghiệp" />
                             <ul class="display-product-option">
                                 
                                     <li class="view-as-grid selected">

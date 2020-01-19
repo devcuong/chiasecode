@@ -26,7 +26,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-sm-3 col-md-3 logo">
                         <a href="index.html">
-                            <img alt="Trang chủ sharecode.vn" title="Sharecode.vn" src="https://sharecode.vn/assets/images/logo.png" /></a>
+                            <img alt="Trang chủ sharecode.vn" title="Sharecode.vn" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png" /></a>
                     </div>
                     <div class="col-xs-7 col-sm-7 col-md-6 header-search-box">
                         <div class="form-inline search-h">
@@ -35,42 +35,48 @@
                                 <div class="form-group form-category">
                                     <input type="hidden" name="ctl00$hdLangFilter" id="hdLangFilter" />
                                     <select class="select-category" id="slSearch">
-                                        <option value="0">TẤT CẢ CODE</option>
+                                        <option value="0">TẤT CẢ KÊNH</option>
 
-                                                <option value="15">Android</option>
+                                                <option value="1">Review Sản phẩm</option>
 
-                                                <option value="23">iOS</option>
+                                                <option value="2">Vlog</option>
 
-                                                <option value="26">Windows phone</option>
+                                                <option value="3">Ẩm thực</option>
 
-                                                <option value="21">PHP & MySQL</option>
+                                                <option value="15">Gym</option>
 
-                                                <option value="29">WordPress</option>
+                                                <option value="16">Hài-parody</option>
 
-                                                <option value="28">Joomla</option>
+                                                <option value="17">Người Nổi Tiếng</option>
 
-                                                <option value="17">Visual C#</option>
+                                                <option value="18">Động vật hài hước</option>
 
-                                                <option value="16">Asp/Asp.Net</option>
+                                                <option value="19">Trò đùa - troll</option>
 
-                                                <option value="20">Java/JSP</option>
+                                                <option value="20">Đập hộp</option>
 
-                                                <option value="19">Visual Basic</option>
+                                                <option value="21">Hướng dẫn Tutorials</option>
 
-                                                <option value="24">Cocos2D</option>
+                                                <option value="22">Gaming</option>
 
-                                                <option value="27">Unity</option>
+                                                <option value="23">Đánh Giá - Reaction</option>
 
-                                                <option value="18">Visual C++</option>
+                                                <option value="24">Phim ảnh</option>
 
-                                                <option value="25">Html & Template</option>
+                                                <option value="25">Du lịch</option>
 
-                                                <option value="22">Khác</option>
+                                                <option value="26">Tin học</option>
+                                                
+                                                <option value="27">Kinh doanh</option>
+                                                
+                                                <option value="28">Âm nhạc</option>
+                                                
+                                                <option value="29">Trang điểm, làm đẹp</option>
 
                                     </select>
                                 </div>
                                 <div class="form-group input-serach">
-                                    <input name="ctl00$txtSearch" type="text" id="txtSearch" class="txt-search txt-auto" placeholder="Nhập Từ khóa (or) Mã code" />
+                                    <input name="ctl00$txtSearch" type="text" id="txtSearch" class="txt-search txt-auto" placeholder="Nhập Từ khóa (or) Tên kênh" />
                                 </div>
                                 <a id="btnSearch" class="pull-right btn-search" href="javascript:__doPostBack(&#39;ctl00$btnSearch&#39;,&#39;&#39;)"></a>
 
