@@ -119,8 +119,7 @@
 					</div>
 					<div class="line_orn"></div>
 					<div class="modal-footer">
-						<p class="text-center">ShareCode.vn Cộng đồng chia sẻ và download
-							source code</p>
+						<p class="text-center"></p>
 					</div>
 				</div>
 			</div>
