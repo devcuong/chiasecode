@@ -11,7 +11,8 @@
 			</a>
 				<meta itemprop="position" content="1">
 			</span> <span class="navigation-pipe">&nbsp;</span>
-			<form action="<?php echo $servername ?>/chu-kenh-dang-ky" method="post">
+			<form action="<?php echo $servername ?>/chu-kenh-dang-ky"
+				method="post">
 				<span itemprop="itemListElement" itemscope=""
 					itemtype="http://schema.org/ListItem"> <a itemprop="item"
 					class="agreen" href="/dang-ki-tai-khoan.htm"
@@ -30,9 +31,9 @@
 							<h1 class="col-sm-4 title3 bold line-h">ĐĂNG KÍ TÀI KHOẢN</h1>
 							<div class="col-sm-8 line-h">
 								(Hoặc) Đăng nhập nhanh &nbsp;<a
-									id="mainbody_contentbody_LinkButton2"
 									title="Đăng nhập nhanh bằng tài khoản Facebook"
-									class="loginBtn loginBtn-facebook">Log in</a>&nbsp;<a id="mainbody_contentbody_LinkButton3"
+									class="loginBtn loginBtn-facebook">Log in</a>&nbsp;<a
+									id="mainbody_contentbody_LinkButton3"
 									title="Đăng nhập nhanh bằng tài khoản Google"
 									class="loginBtn loginBtn-google">Log in</a>
 							</div>
@@ -53,8 +54,7 @@
 								<label for="inputEmail3" class="col-sm-4 control-label">Email <span
 									class="text-error">*</span></label>
 								<div class="col-sm-6">
-									<input name="email-dang-ky"
-										type="text" id="mainbody_contentbody_reg_email"
+									<input name="email-dang-ky" type="text" id="email-dang-ky"
 										placeholder="VD: trantam92@gmail.com" maxlength="50"
 										class="form-control">
 								</div>
@@ -65,31 +65,29 @@
 									<span class="text-error">*</span>
 								</label>
 								<div class="col-sm-6">
-									<input name="password-dang-ky"
-										type="password" id="mainbody_contentbody_reg_password"
-										placeholder="******" maxlength="32" autocomplete="off"
-										class="form-control">
+									<input name="password-dang-ky" type="password"
+										id="password-dang-ky" placeholder="******" maxlength="32"
+										autocomplete="off" class="form-control">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="inputPassword3" class="col-sm-4 control-label">Nhập
-									lại Password <span class="text-error">*</span>
+								<label class="col-sm-4 control-label">Nhập lại Password <span
+									class="text-error">*</span>
 								</label>
 								<div class="col-sm-6">
 									<input placeholder="******" name="password-nhap-lai"
-										id="reg_re_password" maxlength="32" class="form-control"
+										id="password-nhap-lai" maxlength="32" class="form-control"
 										type="password">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="inputPassword3" class="col-sm-4 control-label">Họ
+								<label class="col-sm-4 control-label">Họ
 									tên <span class="text-error">*</span>
 								</label>
 								<div class="col-sm-6">
-									<input name="ho-ten-dang-ky"
-										type="text" id="mainbody_contentbody_reg_fullname"
-										maxlength="40" placeholder="VD: Trần Sỹ Tâm"
-										class="form-control require">
+									<input name="ho-ten-dang-ky" type="text"
+										id="ho-ten-dang-ky" maxlength="40"
+										placeholder="VD: Trần Sỹ Tâm" class="form-control require">
 								</div>
 								<div class="col-sm-3"></div>
 							</div>
@@ -98,8 +96,8 @@
 									hiển thị <span class="text-error">*</span>
 								</label>
 								<div class="col-sm-6">
-									<input name="ten-hien-thi"
-										type="text" id="mainbody_contentbody_reg_username"
+									<input name="ten-hien-thi" type="text"
+										id="mainbody_contentbody_reg_username"
 										placeholder="VD: TranTam92" maxlength="40"
 										class="form-control require">
 								</div>
@@ -109,10 +107,8 @@
 									điện thoại <span class="text-error">*</span>
 								</label>
 								<div class="col-sm-6">
-									<input name="ctl00$ctl00$mainbody$contentbody$reg_phone"
-										type="text" id="mainbody_contentbody_reg_phone"
-										style="width: 185px;" maxlength="20"
-										placeholder="01..., 08..., 09... or +84..."
+									<input name="sdt-dang-ky" type="text" style="width: 185px;"
+										maxlength="20" placeholder="01..., 08..., 09... or +84..."
 										class="form-control require">
 								</div>
 							</div>
@@ -136,7 +132,8 @@
 							</div>
 							<div class="form-group">
 								<div class="col-sm-offset-4 col-sm-6">
-									<button type="submit" name="btn-dang-ky-ngay" class="btn btn-primary">Đăng ký ngay</button>
+									<button type="submit" name="btn-dang-ky-ngay"
+										class="btn btn-primary">Đăng ký ngay</button>
 								</div>
 							</div>
 						</div>
