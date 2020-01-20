@@ -607,7 +607,7 @@ img.alignright {
     padding: 2px 0px 0px 5px;
     border-left: 1px solid #faf8f1;
     overflow: hidden;
-	background: url('../images/sub.png') no-repeat 6px 6px;
+	background: url('../images/sub.png') no-repeat 6px 4px;
 }
 
 
@@ -620,7 +620,7 @@ img.alignright {
 .view-count2 {
     width: 50%;
     height: 22px;
-    background: url('../images/view.png') no-repeat 6px 6px;
+    background: url('../images/view.png') no-repeat 6px 4px;
     float: left;
     padding: 2px 0px 0px 5px;
     overflow: hidden;
@@ -2843,7 +2843,7 @@ span.notify-right {
 */
 
 #columns {
-    padding-top: 16px;
+    padding-top: 10px;
     padding-bottom: 30px;
 }
 
@@ -5507,7 +5507,6 @@ i.BAB {
 
 .reg-border {
     border: 1px solid #e2d8c7;
-    border-radius: 4px;
 }
 
 
