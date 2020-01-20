@@ -121,7 +121,7 @@
 									<div class="checkbox">
 										<label> <input name="agree" id="chkRequirement"
 											checked="checked" value="1" type="checkbox"> <a
-											href="/quy-dinh-chung.htm" target="_blank" class="aorange"
+											href="quy-dinh-chung" target="_blank" class="aorange"
 											title="Xem điều khoản sử dụng">Tôi đồng ý với điều khoản sử
 												dụng</a>
 										</label>
