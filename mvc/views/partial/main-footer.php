@@ -10,13 +10,13 @@
                                         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png" alt="Sharecode.vn" /></a>
                                     <div id="address-list">
                                         <div class="tit-name">Hotline:</div>
-                                        <div class="tit-contain"><a href="tel:+84981282756" title="Click gọi ngay!">0981.282.756</a></div>
+                                        <div class="tit-contain"><a href="tel:+0337.085.567" title="Click gọi ngay!">0337.085.567</a></div>
                                         <div class="tit-name">Email:</div>
-                                        <div class="tit-contain"><a href="mailto:hotro.sharecode@gmail.com" title="Click để gửi email!">Hotro.sharecode@gmail.com</a></div>
+                                        <div class="tit-contain"><a href="mailto:viettxt@gmail.com" title="Click để gửi email!">viettxt@gmail.com</a></div>
                                     </div>
                                     <br />
                                     <div class="social-link">
-                                        <a href="https://www.facebook.com/sharecode.vn"><i class="fa fa-facebook"></i></a>
+                                        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
                                         <a href="https://www.youtube.com/channel/UCrmDzitLIGfSLYQsSe-j6WA"><i class="fa fa-youtube-play"></i></a>
 
                                     </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 15, 2020 lúc 10:43 PM
+-- Thời gian đã tạo: Th1 20, 2020 lúc 02:02 AM
 -- Phiên bản máy phục vụ: 10.4.10-MariaDB
 -- Phiên bản PHP: 7.3.12
 
@@ -69,7 +69,7 @@ CREATE TABLE `kenhyoutube` (
   `id` int(11) NOT NULL,
   `tencode` varchar(100) NOT NULL,
   `luotxem` int(11) NOT NULL,
-  `luottai` int(11) NOT NULL,
+  `luotsub` int(11) NOT NULL,
   `phitai` int(11) NOT NULL,
   `anhdemo` varchar(200) NOT NULL,
   `danhmuc` int(11) NOT NULL,
@@ -81,7 +81,7 @@ CREATE TABLE `kenhyoutube` (
 -- Đang đổ dữ liệu cho bảng `kenhyoutube`
 --
 
-INSERT INTO `kenhyoutube` (`id`, `tencode`, `luotxem`, `luottai`, `phitai`, `anhdemo`, `danhmuc`, `loaiungdung`, `ngayupdate`) VALUES
+INSERT INTO `kenhyoutube` (`id`, `tencode`, `luotxem`, `luotsub`, `phitai`, `anhdemo`, `danhmuc`, `loaiungdung`, `ngayupdate`) VALUES
 (1, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, 300, 'https://sharecode.vn/FilesUpload/Code/source-code-bao-cao-xay-dung-phan-mem-quan-ly-luong-nhan-vien-172918.jpg', 16, 1, '2019-12-21 02:00:00'),
 (2, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 16, 2, '2019-12-21 03:00:00'),
 (3, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 16, 2, '0000-00-00 00:00:00'),

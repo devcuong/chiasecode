@@ -3,9 +3,9 @@
                 <div class="container">
                     <div class="nav-top-links">
                         <a class="first-item" href="tel:+84981282756" title="Click gọi ngay!">
-                            <img alt="hotline" src="https://sharecode.vn/assets/images/phone.png" />0981.282.756</a>
+                            <img alt="hotline" src="https://sharecode.vn/assets/images/phone.png" />0337.085.567</a>
                         <a href="mailto:viettxt@gmail.com" title="Click để gửi email!">
-                            <img alt="email sharecode" src="https://sharecode.vn/assets/images/email.png" />Hotro.sharecode@gmail.com</a>
+                            <img alt="email sharecode" src="https://sharecode.vn/assets/images/email.png" />viettxt@gmail.com</a>
                         <a href="kien-thuc-lap-trinh.html">Kiến thức lập trình</a>
                         <a href="su-kien/%5bsharecodevn%5d-nang-cap-server-moi-cai-tien-tinh-nang-ho-tro-nguoi-dung--13.html">Sự kiện</a>
                     </div>
@@ -192,7 +192,7 @@
                                     <div id="navbar" class="navbar-collapse collapse">
                                         <ul class="nav navbar-nav">
                                             <li id="mnhome" class="active" title="Trang chủ"><a href="index.html"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></li>
-                                            <li id="mntopcode" title="Top code nổi bật"><a href="top-codes.html">Top code</a></li>
+                                            <li id="mntopcode" title="Top kênh nổi bật"><a href="#">Top kênh</a></li>
                                             <li id="mncodeok" title="Code chất lượng (>= 100 Xu)"><a href="code-chat-luong.html">Code chất lượng <span class="notify notify-right"></span></a></li>
                                             <li id="mncode" title="Code tham khảo (2 Xu - 99 Xu)"><a href="code-tham-khao.html">Code tham khảo</a></li>
                                             <li id="mncodefree" title="Code miễn phí (0 Xu)"><a href="code-mien-phi.html">Code miễn phí</a></li>
@@ -229,7 +229,7 @@
                 <div class="modal-content">
                     <div class="modal-header popup_header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <p class="modal-title text-center" id="myModalLabel">SHARECODE.VN</p>
+                        <p class="modal-title text-center" id="myModalLabel">5TUB.COM</p>
                     </div>
                     <div id="loginPanel" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;btnLogin&#39;)">
 

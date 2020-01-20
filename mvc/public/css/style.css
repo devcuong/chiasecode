@@ -270,8 +270,8 @@ a:focus {
 .button-orange {
     white-space: nowrap;
     padding: 10px 20px;
-    background: url(/assets/images/bg_orange.jpg) #ff8401;
-    border: 1px solid #ff8401;
+    background: url(/assets/images/bg_orange.jpg) #ff0000;
+    border: 1px solid #ff0000;
     color: #fff;
 }
 
@@ -577,7 +577,7 @@ img.alignright {
 }
 
 .downview {
-    background-color: rgb(24, 158, 255);
+    background-color: #ff0000;
     color: white;
     height: 22px;
     margin: 5px auto 0px auto;
@@ -607,15 +607,9 @@ img.alignright {
     padding: 2px 0px 0px 5px;
     border-left: 1px solid #faf8f1;
     overflow: hidden;
+	background: url('../images/sub.png') no-repeat 6px 6px;
 }
 
-.down-count2:before {
-    font: normal normal normal 14px/1 FontAwesome;
-    content: "\f019";
-    float: left;
-    margin: 3px -10px 0px 6px;
-    color: #648d03;
-}
 
 .view-count {
     background: url('/assets/images/view.png') no-repeat 0px 4px;
@@ -626,7 +620,7 @@ img.alignright {
 .view-count2 {
     width: 50%;
     height: 22px;
-    background: url(https://sharecode.vn/assets/images/view2.png) no-repeat 6px 6px;
+    background: url('../images/view.png') no-repeat 6px 6px;
     float: left;
     padding: 2px 0px 0px 5px;
     overflow: hidden;
@@ -1991,7 +1985,7 @@ span.notify-right {
 
 .header-top-right .homeslider .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .header-top-right .homeslider .bx-wrapper .bx-pager.bx-default-pager a.active {
-    background: #f40;
+    background: #ff0000;
     color: #fff;
     border: 1px solid #fff;
 }
@@ -5887,7 +5881,7 @@ i.BAB {
 .code-pricing {
     position: absolute;
     left: 5px;
-    bottom: 40px;
+    bottom: 120px;
     background: #ff0000;
     color: #fff;
     padding: 8px 5px;

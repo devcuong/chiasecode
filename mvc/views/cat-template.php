@@ -24,7 +24,7 @@
 							aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						<p class="modal-title text-center" id="myModalLabel">SHARECODE.VN</p>
+						<p class="modal-title text-center" id="myModalLabel">5TUB.COM</p>
 					</div>
 					<div id="loginPanel"
 						onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;btnLogin&#39;)">
@@ -48,7 +48,7 @@
 							<br />
 							<div class="row">
 								<div class="col-xs-12">
-									Bạn chưa có tài khoản ShareCode.vn? <a
+									Bạn chưa có tài khoản 5TUB.COM? <a
 										href="../dang-ki-tai-khoan.html" class="agreen bold">Đăng ký
 										ngay</a>
 								</div>

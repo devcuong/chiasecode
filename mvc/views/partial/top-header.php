@@ -84,10 +84,8 @@
                         </div>
                     </div>
                     <div class="col-xs-5 col-sm-2 col-md-3 shopping-cart-box btn-align">
-
-                        <a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" role="button" class="button-green" title="Nạp tiền vào tài khoản"><i class="fa fa-money fa-lg" aria-hidden="true"></i>&nbsp; NẠP XU</a>&nbsp;&nbsp;
-                        <a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" role="button" class="button-orange" title="Tặng thêm 5 Point cho mỗi Upload"><i class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i>&nbsp; TẢI LÊN</a>
-
+                       <!--   <a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" role="button" class="button-green" title="Nạp tiền vào tài khoản"><i class="fa fa-money fa-lg" aria-hidden="true"></i>&nbsp; NẠP XU</a>&nbsp;&nbsp;-->
+                        <a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" role="button" class="button-orange" title="Tặng thêm 5 Point cho mỗi Upload"><i class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i>&nbsp; ĐĂNG KÊNH</a>
                     </div>
                 </div>
             </div>

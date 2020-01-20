@@ -31,7 +31,10 @@
                                                     <p class="code-pricing"><span class="code-price"><b>Phí Ads:</b> <?php echo $row["phitai"] ?>&nbsp;đ </span></p>
                                                     </div>
                                                 </a>
-                                            
+                                            	<div class="downview">
+                                                            <span class="view-count2">39</span>
+                                                            <span class="down-count2">0</span>
+                                                </div>
                                                 <a class="cate" href='ngon-ngu-lap-trinh/wordpress-29.html'><?php echo $row["theloai"] ?></a>
                                             </div>
                                             <div class="right-block">
