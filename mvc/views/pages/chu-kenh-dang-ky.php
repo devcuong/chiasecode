@@ -15,7 +15,7 @@
 				method="post">
 				<span itemprop="itemListElement" itemscope=""
 					itemtype="http://schema.org/ListItem"> <a itemprop="item"
-					class="agreen" href="/dang-ki-tai-khoan.htm"
+					class="agreen" href="/dang-ki-tai-khoan"
 					title="Đăng kí tài khoản">
 						<h2 class="abread" itemprop="name">Đăng kí tài khoản</h2>
 				</a>
@@ -66,7 +66,7 @@
 								</label>
 								<div class="col-sm-6">
 									<input name="password-dang-ky" type="password"
-										id="password-dang-ky" placeholder="******" maxlength="32"
+										id="password-dang-ky" maxlength="32"
 										autocomplete="off" class="form-control">
 								</div>
 							</div>
@@ -75,7 +75,7 @@
 									class="text-error">*</span>
 								</label>
 								<div class="col-sm-6">
-									<input placeholder="******" name="password-nhap-lai"
+									<input name="password-nhap-lai"
 										id="password-nhap-lai" maxlength="32" class="form-control"
 										type="password">
 								</div>
@@ -96,10 +96,11 @@
 									hiển thị <span class="text-error">*</span>
 								</label>
 								<div class="col-sm-6">
-									<input name="ten-hien-thi" type="text"
+									<input name="ten-hien-thi" id="username" type="text"
 										id="mainbody_contentbody_reg_username"
 										placeholder="VD: TranTam92" maxlength="40"
 										class="form-control require">
+									<div id="messageCheckUser" class="message-username"></div>
 								</div>
 							</div>
 							<div class="form-group">
@@ -137,6 +138,9 @@
 								</div>
 							</div>
 						</div>
+						<?php if(isset($data["insertResult"])){
+						    echo $data["insertResult"];
+						}?>
 					</div>
 
 				</div>

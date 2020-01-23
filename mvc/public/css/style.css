@@ -5886,3 +5886,8 @@ i.BAB {
     padding: 8px 5px;
 	filter: drop-shadow(2px 0px 1px rgba(0, 0, 0, 0.5));
 }
+.message-username{
+	margin-bottom: 10px;
+	height: 20px;
+	
+}
