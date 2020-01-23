@@ -74,3 +74,7 @@ function isPhone(phone){
 	var regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
 	return regex.test(phone);
 }
+
+$( "#btn-dang-ky-ngay" ).click(function() {
+	  alert( "Handler for .click() called." );
+	});
