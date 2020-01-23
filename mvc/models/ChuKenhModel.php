@@ -31,5 +31,15 @@
             return json_encode($kq);
         }
         
+        public function CheckSdtChuKenh($sdt){
+            $qr = "SELECT id FROM chukenh WHERE sdt='$sdt'";
+            $rows = mysqli_query($this->con, $qr);
+            $kq=false;
+            if (mysqli_num_rows($rows)>0){
+                $kq=true;
+            }
+            return json_encode($kq);
+        }
+        
     }
 ?>

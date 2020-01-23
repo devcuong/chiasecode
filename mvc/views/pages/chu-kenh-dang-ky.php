@@ -73,17 +73,6 @@
 								</div>
 							</div>
 							<div class="form-group">
-								<label class="col-sm-4 control-label">Nhập lại Password <span
-									class="text-error">*</span>
-								</label>
-								<div class="col-sm-6">
-									<input name="password-nhap-lai"
-										id="password-nhap-lai" maxlength="32" class="form-control"
-										type="password">
-									<div id="messageCheckRePass" class="message-repass"></div>
-								</div>
-							</div>
-							<div class="form-group">
 								<label class="col-sm-4 control-label">Họ
 									tên <span class="text-error">*</span>
 								</label>
@@ -112,7 +101,7 @@
 									điện thoại <span class="text-error">*</span>
 								</label>
 								<div class="col-sm-6">
-									<input name="sdt-dang-ky" type="text" style="width: 185px;"
+									<input name="sdt-dang-ky" id="sdt-dang-ky" type="text" style="width: 185px;"
 										maxlength="20" placeholder="01..., 08..., 09... or +84..."
 										class="form-control require">
 									<div id="messageCheckSdt" class="message-sdt"></div>

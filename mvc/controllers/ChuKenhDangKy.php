@@ -19,7 +19,7 @@ class ChuKenhDangKy extends Controller{
                 $sdtDangKy = $_POST["sdt-dang-ky"];
                 $passDangKy = password_hash($_POST["password-dang-ky"], PASSWORD_DEFAULT);
                 // 2. Insert database bang chu kenh
-                $kq = $this->ChuKenhModel->InsertChuKenhYoutube($emailDangKy, $passDangKy, $hoTenDangKy, $tenHienThi, $sdtDangKy);
+                $kq = $this->ChuKenhModel->InsertChuKenhYoutube($passDangKy, $emailDangKy, $hoTenDangKy, $tenHienThi, $sdtDangKy);
         }   
         $this->view("cat-template", ["Page"=>"chu-kenh-dang-ky",
                               "insertResult" => $kq

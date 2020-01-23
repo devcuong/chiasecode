@@ -15,5 +15,10 @@
             $email = $_POST["email"];
             echo $this->ChuKenhModel->CheckEmailChuKenh($email);
         }
+        
+        public function CheckSdt(){
+            $sdt = $_POST["sdt"];
+            echo $this->ChuKenhModel->CheckSdtChuKenh($sdt);
+        }
     }
 ?>
