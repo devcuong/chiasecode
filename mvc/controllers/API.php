@@ -10,5 +10,10 @@
             $un = $_POST["un"];
             echo $this->ChuKenhModel->CheckUsernameChuKenh($un);
         }
+        
+        public function CheckEmail(){
+            $email = $_POST["email"];
+            echo $this->ChuKenhModel->CheckEmailChuKenh($email);
+        }
     }
 ?>

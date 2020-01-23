@@ -57,6 +57,7 @@
 									<input name="email-dang-ky" type="text" id="email-dang-ky"
 										placeholder="VD: trantam92@gmail.com" maxlength="50"
 										class="form-control">
+									<div id="messageCheckEmail" class="message-email"></div>	
 								</div>
 
 							</div>
@@ -68,6 +69,7 @@
 									<input name="password-dang-ky" type="password"
 										id="password-dang-ky" maxlength="32"
 										autocomplete="off" class="form-control">
+									<div id="messageCheckPass" class="message-password"></div>
 								</div>
 							</div>
 							<div class="form-group">
@@ -78,6 +80,7 @@
 									<input name="password-nhap-lai"
 										id="password-nhap-lai" maxlength="32" class="form-control"
 										type="password">
+									<div id="messageCheckRePass" class="message-repass"></div>
 								</div>
 							</div>
 							<div class="form-group">
@@ -88,6 +91,7 @@
 									<input name="ho-ten-dang-ky" type="text"
 										id="ho-ten-dang-ky" maxlength="40"
 										placeholder="VD: Trần Sỹ Tâm" class="form-control require">
+									<div id="messageCheckHoTen" class="message-hoten"></div>
 								</div>
 								<div class="col-sm-3"></div>
 							</div>
@@ -111,6 +115,7 @@
 									<input name="sdt-dang-ky" type="text" style="width: 185px;"
 										maxlength="20" placeholder="01..., 08..., 09... or +84..."
 										class="form-control require">
+									<div id="messageCheckSdt" class="message-sdt"></div>
 								</div>
 							</div>
 							<div class="form-group">

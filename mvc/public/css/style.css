@@ -5888,6 +5888,27 @@ i.BAB {
 }
 .message-username{
 	margin-bottom: 10px;
-	height: 20px;
-	
+	height: 10px;
+}
+.message-email{
+	margin-bottom: 10px;
+	height: 10px;
+}
+.message-password{
+	margin-bottom: 10px;
+	height: 10px;
+}
+.message-repass{
+	margin-bottom: 10px;
+	height: 10px;
+}
+.message-hoten{
+	margin-bottom: 10px;
+	height: 10px;
+}
+.message-green{
+	color: green;
+}
+.message-red{
+	color: red;
 }
