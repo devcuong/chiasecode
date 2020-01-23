@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 20, 2020 lúc 02:02 AM
+-- Thời gian đã tạo: Th1 23, 2020 lúc 01:20 PM
 -- Phiên bản máy phục vụ: 10.4.10-MariaDB
 -- Phiên bản PHP: 7.3.12
 
@@ -21,6 +21,21 @@ SET time_zone = "+00:00";
 --
 -- Cơ sở dữ liệu: `youtuber`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `chukenh`
+--
+
+CREATE TABLE `chukenh` (
+  `id` int(11) NOT NULL,
+  `password` varchar(200) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `hoten` varchar(100) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `sdt` varchar(13) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -120,6 +135,12 @@ INSERT INTO `sinhvien` (`id`, `hoten`, `namsinh`) VALUES
 --
 
 --
+-- Chỉ mục cho bảng `chukenh`
+--
+ALTER TABLE `chukenh`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Chỉ mục cho bảng `danhmuc`
 --
 ALTER TABLE `danhmuc`
@@ -134,6 +155,12 @@ ALTER TABLE `sinhvien`
 --
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
+
+--
+-- AUTO_INCREMENT cho bảng `chukenh`
+--
+ALTER TABLE `chukenh`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT cho bảng `danhmuc`
