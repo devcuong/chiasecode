@@ -168,7 +168,6 @@ $("#btn-dang-ky-ngay").click(function() {
 		return false;
     }
     if(!phone.match(phone_pattern)){
-    	alert(phone);
     	$('#registerError').html('Số điện thoại không hợp lệ');
 		$('#sdt-dang-ky').addClass('validation-failed');
 		$('#sdt-dang-ky').focus();
@@ -178,9 +177,24 @@ $("#btn-dang-ky-ngay").click(function() {
         $('#registerError').html('Bạn phải đồng ý với điều khoản sử dụng.');
         return false;
     }
-    $("#frmDangKy").submit();
     
-	
+    var form = $("#frmDangKy");
+    var url = form.attr('action');
+    $.ajax({
+           type: "POST",
+           url: url,
+           data: form.serialize(),
+           success: function(data)
+           {
+               if(data){
+            	   alert("ĐĂNG KÝ THÀNH CÔNG");
+               }else{
+            	   alert("ĐĂNG KÝ THẤT BẠI");
+               }
+           }
+         });
+
+
 });
 function isEmail(email) {
 	var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;

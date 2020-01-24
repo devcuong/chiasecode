@@ -11,8 +11,8 @@
 			</a>
 				<meta itemprop="position" content="1">
 			</span> <span class="navigation-pipe">&nbsp;</span>
-			<form action="<?php echo $servername ?>/chu-kenh-dang-ky"
-				method="post" id="frmDangKy">
+			<form action="<?php echo $servername ?>/api/ChuKenhDangKy"
+				method="post" id="frmDangKy" name="frmDangKy" enctype="multipart/form-data">
 				<span itemprop="itemListElement" itemscope=""
 					itemtype="http://schema.org/ListItem"> <a itemprop="item"
 					class="agreen" href="/dang-ki-tai-khoan"
@@ -127,7 +127,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-sm-offset-4 col-sm-6">
-									<button type="button" name="btn-dang-ky-ngay" id="btn-dang-ky-ngay"
+									<button type="button" class="button-orange" name="btn-dang-ky-ngay" id="btn-dang-ky-ngay"
 										class="btn btn-primary">Đăng ký ngay</button>
 								</div>
 							</div>
