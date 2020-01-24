@@ -12,7 +12,7 @@
 				<meta itemprop="position" content="1">
 			</span> <span class="navigation-pipe">&nbsp;</span>
 			<form action="<?php echo $servername ?>/chu-kenh-dang-ky"
-				method="post">
+				method="post" id="frmDangKy">
 				<span itemprop="itemListElement" itemscope=""
 					itemtype="http://schema.org/ListItem"> <a itemprop="item"
 					class="agreen" href="/dang-ki-tai-khoan"
@@ -102,7 +102,7 @@
 								</label>
 								<div class="col-sm-6">
 									<input name="sdt-dang-ky" id="sdt-dang-ky" type="text" style="width: 185px;"
-										maxlength="20" placeholder="01..., 08..., 09... or +84..."
+										maxlength="20"
 										class="form-control require">
 									<div id="messageCheckSdt" class="message-sdt"></div>
 								</div>

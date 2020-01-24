@@ -126,6 +126,7 @@ $(document)
 $("#btn-dang-ky-ngay").click(function() {
 	var email = $('#email-dang-ky').val();
 	if (email == '') {
+		alert(email);
 		$('#registerError').html('Vui lòng nhập địa chỉ email.');
 		$('#email-dang-ky').addClass('validation-failed');
 		$('#email-dang-ky').focus();
@@ -151,26 +152,33 @@ $("#btn-dang-ky-ngay").click(function() {
 		$('#ho-ten-dang-ky').focus();
 		return false;
 	}
-	var username = $('#ten-hien-thi');
+	var username = $('#ten-hien-thi').val();
 	if(username == ''){
 		$('#registerError').html('Vui lòng nhập username');
 		$('#ten-hien-thi').addClass('validation-failed');
 		$('#ten-hien-thi').focus();
 		return false;
 	}
-	var phone = $('#sdt-dang-ky');
+	var phone = $('#sdt-dang-ky').val();
+	phone_pattern = /^(\+84|0)(([0-9]{9}))$/;
     if(phone == ''){
     	$('#registerError').html('Vui lòng nhập số điện thoại');
 		$('#sdt-dang-ky').addClass('validation-failed');
 		$('#sdt-dang-ky').focus();
 		return false;
     }
-    if(!isPhone(phone)){
+    if(!phone.match(phone_pattern)){
+    	alert(phone);
     	$('#registerError').html('Số điện thoại không hợp lệ');
 		$('#sdt-dang-ky').addClass('validation-failed');
 		$('#sdt-dang-ky').focus();
 		return false;
     }
+    if ($('#chkRequirement').is(":checked") == false) {
+        $('#registerError').html('Bạn phải đồng ý với điều khoản sử dụng.');
+        return false;
+    }
+    $("#frmDangKy").submit();
     
 	
 });
