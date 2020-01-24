@@ -121,13 +121,12 @@
 							</div>
 							<div class="form-group">
 								<div class="col-sm-offset-4 col-sm-7">
-									<span id="register_error" class="text-error">&nbsp;</span> <span
+									<span id="registerError" class="text-error">&nbsp;</span> <span
 										class="text-error" id="reg_error_email">&nbsp;</span>
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="col-sm-offset-4 col-sm-6">
-								<div id="messageCheckError" class="message-error"></div>
 									<button type="button" name="btn-dang-ky-ngay" id="btn-dang-ky-ngay"
 										class="btn btn-primary">Đăng ký ngay</button>
 								</div>
