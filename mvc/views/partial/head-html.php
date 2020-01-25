@@ -14,8 +14,8 @@
 <link rel="stylesheet" type="text/css" href=<?php echo $servername ?>/mvc/public/css/animate.css />
 <link rel="stylesheet" type="text/css" href=<?php echo $servername ?>/mvc/public/css/reset.css />
 <link rel="stylesheet" type="text/css" href=<?php echo $servername ?>/mvc/public/css/style.css />
-<meta name="description" content="Thư viện chia sẻ và download source code, upload code kiếm tiền, tổng hợp các mã nguồn và đồ án, kiến thức lập trình chuyên nghành công nghệ thông tin" />
-<meta name="keywords" content="Downloads source code, đồ án, mã nguồn, source code web, do an lap trinh, Source Code free, source web bán hàng,share code" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
 <meta property="og:image" content="assets/images/logo_sharecode.png" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Nền tảng hỗ trợ kết nối youtuber và cá nhân, doanh nghiệp cần quảng cáo" />

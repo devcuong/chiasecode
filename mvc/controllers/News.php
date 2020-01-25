@@ -1,5 +1,5 @@
 <?php
-    class News{
+    class News extends Controller{
         function SayHi(){
             echo "News - say Hi";
         }

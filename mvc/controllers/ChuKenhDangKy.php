@@ -17,5 +17,12 @@ class ChuKenhDangKy extends Controller
             "Page" => "chu-kenh-dang-ky"
         ]);
     }
+
+    function DangKyThanhCong($ho, $ten)
+    {
+        $this->view("cat-template", [
+            "Page" => "dang-ky-thanh-cong"
+        ]);
+    }
 }
 ?>
