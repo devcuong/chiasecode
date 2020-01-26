@@ -24,7 +24,7 @@
 							aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						<p class="modal-title text-center" id="myModalLabel">5TUB.COM</p>
+						<p class="modal-title text-center" id="myModalLabel">CODE4V.COM</p>
 					</div>
 					<div id="loginPanel"
 						onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;btnLogin&#39;)">
@@ -48,7 +48,7 @@
 							<br />
 							<div class="row">
 								<div class="col-xs-12">
-									Bạn chưa có tài khoản 5TUB.COM? <a
+									Bạn chưa có tài khoản CODE4V.COM? <a
 										href="../dang-ki-tai-khoan.html" class="agreen bold">Đăng ký
 										ngay</a>
 								</div>
@@ -71,25 +71,6 @@
 									<div class="col-sm-6">
 										<input name="ctl00$ctl00$ctl00$log_password" type="password"
 											id="log_password" placeholder="******" class="form-control" />
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-sm-offset-4 col-sm-6">
-										<input name="ctl00$ctl00$ctl00$txtCaptcha" type="text"
-											maxlength="4" id="txtCaptcha" class="form-control alignleft"
-											placeholder="Xác nhận" style="width: 90px;" />
-
-										
-										<div
-											style="height: 30px; width: 140px; float: left; margin-left: 10px;">
-											<img src="../assets/images/captcha.jpg" alt="captcha"
-												class="imgCaptcha" height="30" width="80" />
-											<div class="aorange"
-												style="float: right; width: 60px; margin-top: 6px; padding-left: 5px;"
-												onclick="return createCaptcha();">Mã khác</div>
-										</div>
-
-
 									</div>
 								</div>
 								<div class="form-group">

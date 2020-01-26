@@ -212,7 +212,6 @@ a:focus {
 
 .line {
     height: 1px;
-    background: url(/assets/images/mid_sep.png);
 }
 
 .bold {
@@ -270,13 +269,13 @@ a:focus {
 .button-orange {
     white-space: nowrap;
     padding: 10px 20px;
-    background: url(/assets/images/bg_orange.jpg) #ff0000;
     border: 1px solid #ff0000;
     color: #fff;
+	background-color: #ff0000;
 }
 
 .button-orange:hover {
-    background: #ff8401;
+    background: #ff0000;
     color: #fff;
 }
 
@@ -1479,7 +1478,6 @@ span.notify-right {
 
 #main-menu .navbar .navbar-nav>li:hover,
 #main-menu .navbar .navbar-nav>li.active {
-    background: url(/assets/images/bg_green.jpg) 0px -1px;
     color: #fff;
 }
 
@@ -2875,7 +2873,6 @@ span.notify-right {
 }
 
 #left_column .block .title_block {
-    background: url(/assets/images/logo_popup.png) no-repeat right, url(/assets/images/bg_green.jpg);
     color: #fff;
     font-size: 16px;
     font-weight: bold;
@@ -5168,7 +5165,6 @@ i.BAB {
     font-size: 16px;
     white-space: nowrap;
     padding: 15px 27px;
-    background: url(/assets/images/bg_green.jpg) #84c52c;
     border: 1px solid #84c52c;
 }
 
@@ -5187,7 +5183,6 @@ i.BAB {
     font-size: 16px;
     white-space: nowrap;
     padding: 10px;
-    background: url(/assets/images/bg_green2.jpg) #84c52c;
     border: 1px solid #84c52c;
     display: inherit;
     margin-top: 10px;

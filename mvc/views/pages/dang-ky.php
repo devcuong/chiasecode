@@ -7,7 +7,7 @@
 			<span itemprop="itemListElement" itemscope=""
 				itemtype="http://schema.org/ListItem"> <a itemprop="item"
 				class="agreen" href="/" title="Trở lại trang chủ">Trang chủ
-					<meta itemprop="name" content="5tub.com">
+					<meta itemprop="name" content="code4v.com">
 			</a>
 				<meta itemprop="position" content="1">
 			</span> <span class="navigation-pipe">&nbsp;</span>
@@ -42,7 +42,7 @@
 						<br>
 						<div class="row">
 							<h3 class="col-xs-12 title5">
-								Bạn đã có tài khoản 5TUB.COM? <a data-dismiss="modal"
+								Bạn đã có tài khoản CODE4V.COM? <a data-dismiss="modal"
 									data-toggle="modal" data-target="#LoginForm"
 									onclick="createCaptcha();" role="button" class="agreen bold">Đăng
 									nhập ngay</a>

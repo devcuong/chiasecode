@@ -48,18 +48,6 @@
                                         <input name="ctl00$log_password" type="password" id="log_password" placeholder="******" class="form-control" />
                                     </div>
                                 </div>
-                                 <div class="form-group">
-                                    <div class="col-sm-offset-4 col-sm-6">
-                                         <input name="ctl00$txtCaptcha" type="text" maxlength="4" id="txtCaptcha" class="form-control alignleft" placeholder="Xác nhận" style="width:90px;" />
-<div style="height: 30px; width: 140px; float: left; margin-left: 10px;">
-    <img src="assets/images/captcha.jpg" alt="captcha" class="imgCaptcha" height="30" width="80" />
-    <div class="aorange" style="float: right; width: 60px; margin-top: 6px; padding-left: 5px;"
-        onclick="return createCaptcha();">
-        Mã khác
-    </div>
-</div>
-                                    </div>
-                                </div>
                                 <div class="form-group">
                                     <div class="col-sm-offset-4 col-sm-6">
 

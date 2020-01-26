@@ -27,10 +27,10 @@
 				<h2 class="line-h green">
 					<b>ĐĂNG KÍ TÀI KHOẢN THÀNH CÔNG!</b>
 				</h2>
-				<h3 class="title1">Chào mừng các bạn gia nhập nền tảng Nền tảng hỗ trợ kết nối youtuber và cá nhân, doanh nghiệp cần quảng cáo</h3>
-				<br> <img src="http://techielobang.com/blog/wp-content/uploads/2011/10/youtube_sg.jpg">
+				<h3 class="title1">Chào mừng các bạn đến với website chia sẽ code, thư viện source code đầy đủ nhất hiện nay</h3>
+				<br> <img src="http://hinhnenppt.com/uploads/images/bo-suu-tap-20-hinh-nen-welcome-cuc-dep-de-dat-lam-slide-mo-dau-cho-bai-thuyet-trinh-1490629843-17.png">
 				<div>
-					<br> Sử dụng tài khoản để TẠO PROFILE KÊNH YOUTUBE, đối tác sẽ tìm thấy bạn nhanh hơn<br> <br>
+					<br> Sử dụng tài khoản để <br> <br>
 					<div>
 						<a data-toggle="modal" data-target="#LoginForm"
 							onclick="createCaptcha();" role="button" class="button-orange"

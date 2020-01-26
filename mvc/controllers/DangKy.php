@@ -1,20 +1,20 @@
 <?php
 
-class ChuKenhDangKy extends Controller
+class DangKy extends Controller
 {
 
-    public $ChuKenhModel;
+    public $ThanhVienModel;
 
     public function __construct()
     {
         // Model
-        $this->ChuKenhModel = $this->model("ChuKenhModel");
+        $this->ThanhVienModel= $this->model("ThanhVienModel");
     }
 
     function SayHi()
     {
         $this->view("cat-template", [
-            "Page" => "chu-kenh-dang-ky"
+            "Page" => "dang-ky"
         ]);
     }
 
