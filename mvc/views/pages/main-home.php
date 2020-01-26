@@ -19,7 +19,7 @@
                             <!-- PRODUCT LIST -->
                                 <ul class="row product-list style2 grid">
                                 <?php 
-                                    while($row = mysqli_fetch_array($data["KenhMoiNhat"])){
+                                    while($row = mysqli_fetch_array($data["CodeMoiNhat"])){
                                         ?>
                                         <li class="col-sx-12 col-sm-3" itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
                                         <div class="product-container">

@@ -188,7 +188,7 @@ $("#btn-dang-ky-ngay").click(function() {
            {
                if(data){
             	   alert("ĐĂNG KÝ THÀNH CÔNG");
-            	   $(location).attr('href', 'http://localhost/chiasecode/chu-kenh-dang-ky/DangKyThanhCong');
+            	   $(location).attr('href', 'http://localhost/chiasecode/dang-ky/DangKyThanhCong');
                }else{
             	   alert("ĐĂNG KÝ THẤT BẠI");
                }

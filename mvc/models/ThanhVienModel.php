@@ -12,7 +12,7 @@
         }
         /*CHECK USERNAME CHỦ KÊNH*/
         public function CheckUsernameThanhVien($username){
-            $qr = "SELECT id FROM chukenh WHERE username='$username'";
+            $qr = "SELECT id FROM thanhvien WHERE username='$username'";
             $rows = mysqli_query($this->con, $qr);
             $kq=false;
             if (mysqli_num_rows($rows)>0){
@@ -22,8 +22,8 @@
         }
         
         /*CHECK EMAIL CHỦ KÊNH*/
-        public function CheckEmailChuKenh($email){
-            $qr = "SELECT id FROM chukenh WHERE email='$email'";
+        public function CheckEmailThanhVien($email){
+            $qr = "SELECT id FROM thanhvien WHERE email='$email'";
             $rows = mysqli_query($this->con, $qr);
             $kq=false;
             if (mysqli_num_rows($rows)>0){
@@ -33,8 +33,8 @@
         }
         
         /*CHECK SDT CHỦ KÊNH*/
-        public function CheckSdtChuKenh($sdt){
-            $qr = "SELECT id FROM chukenh WHERE sdt='$sdt'";
+        public function CheckSdtThanhVien($sdt){
+            $qr = "SELECT id FROM thanhvien WHERE sdt='$sdt'";
             $rows = mysqli_query($this->con, $qr);
             $kq=false;
             if (mysqli_num_rows($rows)>0){

@@ -17,10 +17,10 @@ class App{
         $this->controller = new $this->controller;
         // Xu li Action
         if(isset($arr[1])){
-            if( method_exists($this->controller, $arr[1]) ){
-                $this->action = $arr[1];
+            $actionToClass = $this->UrlToClass($arr[1]);
+            if( method_exists($this->controller, $actionToClass) ){
+                $this->action = $actionToClass;
             }
-            //unset($arr[1]);
         }
 
         // Xu li Params
