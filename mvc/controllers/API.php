@@ -41,5 +41,15 @@ class API extends Controller
             echo $kq;
         }
     }
+    
+    public function ThanhVienDangNhap()
+    {
+        if(isset($_POST["log-email"]) && isset($_POST["log-password"])){
+            $logEmail = $_POST["log-email"];
+            $logPassword = $_POST["log-password"];
+            $kq = $this->ThanhVienModel->LayThanhVienByEmail($logEmail, $logPassword);
+            echo $kq;
+        }
+    }
 }
 ?>

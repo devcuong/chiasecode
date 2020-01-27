@@ -10,6 +10,22 @@
             
             return json_encode( $result );
         }
+        
+        /*LẤY USER BẰNG EMAIL VÀ PASSWORD*/
+        public function LayThanhVienByEmail($email, $password){
+            $qr = "SELECT password FROM thanhvien WHERE email='$email'";
+            $rows = mysqli_query($this->con, $qr);
+            $kq=false;
+            $stringReturn = "";
+            while($r = mysqli_fetch_array($rows)){
+                if (password_verify($password, $r["password"])) {
+                     $stringReturn = $r["password"];
+                     $kq=true;
+                } 
+            }
+            return json_encode($kq);
+        }
+        
         /*CHECK USERNAME CHỦ KÊNH*/
         public function CheckUsernameThanhVien($username){
             $qr = "SELECT id FROM thanhvien WHERE username='$username'";

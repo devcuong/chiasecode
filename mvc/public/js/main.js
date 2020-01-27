@@ -197,6 +197,20 @@ $("#btn-dang-ky-ngay").click(function() {
 
 
 });
+$("#btn-login").click(function() {
+	  var form = $("#frmDangNhap");
+	  var url = form.attr('action');
+	  $.ajax({
+          type: "POST",
+          url: url,
+          data: form.serialize(),
+          success: function(data)
+          {
+             alert(data);
+          }
+        });
+		
+});
 function isEmail(email) {
 	var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 	return regex.test(email);
