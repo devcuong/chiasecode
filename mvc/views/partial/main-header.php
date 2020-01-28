@@ -27,10 +27,10 @@
                         <div class="content-slide">
                             <ul id="contenhomeslider">
                                 <li>
-                                    <img alt="sharecode cộng đồng download source code" src="https://sharecode.vn/assets/images/share-code-1.jpg" title="Thư viện download code hàng đầu Việt Nam - Upload mỗi ngày!" /></li>
+                                    <img alt="code4v cộng đồng download source code" src="https://sharecode.vn/assets/images/share-code-1.jpg" title="Thư viện download code hàng đầu Việt Nam - Upload mỗi ngày!" /></li>
 
                                 <li>
-                                    <img alt="Phân biệt sharecode.vn và topcode.vn" src="https://sharecode.vn/assets/images/Sharecode-vs-topcode.jpg" title="Sharecode.vn thư viện code tham khảo và Topcode.vn sàn code chất lượng cao" /></li>
+                                    <img alt="Phân biệt code4v.com và topcode.vn" src="https://sharecode.vn/assets/images/Sharecode-vs-topcode.jpg" title="Sharecode.vn thư viện code tham khảo và Topcode.vn sàn code chất lượng cao" /></li>
 
                             </ul>
                         </div>

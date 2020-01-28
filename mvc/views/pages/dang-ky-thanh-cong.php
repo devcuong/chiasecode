@@ -7,13 +7,13 @@
 			<span itemprop="itemListElement" itemscope=""
 				itemtype="http://schema.org/ListItem"> <a itemprop="item"
 				class="agreen" href="/" title="Trở lại trang chủ">Trang chủ
-					<meta itemprop="name" content="sharecode.vn">
+					<meta itemprop="name" content="code4v.com">
 			</a>
 				<meta itemprop="position" content="1">
 			</span> <span class="navigation-pipe">&nbsp;</span> <span
 				itemprop="itemListElement" itemscope=""
 				itemtype="http://schema.org/ListItem"> <a itemprop="item"
-				class="agreen" href="/dang-ki.htm" title="Đăng kí tài khoản">
+				class="agreen" href="/dang-ky" title="Đăng kí tài khoản">
 					<h1 class="abread" itemprop="name">Đăng kí thành công</h1>
 			</a>
 				<meta itemprop="position" content="2">
@@ -23,7 +23,7 @@
 
 		<div class="text-center">
 			<br>
-			<div id="mainbody_contentbody_divActiveSuccess">
+			<div>
 				<h2 class="line-h green">
 					<b>ĐĂNG KÍ TÀI KHOẢN THÀNH CÔNG!</b>
 				</h2>
