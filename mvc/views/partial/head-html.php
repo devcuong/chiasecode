@@ -13,6 +13,7 @@
 <link rel="stylesheet" type="text/css" href=<?php echo $servername ?>/mvc/public/css/jquery-ui.min.css />
 <link rel="stylesheet" type="text/css" href=<?php echo $servername ?>/mvc/public/css/animate.css />
 <link rel="stylesheet" type="text/css" href=<?php echo $servername ?>/mvc/public/css/reset.css />
+<link rel="stylesheet" type="text/css" href=<?php echo $servername ?>/mvc/public/css/croppie.css />
 <link rel="stylesheet" type="text/css" href=<?php echo $servername ?>/mvc/public/css/style.css />
 <meta name="description" content="" />
 <meta name="keywords" content="" />

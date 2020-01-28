@@ -89,7 +89,8 @@
     <script type="text/javascript" src="<?php echo $servername ?>/mvc/public/js/jquery.actual.min.js"></script>
     <script type="text/javascript" src="<?php echo $servername ?>/mvc/public/js/theme-script.js"></script>
     <script type="text/javascript" src="<?php echo $servername ?>/mvc/public/js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="<?php echo $servername ?>/mvc/public/js/main.js"></script>
+    <script type="text/javascript" src="<?php echo $servername ?>/mvc/public/js/croppie.js"></script>
+    <script type="text/javascript" src="<?php echo $servername ?>/mvc/public/js/main.js"></script>
     <script type="text/javascript">
         $('.carousel').carousel({
             interval: 5000

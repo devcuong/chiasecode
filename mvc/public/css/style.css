@@ -4781,10 +4781,9 @@ i.BAB {
 
 .u_image {
     width: 200px;
-    height: 150px;
+    height: 200px;
     background: url('/assets/images/img_code.jpg') no-repeat;
-    border: 1px solid #d5c6ae;
-    border-radius: 3px;
+    border: 1px solid #ff0000;
     float: left;
     position: relative;
     overflow: hidden;
@@ -4796,14 +4795,14 @@ i.BAB {
     top: 0px;
     left: 0px;
     width: 200px;
-    height: 148px;
+    height: 200px;
 }
 
 .u_image .img_edit {
     position: absolute;
     top: 0;
     width: 200px;
-    height: 150px;
+    height: 200px;
 }
 
 .u_image:hover .img_edit {
@@ -4815,7 +4814,7 @@ i.BAB {
     top: 0;
     right: 0;
     width: 200px;
-    height: 150px;
+    height: 200px;
     font-size: 20px;
     cursor: pointer;
     opacity: 0;

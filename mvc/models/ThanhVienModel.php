@@ -1,5 +1,4 @@
 <?php
-    session_start();
     class ThanhVienModel extends DB{
         /*THÊM USER*/
         public function InsertThanhVien($email, $password, $hoten, $username, $sdt){
