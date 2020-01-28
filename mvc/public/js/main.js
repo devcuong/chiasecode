@@ -197,6 +197,7 @@ $("#btn-dang-ky-ngay").click(function() {
 
 
 });
+
 $("#btn-login").click(function() {
 	  var form = $("#frmDangNhap");
 	  var url = form.attr('action');
@@ -206,11 +207,27 @@ $("#btn-login").click(function() {
           data: form.serialize(),
           success: function(data)
           {
-             alert(data);
+             if(data){
+            	  $(location).attr('href', 'http://localhost/chiasecode/');
+             }
           }
         });
 		
 });
+
+$('#btn-exit').click(function(){
+	 $.ajax({
+         type: "POST",
+         url: "http://localhost/chiasecode/api/ThanhVienLogout",
+         success: function(data)
+         {
+            if(data){
+           	  $(location).attr('href', 'http://localhost/chiasecode/');
+            }
+         }
+       });
+});
+
 function isEmail(email) {
 	var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 	return regex.test(email);

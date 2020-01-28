@@ -1,4 +1,5 @@
 <?php
+    session_start();
     class ThanhVienModel extends DB{
         /*THÊM USER*/
         public function InsertThanhVien($email, $password, $hoten, $username, $sdt){
@@ -13,17 +14,26 @@
         
         /*LẤY USER BẰNG EMAIL VÀ PASSWORD*/
         public function LayThanhVienByEmail($email, $password){
-            $qr = "SELECT password FROM thanhvien WHERE email='$email'";
+            $qr = "SELECT password, username FROM thanhvien WHERE email='$email'";
             $rows = mysqli_query($this->con, $qr);
             $kq=false;
             $stringReturn = "";
             while($r = mysqli_fetch_array($rows)){
                 if (password_verify($password, $r["password"])) {
                      $stringReturn = $r["password"];
+                     $_SESSION['username'] = $r["username"];
                      $kq=true;
                 } 
             }
             return json_encode($kq);
+        }
+        
+        /* XÓA SESSION USER ĐĂNG NHẬP */
+        public function XoaSessionDangNhap()
+        {
+            unset($_SESSION['username']);
+            return true;
+        
         }
         
         /*CHECK USERNAME CHỦ KÊNH*/

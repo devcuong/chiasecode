@@ -7,11 +7,36 @@
                             <img alt="email sharecode" src="https://sharecode.vn/assets/images/email.png" />viettxt@gmail.com</a>
                         <a href="su-kien/%5bsharecodevn%5d-nang-cap-server-moi-cai-tien-tinh-nang-ho-tro-nguoi-dung--13.html">Sự kiện</a>
                     </div>
-                    <div id="LoginBox" class="support-link">
+                    <?php if(!isset($_SESSION['username'])) {?>
+                     <div id="LoginBox" class="support-link">
                         <a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" role="button">Đăng nhập</a>
-                        <a href="dang-ki-tai-khoan.html">Đăng kí</a>
+                        <a href="dang-ki-tai-khoan">Đăng kí</a>
                     </div>
                     <div id="user-info-top" class="user-info pull-right">
+                    <?php } else { ?>
+                    <div id="ExitBox" class="support-link">
+                        <a id="btn-exit" class="aorange" href="#">[Thoát]</a>
+                    </div>
+                    <div id="user-info-top" class="user-info pull-right">
+                        <div id="AcInfo" class="dropdown">
+                            <a href="/code-upload-cua-toi" id="UserName2" class="current-open" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Xin chào, </span><span id="txt-username"><b><?php echo $_SESSION['username'] ?></b></span></a>
+                            <ul class="dropdown-menu mega_dropdown" role="menu">
+                                <li><a href="/code-upload-cua-toi"><i class="fa fa-cloud-upload" aria-hidden="true"></i>&nbsp;Code tải lên</a></li>
+                                <li><a href="/code-da-luu"><i class="fa fa-folder-open" aria-hidden="true"></i>&nbsp;&nbsp;Code đã lưu</a></li>
+                                <li><a href="/code-download"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;Code đã mua</a></li>
+                                <li><a href="/doanh-thu-ban-code"><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Doanh thu bán code</a></li>
+                                <li><a href="/lich-su-giao-dich"><i class="fa fa-history" aria-hidden="true"></i>&nbsp;&nbsp;Lịch sử nạp tiền</a></li>
+                                <li><a href="/rut-tien"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;Rút tiền</a></li>
+                                <li><a href="https://me.sharecode.vn" target="_blank"><i class="fa fa-server" aria-hidden="true"></i>&nbsp;Quản lý Domain - Hosting</a></li>
+                                <li><a href="/binh-luan" class="orange"><i class="fa fa-comment" aria-hidden="true"></i>&nbsp;Bình luận</a></li>
+                                <li><a href="/thong-tin-ca-nhan" class="green"><i class="fa fa-cog" aria-hidden="true"></i>&nbsp;Cài đặt thông tin</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    
+                    <?php } ?>
+                   
                         <div id="AcLogin" class="dropdown">
                             <a class="current-open" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="index.html"><span></span></a>
                             <ul class="dropdown-menu mega_dropdown" role="menu">

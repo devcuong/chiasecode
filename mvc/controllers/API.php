@@ -51,5 +51,10 @@ class API extends Controller
             echo $kq;
         }
     }
+    
+   public function ThanhVienLogout(){
+       $kq = $this->ThanhVienModel->XoaSessionDangNhap();
+       echo $kq;
+   }
 }
 ?>
