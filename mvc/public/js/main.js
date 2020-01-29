@@ -270,6 +270,11 @@ $image_crop = $('#image_demo').croppie({
       });
     })
   });
+  
+  $('#btn-upload').click(function(event){
+	 alert("ok"); 
+  });
+    
 function isEmail(email) {
 	var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 	return regex.test(email);
@@ -278,3 +283,9 @@ function isPhone(phone) {
 	var regex = /^(\+84|0)(([0-9]{9}))$/;
 	return regex.test(phone);
 }
+// Function validate upload
+function validateTitle(){
+	var kt = true;
+	
+}
+

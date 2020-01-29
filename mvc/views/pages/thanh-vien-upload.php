@@ -1272,12 +1272,11 @@
 									<br>
 									<div class="form-group">
 										<div class="col-md-offset-2 col-md-10 line-h">
-											<a onclick=" return ValidateUpload();"
-												id="mainbody_contentbody_contentpage_btnUpload"
-												class="button-orange"
-												href="javascript:__doPostBack('ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$btnUpload','')"><i
+											<button type="button"
+												id="btn-upload"
+												class="button-orange" ><i
 												class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i>&nbsp;<span
-												id="mainbody_contentbody_contentpage_lblButton">TẢI LÊN NGAY</span></a>
+												id="mainbody_contentbody_contentpage_lblButton">TẢI LÊN NGAY</span></button>
 											&nbsp;&nbsp; <span class="text-error text-nowrap"
 												style="line-height: 40px;">(*) Là các trường bắt buộc nhập
 												nội dung</span>
@@ -1365,8 +1364,6 @@
 						</div>
 					</div>
 				</div>
-				<input type="hidden"
-					id="mainbody_contentbody_contentpage_hdCodeId" value="0"> <br> <br>
 			</div>
 		</div>
 	</div>
