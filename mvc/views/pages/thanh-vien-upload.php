@@ -186,11 +186,11 @@
 											class="text-error">*</span></label>
 										<div class="col-md-7">
 											<input
-												name="ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$txtLink"
+												name="txt-link"
 												type="text" maxlength="300"
-												id="mainbody_contentbody_contentpage_txtLink"
+												id="txt-link"
 												title="Link download source code: Mediafile, Fshare, Google drive..."
-												class="form-control" onblur="ValidateLink()"
+												class="form-control"
 												placeholder="Link download: Mediafile, Fshare, Google drive...">
 											<span
 												class="glyphicon glyphicon-ok form-control-feedback success-ic"
