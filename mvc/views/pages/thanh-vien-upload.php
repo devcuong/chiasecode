@@ -19,8 +19,8 @@
 				<h2 class="abread">Code tải lên</h2>
 			</a> <span class="navigation-pipe">&nbsp;</span> <a
 				href="https://sharecode.vn/thanh-vien-upload.htm"
-				id="mainbody_breadcrumb_breadpage_pathLink" class="agreen">
-				<h2 id="mainbody_breadcrumb_breadpage_pathTitle" class="abread">Tải
+				id="path-link" class="agreen">
+				<h2 id="path-title" class="abread">Tải
 					code lên</h2>
 			</a>
 		</div>
@@ -103,11 +103,11 @@
 											<input
 												name="ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$txtTitle"
 												type="text" maxlength="200"
-												id="mainbody_contentbody_contentpage_txtTitle"
+												id="txt-title"
 												class="form-control" onblur="ValidateTitle()"
 												placeholder="Tối thiểu 20 kí tự"> <span
 												class="glyphicon glyphicon-ok form-control-feedback success-ic"
-												aria-hidden="true" id="successTitle" style="display: none;"></span>
+												aria-hidden="true" id="successTitle" style="display: none;" onblur="validateTitle()"></span>
 										</div>
 										<div class="col-md-3 note-col">
 											<div class="form-control-static">

@@ -286,6 +286,15 @@ function isPhone(phone) {
 // Function validate upload
 function validateTitle(){
 	var kt = true;
-	
+	$('#title_error').html('');
+	$('#txt-title').removeClass('validation-failed');
+    $('#txt-title').removeClass('validation-success');
+    $('#successTitle').hide();
+    var title = $('#txt-title').val();
+    if (title == '') {
+        $('#title_error').html('Vui lòng nhập tiêu đề.');
+        kt = false;
+    }
+
 }
 
