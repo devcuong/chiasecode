@@ -101,13 +101,13 @@
 											class="text-error">*</span></label>
 										<div class="col-md-7">
 											<input
-												name="ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$txtTitle"
+												name="txt-title"
 												type="text" maxlength="200"
 												id="txt-title"
-												class="form-control" onblur="ValidateTitle()"
+												class="form-control"
 												placeholder="Tối thiểu 20 kí tự"> <span
 												class="glyphicon glyphicon-ok form-control-feedback success-ic"
-												aria-hidden="true" id="successTitle" style="display: none;" onblur="validateTitle()"></span>
+												aria-hidden="true" id="successTitle" style="display: none;"></span>
 										</div>
 										<div class="col-md-3 note-col">
 											<div class="form-control-static">
@@ -161,9 +161,9 @@
 											class="text-error">*</span></label>
 										<div class="col-md-7">
 											<textarea
-												name="ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$txtSubTitle"
+												name="txt-subtitle"
 												rows="2" cols="20"
-												id="mainbody_contentbody_contentpage_txtSubTitle"
+												id="txt-subtitle"
 												class="form-control up-textarea" onblur="ValidateSub()"
 												placeholder="Tối thiểu 70 kí tự" maxlength="200"
 												style="height: 60px;"></textarea>

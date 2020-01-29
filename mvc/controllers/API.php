@@ -4,10 +4,12 @@ class API extends Controller
 {
 
     public $ThanhVienModel;
+    public $CodeModel;
 
     public function __construct()
     {
         $this->ThanhVienModel = $this->model("ThanhVienModel");
+        $this->CodeModel = $this->model("CodeModel");
     }
 
     public function CheckUsername()
@@ -81,6 +83,13 @@ class API extends Controller
            echo '<img src="'.$imageName.'" class="img-thumbnail" />';
            
        }
+   }
+   
+   /* CHECK TITLE */
+   public function CheckCodeTitle(){
+       $title = $_POST["title"];
+       $kq = $this->CodeModel->CodeTitleDuplicate($title);
+       echo $kq;
    }
    
    

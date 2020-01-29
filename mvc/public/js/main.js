@@ -1,3 +1,4 @@
+
 $(document)
 		.ready(
 				function() {
@@ -274,6 +275,10 @@ $image_crop = $('#image_demo').croppie({
   $('#btn-upload').click(function(event){
 	 alert("ok"); 
   });
+  
+  $('#txt-title').blur(function(event){
+	  validateTitle(); 
+  });
     
 function isEmail(email) {
 	var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -283,17 +288,71 @@ function isPhone(phone) {
 	var regex = /^(\+84|0)(([0-9]{9}))$/;
 	return regex.test(phone);
 }
-// Function validate upload
+//Function validate title upload
 function validateTitle(){
 	var kt = true;
 	$('#title_error').html('');
-	$('#txt-title').removeClass('validation-failed');
+	$('#txt-title').addClass('validation-failed');
     $('#txt-title').removeClass('validation-success');
     $('#successTitle').hide();
     var title = $('#txt-title').val();
     if (title == '') {
         $('#title_error').html('Vui lòng nhập tiêu đề.');
         kt = false;
+    }
+    else{
+    	title = title.trim();
+        title = title.replace(/\s+/g, ' ');
+        $('#txt-title').val(title);
+        if(title.length < 20){
+        	$('#title_error').html('Tiêu đề phải dài hơn 20 kí tự.');
+        	kt = false;
+        }
+        else{
+        	$.ajax({
+                url:"http://localhost/chiasecode/api/CheckCodeTitle",
+                type: "POST",
+                data:{"title": title},
+                success:function(data)
+                {
+                  if(data == true){
+                      $('#title_error').html('Tiêu đề đã tồn tại.');
+                      kt = false;
+                  }
+                }
+              });
+        }
+    }
+    if(kt){
+    	$("#txt-title").addClass('validation-success');
+    	$("#successTitle").show();
+    	return true;
+    }else{
+        $('#txt-title').addClass('validation-failed');
+        return false;
+    }
+}
+
+// Function validate SubTitle
+function ValidateSub(){
+	var kt = true;
+	$('#subdetail_error').html('');
+    $('#txt-subtitle').removeClass('validation-failed');
+    $('#txt-title').addClass('validation-success');
+    $('#successSub').hide();
+    var subtitle = $('#txt-subtitle').val();
+    if(subtitle == ''){
+        $('#subdetail_error').html('Vui lòng nhập mô tả ngắn.');
+        kt = false;
+    }
+    else{
+    	subtitle = subtitle.trim();
+    	subtitle = subtitle.replace(/\s+/g, ' '); // replace space anywhere in string
+    	$('#txt-subtitle').val(subtitle);
+    	if(subtitle.length < 70){
+    		 $('#subdetail_error').html('Mô tả ngắn phải dài hơn 70 kí tự.');
+             kt = false;
+    	}
     }
 
 }

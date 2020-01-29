@@ -24,7 +24,15 @@
             return mysqli_query($this->con, $qr);
         }
         
-        /*CODE THEO LOẠI CODE*/
-        /*DÙNG TRONG MODEL LOẠI CODE*/
+        /*CHECK CODE TITLE DUPLICATE*/
+        public  function CodeTitleDuplicate($title){
+            $qr = "SELECT tencode FROM code WHERE tencode='$title'";
+            $rows = mysqli_query($this->con, $qr);
+            $kq=false;
+            if (mysqli_num_rows($rows)>0){
+                $kq=true;
+            }
+            return json_encode($kq);
+        }
     }
 ?>
