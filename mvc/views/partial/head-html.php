@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href=<?php echo $servername ?>/mvc/public/css/select2.min.css />
 <link rel="stylesheet" type="text/css" href=<?php echo $servername ?>/mvc/public/css/owl.carousel.css />
 <link rel="stylesheet" type="text/css" href=<?php echo $servername ?>/mvc/public/css/jquery-ui.min.css />
+<link rel="stylesheet" type="text/css" href=<?php echo $servername ?>/mvc/public/css/jquery.tag-editor.css />
 <link rel="stylesheet" type="text/css" href=<?php echo $servername ?>/mvc/public/css/animate.css />
 <link rel="stylesheet" type="text/css" href=<?php echo $servername ?>/mvc/public/css/reset.css />
 <link rel="stylesheet" type="text/css" href=<?php echo $servername ?>/mvc/public/css/croppie.css />
@@ -25,3 +26,4 @@
 <link href="index.html" rel="canonical" />
 <link rel="stylesheet" type="text/css" href="<?php echo $servername ?>/mvc/public/css/jquery.bxslider.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo $servername ?>/mvc/public/css/responsive.css" /></head>
+<script type="text/javascript" src="<?php echo $servername ?>/mvc/public/js/ckeditor/ckeditor.js"></script>

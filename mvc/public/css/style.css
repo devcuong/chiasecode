@@ -4745,9 +4745,9 @@ i.BAB {
 /*upload form*/
 
 .box-bg {
-    background: #faf8f1;
+    background: #fff;
     border-radius: 4px;
-    border: 1px solid #e2d8c7;
+    border: 1px solid #000;
 }
 
 .box-bg .text-error {

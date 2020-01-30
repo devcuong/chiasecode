@@ -272,21 +272,13 @@ $image_crop = $('#image_demo').croppie({
     })
   });
   
-  $('#txt-tag').tagEditor({
-	  autocomplete: { source: ['ActionScript', 'AppleScript', 'Asp', 'BASIC', 'C', 'C++', 'CSS', 'Clojure', 'COBOL', 'ColdFusion', 'Erlang', 'Fortran', 'Groovy', 'Haskell', 'HTML', 'Java', 'JavaScript', 'Lisp', 'Perl', 'PHP', 'Python', 'Ruby', 'Scala', 'Scheme'], minLength: 2, delay: 250, html: true, position: { collision: 'flip' } },
-      forceLowercase: false,
-      placeholder: 'Tối thiểu 3 từ khóa',
-      maxTags: 6,
-      removeDuplicates: true,
-      onChange: function (field, editor, tags) {
-          ValidateTag();
-      }
-  });
+  $('#txt-tag').tagEditor({placeholder: 'Tối thiểu 3 từ khóa', maxTags: 5, removeDuplicates: true, onChange: function (field, editor, tags) {
+      ValidateTag();
+  }});
   
   $('#btn-upload').click(function(event){
-	 alert("ok"); 
+	  ValidateTag();
   });
-  
   $('#txt-title').blur(function(event){
 	  validateTitle(); 
   });
@@ -296,7 +288,9 @@ $image_crop = $('#image_demo').croppie({
   $('#txt-link').blur(function(event){
 	  ValidateLink();
   });
-    
+  $('#editorDetail').mouseout(function (event) {
+      ValidateDetail();
+  });
 function isEmail(email) {
 	var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 	return regex.test(email);
@@ -404,4 +398,51 @@ function ValidateLink(){
          $('#txt-link').addClass('validation-failed');
          return false;
      }
+}
+// Function validate detail
+function ValidateDetail(){
+	var kt = true;
+	$('#upload_error').html();
+	$('#editorDetail div:first').removeClass('validation-failed');
+	$('#editorDetail div:first').removeClass('validation-success');
+	$('#successDetail').hide();
+	if($("#editorDetail iframe").contents().find("body").text() == ''){
+		$('#upload_error').html('vui lòng nhập mô tả chi tiết');
+		kt = false;
+	}
+	if(kt){
+		$('#editorDetail div:first').addClass('validation-success');
+		$('#successDetail').show();
+		return true;
+	}else{
+		$('#editorDetail div:first').addClass('validation-failed');
+		return false;
+	}
+	
+}
+// Function validate tag
+function ValidateTag(){
+	var kt = true;
+	$('#tag_error').html('');
+    $('.tag-editor').removeClass('validation-failed');
+    $('.tag-editor').removeClass('validation-success');
+    $('#successTag').hide();
+    var tag = $('#txt-tag').val();
+    var count = 0;
+    for(var i=0; i<tag.split(",").length;i++){
+    	if(tag.split(",")[i].trim().length != 0)
+    		count++;
+    }
+    if(count < 3){
+        $('#tag_error').html('Nhập tối thiểu 3 từ khóa.');
+        kt = false;
+    }
+    if(kt){
+        $('.tag-editor').addClass('validation-success');
+        $('#successTag').show();
+        return true;
+    }else{
+    	$('.tag-editor').addClass('validation-failed');
+        return false;
+    }
 }
