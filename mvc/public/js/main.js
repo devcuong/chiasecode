@@ -272,6 +272,17 @@ $image_crop = $('#image_demo').croppie({
     })
   });
   
+  $('#txt-tag').tagEditor({
+	  autocomplete: { source: ['ActionScript', 'AppleScript', 'Asp', 'BASIC', 'C', 'C++', 'CSS', 'Clojure', 'COBOL', 'ColdFusion', 'Erlang', 'Fortran', 'Groovy', 'Haskell', 'HTML', 'Java', 'JavaScript', 'Lisp', 'Perl', 'PHP', 'Python', 'Ruby', 'Scala', 'Scheme'], minLength: 2, delay: 250, html: true, position: { collision: 'flip' } },
+      forceLowercase: false,
+      placeholder: 'Tối thiểu 3 từ khóa',
+      maxTags: 6,
+      removeDuplicates: true,
+      onChange: function (field, editor, tags) {
+          ValidateTag();
+      }
+  });
+  
   $('#btn-upload').click(function(event){
 	 alert("ok"); 
   });

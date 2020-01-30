@@ -1209,9 +1209,8 @@
 											class="text-error">*</span></label>
 										<div class="col-md-7">
 											<textarea
-												name="ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$txtTag"
-												id="mainbody_contentbody_contentpage_txtTag"
-												onblur="ValidateTag()"
+												name="txt-tag"
+												id="txt-tag"
 												class="form-control tag-editor-hidden-src"></textarea>
 											<ul class="tag-editor ui-sortable">
 												<li style="width: 1px" class="ui-sortable-handle">&nbsp;</li>
