@@ -262,11 +262,10 @@
 
 												</div>
 												<input
-													name="ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$txtPriceOther"
+													name="txt-price-other"
 													type="text" maxlength="4"
-													id="mainbody_contentbody_contentpage_txtPriceOther"
-													class="bold form-control" onblur="ValidatePrice()"
-													onkeypress="CheckNumeric(event);" onkeyup="ChangPrice();"
+													id="txt-price-other"
+													class="bold form-control"
 													placeholder="Tự nhập phí tải"> <span
 													class="glyphicon glyphicon-ok form-control-feedback success-ic"
 													aria-hidden="true" id="successPrice"
@@ -279,8 +278,7 @@
 										</div>
 										<div class="col-sm-6 col-md-3">
 											<div class="checkbox" id="boxCheck" style="display: block;">
-												<label class="orange"> <input id="chkCamKet"
-													onchange="ValidatePrice()" value="1" type="checkbox"> Cam
+												<label class="orange"> <input id="chk-cam-ket" value="1" type="checkbox"> Cam
 													kết hỗ trợ người mua
 												</label>
 											</div>

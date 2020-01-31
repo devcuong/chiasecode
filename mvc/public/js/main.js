@@ -294,6 +294,19 @@ $image_crop = $('#image_demo').croppie({
   $('#chk-require').change(function (event) {
 	  ValidateCheck();
   });
+  $('#txt-price-other').keyup(function (event){
+	  ChangePrice();
+  });
+  $('#txt-price-other').keypress(function (event){
+	  CheckNumeric(event);
+  });
+  $('#txt-price-other').blur(function (event){
+	  ValidatePrice();
+  });
+  $('#chk-cam-ket').change(function (event){
+	  ValidatePrice();
+  });
+  
 function isEmail(email) {
 	var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 	return regex.test(email);
@@ -466,5 +479,85 @@ function ValidateCheck(){
 	}else{
 		 $('#chk-require-box').addClass('validation-failed');
          return false;
+	}
+}
+
+// Function changePrice
+function ChangePrice(){
+	//price change
+	var price = parseInt($('#txt-price-other').val(), 10);
+	if(price == 0){
+		$('#boxPrice').hide();
+        $('#boxCheck').hide();
+        $('#lblCheckFree').addClass('active');
+        $('#lblCheckCode').removeClass('active');
+        $('#lblCheckCodeOK').removeClass('active');
+        $('input:radio[name="options"][value="Free"]').prop('checked', true);
+	} else if(price > 0 && price <100){
+		 $('#boxPrice').show();
+         $('#boxCheck').hide();
+         $('#lblCheckFree').removeClass('active');
+         $('#lblCheckCode').addClass('active');
+         $('#lblCheckCodeOK').removeClass('active');
+         $('input:radio[name="options"][value="Code"]').prop('checked', true);
+	} else if(price > 99){
+		 $('#boxPrice').show();
+         $('#boxCheck').show();
+         $('#lblCheckFree').removeClass('active');
+         $('#lblCheckCode').removeClass('active');
+         $('#lblCheckCodeOK').addClass('active');
+         $('input:radio[name="options"][value="CodeOK"]').prop('checked', true);
+	}
+}
+// Function validate price
+function ValidatePrice(){
+	var kt = true;
+	$('#price_error').html('');
+    $('#txt-price-other').removeClass('validation-failed');
+    $('#txt-price-other').removeClass('validation-success');
+    $('#successPrice').hide();
+    if($('input:radio[name="option"]:checked').val() == 'Free'){
+    	$('#boxPrice').hide();
+    	 $('#boxCheck').hide();
+    	return true;
+    }
+    else{
+    	var price = $('#txt-price-other').val();
+    	if(price == ''){
+    		$('#price_error').html('Vui lòng nhập phí tải.');
+    		kt = false;
+    	}else if(parseInt(price, 10) < 2){
+            $('#price_error').html('Phí tải tối thiểu là 2 Xu.');
+            kt = false;
+    	}else if(parseInt(price, 10) > 99 && document.getElementById("chk-cam-ket").checked == false){
+    		$('#price_error').html('Chưa chọn cam kết hỗ trợ người mua.');
+            kt = false;
+    	}
+    }
+    
+    if(kt){
+    	$('#price_error').html('Chưa chọn cam kết hỗ trợ người mua.');
+        kt = false;
+    } else{
+    	$('#price_error').addClass('validation-failed');
+        return false;
+    }
+}
+
+// Function check numeric input
+function CheckNumeric(e){
+	if(window.event)
+	{
+		if((e.keyCode < 48 || e.keyCode > 57) & e.keyCode != 8){
+			event.returnValue = false;
+			return false;
+		}
+	}
+	else
+	{
+		if((e.which < 48 || e.which > 57) & e.which != 8){
+			e.preventDefault();
+			return false;
+		}
 	}
 }
