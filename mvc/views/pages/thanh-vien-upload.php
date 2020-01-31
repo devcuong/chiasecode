@@ -327,7 +327,7 @@
 									<div class="form-group">
 										<label class="col-md-2 control-label bold">Mô tả chi tiết <span
 											class="text-error">*</span></label>
-										<div class="col-md-10" id="editorDetail">
+										<div class="col-md-10" id="editor-detail">
 											<textarea
 												name="ck-detail"
 												rows="2" cols="20"
@@ -394,12 +394,11 @@
 									<div class="form-group">
 										<div class="col-md-offset-2 col-md-10">
 											<div class="checkbox">
-												<label id="chkRequireBox" style="border-radius: 4px;"> <input
-													name="chkRequirement"
+												<label id="chk-require-box" style="border-radius: 4px;"> <input
+													name="chk-require"
 													type="checkbox"
-													id="chkRequirement"
-													onchange="ValidateCheck()" value="1"> <a
-													href="/quy-dinh-chung.htm" target="_blank" class="aorange"
+													id="chk-require" value="1"> <a
+													href="quy-dinh-chung" target="_blank" class="aorange"
 													title="Xem thêm điều khoản sử dụng">Tôi đã đọc và đồng ý
 														với các điều khoản của code4v.com&nbsp;</a>
 												</label> &nbsp;&nbsp;<span id="check_error"

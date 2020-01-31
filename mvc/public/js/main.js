@@ -288,8 +288,11 @@ $image_crop = $('#image_demo').croppie({
   $('#txt-link').blur(function(event){
 	  ValidateLink();
   });
-  $('#editorDetail').mouseout(function (event) {
+  $('#editor-detail').mouseout(function (event) {
       ValidateDetail();
+  });
+  $('#chk-require').change(function (event) {
+	  ValidateCheck();
   });
 function isEmail(email) {
 	var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -403,19 +406,19 @@ function ValidateLink(){
 function ValidateDetail(){
 	var kt = true;
 	$('#upload_error').html();
-	$('#editorDetail div:first').removeClass('validation-failed');
-	$('#editorDetail div:first').removeClass('validation-success');
+	$('#editor-detail div:first').removeClass('validation-failed');
+	$('#editor-detail div:first').removeClass('validation-success');
 	$('#successDetail').hide();
 	if($("#editorDetail iframe").contents().find("body").text() == ''){
 		$('#upload_error').html('vui lòng nhập mô tả chi tiết');
 		kt = false;
 	}
 	if(kt){
-		$('#editorDetail div:first').addClass('validation-success');
+		$('#editor-detail div:first').addClass('validation-success');
 		$('#successDetail').show();
 		return true;
 	}else{
-		$('#editorDetail div:first').addClass('validation-failed');
+		$('#editor-detail div:first').addClass('validation-failed');
 		return false;
 	}
 	
@@ -445,4 +448,23 @@ function ValidateTag(){
     	$('.tag-editor').addClass('validation-failed');
         return false;
     }
+}
+
+// Function validate check
+function ValidateCheck(){
+	var kt = true;
+	$('#check_error').html('');
+	$('#chk-require-box').removeClass('validation-failed');
+	
+	if(document.getElementById("chk-require").checked == false){
+		$('#check_error').html('Vui lòng đọc và đồng ý các điều khoản.');
+		kt=false;
+	}
+	
+	if(kt){
+		return true;
+	}else{
+		 $('#chk-require-box').addClass('validation-failed');
+         return false;
+	}
 }
