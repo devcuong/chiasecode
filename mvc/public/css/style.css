@@ -4803,10 +4803,11 @@ i.BAB {
     top: 0;
     width: 200px;
     height: 200px;
+	background: url('http://localhost/chiasecode/mvc/public/images/imageplace.png') no-repeat;
 }
 
 .u_image:hover .img_edit {
-    background: url('/assets/images/img_edit.png') no-repeat;
+    background: url('http://localhost/chiasecode/mvc/public/images/imageedit.jpg') no-repeat;
 }
 
 .u_image input.img_upload {

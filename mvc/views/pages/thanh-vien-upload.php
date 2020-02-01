@@ -86,7 +86,7 @@
 											<div id="uploaded_image"><img id="mainbody_contentbody_contentpage_imgUpdateCode"
 													class="u_image_edit"></div>
 												<div class="img_edit"></div>
-												<input type="file" id="FileUpload1" class="img_upload"
+												<input type="file" id="file-upload-1" class="img_upload"
 													accept=".jpg,.png,.gif">
 											</div>
 											<div class="alignleft u_image_txt">
@@ -296,19 +296,19 @@
 												<div class="f_control">
 													<div class="f_upload_file">
 														Thêm ảnh... <input type="file" multiple="multiple"
-															name="ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$FileUpload2"
-															id="mainbody_contentbody_contentpage_FileUpload2"
+															name="file-upload-2"
+															id="file-upload-2"
 															class="upload" accept="image/gif, image/jpeg, image/png">
 													</div>
-													<div class="mess alignleft" id="countFiles"></div>
+													<div class="mess alignleft" id="count-files"></div>
 
 													<div id="errFileMax2" class="text-error clear"></div>
 												</div>
-												<span id="mainbody_contentbody_contentpage_lblListImage"></span>
-												<div id="mainbody_contentbody_contentpage_upPannel">
+												<span id="lbl-list-image"></span>
+												<div id="lbl-list-image">
 
 
-													<div id="mainbody_contentbody_contentpage_TotalImage"
+													<div id="total-image"
 														class="f_total">
 														Tối đa <b>10</b> ảnh, Dung lượng tối đa <b>2 Mb</b> 1 ảnh
 													</div>

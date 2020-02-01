@@ -241,7 +241,7 @@ $image_crop = $('#image_demo').croppie({
     }
   });
 
-  $('#FileUpload1').on('change', function(){
+  $('#file-upload-1').on('change', function(){
     var reader = new FileReader();
     reader.onload = function (event) {
       $image_crop.croppie('bind', {
@@ -306,6 +306,94 @@ $image_crop = $('#image_demo').croppie({
   $('#chk-cam-ket').change(function (event){
 	  ValidatePrice();
   });
+  //price
+  $('#boxPrice').hide();
+  $('#boxCheck').hide();
+  $('input:radio[name="options"]').change(
+      function () {
+          if (this.checked) {
+              if (this.value == 'Free') {
+                  $('#boxPrice').hide();
+                  $('#boxCheck').hide();
+                  $('input:radio[name="options"][value="Free"]').prop('checked', true);
+              }
+              else if (this.value == 'Code') {
+                  $('#boxPrice').show();
+                  $('#boxCheck').hide();
+                  $('input:radio[name="options"][value="Code"]').prop('checked', true);
+              }
+              else if (this.value == 'CodeOK') {
+                  $('#boxPrice').show();
+                  $('#boxCheck').show();
+                  $('input:radio[name="options"][value="CodeOK"]').prop('checked', true);
+              }
+          }
+      });
+  $('#li5').click(function () {
+      $("#txt-price-other").val(5);
+      ChangePrice();
+  });
+  $('#li10').click(function () {
+      $("#txt-price-other").val(10);
+      ChangePrice();
+  });
+  $('#li15').click(function () {
+      $("#txt-price-other").val(15);
+      ChangePrice();
+  });
+  $('#li20').click(function () {
+      $("#txt-price-other").val(20);
+      ChangePrice();
+  });
+  $('#li40').click(function () {
+      $("#txt-price-other").val(40);
+      ChangePrice();
+  });
+  $('#li80').click(function () {
+      $("#txt-price-other").val(80);
+      ChangePrice();
+  });
+  $('#li100').click(function () {
+      $("#txt-price-other").val(100);
+      ChangePrice();
+  });
+  $('#li150').click(function () {
+      $("#txt-price-other").val(150);
+      ChangePrice();
+  });
+  $('#li240').click(function () {
+      $("#txt-price-other").val(240);
+      ChangePrice();
+  });
+  $('#li400').click(function () {
+      $("#txt-price-other").val(400);
+      ChangePrice();
+  });
+  //edit
+  var price = parseInt($("#txt-price-other").val(), 10);
+  if (price > 99)
+      $('#chkCamKet').prop('checked', true);
+  ChangePrice();
+  
+//count file selected
+  $('#file-upload-2').change(function(){ 
+	  $("#count-files").html("Đã chọn <b>" + this.files.length + "</b> File");
+      var fileUpload = $("#file-upload-2");
+      var maxFileSize = 2097152; // 2MB
+      var countfile = 0;
+      for (var i = 0; i < this.files.length; i++) {
+          if (this.files[i].size > maxFileSize) {
+              countfile = countfile + 1;
+          }
+      }
+
+      if (countfile > 0) {
+          document.getElementById("errFileMax2").innerHTML = "Chú ý: Có " + countfile + " ảnh vượt quá 2Mb sẽ không được tải nên";
+      }
+      else
+          document.getElementById("errFileMax2").innerHTML = "";
+  });
+
   
 function isEmail(email) {
 	var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -536,10 +624,11 @@ function ValidatePrice(){
     }
     
     if(kt){
-    	$('#price_error').html('Chưa chọn cam kết hỗ trợ người mua.');
-        kt = false;
+    	  $('#txt-price-other').addClass('validation-success');
+          $('#successPrice').show();
+          return true;
     } else{
-    	$('#price_error').addClass('validation-failed');
+    	$('#txt-price-other').addClass('validation-failed');
         return false;
     }
 }
