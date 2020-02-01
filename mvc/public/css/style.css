@@ -4803,7 +4803,6 @@ i.BAB {
     top: 0;
     width: 200px;
     height: 200px;
-	background: url('http://localhost/chiasecode/mvc/public/images/imageplace.png') no-repeat;
 }
 
 .u_image:hover .img_edit {
@@ -5036,8 +5035,8 @@ i.BAB {
 .up-box .btn-warning:hover,
 .up-box .btn-warning.active {
     color: #fff;
-    background-color: #ff8401;
-    border-color: #ff8401;
+    background-color: #ff0000;
+    border-color: #ff0000;
 }
 
 

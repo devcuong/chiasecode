@@ -84,8 +84,7 @@
 										<div class="col-md-10">
 											<div class="u_image validation-success">
 											<div id="uploaded_image"><img id="mainbody_contentbody_contentpage_imgUpdateCode"
-													class="u_image_edit"></div>
-												<div class="img_edit"></div>
+													class="u_image_edit" src="http://localhost/chiasecode/mvc/public/images/imageplace.png"></div>
 												<input type="file" id="file-upload-1" class="img_upload"
 													accept=".jpg,.png,.gif">
 											</div>
@@ -204,9 +203,9 @@
 										<label class="col-md-2 control-label bold">Link demo</label>
 										<div class="col-md-4">
 											<input
-												name="ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$txtLinkDemo"
+												name="txt-link-demo"
 												type="text" maxlength="300"
-												id="mainbody_contentbody_contentpage_txtLinkDemo"
+												id="txt-link-demo"
 												title="Link demo sản phẩm thực tế đã triển khai từ code"
 												class="form-control" onblur="ValidateDemo()"
 												placeholder="Link live demo (Nếu có)"> <span

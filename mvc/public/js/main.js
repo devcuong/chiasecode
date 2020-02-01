@@ -1,4 +1,3 @@
-
 $(document)
 		.ready(
 				function() {
@@ -633,6 +632,51 @@ function ValidatePrice(){
     }
 }
 
+// Function Validate form
+function ValidateUpload(){
+	var ktt = true;
+	if(!ValidateTag()){
+		ktt = false;
+	}
+	if(!ValidateCheck()){
+		ktt = false;
+	}
+	if(!ValidateDetail()){
+		ktt = false;
+	}
+	//TH tự đặt giá
+	if(!ValidatePrice()){
+		$('#txt-price-other').focus();
+        ktt = false;
+	}
+	
+	if (!ValidateDemo()) {
+           ktt = false;
+           $('#txt-link-demo').focus();
+    }
+}
+// Function validate demo
+function ValidateDemo(){
+    $('#demo_error').html('');
+    $('#txt-link-demo').removeClass('validation-failed');
+    $('#txt-link-demo').removeClass('validation-success');
+    $('#successDemo').hide();
+    var link = $('#txt-link-demo').val().trim();
+    if(link != ''){
+    	if(!(link.indexOf("http://") == 0 || link.indexOf("https://") == 0)){
+    		$('#demo_error').html('Link phải bắt đầu http://... (or) https://...');
+    		$('#txt-link-demo').addClass('validation-failed');
+    		return false;
+    	}
+    	else{
+    		jQuery('#txt-link-demo').addClass('validation-success');
+            jQuery('#successDemo').show();
+            return true;
+    	}
+    }
+    return true;
+}
+
 // Function check numeric input
 function CheckNumeric(e){
 	if(window.event)
@@ -650,3 +694,5 @@ function CheckNumeric(e){
 		}
 	}
 }
+
+
