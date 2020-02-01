@@ -4902,11 +4902,11 @@ i.BAB {
     overflow: hidden;
     width: 120px;
     height: 33px;
-    border: 1px solid #84c52c;
+    border: 1px solid #ff0000;
     padding-left: 33px;
     padding-top: 6px;
     border-radius: 3px;
-    color: #648d03;
+    color: #ff0000;
     background: url('/assets/images/ic_add.png') no-repeat 10px 7px;
     float: left;
 }

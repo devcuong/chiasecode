@@ -281,11 +281,20 @@ $image_crop = $('#image_demo').croppie({
   $('#txt-title').blur(function(event){
 	  validateTitle(); 
   });
+  $('#ddl-category-lang').change(function(){
+	  ValidateCate(); 
+  });
+  $('#ddl-category-lang').blur(function(){
+	  ValidateCate(); 
+  });
   $('#txt-subtitle').blur(function(event){
 	  ValidateSub();
   });
   $('#txt-link').blur(function(event){
 	  ValidateLink();
+  });
+  $('#txt-link-demo').blur(function(event){
+	  ValidateDemo();
   });
   $('#editor-detail').mouseout(function (event) {
       ValidateDetail();
@@ -445,6 +454,29 @@ function validateTitle(){
         $('#txt-title').addClass('validation-failed');
         return false;
     }
+}
+
+// Function validate category
+function ValidateCate(){
+	var kt = true;
+	$('#lang_error').html('');
+    $('#ddl-category-lang').removeClass('validation-failed');
+    $('#ddl-category-lang').removeClass('validation-success');
+    $('#successCate').hide();
+    var lang = jQuery('#ddl-category-lang').val();
+    if (lang == '0') {
+        $('#lang_error').html('Chưa chọn danh mục.');
+        kt = false;
+    } 
+    if (kt) {
+        $('#ddl-category-lang').addClass('validation-success');
+        $('#successCate').show();
+        return true;
+    } else {
+        $('#ddl-category-lang').addClass('validation-failed');
+        return false;
+    }
+    
 }
 
 // Function validate SubTitle
@@ -632,30 +664,7 @@ function ValidatePrice(){
     }
 }
 
-// Function Validate form
-function ValidateUpload(){
-	var ktt = true;
-	if(!ValidateTag()){
-		ktt = false;
-	}
-	if(!ValidateCheck()){
-		ktt = false;
-	}
-	if(!ValidateDetail()){
-		ktt = false;
-	}
-	//TH tự đặt giá
-	if(!ValidatePrice()){
-		$('#txt-price-other').focus();
-        ktt = false;
-	}
-	
-	if (!ValidateDemo()) {
-           ktt = false;
-           $('#txt-link-demo').focus();
-    }
-}
-// Function validate demo
+//Function validate demo
 function ValidateDemo(){
     $('#demo_error').html('');
     $('#txt-link-demo').removeClass('validation-failed');
@@ -694,5 +703,49 @@ function CheckNumeric(e){
 		}
 	}
 }
+
+// Function Validate form
+function ValidateUpload(){
+	var ktt = true;
+	if(!ValidateTag()){
+		ktt = false;
+	}
+	if(!ValidateCheck()){
+		ktt = false;
+	}
+	if(!ValidateDetail()){
+		ktt = false;
+	}
+	//TH tự đặt giá
+	if(!ValidatePrice()){
+		$('#txt-price-other').focus();
+        ktt = false;
+	}
+	
+	if (!ValidateDemo()) {
+           ktt = false;
+           $('#txt-link-demo').focus();
+    }
+	
+	if(!ValidateLink()){
+		 ktt = false;
+         $('#txt-link').focus();
+	}
+	
+	 if (!ValidateSub()) {
+         $('#txt-subtitle').focus();
+         ktt = false;
+     }
+	 
+	 if (!ValidateCate()) {
+         jQuery('#mainbody_contentbody_contentpage_ddlCategoryLang').focus();
+             ktt = false;
+         }
+         if (!ValidateTitle()) {
+             ktt = false;
+             jQuery('#mainbody_contentbody_contentpage_txtTitle').focus();
+     }
+}
+
 
 

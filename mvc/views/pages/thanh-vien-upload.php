@@ -123,10 +123,9 @@
 											class="text-error">*</span></label>
 										<div class="col-md-4">
 											<select
-												name="ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$ddlCategoryLang"
-												id="mainbody_contentbody_contentpage_ddlCategoryLang"
-												class="form-control" onblur="ValidateCate()"
-												onchange="ValidateCate()">
+												name="ddl-category-lang"
+												id="ddl-category-lang"
+												class="form-control">
 												<option value="0">--Chọn danh mục--</option>
 												<option value="15">Android</option>
 												<option value="23">iOS</option>
@@ -207,7 +206,7 @@
 												type="text" maxlength="300"
 												id="txt-link-demo"
 												title="Link demo sản phẩm thực tế đã triển khai từ code"
-												class="form-control" onblur="ValidateDemo()"
+												class="form-control"
 												placeholder="Link live demo (Nếu có)"> <span
 												class="glyphicon glyphicon-ok form-control-feedback success-ic"
 												aria-hidden="true" id="successDemo" style="display: none;"></span>
