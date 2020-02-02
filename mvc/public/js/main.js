@@ -741,7 +741,7 @@ function ValidateUpload(){
          jQuery('#mainbody_contentbody_contentpage_ddlCategoryLang').focus();
              ktt = false;
          }
-         if (!ValidateTitle()) {
+     if (!ValidateTitle()) {
              ktt = false;
              jQuery('#mainbody_contentbody_contentpage_txtTitle').focus();
      }
