@@ -24,6 +24,7 @@
 					code lên</h2>
 			</a>
 		</div>
+<form method="post" action="/thanh-vien-upload" id="frm-upload" enctype="multipart/form-data">
 		<div class="row">
 			<div class="center_column col-xs-12 col-sm-12" id="center_column">
 
@@ -162,7 +163,7 @@
 												name="txt-subtitle"
 												rows="2" cols="20"
 												id="txt-subtitle"
-												class="form-control up-textarea" onblur="ValidateSub()"
+												class="form-control up-textarea"
 												placeholder="Tối thiểu 70 kí tự" maxlength="200"
 												style="height: 60px;"></textarea>
 											<span
@@ -410,7 +411,7 @@
 									<br>
 									<div class="form-group">
 										<div class="col-md-offset-2 col-md-10 line-h">
-											<a onclick=" return ValidateUpload();"
+											<a onclick="SubmitForm()"
 												id="btn-upload"
 												class="button-orange" ><i
 												class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i>&nbsp;<span
@@ -504,6 +505,7 @@
 				</div>
 			</div>
 		</div>
+		</form>
 	</div>
 </div>
 <div class="clearfix"></div>

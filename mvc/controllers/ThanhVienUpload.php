@@ -7,8 +7,10 @@ class ThanhVienUpload extends Controller{
             header("Location: http://localhost/chiasecode", 301);
             exit();
         }
-       
-        
+    }
+    
+    function UploadCode(){
+        echo "OK";
     }
     
 }

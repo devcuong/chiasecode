@@ -710,44 +710,36 @@ function CheckNumeric(e){
 function ValidateUpload(){
 	var ktt = true;
 	if(!ValidateTag()){
-		alert("loi tag");
 		ktt = false;
 	}
 	if(!ValidateCheck()){
-		alert("loi check");
 		ktt = false;
 	}
 	if(!ValidateDetail()){
-		alert("loi detail");
 		ktt = false;
 	}
 	//TH tự đặt giá
 	if(!ValidatePrice()){
-		alert(ValidatePrice());
 		$('#txt-price-other').focus();
         ktt = false;
 	}
 	
 	if (!ValidateDemo()) {
-		alert("loi demo");
            ktt = false;
            $('#txt-link-demo').focus();
     }
 	
 	if(!ValidateLink()){
-		alert("loi link");
 		 ktt = false;
          $('#txt-link').focus();
 	}
 	
 	 if (!ValidateSub()) {
-		 alert("loi sub");
          $('#txt-subtitle').focus();
          ktt = false;
      }
 	 
 	 if (!ValidateCate()) {
-		 alert("loi cate");
          $('#ddl-category-lang').focus();
              ktt = false;
          }
@@ -765,6 +757,13 @@ function ValidateUpload(){
     	 return false;
      }
      return true;
+}
+
+// Submit form
+function SubmitForm(){
+	if(ValidateUpload()){
+		
+	}
 }
 
 
