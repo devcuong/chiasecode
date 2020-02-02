@@ -750,10 +750,8 @@ function ValidateUpload(){
 		 alert("loi cate");
          $('#ddl-category-lang').focus();
              ktt = false;
-     }
-	 
+         }
      if (!ValidateTitle()) {
-    	 alert("loi title");
              ktt = false;
              $('#txt-title').focus();
      }
