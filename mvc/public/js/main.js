@@ -178,7 +178,7 @@ $("#btn-dang-ky-ngay").click(function() {
         return false;
     }
     
-    var form = $("#frmDangKy");
+    var form = $("#frm-dang-ky");
     var url = form.attr('action');
     $.ajax({
            type: "POST",
@@ -199,7 +199,7 @@ $("#btn-dang-ky-ngay").click(function() {
 });
 
 $("#btn-login").click(function() {
-	  var form = $("#frmDangNhap");
+	  var form = $("#frm-dang-nhap");
 	  var url = form.attr('action');
 	  $.ajax({
           type: "POST",
@@ -259,7 +259,7 @@ $image_crop = $('#image_demo').croppie({
       size: 'viewport'
     }).then(function(response){
       $.ajax({
-        url:"http://localhost/chiasecode/api/ThanhVienUpload",
+        url:"http://localhost/chiasecode/thanh-vien-upload/crop-file",
         type: "POST",
         data:{"image": response},
         success:function(data)
@@ -762,7 +762,21 @@ function ValidateUpload(){
 // Submit form
 function SubmitForm(){
 	if(ValidateUpload()){
-		
+	    var form = $("#frm-upload");
+	    var url = form.attr('action');
+	    $.ajax({
+	           type: "POST",
+	           url: url,
+	           data: form.serialize(),
+	           success: function(data)
+	           {
+	               if(data){
+	            	   alert(data);
+	               }else{
+	            	   alert("THẤT BẠI");
+	               }
+	           }
+	         });
 	}
 }
 

@@ -18,7 +18,7 @@
                             </div>
                             <br />
                            <form action="<?php echo $servername ?>/api/ThanhVienDangNhap"
-				method="post" id="frmDangNhap" name="frmDangNhap" enctype="multipart/form-data">
+				method="post" id="frm-dang-nhap" name="frm-dang-nhap" enctype="multipart/form-data">
                                 <div class="form-horizontal">
                                     <div class="form-group">
                                         <label for="inputEmail3" class="col-sm-4 control-label">Email <span class="text-error">*</span></label>

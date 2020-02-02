@@ -12,7 +12,7 @@
 				<meta itemprop="position" content="1">
 			</span> <span class="navigation-pipe">&nbsp;</span>
 			<form action="<?php echo $servername ?>/api/ThanhVienDangKy"
-				method="post" id="frmDangKy" name="frmDangKy" enctype="multipart/form-data">
+				method="post" id="frm-dang-ky" name="frm-dang-ky" enctype="multipart/form-data">
 				<span itemprop="itemListElement" itemscope=""
 					itemtype="http://schema.org/ListItem"> <a itemprop="item"
 					class="agreen" href="/dang-ki-tai-khoan"
