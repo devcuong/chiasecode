@@ -275,11 +275,12 @@ $image_crop = $('#image_demo').croppie({
       ValidateTag();
   }});
   
-  $('#btn-upload').click(function(event){
-	  ValidateTag();
-  });
+//  $('#btn-upload').click(function(){
+//	  ValidateUpLoad();
+//  });
+  
   $('#txt-title').blur(function(event){
-	  validateTitle(); 
+	  ValidateTitle(); 
   });
   $('#ddl-category-lang').change(function(){
 	  ValidateCate(); 
@@ -412,7 +413,7 @@ function isPhone(phone) {
 	return regex.test(phone);
 }
 //Function validate title upload
-function validateTitle(){
+function ValidateTitle(){
 	var kt = true;
 	$('#title_error').html('');
 	$('#txt-title').addClass('validation-failed');
@@ -541,11 +542,12 @@ function ValidateDetail(){
 	$('#editor-detail div:first').removeClass('validation-failed');
 	$('#editor-detail div:first').removeClass('validation-success');
 	$('#successDetail').hide();
-	if($("#editorDetail iframe").contents().find("body").text() == ''){
+	if($("#editor-detail iframe").contents().find("body").text() == ''){
 		$('#upload_error').html('vui lòng nhập mô tả chi tiết');
 		kt = false;
 	}
 	if(kt){
+		$('#upload_error').html('');
 		$('#editor-detail div:first').addClass('validation-success');
 		$('#successDetail').show();
 		return true;
@@ -708,43 +710,63 @@ function CheckNumeric(e){
 function ValidateUpload(){
 	var ktt = true;
 	if(!ValidateTag()){
+		alert("loi tag");
 		ktt = false;
 	}
 	if(!ValidateCheck()){
+		alert("loi check");
 		ktt = false;
 	}
 	if(!ValidateDetail()){
+		alert("loi detail");
 		ktt = false;
 	}
 	//TH tự đặt giá
 	if(!ValidatePrice()){
+		alert(ValidatePrice());
 		$('#txt-price-other').focus();
         ktt = false;
 	}
 	
 	if (!ValidateDemo()) {
+		alert("loi demo");
            ktt = false;
            $('#txt-link-demo').focus();
     }
 	
 	if(!ValidateLink()){
+		alert("loi link");
 		 ktt = false;
          $('#txt-link').focus();
 	}
 	
 	 if (!ValidateSub()) {
+		 alert("loi sub");
          $('#txt-subtitle').focus();
          ktt = false;
      }
 	 
 	 if (!ValidateCate()) {
-         jQuery('#mainbody_contentbody_contentpage_ddlCategoryLang').focus();
+		 alert("loi cate");
+         $('#ddl-category-lang').focus();
              ktt = false;
-         }
-         if (!ValidateTitle()) {
-             ktt = false;
-             jQuery('#mainbody_contentbody_contentpage_txtTitle').focus();
      }
+	 
+     if (!ValidateTitle()) {
+    	 alert("loi title");
+             ktt = false;
+             $('#txt-title').focus();
+     }
+
+     if(ktt){
+    	 $('#btn-upload').addClass('upload_btn UploadSuccess'); //Hiển thị thông báo thành công
+    	 return true;
+     }else{
+    	 if($('#upload_error').html() == "")
+             $('#upload_error').html('Vui lòng điền thông tin còn thiếu.');
+    	 return false;
+     }
+     return true;
 }
 
 

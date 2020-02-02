@@ -404,18 +404,17 @@
 									</div>
 									<div class="form-group">
 										<div class="col-md-offset-2 col-md-10">
-											<span id="upload_error" class="text-error">Vui lòng nhập mô
-												tả chi tiết.</span>
+											<span id="upload_error" class="text-error">&nbsp;</span>
 										</div>
 									</div>
 									<br>
 									<div class="form-group">
 										<div class="col-md-offset-2 col-md-10 line-h">
-											<button type="button"
+											<a onclick=" return ValidateUpload();"
 												id="btn-upload"
 												class="button-orange" ><i
 												class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i>&nbsp;<span
-												id="mainbody_contentbody_contentpage_lblButton">TẢI LÊN NGAY</span></button>
+												id="mainbody_contentbody_contentpage_lblButton">TẢI LÊN NGAY</span></a>
 											&nbsp;&nbsp; <span class="text-error text-nowrap"
 												style="line-height: 40px;">(*) Là các trường bắt buộc nhập
 												nội dung</span>
