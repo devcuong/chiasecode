@@ -381,7 +381,7 @@ $image_crop = $('#image_demo').croppie({
   //edit
   var price = parseInt($("#txt-price-other").val(), 10);
   if (price > 99)
-      $('#chkCamKet').prop('checked', true);
+      $('#chk-cam-ket').prop('checked', true);
   ChangePrice();
   
 //count file selected
@@ -637,7 +637,7 @@ function ValidatePrice(){
     $('#txt-price-other').removeClass('validation-failed');
     $('#txt-price-other').removeClass('validation-success');
     $('#successPrice').hide();
-    if($('input:radio[name="option"]:checked').val() == 'Free'){
+    if($('input:radio[name="options"]:checked').val() == 'Free'){
     	$('#boxPrice').hide();
     	 $('#boxCheck').hide();
     	return true;
@@ -655,7 +655,6 @@ function ValidatePrice(){
             kt = false;
     	}
     }
-    
     if(kt){
     	  $('#txt-price-other').addClass('validation-success');
           $('#successPrice').show();
@@ -720,6 +719,7 @@ function ValidateUpload(){
 	}
 	//TH tự đặt giá
 	if(!ValidatePrice()){
+		alert(ValidatePrice());
 		$('#txt-price-other').focus();
         ktt = false;
 	}
@@ -762,12 +762,17 @@ function ValidateUpload(){
 // Submit form
 function SubmitForm(){
 	if(ValidateUpload()){
-	    var form = $("#frm-upload");
-	    var url = form.attr('action');
+	    var form = $("#frm-upload")[0];
+	    var indexForm = $("#frm-upload");
+	    var formData = new FormData(form);
+        event.preventDefault();
+	    var url = indexForm.attr('action');
 	    $.ajax({
 	           type: "POST",
 	           url: url,
-	           data: form.serialize(),
+	           processData: false,
+	           contentType: false,
+	           data: formData,
 	           success: function(data)
 	           {
 	               if(data){

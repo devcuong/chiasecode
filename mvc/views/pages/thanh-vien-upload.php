@@ -219,13 +219,13 @@
 										<label class="col-md-2 control-label bold">Đặt phí tải</label>
 										<div class="col-md-10">
 											<div class="btn-group" data-toggle="buttons">
-												<label class="btn btn-warning" id="lblCheckFree"> <input
+												<label class="btn btn-warning active" id="lblCheckFree"> <input
 													type="radio" name="options" id="idFree" value="Free"
-													checked=""> Miễn phí (0 Xu)
+													checked> Miễn phí (0 Xu)
 												</label> <label class="btn btn-warning" id="lblCheckCode"> <input
 													type="radio" name="options" id="idCode" value="Code"> Tham
 													khảo (2Xu - 99Xu)
-												</label> <label class="btn btn-warning active"
+												</label> <label class="btn btn-warning"
 													id="lblCheckCodeOK"> <input type="radio" name="options"
 													id="idCodeOK" value="CodeOK"> Chất lượng (&gt;= 100 Xu)
 												</label>
@@ -292,7 +292,7 @@
 												<div class="f_control">
 													<div class="f_upload_file">
 														Thêm ảnh... <input type="file" multiple="multiple"
-															name="file-upload-2"
+															name="fileupload2[]"
 															id="file-upload-2"
 															class="upload" accept="image/gif, image/jpeg, image/png">
 													</div>
