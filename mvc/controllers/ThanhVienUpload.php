@@ -40,7 +40,17 @@ class ThanhVienUpload extends Controller{
     }
     
     function UploadCode(){
-        if(isset($_POST["img-dai-dien-hidden"])) ;
+        if(isset($_POST["img-dai-dien-hidden"])){
+            $data = $_POST["img-dai-dien-hidden"];
+            $image_array_1 = explode(";", $data);
+            $image_array_2 = explode(",", $image_array_1[1]);
+            $data = base64_decode($image_array_2[1]);
+            $imageName = time() . '.png';
+            file_put_contents($imageName, $data);
+            echo true;
+        }
+            
+        
     }
     
 }
