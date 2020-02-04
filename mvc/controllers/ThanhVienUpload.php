@@ -1,5 +1,13 @@
 <?php
 class ThanhVienUpload extends Controller{
+    
+    public $CodeModel;
+    
+    public function __construct()
+    {
+        $this->CodeModel = $this->model("CodeModel");
+    }
+    
     function SayHi(){
         if(isset($_SESSION["username"])){
             $this->view("cat-template", ["Page"=>"thanh-vien-upload"]);
@@ -109,7 +117,8 @@ class ThanhVienUpload extends Controller{
         if(isset($_POST["chk-require"])){
             $daDocDieuKhoan = $_POST["chk-require"];
         }
-    
+        
+        $kq = $this->CodeModel->InsertCode($imageDaiDien, $tieuDeCode, $danhMuc);
         echo $moTaChiTiet;
     }
     
