@@ -292,7 +292,7 @@
 												<div class="f_control">
 													<div class="f_upload_file">
 														Thêm ảnh... <input type="file" multiple="multiple"
-															name="fileupload2[]"
+															name="file-upload-2[]"
 															id="file-upload-2"
 															class="upload" accept="image/gif, image/jpeg, image/png">
 													</div>

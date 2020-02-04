@@ -762,6 +762,9 @@ function ValidateUpload(){
 // Submit form
 function SubmitForm(){
 	if(ValidateUpload()){
+		for ( instance in CKEDITOR.instances ) {
+	            CKEDITOR.instances[instance].updateElement();
+	    }
 	    var form = $("#frm-upload")[0];
 	    var indexForm = $("#frm-upload");
 	    var formData = new FormData(form);
