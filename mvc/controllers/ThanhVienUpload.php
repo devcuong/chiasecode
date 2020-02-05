@@ -76,6 +76,7 @@ class ThanhVienUpload extends Controller{
         }
         if(isset($_POST["ddl-category-lang"])){
             $danhMuc = trim($_POST["ddl-category-lang"]);
+            $danhMuc = intval($danhMuc);
         }
         if(isset($_POST["txt-subtitle"])){
             $moTaNgan = trim($_POST["txt-subtitle"]);
@@ -91,9 +92,14 @@ class ThanhVienUpload extends Controller{
         }
         if(isset($_POST["txt-price-other"])){
             $phiTai = trim($_POST["txt-price-other"]);
+            $phiTai = intval($phiTai);
         }
         if(isset($_POST["chk-cam-ket"])){
             $camKetHoTro = $_POST["chk-cam-ket"];
+            $camKetHoTro = intval($camKetHoTro);
+        }
+        else {
+            $camKetHoTro = 0;
         }
         $total = count($_FILES['file-upload-2']['name']);
         if($total > 0){
@@ -116,10 +122,11 @@ class ThanhVienUpload extends Controller{
         }
         if(isset($_POST["chk-require"])){
             $daDocDieuKhoan = $_POST["chk-require"];
+            $daDocDieuKhoan = intval($daDocDieuKhoan);
         }
         
-        $kq = $this->CodeModel->InsertCode($imageDaiDien, $tieuDeCode, $danhMuc);
-        echo $moTaChiTiet;
+        $kq = $this->CodeModel->InsertCode($imageDaiDien, $tieuDeCode, $danhMuc, $moTaNgan, $linkCode, $linkDemo, $luaChonPhiTai, $phiTai, $camKetHoTro, $hinhAnhCode, $moTaChiTiet, $huongDanCaiDat, $tuKhoa, $daDocDieuKhoan, intval($_SESSION['userid']), time());
+        echo $kq;
     }
     
 }

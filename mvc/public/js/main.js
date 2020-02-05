@@ -779,7 +779,7 @@ function SubmitForm(){
 	           success: function(data)
 	           {
 	               if(data){
-	            	   alert(data);
+	            	   $('#upload_error').html(data);
 	               }else{
 	            	   alert("THẤT BẠI");
 	               }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th1 26, 2020 lúc 05:14 AM
+-- Thời gian đã tạo: Th2 05, 2020 lúc 04:50 AM
 -- Phiên bản máy phục vụ: 10.4.10-MariaDB
 -- Phiên bản PHP: 7.3.12
 
@@ -30,13 +30,25 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `code` (
   `id` int(11) NOT NULL,
-  `tencode` varchar(100) NOT NULL,
+  `tieudecode` varchar(100) NOT NULL,
   `luotxem` int(11) NOT NULL,
-  `luotsub` int(11) NOT NULL,
+  `luottai` int(11) NOT NULL,
+  `luaChonPhiTai` varchar(100) NOT NULL,
   `phitai` int(11) NOT NULL,
-  `anhdemo` varchar(200) NOT NULL,
+  `anhdaidien` varchar(200) NOT NULL,
   `danhmuc` int(11) NOT NULL,
   `loaiungdung` int(11) NOT NULL,
+  `motangan` text NOT NULL,
+  `linkcode` varchar(200) NOT NULL,
+  `linkdemo` varchar(100) NOT NULL,
+  `camkethotro` int(2) NOT NULL,
+  `hinhanhcode` text NOT NULL,
+  `motachitiet` text NOT NULL,
+  `huongdancaidat` text NOT NULL,
+  `tukhoa` text NOT NULL,
+  `dadocdieukhoan` int(2) NOT NULL,
+  `thanhvienupload` int(11) NOT NULL,
+  `duocduyet` int(1) NOT NULL,
   `ngayupdate` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -44,19 +56,20 @@ CREATE TABLE `code` (
 -- Đang đổ dữ liệu cho bảng `code`
 --
 
-INSERT INTO `code` (`id`, `tencode`, `luotxem`, `luotsub`, `phitai`, `anhdemo`, `danhmuc`, `loaiungdung`, `ngayupdate`) VALUES
-(1, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, 300, 'https://sharecode.vn/FilesUpload/Code/source-code-bao-cao-xay-dung-phan-mem-quan-ly-luong-nhan-vien-172918.jpg', 16, 1, '2019-12-21 02:00:00'),
-(2, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 16, 2, '2019-12-21 03:00:00'),
-(3, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 16, 2, '0000-00-00 00:00:00'),
-(4, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 18, 2, '0000-00-00 00:00:00'),
-(5, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 19, 1, '0000-00-00 00:00:00'),
-(6, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 20, 1, '0000-00-00 00:00:00'),
-(7, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 21, 1, '0000-00-00 00:00:00'),
-(8, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 22, 1, '0000-00-00 00:00:00'),
-(9, 'Mã nguồn code game tôm cua bầu 2019', 77, 0, 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 23, 3, '0000-00-00 00:00:00'),
-(10, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 24, 3, '0000-00-00 00:00:00'),
-(11, 'Mã nguồn code game tôm cua bầu 2019', 35, 0, 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 25, 3, '0000-00-00 00:00:00'),
-(12, 'Mã nguồn code game tôm cua bầu 2019', 411, 0, 300, 'https://sharecode.vn/FilesUpload/Code/source-code-bao-cao-xay-dung-phan-mem-quan-ly-luong-nhan-vien-172918.jpg', 26, 1, '0000-00-00 00:00:00');
+INSERT INTO `code` (`id`, `tieudecode`, `luotxem`, `luottai`, `luaChonPhiTai`, `phitai`, `anhdaidien`, `danhmuc`, `loaiungdung`, `motangan`, `linkcode`, `linkdemo`, `camkethotro`, `hinhanhcode`, `motachitiet`, `huongdancaidat`, `tukhoa`, `dadocdieukhoan`, `thanhvienupload`, `duocduyet`, `ngayupdate`) VALUES
+(1, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://sharecode.vn/FilesUpload/Code/source-code-bao-cao-xay-dung-phan-mem-quan-ly-luong-nhan-vien-172918.jpg', 16, 1, '', '', '', 0, '', '', '', '', 0, 0, 0, '2019-12-21 02:00:00'),
+(2, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 16, 2, '', '', '', 0, '', '', '', '', 0, 0, 0, '2019-12-21 03:00:00'),
+(3, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 16, 2, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
+(4, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 18, 2, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
+(5, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 19, 1, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
+(6, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 20, 1, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
+(7, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 21, 1, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
+(8, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 22, 1, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
+(9, 'Mã nguồn code game tôm cua bầu 2019', 77, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 23, 3, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
+(10, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 24, 3, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
+(11, 'Mã nguồn code game tôm cua bầu 2019', 35, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 25, 3, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
+(12, 'Mã nguồn code game tôm cua bầu 2019', 411, 0, '', 300, 'https://sharecode.vn/FilesUpload/Code/source-code-bao-cao-xay-dung-phan-mem-quan-ly-luong-nhan-vien-172918.jpg', 26, 1, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
+(13, 'UPLOAD CODE CHIA Su1eba & KIu1ebeM TIu1ec0N Cu00d9NG SHARECODE.VN', 0, 0, 'Free', 0, '1580862755.png', 23, 0, 'UPLOAD CODE CHIA Su1eba & KIu1ebeM TIu1ec0N Cu00d9NG SHARECODE.VNUPLOAD CODE CHIA Su1eba & KIu1ebeM TIu1ec0N Cu00d9NG SHARECODE.VN', 'https://sharecode.vn/thanh-vien-upload.htm', 'https://sharecode.vn/thanh-vien-upload.htm', 0, ',[bat-buoc-bo-sung-video-cai-dat-file-trong-code-den-khi-chay]-source-code-game-kiem-vu-h5-dang-cuc-hot-105012.jpg,[serverclient]-vo-lam-truyen-ky-mobile-19-phai-day-du-web-api-214535.jpg,[vui-long-kiem-tra-lai-link-download-khong-chinh-xac]-30-source-code-ma-nguon-wordpress-phong-phu-load-nhe-chuan-seo-112922.jpg,[xac-nhan-nguon-chinh-thong-phan-hoi-qua-email]-rabbit-skater-unity-game-source-code-92744.jpg', '<p>UPLOAD CODE CHIA Su1eba &amp; KIu1ebeM TIu1ec0N C&Ugrave;NG SHARECODE.VN</p>', '', 'abc,cba,ggf', 1, 56, 0, '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -135,12 +148,21 @@ CREATE TABLE `thanhvien` (
 --
 
 INSERT INTO `thanhvien` (`id`, `password`, `email`, `hoten`, `username`, `sdt`) VALUES
-(17, '$2y$10$3K4avNzal/u4YTDEq5V53eCce63sGoFM7SdACJ/QmkVSLEhoWjJVq', 'cuong.dh8c@gmail.com', 'admin aa', 'admin', '0337085567'),
-(18, '$2y$10$vzsOUJIRnPgR9mLB7Pbs8uyexLP1WTrx66cbCBO8kflqNaz1uG1aO', 'cuong.doan.mail@gmail.com', 'admin', 'admin555', '0337085569');
+(52, '$2y$10$Y7SL6NnaBCF5trOWawj/juu80oVhCzmNFzpV9czkjO35jT6FHbpGS', 'abcdef@gmail.com', 'Tran Tam', 'TranTam15035', '0337085567'),
+(53, '$2y$10$oQPqYKEGqz0c3MbWQ3j1AuBxm07OK7ThV6jGTq3GOy4jdbMWGu0ve', 'abcdef@gmail.com', 'Tran Tam', 'TranTam150366', '0337085585'),
+(54, '$2y$10$7BTTqX5e1YJBaLkSsX/g9eB9LVdJZm0jNKC2S5VSFbx70lYMrvaai', 'abcdef@gmail.com', 'Tran Tam', 'TranTam1503', '0337085569'),
+(55, '$2y$10$BeLpNik60BA7qVbu0h.6QOHTdhmvOmfwhVQJKgj7hg6E6MBdmtXry', 'teoem@gmail.com', 'Trần Tâm', 'TranTam1555', '0337085654'),
+(56, '$2y$10$BQ9sSUT9kyOWjb.bD6/9/OAI9y161O/enLDhY2Bcv058zHm9BLRRi', 'viettxt@gmail.com', 'Tran Tam', 'TranTam15555', '0337085578');
 
 --
 -- Chỉ mục cho các bảng đã đổ
 --
+
+--
+-- Chỉ mục cho bảng `code`
+--
+ALTER TABLE `code`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Chỉ mục cho bảng `danhmuc`
@@ -165,6 +187,12 @@ ALTER TABLE `thanhvien`
 --
 
 --
+-- AUTO_INCREMENT cho bảng `code`
+--
+ALTER TABLE `code`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
 -- AUTO_INCREMENT cho bảng `danhmuc`
 --
 ALTER TABLE `danhmuc`
@@ -180,7 +208,7 @@ ALTER TABLE `sinhvien`
 -- AUTO_INCREMENT cho bảng `thanhvien`
 --
 ALTER TABLE `thanhvien`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

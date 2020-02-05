@@ -13,7 +13,7 @@
         
         /*LẤY USER BẰNG EMAIL VÀ PASSWORD*/
         public function LayThanhVienByEmail($email, $password){
-            $qr = "SELECT password, username FROM thanhvien WHERE email='$email'";
+            $qr = "SELECT id, password, username FROM thanhvien WHERE email='$email'";
             $rows = mysqli_query($this->con, $qr);
             $kq=false;
             $stringReturn = "";
@@ -21,6 +21,7 @@
                 if (password_verify($password, $r["password"])) {
                      $stringReturn = $r["password"];
                      $_SESSION['username'] = $r["username"];
+                     $_SESSION['userid'] = $r["id"];
                      $kq=true;
                 } 
             }
@@ -31,6 +32,7 @@
         public function XoaSessionDangNhap()
         {
             unset($_SESSION['username']);
+            unset($_SESSION['userid']);
             return true;
         
         }
