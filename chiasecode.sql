@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th2 05, 2020 lúc 04:50 AM
+-- Thời gian đã tạo: Th2 05, 2020 lúc 10:01 AM
 -- Phiên bản máy phục vụ: 10.4.10-MariaDB
 -- Phiên bản PHP: 7.3.12
 
@@ -49,7 +49,7 @@ CREATE TABLE `code` (
   `dadocdieukhoan` int(2) NOT NULL,
   `thanhvienupload` int(11) NOT NULL,
   `duocduyet` int(1) NOT NULL,
-  `ngayupdate` datetime NOT NULL
+  `ngayupdate` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -57,8 +57,8 @@ CREATE TABLE `code` (
 --
 
 INSERT INTO `code` (`id`, `tieudecode`, `luotxem`, `luottai`, `luaChonPhiTai`, `phitai`, `anhdaidien`, `danhmuc`, `loaiungdung`, `motangan`, `linkcode`, `linkdemo`, `camkethotro`, `hinhanhcode`, `motachitiet`, `huongdancaidat`, `tukhoa`, `dadocdieukhoan`, `thanhvienupload`, `duocduyet`, `ngayupdate`) VALUES
-(1, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://sharecode.vn/FilesUpload/Code/source-code-bao-cao-xay-dung-phan-mem-quan-ly-luong-nhan-vien-172918.jpg', 16, 1, '', '', '', 0, '', '', '', '', 0, 0, 0, '2019-12-21 02:00:00'),
-(2, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 16, 2, '', '', '', 0, '', '', '', '', 0, 0, 0, '2019-12-21 03:00:00'),
+(1, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://sharecode.vn/FilesUpload/Code/source-code-bao-cao-xay-dung-phan-mem-quan-ly-luong-nhan-vien-172918.jpg', 16, 1, '', '', '', 0, '', '', '', '', 0, 0, 0, '2019-12-20 19:00:00'),
+(2, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 16, 2, '', '', '', 0, '', '', '', '', 0, 0, 0, '2019-12-20 20:00:00'),
 (3, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 16, 2, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
 (4, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 18, 2, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
 (5, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 19, 1, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
@@ -69,7 +69,7 @@ INSERT INTO `code` (`id`, `tieudecode`, `luotxem`, `luottai`, `luaChonPhiTai`, `
 (10, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 24, 3, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
 (11, 'Mã nguồn code game tôm cua bầu 2019', 35, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 25, 3, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
 (12, 'Mã nguồn code game tôm cua bầu 2019', 411, 0, '', 300, 'https://sharecode.vn/FilesUpload/Code/source-code-bao-cao-xay-dung-phan-mem-quan-ly-luong-nhan-vien-172918.jpg', 26, 1, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
-(13, 'UPLOAD CODE CHIA Su1eba & KIu1ebeM TIu1ec0N Cu00d9NG SHARECODE.VN', 0, 0, 'Free', 0, '1580862755.png', 23, 0, 'UPLOAD CODE CHIA Su1eba & KIu1ebeM TIu1ec0N Cu00d9NG SHARECODE.VNUPLOAD CODE CHIA Su1eba & KIu1ebeM TIu1ec0N Cu00d9NG SHARECODE.VN', 'https://sharecode.vn/thanh-vien-upload.htm', 'https://sharecode.vn/thanh-vien-upload.htm', 0, ',[bat-buoc-bo-sung-video-cai-dat-file-trong-code-den-khi-chay]-source-code-game-kiem-vu-h5-dang-cuc-hot-105012.jpg,[serverclient]-vo-lam-truyen-ky-mobile-19-phai-day-du-web-api-214535.jpg,[vui-long-kiem-tra-lai-link-download-khong-chinh-xac]-30-source-code-ma-nguon-wordpress-phong-phu-load-nhe-chuan-seo-112922.jpg,[xac-nhan-nguon-chinh-thong-phan-hoi-qua-email]-rabbit-skater-unity-game-source-code-92744.jpg', '<p>UPLOAD CODE CHIA Su1eba &amp; KIu1ebeM TIu1ec0N C&Ugrave;NG SHARECODE.VN</p>', '', 'abc,cba,ggf', 1, 56, 0, '0000-00-00 00:00:00');
+(25, 'How do I get the current date and time in PHP?', 0, 0, 'CodeOK', 100, '1580879087.png', 23, 0, 'How do I get the current date and time in PHP?How do I get the current date and time in PHP?', 'https://stackoverflow.com/questions/5632662/saving-timestamp-in-mysql-table-using-php', 'https://stackoverflow.com/questions/5632662/saving-timestamp-in-mysql-table-using-php', 1, ',1580220083.png,1580221537.png,1580226804.png,sample-image.jpg', '&lt;p&gt;How do I get the current date and time in PHP?How do I get the current date and time in PHP?&lt;/p&gt;', '', 'jkkl,kjh,oi[', 1, 22, 0, '2020-02-04 23:04:47');
 
 -- --------------------------------------------------------
 
@@ -190,7 +190,7 @@ ALTER TABLE `thanhvien`
 -- AUTO_INCREMENT cho bảng `code`
 --
 ALTER TABLE `code`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT cho bảng `danhmuc`
