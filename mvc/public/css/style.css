@@ -2790,7 +2790,7 @@ span.notify-right {
     z-index: 9999;
     right: 10px;
     bottom: 32px;
-    background: #8C6635;
+    background: #ff0000;
     display: none;
     border-radius: 17px;
 }
@@ -2868,11 +2868,12 @@ span.notify-right {
 }
 
 #left_column .block {
-    background: #faf8f1;
+    background: #fff;
     border-radius: 4px;
 }
 
 #left_column .block .title_block {
+	background-color:#ff0000;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
@@ -4747,7 +4748,6 @@ i.BAB {
 .box-bg {
     background: #fff;
     border-radius: 4px;
-    border: 1px solid #000;
 }
 
 .box-bg .text-error {
@@ -5904,4 +5904,38 @@ i.BAB {
 }
 .message-red{
 	color: red;
+}
+
+/*PROFILE*/
+.pro-link-first {
+    margin-top: 20px;
+}
+.pro-link {
+    line-height: 22px;
+    padding: 0px 15px;
+}
+.pro-list {
+    background: #EEEEEE;
+    padding: 10px 0px;
+    margin-top: 10px;
+}
+.pro-list li {
+    height: 32px;
+    font-size: 14px;
+    text-align: center;
+    background: #faf8f1;
+    margin: 5px;
+    border: 1px solid #d5c6ae;
+}
+.pro-list li a {
+    display: block;
+    line-height: 30px;
+	color: #000;
+}
+.pro-list li.pro-select {
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+}
+.pro-list li.pro-select a{
+    color: #fff;
 }

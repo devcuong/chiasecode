@@ -124,8 +124,8 @@ class ThanhVienUpload extends Controller{
             $daDocDieuKhoan = $_POST["chk-require"];
             $daDocDieuKhoan = intval($daDocDieuKhoan);
         }
-        
-        $kq = $this->CodeModel->InsertCode($imageDaiDien, $tieuDeCode, $danhMuc, $moTaNgan, $linkCode, $linkDemo, $luaChonPhiTai, $phiTai, $camKetHoTro, $hinhAnhCode, $moTaChiTiet, $huongDanCaiDat, $tuKhoa, $daDocDieuKhoan, intval($_SESSION['userid']), time());
+        $created_date = date("Y-m-d H:i:s");
+        $kq = $this->CodeModel->InsertCode($imageDaiDien, $tieuDeCode, $danhMuc, $moTaNgan, $linkCode, $linkDemo, $luaChonPhiTai, $phiTai, $camKetHoTro, $hinhAnhCode, $moTaChiTiet, $huongDanCaiDat, $tuKhoa, $daDocDieuKhoan, intval($_SESSION['userid']), $created_date);
         echo $kq;
     }
     
