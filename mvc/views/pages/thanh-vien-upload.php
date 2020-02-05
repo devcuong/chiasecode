@@ -434,7 +434,7 @@
         </a>
     </div>
     <div class="pro-right">
-        <h2 id="mainbody_contentbody_ucProfile_FullName" class="pro-title green bold">sen đỏ TV</h2>
+        <h2 id="pro-title" class="pro-title red bold">sen đỏ TV</h2>
         <div class="line"></div>
         <div class="pro-money">
             <div>Tài khoản&nbsp;<strong id="mainbody_contentbody_ucProfile_Money">0</strong> Xu</div>
@@ -541,5 +541,26 @@
      </div>
     </div>
 </div>
-
+<div class="modal fade" id="ignismyModal" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label=""><span>×</span></button>
+                     </div>
+					
+                    <div class="modal-body">
+                       
+						<div class="thank-you-pop">
+							<img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">
+							<h1>UPLOAD THÀNH CÔNG!</h1>
+							<p>code của bạn đã upload thành công lên hệ thống, code sẽ hiển thị sau khi ban quản trị kiểm duyệt</p>
+							<h3 class="cupon-pop">TÀI KHOẢN: <span><?php echo $_SESSION["username"] ?></span></h3>
+							
+ 						</div>
+                         
+                    </div>
+					
+                </div>
+            </div>
+        </div>
 
