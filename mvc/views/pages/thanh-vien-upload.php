@@ -29,7 +29,7 @@
 			<div class="center_column col-xs-12 col-sm-9" id="center_column">
 				<div class="box-bg">
 					<div class="upload_form">
-						<h1 class="title3 bold text-center up-title">UPLOAD CODE CHIA SẺ
+						<h1 class="title3 bold text-center up-title" id="up-title">UPLOAD CODE CHIA SẺ
 							&amp; KIẾM TIỀN CÙNG CODE4V</h1>
 						<div class="up-note hidden-xs">
 							<div class="col-md-6 up-left">

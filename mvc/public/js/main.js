@@ -779,7 +779,7 @@ function SubmitForm(){
 	           success: function(data)
 	           {
 	               if(data){
-	            	   $('#upload_error').html(data);
+	            	   $( "<div class='alert alert-success'>UPLOAD THÀNH CÔNG</div>" ).insertBefore($('#up-title'));
 	               }else{
 	            	   alert("THẤT BẠI");
 	               }
