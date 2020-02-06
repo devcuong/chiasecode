@@ -2,6 +2,9 @@
 <?php require_once "./mvc/core/Config.php"?>
 <div id="view-content-page" class="view-content-page">
 	<div class="container" id="columns">
+	 <?php 
+                                    while($row = mysqli_fetch_array($data["InforSourceCode"])){
+                                        ?>
 		<div class="breadcrumb clearfix" itemscope=""
 			itemtype="http://schema.org/BreadcrumbList">
 			<span itemprop="itemListElement" itemscope=""
@@ -58,14 +61,11 @@
 
 						</div>
 						<div class="col-sm-7 dt-center">
-							<h1 id="mainbody_contentbody_TitleCode" class="dt-title bold"
-								itemprop="name">Source code website bán máy tính laptop
-								Wordpress</h1>
+							<h1 id="title-code" class="dt-title bold"
+								itemprop="name"><?php echo $row["tieudecode"] ?></h1>
 							<span class="red dt-title bold text-nowrap">[Mã code <span
-								id="mainbody_contentbody_Code" itemprop="productID">19470</span>]
+								id="mainbody_contentbody_Code" itemprop="productID"><?php echo $row["id"] ?></span>]
 							</span>
-							<meta itemprop="mpn" content="19470">
-							<meta itemprop="sku" content="19470">
 							<div class="row title5">
 								<div class="col-md-6 col-lg-7 dt-sta-vie">
 									<div class="rateit rate-po rateit-bg" data-rateit-value="5"
@@ -75,26 +75,15 @@
 											aria-controls="rateit-range-2" style="display: none;">
 											<span></span>
 										</button>
-										<div id="rateit-range-2" class="rateit-range" tabindex="0"
-											role="slider" aria-label="rating" aria-owns="rateit-reset-2"
-											aria-valuemin="0" aria-valuemax="5" aria-valuenow="5"
-											aria-readonly="true" style="width: 80px; height: 16px;">
-											<div class="rateit-empty"></div>
-											<div class="rateit-selected"
-												style="height: 16px; width: 80px;"></div>
-											<div class="rateit-hover" style="height: 16px;"></div>
-										</div>
 									</div>
-									&nbsp;&nbsp;<span id="mainbody_contentbody_totalRate"
-										class="text-nowrap">1 Đánh giá</span>&nbsp;&nbsp; <a
-										href="#danh-gia" class="text-nowrap"><i class="fa fa-pencil"
-										aria-hidden="true"></i>&nbsp;Viết đánh giá</a>
+									<span id="total-rate"
+										class="text-nowrap">1 Đánh giá</span>
 								</div>
 								<div class="col-md-6 col-lg-5 dt-sta-vie2 red">
 									<i class="fa fa-download" aria-hidden="true"></i>&nbsp;<b
-										id="mainbody_contentbody_DownloadCount">7</b>&nbsp;&nbsp;&nbsp;&nbsp;
+										id="download-count"><?php echo $row["luottai"] ?></b>&nbsp;&nbsp;&nbsp;&nbsp;
 									<span class="dt-vie-ic">&nbsp;<b
-										id="mainbody_contentbody_Views">159159</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
+										id="views"><?php echo $row["luotxem"] ?></b></span>&nbsp;&nbsp;&nbsp;&nbsp;
 									<span class="text-nowrap"><i class="fa fa-heart"
 										aria-hidden="true"></i>&nbsp;<b
 										id="mainbody_contentbody_Likes">11</b></span>
@@ -104,9 +93,11 @@
 							<div class="row">
 								<div class="col-sm-10 col-md-8 dt-price">
 									<span class="bold">Phí tải: <span
-										id="mainbody_contentbody_Copyright" class="green">300 Xu</span></span>
-									<em id="mainbody_contentbody_lblQuydoi" class="txt-em">(1Xu =
-										1.000đ)</em>
+										id="mainbody_contentbody_Copyright" class="green"><?php if(intval($row["phitai"]) == 0)
+										{echo "Miễn Phí";}
+										else
+										{echo $row["phitai"]." Xu "."(1Xu =
+										1.000đ)";}    ?> </span></span>
 								</div>
 								<div class="col-sm-2 col-md-4 dt-pri-btn text-center">
 									<a id="mainbody_contentbody_btnLike" title="Yêu thích code này"
@@ -125,8 +116,7 @@
 									<div class="dt-col">Danh mục</div>
 									<div itemprop="material">
 										<a href="/ngon-ngu-lap-trinh/wordpress-29.htm"
-											id="mainbody_contentbody_Lang2" class="red"
-											target="_blank">WordPress</a>
+											id="mainbody_contentbody_Lang2" class="red" target="_blank">WordPress</a>
 									</div>
 									<div class="dt-col">Thể loại</div>
 									<div itemprop="category">
@@ -175,20 +165,43 @@
 							</div>
 							<div class="dt-chk red">
 
-								<div id="chk-codeok" class="it-chk">Cam kết
-									hỗ trợ</div>
+								<div id="chk-codeok" class="it-chk">Cam kết hỗ trợ</div>
 								<div class="it-chk">Không chứa mã độc</div>
-								<div id="chk-demo" class="it-chk">Có demo
-									thực tế</div>
-								<div id="chk-config" class="it-chk">Có hướng
-									dẫn cài đặt</div>
+								<div id="chk-demo" class="it-chk">Có demo thực tế</div>
+								<div id="chk-config" class="it-chk">Có hướng dẫn cài đặt</div>
 
 							</div>
 						</div>
 						<div class="col-sm-5 col-sm-pull-7">
-							<div class="text-center dt-same">
-								<a href="#code-giong"><span class="hidden-sm">Xem thêm </span><strong>CODE
-										GẦN GIỐNG</strong></a>
+							<div class="dt-img-small">
+								<img
+									src="https://topcode.vn/FilesUpload/CodeUpload/share-code-shop-cong-nghe-bang-opencart-3.0-tieng-viet-174739.jpg"
+									alt="code shop game,code opencart 3.x full,code shop php full"
+									title="Download Share code shop công nghệ bằng Opencart 3.0 tiếng Việt ngay!">
+							</div>
+							<div class="dt-img-small">
+								<img
+									src="https://topcode.vn/FilesUpload/CodeUpload/share-code-shop-cong-nghe-bang-opencart-3.0-tieng-viet-174740.jpg"
+									alt="code shop game,code opencart 3.x full,code shop php full"
+									title="Download Share code shop công nghệ bằng Opencart 3.0 tiếng Việt ngay!">
+							</div>
+							<div class="dt-img-small">
+								<img
+									src="https://topcode.vn/FilesUpload/CodeUpload/share-code-shop-cong-nghe-bang-opencart-3.0-tieng-viet-174742.jpg"
+									alt="code shop game,code opencart 3.x full,code shop php full"
+									title="Download Share code shop công nghệ bằng Opencart 3.0 tiếng Việt ngay!">
+							</div>
+							<div class="dt-img-small">
+								<img
+									src="https://topcode.vn/FilesUpload/CodeUpload/share-code-shop-cong-nghe-bang-opencart-3.0-tieng-viet-174741.jpg"
+									alt="code shop game,code opencart 3.x full,code shop php full"
+									title="Download Share code shop công nghệ bằng Opencart 3.0 tiếng Việt ngay!">
+							</div>
+							<div class="dt-img-small">
+								<img
+									src="https://topcode.vn/FilesUpload/CodeUpload/share-code-shop-cong-nghe-bang-opencart-3.0-tieng-viet-174741.jpg"
+									alt="code shop game,code opencart 3.x full,code shop php full"
+									title="Download Share code shop công nghệ bằng Opencart 3.0 tiếng Việt ngay!">
 							</div>
 						</div>
 					</div>
@@ -287,30 +300,24 @@
 									class="dt-max-img">
 							</div>
 							<br>
-
 						</div>
-						<p class="alignright" id="huong-dan-cai-dat">Nguồn: code4v.com</p>
 					</div>
 					<br> <br> <span class="dt-box-title bold">HƯỚNG DẪN CÀI ĐẶT</span>
 					<div class="dt-box entry-detail">
-						<p
-							style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; background: transparent; outline: 0px; vertical-align: top; color: rgb(126, 89, 42); font-family: Tahoma, Arial, sans-serif;">
+						<p>
 							Khi tải về sẽ có 2 file là source và database</p>
-						<p
-							style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; background: transparent; outline: 0px; vertical-align: top; color: rgb(126, 89, 42); font-family: Tahoma, Arial, sans-serif;">
+						<p>
 							<strong
 								style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; background: transparent; outline: 0px; vertical-align: top;">Bước
 								1:</strong>&nbsp;Upload source lên hosting và import database
 						</p>
-						<p
-							style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; background: transparent; outline: 0px; vertical-align: top; color: rgb(126, 89, 42); font-family: Tahoma, Arial, sans-serif;">
+						<p>
 							<strong
 								style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; background: transparent; outline: 0px; vertical-align: top;">Bước
 								2:</strong>&nbsp;Cấu hình lại thông tin database cho kết nối mã
 							nguồn và hosting
 						</p>
-						<p
-							style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; background: transparent; outline: 0px; vertical-align: top; color: rgb(126, 89, 42); font-family: Tahoma, Arial, sans-serif;">
+						<p>
 							<strong
 								style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; background: transparent; outline: 0px; vertical-align: top;">Bước
 								3:</strong>&nbsp;Truy cập vào database, mở tab wp_options và
@@ -327,15 +334,13 @@
 								<h2 id="file-name" class="dt-file">
 									website.rar <span>[111 MB]</span>
 								</h2>
-								<div id="status" class="dt-true-ic bold">File
-									đã kiểm duyệt</div>
+								<div id="status" class="dt-true-ic bold">File đã kiểm duyệt</div>
 								<a id="code-giong" class="aorange  text-nowrap dt-action"
 									role="button" data-toggle="collapse" href="#collError"
 									aria-expanded="false" aria-controls="collError"><i
 									class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;Báo lỗi
 									(or) Gửi hỗ trợ</a> &nbsp;&nbsp;&nbsp; <a
-									href="/bao-code-trung.htm?code=19470"
-									id="lnk-copyright"
+									href="/bao-code-trung.htm?code=19470" id="lnk-copyright"
 									class="aorange text-nowrap dt-action"><i
 									class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;Báo
 									vi phạm bản quyền</a>
@@ -346,8 +351,7 @@
 								<a onclick="return false;" id="btn-link-main"
 									title="Download Source code website bán máy tính laptop Wordpress ngay!"
 									class="btn2 button-down2" data-target="#Message_modal"
-									role="button" data-toggle="modal"><div
-										class="btn-box">
+									role="button" data-toggle="modal"><div class="btn-box">
 										<div class="btn-ic"></div>
 										<div class="btn-txt bold">
 											DOWNLOAD<br> <span id="mainbody_contentbody_divPrice2">(300
@@ -359,8 +363,7 @@
 							<div class="col-xs-12">
 								<div class="collapse" id="coll-error">
 									<div class="well">
-										<textarea name="txt-error"
-											rows="3" cols="20" id="txt-error"
+										<textarea name="txt-error" rows="3" cols="20" id="txt-error"
 											class="form-control send-sp"
 											placeholder="Nhập mô tả lỗi (or) nội dung yêu cầu hỗ trợ..."></textarea>
 										<input type="submit"
@@ -456,12 +459,13 @@
 					<div class="block left-module" id="boxSlogan">
 						<div class="block_content">
 							<div class="safe-img">
-								<img src="https://sharecode.vn/assets/images/safe.png" style="border: none;"
+								<img src="https://sharecode.vn/assets/images/safe.png"
+									style="border: none;"
 									alt="Mua code qua sharecode.vn để được bảo vệ">
 							</div>
 							<div class="safe-txt bold">
-								BẠN HÃY MUA CODE QUA <span class="red">CODE4V.COM</span> ĐỂ
-								ĐƯỢC <span class="red">BẢO VỆ</span>
+								BẠN HÃY MUA CODE QUA <span class="red">CODE4V.COM</span> ĐỂ ĐƯỢC
+								<span class="red">BẢO VỆ</span>
 							</div>
 						</div>
 					</div>
@@ -481,7 +485,7 @@
 						</div>
 						<div class="pro-right">
 							<a href="/thanh-vien/luan-nguyen-151826.htm"
-								id="mainbody_contentbody_UserName" target="_blank"
+								id="username" target="_blank"
 								class="agreen bold title4 pro-title" itemprop="url"
 								title="Thành viên Nguyễn Minh Luân"><span
 								id="mainbody_contentbody_NameText" itemprop="name">Boombi</span></a>
@@ -535,8 +539,8 @@
 									title="Lưu lại code cho tôi" class="SaveSuccess"
 									href="javascript:__doPostBack('ctl00$ctl00$mainbody$contentbody$btnSave','')"><div
 										style="width: 50%; text-align: center; float: left; padding: 0px 20px">
-										<img src="https://sharecode.vn/assets/images/share-save.png"><br>Lưu lại code cho
-										tôi
+										<img src="https://sharecode.vn/assets/images/share-save.png"><br>Lưu
+										lại code cho tôi
 									</div></a>
 
 							</div>
@@ -584,7 +588,7 @@
 											<a
 												href="/source-code/30-source-code-ma-nguon-wordpress-phong-phu-load-nhe-chuan-seo-24078.htm">
 												<img
-												src="/FilesUpload/Code/[vui-long-kiem-tra-lai-link-download-khong-chinh-xac]-30-source-code-ma-nguon-wordpress-phong-phu-load-nhe-chuan-seo-112922.jpg"
+												src="http://sharecode.vn/FilesUpload/Code/[vui-long-kiem-tra-lai-link-download-khong-chinh-xac]-30-source-code-ma-nguon-wordpress-phong-phu-load-nhe-chuan-seo-112922.jpg"
 												alt="trọn bộ 30 code web wordpress,code wordpress bán hàng,code wordpress thiết kế web,code web mỹ phẩm"
 												title="Download 30 Source code mã nguồn WordPress phong phú load nhẹ chuẩn SEO">
 											</a>
@@ -639,7 +643,7 @@
 											<a
 												href="/source-code/full-code-thuong-mai-dien-tu-moi-24063.htm">
 												<img
-												src="/FilesUpload/Code/ban-full-code-website-thuong-mai-dien-tu-moi-103256.jpg"
+												src="http://sharecode.vn/FilesUpload/Code/ban-full-code-website-thuong-mai-dien-tu-moi-103256.jpg"
 												alt="điện tử,thương mại,code thương mại  điện tử,Share code thương mại điện tử,full code thương mại điện tử,Code thương mại điện tử"
 												title="Download Bán full code website thương mại điện tử mới">
 											</a>
@@ -694,7 +698,7 @@
 											<a
 												href="/source-code/share-code-tin-tuc-wordpress-giong-quantrimangcom-25266.htm">
 												<img
-												src="/FilesUpload/Code/share-code-tin-tuc-wordpress-giong-quantrimang.com-152153.jpg"
+												src="http://sharecode.vn/FilesUpload/Code/share-code-tin-tuc-wordpress-giong-quantrimang.com-152153.jpg"
 												alt="code wordpress tin tức chuẩn SEO,code tin tức,code wordpress,code tin tức wordpress"
 												title="Download Share code tin tức wordpress giống Quantrimang.com">
 											</a>
@@ -749,7 +753,7 @@
 											<a
 												href="/source-code/source-code-website-ban-hoa-wordpress-chuan-seo-24128.htm">
 												<img
-												src="/FilesUpload/Code/source-code-website-ban-hoa-wordpress-chuan-seo-11847.jpg"
+												src="http://sharecode.vn/FilesUpload/Code/source-code-website-ban-hoa-wordpress-chuan-seo-11847.jpg"
 												alt="code bán hàng wordpress,web bán hàng bằng wordpress,code web bán hoa,code web cửa hàng hoa,website bán hoa"
 												title="Download Source code website bán hoa Wordpress chuẩn seo">
 											</a>
@@ -804,7 +808,7 @@
 											<a
 												href="/source-code/mau-website-thiet-ke-website-doanh-nghiep-cong-ty-chuyen-nghiep-25192.htm">
 												<img
-												src="/FilesUpload/Code/mau-website-thiet-ke-website-doanh-nghiep-cong-ty-chuyen-nghiep-9204.jpg"
+												src="http://sharecode.vn/FilesUpload/Code/mau-website-thiet-ke-website-doanh-nghiep-cong-ty-chuyen-nghiep-9204.jpg"
 												alt="web công ty,thiết kế,website,website thiết kế,website doanh nghiệp,chuyên nghiệp"
 												title="Download Mẫu website thiết kế website doanh nghiệp, công ty chuyên nghiệp">
 											</a>
@@ -864,6 +868,8 @@
 				</div>
 			</div>
 		</div>
+		       <?php }
+                                ?>      
 	</div>
 </div>
 <div class="clearfix"></div>

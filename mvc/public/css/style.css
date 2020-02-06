@@ -135,14 +135,14 @@ h3 {
 }
 
 .txt-em {
-    color: #cebda2;
+    color: #000;
     font-size: 14px;
     white-space: nowrap;
     line-height: 30px;
 }
 
 a {
-    color: #8C6635;
+    color: #000;
 }
 
 a:hover {
@@ -612,9 +612,9 @@ img.alignright {
 
 
 .view-count {
-    background: url('/assets/images/view.png') no-repeat 0px 4px;
+    background: url('http://localhost/chiasecode/mvc/public/images/viewred.png') no-repeat 0px 1px;
     padding-left: 18px;
-    color: #ff8401;
+    color: #ff0000;
 }
 
 .view-count2 {
@@ -3332,7 +3332,7 @@ span.notify-right {
 }
 
 .cate {
-    color: #ff8401;
+    color: #ff0000;
     font-style: italic;
     margin-top: 5px;
 }
@@ -4881,8 +4881,7 @@ i.BAB {
     margin-top: 5px;
     overflow: hidden;
     padding: 10px 0px;
-    background-color: #f0ecdd;
-    border-radius: 4px;
+	border: 1px dashed #ff0000;
 }
 
 .upload_file .f_control {
@@ -5062,7 +5061,6 @@ i.BAB {
 .us-contact {
     border: 1px dashed #d5c6ae;
     margin: 0px 15px 15px 15px;
-    border-radius: 4px;
     background-color: #fff;
     padding: 5px 10px;
     overflow: hidden;
@@ -5118,7 +5116,7 @@ i.BAB {
 }
 
 .dt-vie-ic {
-    background: url(/assets/images/view.png) no-repeat 0px 3px;
+    background: url(http://localhost/chiasecode/mvc/public/images/viewred.png) no-repeat 0px 0px;
     padding-left: 15px;
 }
 
@@ -5179,8 +5177,8 @@ i.BAB {
 }
 
 .button-down2:hover {
-    background: #84c52c;
-    border: 1px solid #84c52c;
+    background: #FA5858;
+    border: 1px solid #FA5858;
     color: #fff;
 }
 
@@ -5234,11 +5232,11 @@ i.BAB {
 }
 
 .dt-tag {
-    background: #f0ecdd;
+    background: #fff;
     padding: 5px 15px;
     white-space: nowrap;
-    border-radius: 4px;
-    margin-right: 5px;
+    margin-right: 4px;
+	border: 1px dashed #ff0000;
 }
 
 .dt-help {
@@ -5275,27 +5273,10 @@ i.BAB {
     margin: 7px auto 10px auto;
 }
 
-.dt-same {
-    line-height: 28px;
-    margin: 10px 0px;
-}
-
-.dt-same a {
-    font-size: 15px;
-    background: #F5A9A9;
-    padding: 5px 0px;
-    color: #DF0101;
-    display: block;
-}
-
-.dt-same a:hover {
-    background: #ff0000;
-    color: #fff;
-}
-
 .dt-box {
     border: 1px solid #ff0000;
     padding: 30px 15px;
+	color: #000;
 }
 
 .dt-box iframe,
@@ -5763,7 +5744,7 @@ i.BAB {
 }
 
 .breadcrumb .agreen {
-    color: #cebda2;
+    color: #acacac;
 }
 
 .breadcrumb .agreen:hover {
@@ -5980,4 +5961,14 @@ i.BAB {
 
 #ignismyModal .modal-body{
 	background: #fff;
+}
+
+.dt-img-small {
+    height: 70px;
+    width: 70px;
+    border: 1px solid #dddddd;
+    position: relative;
+    float: left;
+    background: #fff;
+	margin-right: 5px;
 }
