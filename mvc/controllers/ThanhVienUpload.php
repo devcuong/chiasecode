@@ -8,7 +8,7 @@ class ThanhVienUpload extends Controller{
         $this->CodeModel = $this->model("CodeModel");
     }
     
-    function SayHi(){
+    function Index(){
         if(isset($_SESSION["username"])){
             $this->view("cat-template", ["Page"=>"thanh-vien-upload"]);
         }else{

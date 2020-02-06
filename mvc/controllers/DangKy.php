@@ -11,7 +11,7 @@ class DangKy extends Controller
         $this->ThanhVienModel= $this->model("ThanhVienModel");
     }
 
-    function SayHi()
+    function Index()
     {
         $this->view("cat-template", [
             "Page" => "dang-ky"

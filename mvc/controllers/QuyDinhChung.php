@@ -1,8 +1,7 @@
 <?php
 class QuyDinhChung extends Controller{
-    function SayHi(){
+    function Index(){
        $this->view("cat-template", ["Page"=>"quy-dinh-chung"]);
-        
     }
     
 }

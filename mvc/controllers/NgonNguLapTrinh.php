@@ -1,6 +1,6 @@
 <?php
 class NgonNguLapTrinh extends Controller{
-    function SayHi($tenController, $tenParam){
+    function Index($tenController, $tenParam){
             $arr = explode("-",$tenParam);
             //Model
             $loaiCode = $this->model("LoaiCodeModel");

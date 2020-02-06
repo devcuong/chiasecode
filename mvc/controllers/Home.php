@@ -1,6 +1,6 @@
 <?php
     class Home extends Controller{
-        function SayHi(){
+        function Index(){
             $shop = $this->model("CodeModel");
             //echo $teo->GetSV();
 
