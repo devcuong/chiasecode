@@ -48,7 +48,7 @@
 								<img id="mainbody_contentbody_CodeImage"
 									title="Download ngay Source code website bán máy tính laptop Wordpress"
 									class="img-val" itemprop="image"
-									src="/FilesUpload/Code/source-code-website-ban-may-tinh-laptop-wordpress-83248.jpg"
+									src="https://sharecode.vn/FilesUpload/Code/full-source-rut-vang-nro-tu-dong-ban-nick-vong-quay-171159.jpg"
 									alt="share code bán hàng php,code bán hàng wordpress,code web bán máy tính,code bán máy tính php,web bán hàng bằng wordpress,code bán hàng php">
 							</div>
 							<div class="text-center dt-gallery">
@@ -297,7 +297,7 @@
 
 							<div class="text-center">
 								<img
-									src="/FilesUpload/CodeUpload/source-code-website-ban-may-tinh-laptop-wordpress-83248.jpg"
+									src="https://sharecode.vn/FilesUpload/CodeUpload/source-code-website-ban-may-tinh-laptop-wordpress-83248.jpg"
 									alt="share code bán hàng php,code bán hàng wordpress,code web bán máy tính,code bán máy tính php,web bán hàng bằng wordpress,code bán hàng php"
 									title="Download Source code website bán máy tính laptop Wordpress ngay!"
 									class="dt-max-img">
@@ -390,122 +390,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="row banner-bottom">
-						<div class="col-sm-6">
-							<div class="banner-boder-zoom">
-								<a href="/dang-ki-ten-mien.htm"> <img
-									alt="Kiểm tra và đăng kí tên miền" class="img-responsive"
-									src="/assets/images/banner-domain2.jpg"></a>
-							</div>
-						</div>
-						<div class="col-sm-6">
-							<div class="banner-boder-zoom">
-								<a href="/hosting-ssd.htm"> <img
-									alt="Đăng kí hosting ssd chất lượng cao" class="img-responsive"
-									src="/assets/images/banner-hosting2.jpg"></a>
-							</div>
-						</div>
-					</div>
-					<input type="hidden"
-						name="ctl00$ctl00$mainbody$contentbody$hdCodeId"
-						id="mainbody_contentbody_hdCodeId" value="19470"> <input
-						type="hidden"
-						name="ctl00$ctl00$mainbody$contentbody$hdIsShowDownload_now_modal"
-						id="mainbody_contentbody_hdIsShowDownload_now_modal" value="false">
-					<input type="hidden"
-						name="ctl00$ctl00$mainbody$contentbody$hdIsShowMessage_modal"
-						id="mainbody_contentbody_hdIsShowMessage_modal" value="true"> <input
-						type="hidden"
-						name="ctl00$ctl00$mainbody$contentbody$hdIsShowDownload_modal"
-						id="mainbody_contentbody_hdIsShowDownload_modal" value="false">
-					<div class="cmt">
-						<div class="cmt-img">
-							<img src="../assets/images/avanta.png"
-								id="mainbody_contentbody_img" width="45" height="45">
-						</div>
-						<div class="cmt-box">
-							<textarea name="ctl00$ctl00$mainbody$contentbody$txtComment"
-								rows="3" cols="20" id="mainbody_contentbody_txtComment"
-								class="form-control send-sp" placeholder="Nhập nội dung..."></textarea>
-							<a id="mainbody_contentbody_bntComment"
-								class="button-orange button-small alignright"
-								href="javascript:__doPostBack('ctl00$ctl00$mainbody$contentbody$bntComment','')"><i
-								class="fa fa-comment line-h20" aria-hidden="true"></i>&nbsp;BÌNH
-								LUẬN</a>
-
-						</div>
-						<div style="display: none;" class="cmt-reply CommentReply">
-							<div class="cmt-img">
-								<img src="../assets/images/avanta.png"
-									id="mainbody_contentbody_img2" width="45" height="45">
-							</div>
-							<div class="cmt-box">
-								<textarea
-									name="ctl00$ctl00$mainbody$contentbody$txtCommentReply"
-									rows="2" cols="20" id="mainbody_contentbody_txtCommentReply"
-									class="form-control send-sp" placeholder="Nhập nội dung..."></textarea>
-								<a id="mainbody_contentbody_bntCommentReply"
-									class="button-orange button-small alignright"
-									href="javascript:__doPostBack('ctl00$ctl00$mainbody$contentbody$bntCommentReply','')"><i
-									class="fa fa-comment line-h20" aria-hidden="true"></i>&nbsp;BÌNH
-									LUẬN</a>
-
-							</div>
-						</div>
-						<input type="hidden"
-							name="ctl00$ctl00$mainbody$contentbody$hdCommentParent"
-							id="mainbody_contentbody_hdCommentParent"> <input type="hidden"
-							name="ctl00$ctl00$mainbody$contentbody$hdCommentReply"
-							id="mainbody_contentbody_hdCommentReply">
-
-						<div class="cmt-item " id="cmt-13421">
-							<div class="cmt-img">
-								<a href="/thanh-vien/luan-nguyen-151826.htm" target="_blank"> <img
-									width="45" height="45"
-									src="/FilesUpload/User/172719-nguyen-minh-luan.jpg"></a>
-							</div>
-							<div class="cmt-box cmt-border">
-								<div class="cmt-head">
-									<a href="/thanh-vien/luan-nguyen-151826.htm" target="_blank"
-										class="bold agreen">Boombi</a><span
-										class="text-nowrap cmt-right"><span class="orange cmt-action"
-										onclick="ReplyID(13421,13421)"><i class="fa fa-reply"
-											aria-hidden="true"></i> Trả lời </span><span
-										class="cmt-unlike"> <a
-											href="javascript:__doPostBack('ctl00$ctl00$mainbody$contentbody$rptComment$ctl00$ctl00','')">Thích</a></span>&nbsp;<span
-										class="txt-colo"><i class="fa fa-thumbs-up" aria-hidden="true"></i>
-											0</span></span><span class="txt-colo cmt-right  cmt-date">17:27
-										- 9/4/2019</span>
-								</div>
-								<div class="cmt-content">@Thang Nguyen: Chào bạn, code này hoàn
-									toàn là sạch nên bạn có thể yên tâm sử dụng nhé. Trong quá
-									trình sử dụng nếu có bất cứ thắc mắc gì bạn có thể liên hệ tới
-									mình theo thông tin khi mua bạn đã nhận được. Mong bạn hạn chế
-									đánh giá khi chưa xác định được chính xác thông tin ạ.</div>
-
-							</div>
-
-						</div>
-						<div id="Parent13421"></div>
-
-						<div class="sortPagiBar clear">
-							<div class="bottom-pagination">
-								<nav id="mainbody_contentbody_PaggingBottom">
-									<ul class="pagination">
-										<li class="active"><a href="?page=1">1</a></li>
-									</ul>
-								</nav>
-							</div>
-						</div>
-					</div>
-					<br>
-					<br> <input type="hidden"
-						name="ctl00$ctl00$mainbody$contentbody$hdRating"
-						id="mainbody_contentbody_hdRating" value="5">
-					<br>
-
 				</div>
-
 				<!-- Thông báo không đủ xu download -->
 				<div class="modal fade" id="Message_modal" tabindex="-1"
 					role="dialog" aria-labelledby="myModalLabel">
@@ -588,7 +473,7 @@
 					<div class="block left-module" id="boxSlogan">
 						<div class="block_content">
 							<div class="safe-img">
-								<img src="/assets/images/safe.png" style="border: none;"
+								<img src="https://sharecode.vn/assets/images/safe.png" style="border: none;"
 									alt="Mua code qua sharecode.vn để được bảo vệ">
 							</div>
 							<div class="safe-txt bold">
@@ -605,7 +490,7 @@
 						<div class="pro-left">
 							<a href="/thanh-vien/luan-nguyen-151826.htm"
 								id="mainbody_contentbody_AvantaLink" target="_blank"> <img
-								src="/FilesUpload/User/172719-nguyen-minh-luan.jpg"
+								src="https://sharecode.vn/FilesUpload/User/14655-tu-nguyen-entertainment.jpg"
 								id="mainbody_contentbody_Avanta" class="prof_img" width="90"
 								height="90" itemprop="image" title="Thành viên Nguyễn Minh Luân"
 								alt="Nguyễn Minh Luân">
@@ -660,14 +545,14 @@
 								<a role="button" data-toggle="collapse" href="#boxSendEmail"
 									aria-expanded="false" aria-controls="boxSendEmail">
 									<div class="share-email">
-										<img src="/assets/images/share-email.png"
+										<img src="https://sharecode.vn/assets/images/share-email.png"
 											style="margin-right: 5px"><br> Gửi code tới email bạn bè
 									</div>
 								</a> <a id="mainbody_contentbody_btnSave"
 									title="Lưu lại code cho tôi" class="SaveSuccess"
 									href="javascript:__doPostBack('ctl00$ctl00$mainbody$contentbody$btnSave','')"><div
 										style="width: 50%; text-align: center; float: left; padding: 0px 20px">
-										<img src="/assets/images/share-save.png"><br>Lưu lại code cho
+										<img src="https://sharecode.vn/assets/images/share-save.png"><br>Lưu lại code cho
 										tôi
 									</div></a>
 

@@ -212,6 +212,7 @@ a:focus {
 
 .line {
     height: 1px;
+    background: #cccccc;
 }
 
 .bold {
@@ -2869,7 +2870,6 @@ span.notify-right {
 
 #left_column .block {
     background: #fff;
-    border-radius: 4px;
 }
 
 #left_column .block .title_block {
@@ -2881,19 +2881,16 @@ span.notify-right {
     text-transform: uppercase;
     padding-top: 11px;
     padding-bottom: 12px;
-    border-radius: 4px 4px 0px 0px;
 }
 
 #left_column .block .block_content {
     padding: 15px 15px;
     border: 1px solid #e2d8c7;
-    border-radius: 0px 0px 4px 4px;
     overflow: hidden;
 }
 
 #left_column .block img {
     border: 1px solid #e2d8c7;
-    border-radius: 3px;
 }
 
 .layered .layered_subtitle {
@@ -3968,7 +3965,6 @@ span.notify-right {
     width: 90px;
     height: 90px;
     background-image: url(/assets/images/avanta2.png);
-    border-radius: 3px;
 }
 
 .pro-right {
@@ -5061,7 +5057,6 @@ i.BAB {
 
 .bg-colo {
     background: #f4f0e2;
-    border-radius: 4px;
 }
 
 .us-contact {
@@ -5154,15 +5149,13 @@ i.BAB {
 
 .btn2 {
     color: #fff;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
 }
 
 .button-down {
     font-size: 16px;
     white-space: nowrap;
     padding: 15px 27px;
+    background-color: #84c52c;
     border: 1px solid #84c52c;
 }
 
@@ -5181,9 +5174,10 @@ i.BAB {
     font-size: 16px;
     white-space: nowrap;
     padding: 10px;
-    border: 1px solid #84c52c;
+    border: 1px solid #ff0000;
     display: inherit;
     margin-top: 10px;
+	background: #ff0000;
 }
 
 .button-down2:hover {
@@ -5217,7 +5211,7 @@ i.BAB {
 }
 
 .button-down2 .btn-txt span {
-    color: #cbf592;
+    color: #fff;
     font-weight: normal;
     font-size: 16px;
 }
@@ -5226,8 +5220,8 @@ i.BAB {
     font-size: 16px;
     white-space: nowrap;
     padding: 15px 31px;
-    background: #e2d8c7;
-    border: 1px solid #cebda2;
+    background: #dddddd;
+    border: 1px solid #c2c2c2;
     color: #8c6635;
 }
 
@@ -5255,10 +5249,9 @@ i.BAB {
 }
 
 .dt-chk {
-    border: 1px dashed #ff8401;
+    border: 1px dashed #ff0000;
     margin: 15px 0px;
-    border-radius: 5px;
-    background-color: #f4f0e2;
+    background-color: #fff;
     padding: 17px 5px 17px 15px;
     overflow: hidden;
 }
@@ -5266,7 +5259,7 @@ i.BAB {
 .dt-chk .it-chk {
     width: 33%;
     float: left;
-    background: url(/assets/images/tick.png) no-repeat 15px 6px;
+    background: url(https://topcode.vn/assets/images/tick.png) no-repeat 15px 6px;
     padding: 6px 0px 6px 36px;
 }
 
@@ -5291,10 +5284,10 @@ i.BAB {
 
 .dt-same a {
     font-size: 15px;
-    background: #cbf592;
+    background: #F5A9A9;
     padding: 5px 0px;
     border-radius: 5px;
-    color: #648d03;
+    color: #DF0101;
     display: block;
 }
 
@@ -5304,9 +5297,8 @@ i.BAB {
 }
 
 .dt-box {
-    border: 1px solid #ff8401;
+    border: 1px solid #ff0000;
     padding: 30px 15px;
-    border-radius: 0px 4px 4px 4px;
 }
 
 .dt-box iframe,
@@ -5317,8 +5309,7 @@ i.BAB {
 
 .dt-box-title {
     font-size: 16px;
-    background: url(/assets/images/bg_orange.jpg);
-    border-radius: 4px 4px 0px 0px;
+    background-color: #ff0000;
     padding: 10px 30px;
     display: inline-block;
     color: #fff;
@@ -5333,15 +5324,13 @@ i.BAB {
 }
 
 .dt-down {
-    background-color: #8c6635;
-    border-radius: 4px;
-    padding: 0px 5px;
+    padding: 0px 0px;
     overflow: hidden;
 }
 
 .dt-down2 {
-    background-color: #f4f0e2;
-    border-radius: 5px;
+    background-color: #dddddd;
+	border-top: 2px solid #cf131f;
     overflow: hidden;
     padding: 20px 0px;
 }
@@ -5379,9 +5368,8 @@ i.BAB {
 }
 
 .dt-sub {
-    background: #f4f0e2;
     padding: 20px 15px;
-    border-radius: 4px;
+	border: 1px dashed #ff0000;
 }
 
 .dt-note {
