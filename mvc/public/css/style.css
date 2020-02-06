@@ -5056,7 +5056,7 @@ i.BAB {
 }
 
 .bg-colo {
-    background: #f4f0e2;
+    background: #fff;
 }
 
 .us-contact {
@@ -5084,11 +5084,9 @@ i.BAB {
 }
 
 .img-border {
-    max-width: 300px;
-    padding: 10px;
+    max-width: 350px;
+    padding: 5px;
     border: 1px solid #e2d8c7;
-    border-radius: 4px;
-    margin: auto;
 }
 
 .img-border .img-val {
@@ -5134,7 +5132,7 @@ i.BAB {
     width: 95px;
     float: left;
     clear: both;
-    color: #cebda2;
+    color: #acacac;
 }
 
 .dt-des {
@@ -5222,7 +5220,7 @@ i.BAB {
     padding: 15px 31px;
     background: #dddddd;
     border: 1px solid #c2c2c2;
-    color: #8c6635;
+    color: #000;
 }
 
 .button-demo:before {
@@ -5257,7 +5255,7 @@ i.BAB {
 }
 
 .dt-chk .it-chk {
-    width: 33%;
+    width: 50%;
     float: left;
     background: url(https://topcode.vn/assets/images/tick.png) no-repeat 15px 6px;
     padding: 6px 0px 6px 36px;
@@ -5286,13 +5284,12 @@ i.BAB {
     font-size: 15px;
     background: #F5A9A9;
     padding: 5px 0px;
-    border-radius: 5px;
     color: #DF0101;
     display: block;
 }
 
 .dt-same a:hover {
-    background: #84c52c;
+    background: #ff0000;
     color: #fff;
 }
 

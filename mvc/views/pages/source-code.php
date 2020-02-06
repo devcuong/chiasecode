@@ -43,7 +43,7 @@
 				<div id="mainbody_contentbody_upPannel">
 
 					<div class="row">
-						<div class="col-sm-4">
+						<div class="col-sm-5">
 							<div class="img-border">
 								<img id="mainbody_contentbody_CodeImage"
 									title="Download ngay Source code website bán máy tính laptop Wordpress"
@@ -57,11 +57,11 @@
 							</div>
 
 						</div>
-						<div class="col-sm-8 dt-center">
+						<div class="col-sm-7 dt-center">
 							<h1 id="mainbody_contentbody_TitleCode" class="dt-title bold"
 								itemprop="name">Source code website bán máy tính laptop
 								Wordpress</h1>
-							<span class="green dt-title bold text-nowrap">[Mã code <span
+							<span class="red dt-title bold text-nowrap">[Mã code <span
 								id="mainbody_contentbody_Code" itemprop="productID">19470</span>]
 							</span>
 							<meta itemprop="mpn" content="19470">
@@ -90,7 +90,7 @@
 										href="#danh-gia" class="text-nowrap"><i class="fa fa-pencil"
 										aria-hidden="true"></i>&nbsp;Viết đánh giá</a>
 								</div>
-								<div class="col-md-6 col-lg-5 dt-sta-vie2 orange">
+								<div class="col-md-6 col-lg-5 dt-sta-vie2 red">
 									<i class="fa fa-download" aria-hidden="true"></i>&nbsp;<b
 										id="mainbody_contentbody_DownloadCount">7</b>&nbsp;&nbsp;&nbsp;&nbsp;
 									<span class="dt-vie-ic">&nbsp;<b
@@ -120,18 +120,18 @@
 							<div class="line"></div>
 							<div class="row">
 								<div class="col-md-7 dt-des">
-									<meta itemprop="brand" content="sharecode.vn">
+									<meta itemprop="brand" content="code4v.com">
 									<meta itemprop="releaseDate" content="5/11/2018 9:33:36 PM">
 									<div class="dt-col">Danh mục</div>
 									<div itemprop="material">
 										<a href="/ngon-ngu-lap-trinh/wordpress-29.htm"
-											id="mainbody_contentbody_Lang2" class="aorange"
+											id="mainbody_contentbody_Lang2" class="red"
 											target="_blank">WordPress</a>
 									</div>
 									<div class="dt-col">Thể loại</div>
 									<div itemprop="category">
 										<a href="/the-loai-source-code/website-1.htm"
-											id="mainbody_contentbody_Category2" class="aorange"
+											id="mainbody_contentbody_Category2" class="red"
 											target="_blank">Website</a>
 									</div>
 									<div class="dt-col">Nhóm code</div>
@@ -163,7 +163,7 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-sm-8 col-sm-push-4">
+						<div class="col-sm-7 col-sm-push-5">
 							<div class="dt-help">
 								<b>Hướng dẫn: &nbsp;&nbsp;</b> <a
 									href="https://sharecode.vn/cau-hoi/huong-dan-cach-tai-code-mien-phi-14.htm"
@@ -173,38 +173,22 @@
 									href="https://sharecode.vn/cau-hoi/huong-dan-ho-tro-ki-thuat-16.htm"
 									target="_blank" class="dt-tag">Hỗ trợ kĩ thuật</a>
 							</div>
-							<div class="dt-chk orange">
+							<div class="dt-chk red">
 
-								<div id="mainbody_contentbody_chkCodeOK" class="it-chk">Cam kết
+								<div id="chk-codeok" class="it-chk">Cam kết
 									hỗ trợ</div>
 								<div class="it-chk">Không chứa mã độc</div>
-								<div id="mainbody_contentbody_chkDemo" class="it-chk">Có demo
+								<div id="chk-demo" class="it-chk">Có demo
 									thực tế</div>
-								<div id="mainbody_contentbody_chkConfig" class="it-chk">Có hướng
+								<div id="chk-config" class="it-chk">Có hướng
 									dẫn cài đặt</div>
 
 							</div>
 						</div>
-						<div class="col-sm-4 col-sm-pull-8">
+						<div class="col-sm-5 col-sm-pull-7">
 							<div class="text-center dt-same">
 								<a href="#code-giong"><span class="hidden-sm">Xem thêm </span><strong>CODE
 										GẦN GIỐNG</strong></a>
-							</div>
-							<div class="dt-help">
-
-								<a class="dt-tag" target="_blank"
-									href="/tu-khoa/share-code-ban-hang-php-23999.htm">share code
-									bán hàng php</a> <a class="dt-tag" target="_blank"
-									href="/tu-khoa/code-ban-hang-wordpress-21623.htm">code bán hàng
-									wordpress</a> <a class="dt-tag" target="_blank"
-									href="/tu-khoa/code-web-ban-may-tinh-13394.htm">code web bán
-									máy tính</a> <a class="dt-tag" target="_blank"
-									href="/tu-khoa/code-ban-may-tinh-php-25246.htm">code bán máy
-									tính php</a> <a class="dt-tag" target="_blank"
-									href="/tu-khoa/web-ban-hang-bang-wordpress-432.htm">web bán
-									hàng bằng wordpress</a> <a class="dt-tag" target="_blank"
-									href="/tu-khoa/code-ban-hang-php-9725.htm">Code bán hàng PHP</a>
-
 							</div>
 						</div>
 					</div>
@@ -287,12 +271,12 @@
 						<div>&nbsp;</div>
 						<div>- Tư vấn/hướng dẫn đưa website lên Google.</div>
 
-						<p id="mainbody_contentbody_boxTextConfig">
+						<p id="box-text-config">
 							<br> XEM THÊM ==&gt; <a href="#huong-dan-cai-dat" class="aorange">Hướng
 								dẫn cài đặt chi tiết</a>
 						</p>
 						<p id="anh-demo">&nbsp;</p>
-						<div id="mainbody_contentbody_divGalleryImage" class="dt-img">
+						<div id="div-gallery-image" class="dt-img">
 							<b>HÌNH ẢNH DEMO</b> <br> <br>
 
 							<div class="text-center">
@@ -305,7 +289,7 @@
 							<br>
 
 						</div>
-						<p class="alignright" id="huong-dan-cai-dat">Nguồn: Sharecode.vn</p>
+						<p class="alignright" id="huong-dan-cai-dat">Nguồn: code4v.com</p>
 					</div>
 					<br> <br> <span class="dt-box-title bold">HƯỚNG DẪN CÀI ĐẶT</span>
 					<div class="dt-box entry-detail">
@@ -340,10 +324,10 @@
 						<div class="dt-down2">
 							<div class="col-sm-7 col-md-8">
 								<div class="bold title3">LINK DOWNLOAD</div>
-								<h2 id="mainbody_contentbody_FileName" class="dt-file">
+								<h2 id="file-name" class="dt-file">
 									website.rar <span>[111 MB]</span>
 								</h2>
-								<div id="mainbody_contentbody_Status" class="dt-true-ic bold">File
+								<div id="status" class="dt-true-ic bold">File
 									đã kiểm duyệt</div>
 								<a id="code-giong" class="aorange  text-nowrap dt-action"
 									role="button" data-toggle="collapse" href="#collError"
@@ -351,19 +335,18 @@
 									class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;Báo lỗi
 									(or) Gửi hỗ trợ</a> &nbsp;&nbsp;&nbsp; <a
 									href="/bao-code-trung.htm?code=19470"
-									id="mainbody_contentbody_lnkCopyright"
+									id="lnk-copyright"
 									class="aorange text-nowrap dt-action"><i
 									class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;Báo
 									vi phạm bản quyền</a>
 
 							</div>
 							<div class="col-sm-5 col-md-4 text-center">
-								<strong>Pass giải nén</strong> (Nếu có):<br> <span class="green">sharecode.vn</span>
-								<a onclick="return false;" id="mainbody_contentbody_btnLinkMain"
+								<strong>Pass giải nén</strong> (Nếu có):<br> <span class="red">code4v.com</span>
+								<a onclick="return false;" id="btn-link-main"
 									title="Download Source code website bán máy tính laptop Wordpress ngay!"
 									class="btn2 button-down2" data-target="#Message_modal"
-									role="button" data-toggle="modal"
-									href="javascript:__doPostBack('ctl00$ctl00$mainbody$contentbody$btnLinkMain','')"><div
+									role="button" data-toggle="modal"><div
 										class="btn-box">
 										<div class="btn-ic"></div>
 										<div class="btn-txt bold">
@@ -374,10 +357,10 @@
 
 							</div>
 							<div class="col-xs-12">
-								<div class="collapse" id="collError">
+								<div class="collapse" id="coll-error">
 									<div class="well">
-										<textarea name="ctl00$ctl00$mainbody$contentbody$txtError"
-											rows="3" cols="20" id="mainbody_contentbody_txtError"
+										<textarea name="txt-error"
+											rows="3" cols="20" id="txt-error"
 											class="form-control send-sp"
 											placeholder="Nhập mô tả lỗi (or) nội dung yêu cầu hỗ trợ..."></textarea>
 										<input type="submit"
@@ -477,8 +460,8 @@
 									alt="Mua code qua sharecode.vn để được bảo vệ">
 							</div>
 							<div class="safe-txt bold">
-								BẠN HÃY MUA CODE QUA <span class="orange">SHARECODE.VN</span> ĐỂ
-								ĐƯỢC <span class="orange">BẢO VỆ</span>
+								BẠN HÃY MUA CODE QUA <span class="red">CODE4V.COM</span> ĐỂ
+								ĐƯỢC <span class="red">BẢO VỆ</span>
 							</div>
 						</div>
 					</div>
@@ -513,7 +496,7 @@
 						</div>
 						<div class="clear us-pad">&nbsp;</div>
 						<div id="mainbody_contentbody_divInfoContact" class="us-contact">
-							<div class="orange item_lable">Thông tin liên hệ &amp; hỗ trợ</div>
+							<div class="red item_lable">Thông tin liên hệ &amp; hỗ trợ</div>
 							<div class="item">
 								Email: <a href="../#" id="mainbody_contentbody_lblEmail"
 									title="Click để gửi email!" class="item_detail">Đang ẩn...</a>
