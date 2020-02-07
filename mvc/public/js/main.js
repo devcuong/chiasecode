@@ -230,13 +230,13 @@ $('#btn-exit').click(function(){
 $image_crop = $('#image_demo').croppie({
     enableExif: true,
     viewport: {
-      width:200,
-      height:200,
+      width:280,
+      height:280,
       type:'square' //circle
     },
     boundary:{
-      width:300,
-      height:300
+      width:350,
+      height:350
     }
   });
 
@@ -776,8 +776,10 @@ function SubmitForm(){
 	           processData: false,
 	           contentType: false,
 	           data: formData,
+	           dataType: "json",
 	           success: function(data)
 	           {
+	        	   var dt = JSON.stringify(data);	        	   
 	               if(data){
 	            	   $('#ignismyModal').modal('show'); 
 	               }else{

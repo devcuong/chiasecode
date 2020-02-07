@@ -37,13 +37,13 @@
         
         /*THÊM CODE BY THÀNH VIÊN*/
         public function InsertCode($imageDaiDien, $tieuDeCode, $danhMuc, $moTaNgan, $linkCode, $linkDemo, $luaChonPhiTai, $phiTai, $camKetHoTro, $hinhAnhCode, $moTaChiTiet, $huongDanCaiDat, $tuKhoa, $daDocDieuKhoan, $thanhVienUpload, $ngayUpdate){
-            $qr = "INSERT INTO code VALUES(null, '$tieuDeCode', 0, 0, '$luaChonPhiTai', $phiTai, '$imageDaiDien', '$danhMuc', 0, '$moTaNgan', '$linkCode', '$linkDemo',$camKetHoTro,'$hinhAnhCode', '$moTaChiTiet', '$huongDanCaiDat','$tuKhoa',$daDocDieuKhoan, $thanhVienUpload,0,'$ngayUpdate')";
+            $qr = "INSERT INTO code VALUES(null, '$tieuDeCode', 0, 0, '$luaChonPhiTai', $phiTai, '$imageDaiDien', '$danhMuc', 0, '$moTaNgan', '$linkCode', '$linkDemo',$camKetHoTro,'$hinhAnhCode', '$moTaChiTiet', '$huongDanCaiDat','$tuKhoa',$daDocDieuKhoan, $thanhVienUpload,0,'','','$ngayUpdate')";
             $result = false;
             if(mysqli_query($this->con, $qr)){
                 $result = true;
             }
             
-            return json_encode( $qr);
+            return json_encode($result);
         }
         
         /*LẤY CODE BỞI ID CODE*/

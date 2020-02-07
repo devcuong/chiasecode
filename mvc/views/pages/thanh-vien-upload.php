@@ -12,7 +12,7 @@
 			</a>
 				<meta itemprop="position" content="1">
 			</span> <span class="navigation-pipe">&nbsp;</span> <a
-				href="https://sharecode.vn/thong-tin-ca-nhan.htm"
+				href="thong-tin-ca-nhan"
 				id="breadcrumb-userName" class="agreen"><?php echo $_SESSION['username'] ?></a>
 			<span class="navigation-pipe">&nbsp;</span> <a class="agreen"
 				href="https://sharecode.vn/code-upload-cua-toi.htm">

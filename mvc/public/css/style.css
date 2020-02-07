@@ -4008,7 +4008,7 @@ span.notify-right {
 }
 
 .popup_header {
-    background: url(/assets/images/logo_popup.png) no-repeat, url(/assets/images/bt_title_popup.jpg);
+	background-color: #ff0000;
     font-size: 18px;
     color: #fff;
     height: 45px;

@@ -2,9 +2,9 @@
 <?php require_once "./mvc/core/Config.php"?>
 <div id="view-content-page" class="view-content-page">
 	<div class="container" id="columns">
-	 <?php 
-                                    while($row = mysqli_fetch_array($data["InforSourceCode"])){
-                                        ?>
+	 <?php
+while ($row = mysqli_fetch_array($data["InforSourceCode"])) {
+    ?>
 		<div class="breadcrumb clearfix" itemscope=""
 			itemtype="http://schema.org/BreadcrumbList">
 			<span itemprop="itemListElement" itemscope=""
@@ -16,26 +16,25 @@
 			</span> <span class="navigation-pipe">&nbsp;</span> <span
 				itemprop="itemListElement" itemscope=""
 				itemtype="http://schema.org/ListItem"> <a
-				href="/ngon-ngu-lap-trinh/wordpress-29.htm"
-				id="mainbody_breadcrumb_PathCate" itemprop="item" class="agreen"
-				title="Danh mục WordPress"><span itemprop="name">WordPress</span></a>
+				href="/ngon-ngu-lap-trinh/wordpress-29.htm" id="path-cate"
+				itemprop="item" class="agreen" title="Danh mục WordPress"><span
+					itemprop="name">WordPress</span></a>
 				<meta itemprop="position" content="2">
 			</span> <span class="navigation-pipe">&nbsp;</span> <span
 				itemprop="itemListElement" itemscope=""
 				itemtype="http://schema.org/ListItem"> <a
-				href="/the-loai-source-code/website-1.htm"
-				id="mainbody_breadcrumb_PathType" itemprop="item" class="agreen"
-				title="Thể loại Website"><span itemprop="name">Website</span></a>
+				href="/the-loai-source-code/website-1" id="path-type"
+				itemprop="item" class="agreen" title="Thể loại Website"><span
+					itemprop="name">Website</span></a>
 				<meta itemprop="position" content="3">
-			</span> <span class="navigation-pipe">&nbsp;</span> <span
-				itemprop="itemListElement" itemscope=""
-				itemtype="http://schema.org/ListItem"> <a
+			</span> <span class="navigation-pipe">&nbsp;</span><a
 				href="/source-code/source-code-website-ban-may-tinh-laptop-19470.htm"
-				id="mainbody_breadcrumb_PathLink" class="agreen" itemprop="item"> <span
-					id="mainbody_breadcrumb_PathLinkTitle" itemprop="name">Source code
-						website bán máy tính laptop Wordpress</span>
+				id="path-link" class="agreen" itemprop="item"> <span
+				id="mainbody_breadcrumb_PathLinkTitle" itemprop="name">Source code
+					website bán máy tính laptop Wordpress</span>
 			</a>
-				<meta itemprop="position" content="4"></span>
+			<meta itemprop="position" content="4">
+			</span>
 
 		</div>
 		<div class="row" itemscope="" itemtype="http://schema.org/Product">
@@ -48,10 +47,10 @@
 					<div class="row">
 						<div class="col-sm-5">
 							<div class="img-border">
-								<img id="mainbody_contentbody_CodeImage"
+								<img id="code-image"
 									title="Download ngay Source code website bán máy tính laptop Wordpress"
 									class="img-val" itemprop="image"
-									src="https://sharecode.vn/FilesUpload/Code/full-source-rut-vang-nro-tu-dong-ban-nick-vong-quay-171159.jpg"
+									src="<?php echo $servername; ?>/mvc/public/member/thumbnail/<?php echo $row["anhdaidien"] ?>"
 									alt="share code bán hàng php,code bán hàng wordpress,code web bán máy tính,code bán máy tính php,web bán hàng bằng wordpress,code bán hàng php">
 							</div>
 							<div class="text-center dt-gallery">
@@ -61,8 +60,7 @@
 
 						</div>
 						<div class="col-sm-7 dt-center">
-							<h1 id="title-code" class="dt-title bold"
-								itemprop="name"><?php echo $row["tieudecode"] ?></h1>
+							<h1 id="title-code" class="dt-title bold" itemprop="name"><?php echo $row["tieudecode"] ?></h1>
 							<span class="red dt-title bold text-nowrap">[Mã code <span
 								id="mainbody_contentbody_Code" itemprop="productID"><?php echo $row["id"] ?></span>]
 							</span>
@@ -76,14 +74,12 @@
 											<span></span>
 										</button>
 									</div>
-									<span id="total-rate"
-										class="text-nowrap">1 Đánh giá</span>
+									<span id="total-rate" class="text-nowrap">1 Đánh giá</span>
 								</div>
 								<div class="col-md-6 col-lg-5 dt-sta-vie2 red">
 									<i class="fa fa-download" aria-hidden="true"></i>&nbsp;<b
 										id="download-count"><?php echo $row["luottai"] ?></b>&nbsp;&nbsp;&nbsp;&nbsp;
-									<span class="dt-vie-ic">&nbsp;<b
-										id="views"><?php echo $row["luotxem"] ?></b></span>&nbsp;&nbsp;&nbsp;&nbsp;
+									<span class="dt-vie-ic">&nbsp;<b id="views"><?php echo $row["luotxem"] ?></b></span>&nbsp;&nbsp;&nbsp;&nbsp;
 									<span class="text-nowrap"><i class="fa fa-heart"
 										aria-hidden="true"></i>&nbsp;<b
 										id="mainbody_contentbody_Likes">11</b></span>
@@ -93,11 +89,15 @@
 							<div class="row">
 								<div class="col-sm-10 col-md-8 dt-price">
 									<span class="bold">Phí tải: <span
-										id="mainbody_contentbody_Copyright" class="green"><?php if(intval($row["phitai"]) == 0)
-										{echo "Miễn Phí";}
-										else
-										{echo $row["phitai"]." Xu "."(1Xu =
-										1.000đ)";}    ?> </span></span>
+										id="mainbody_contentbody_Copyright" class="green"><?php
+    
+if (intval($row["phitai"]) == 0) {
+        echo "Miễn Phí";
+    } else {
+        echo $row["phitai"] . " Xu " . "(1Xu =
+										1.000đ)";
+    }
+    ?> </span></span>
 								</div>
 								<div class="col-sm-2 col-md-4 dt-pri-btn text-center">
 									<a id="mainbody_contentbody_btnLike" title="Yêu thích code này"
@@ -134,19 +134,26 @@
 											class="fa fa-info-circle" aria-hidden="true"></i></span>
 									</div>
 									<div class="dt-col">Ngày đăng</div>
-									<div id="mainbody_contentbody_Date2">11-5-2018</div>
+									<div id="date-post"><?php
+    $timeStamp = $row['ngayupdate'];
+    $timeStamp = date("d/m/Y", strtotime($timeStamp));
+    echo $timeStamp;
+    ?></div>
 									<div class="dt-col">Loại file</div>
-									<div id="mainbody_contentbody_Type2">Full code</div>
+									<div id="file-type"><?php echo $row["loaifile"] ?></div>
 									<div class="dt-col">Dung lượng</div>
-									<div id="mainbody_contentbody_Size">111 MB</div>
+									<div id="file-size"><?php echo $row["dungluong"] ?></div>
 								</div>
 								<div class="col-md-5 dt-dow-vie">
 									<a href="#Download" class="btn2 button-down bold"
-										title="Download code này">&nbsp; DOWNLOAD</a> <a
-										href="http://web.boombi.net/banhang9/"
-										id="mainbody_contentbody_btnView" target="blank"
-										class="btn2 button-demo bold" title="Xem demo thực tế">&nbsp;
-										XEM DEMO</a>
+										title="Download code này">&nbsp; DOWNLOAD</a>
+										<?php if($row["linkdemo"] != ""){?>
+                                    <a
+										href="<?php echo $row["linkdemo"] ?>" id="btn-demo"
+										target="blank" class="btn2 button-demo bold"
+										title="Xem demo thực tế">&nbsp; XEM DEMO</a>
+										<?php }?>
+									
 								</div>
 							</div>
 							<div class="line"></div>
@@ -164,45 +171,37 @@
 									target="_blank" class="dt-tag">Hỗ trợ kĩ thuật</a>
 							</div>
 							<div class="dt-chk red">
-
-								<div id="chk-codeok" class="it-chk">Cam kết hỗ trợ</div>
+								<?php if($row["luachonphitai"] == "CodeOK" && $row["camkethotro"] != 0) { ?>
+										<div id="chk-codeok" class="it-chk">Cam kết hỗ trợ</div>
+								<?php } ?>
+								
 								<div class="it-chk">Không chứa mã độc</div>
-								<div id="chk-demo" class="it-chk">Có demo thực tế</div>
-								<div id="chk-config" class="it-chk">Có hướng dẫn cài đặt</div>
-
+								<?php if($row["linkdemo"] != ""){?>
+									<div id="chk-demo" class="it-chk">Có demo thực tế</div>
+								<?php } ?>
+								<?php if($row["huongdancaidat"] != "") {?>
+									<div id="chk-config" class="it-chk">Có hướng dẫn cài đặt</div>
+								<?php } ?>
 							</div>
 						</div>
 						<div class="col-sm-5 col-sm-pull-7">
-							<div class="dt-img-small">
+						<?php
+    if ($row["hinhanhcode"] != '') {
+        $imagesDemo = $row["hinhanhcode"];
+        $arrImg = explode(",", $imagesDemo);
+        for ($i = 0; $i < count($arrImg); $i ++) {
+            ?>
+						    <div class="dt-img-small">
 								<img
-									src="https://topcode.vn/FilesUpload/CodeUpload/share-code-shop-cong-nghe-bang-opencart-3.0-tieng-viet-174739.jpg"
+									src="<?php echo $servername ?>/mvc/public/member/code/<?php echo $arrImg[$i]?>"
 									alt="code shop game,code opencart 3.x full,code shop php full"
 									title="Download Share code shop công nghệ bằng Opencart 3.0 tiếng Việt ngay!">
 							</div>
-							<div class="dt-img-small">
-								<img
-									src="https://topcode.vn/FilesUpload/CodeUpload/share-code-shop-cong-nghe-bang-opencart-3.0-tieng-viet-174740.jpg"
-									alt="code shop game,code opencart 3.x full,code shop php full"
-									title="Download Share code shop công nghệ bằng Opencart 3.0 tiếng Việt ngay!">
-							</div>
-							<div class="dt-img-small">
-								<img
-									src="https://topcode.vn/FilesUpload/CodeUpload/share-code-shop-cong-nghe-bang-opencart-3.0-tieng-viet-174742.jpg"
-									alt="code shop game,code opencart 3.x full,code shop php full"
-									title="Download Share code shop công nghệ bằng Opencart 3.0 tiếng Việt ngay!">
-							</div>
-							<div class="dt-img-small">
-								<img
-									src="https://topcode.vn/FilesUpload/CodeUpload/share-code-shop-cong-nghe-bang-opencart-3.0-tieng-viet-174741.jpg"
-									alt="code shop game,code opencart 3.x full,code shop php full"
-									title="Download Share code shop công nghệ bằng Opencart 3.0 tiếng Việt ngay!">
-							</div>
-							<div class="dt-img-small">
-								<img
-									src="https://topcode.vn/FilesUpload/CodeUpload/share-code-shop-cong-nghe-bang-opencart-3.0-tieng-viet-174741.jpg"
-									alt="code shop game,code opencart 3.x full,code shop php full"
-									title="Download Share code shop công nghệ bằng Opencart 3.0 tiếng Việt ngay!">
-							</div>
+						<?php
+        }
+    }
+    
+    ?>
 						</div>
 					</div>
 					<br>
@@ -302,30 +301,12 @@
 							<br>
 						</div>
 					</div>
+					<?php if($row["huongdancaidat"] != ""){ ?>
 					<br> <br> <span class="dt-box-title bold">HƯỚNG DẪN CÀI ĐẶT</span>
 					<div class="dt-box entry-detail">
-						<p>
-							Khi tải về sẽ có 2 file là source và database</p>
-						<p>
-							<strong
-								style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; background: transparent; outline: 0px; vertical-align: top;">Bước
-								1:</strong>&nbsp;Upload source lên hosting và import database
-						</p>
-						<p>
-							<strong
-								style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; background: transparent; outline: 0px; vertical-align: top;">Bước
-								2:</strong>&nbsp;Cấu hình lại thông tin database cho kết nối mã
-							nguồn và hosting
-						</p>
-						<p>
-							<strong
-								style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; background: transparent; outline: 0px; vertical-align: top;">Bước
-								3:</strong>&nbsp;Truy cập vào database, mở tab wp_options và
-							thay đổi siteurl và home thành tên miền của bạn.
-						</p>
-
-						<span id="Download">&nbsp;</span> <br>
+						<?php echo html_entity_decode($row["huongdancaidat"]) ;?>
 					</div>
+					<?php } ?>
 					<div class="clear" style="height: 40px;">&nbsp;</div>
 					<div class="dt-down">
 						<div class="dt-down2">
@@ -484,10 +465,9 @@
 							</a>
 						</div>
 						<div class="pro-right">
-							<a href="/thanh-vien/luan-nguyen-151826.htm"
-								id="username" target="_blank"
-								class="agreen bold title4 pro-title" itemprop="url"
-								title="Thành viên Nguyễn Minh Luân"><span
+							<a href="/thanh-vien/luan-nguyen-151826.htm" id="username"
+								target="_blank" class="agreen bold title4 pro-title"
+								itemprop="url" title="Thành viên Nguyễn Minh Luân"><span
 								id="mainbody_contentbody_NameText" itemprop="name">Boombi</span></a>
 							<div class="line"></div>
 							<div class="pro-money us-bg-no">
@@ -868,8 +848,10 @@
 				</div>
 			</div>
 		</div>
-		       <?php }
-                                ?>      
+		       <?php
+
+}
+?>      
 	</div>
 </div>
 <div class="clearfix"></div>
