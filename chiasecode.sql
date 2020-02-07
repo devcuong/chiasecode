@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th2 07, 2020 lúc 08:19 AM
+-- Thời gian đã tạo: Th2 07, 2020 lúc 11:34 AM
 -- Phiên bản máy phục vụ: 10.4.10-MariaDB
 -- Phiên bản PHP: 7.3.12
 
@@ -33,7 +33,7 @@ CREATE TABLE `code` (
   `tieudecode` varchar(100) NOT NULL,
   `luotxem` int(11) NOT NULL,
   `luottai` int(11) NOT NULL,
-  `luaChonPhiTai` varchar(100) NOT NULL,
+  `luachonphitai` varchar(100) NOT NULL,
   `phitai` int(11) NOT NULL,
   `anhdaidien` varchar(200) NOT NULL,
   `danhmuc` int(11) NOT NULL,
@@ -49,6 +49,8 @@ CREATE TABLE `code` (
   `dadocdieukhoan` int(2) NOT NULL,
   `thanhvienupload` int(11) NOT NULL,
   `duocduyet` int(1) NOT NULL,
+  `loaifile` varchar(100) NOT NULL,
+  `dungluong` varchar(100) NOT NULL,
   `ngayupdate` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -56,24 +58,8 @@ CREATE TABLE `code` (
 -- Đang đổ dữ liệu cho bảng `code`
 --
 
-INSERT INTO `code` (`id`, `tieudecode`, `luotxem`, `luottai`, `luaChonPhiTai`, `phitai`, `anhdaidien`, `danhmuc`, `theloai`, `motangan`, `linkcode`, `linkdemo`, `camkethotro`, `hinhanhcode`, `motachitiet`, `huongdancaidat`, `tukhoa`, `dadocdieukhoan`, `thanhvienupload`, `duocduyet`, `ngayupdate`) VALUES
-(1, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://sharecode.vn/FilesUpload/Code/source-code-bao-cao-xay-dung-phan-mem-quan-ly-luong-nhan-vien-172918.jpg', 16, 1, '', '', '', 0, '', '', '', '', 0, 0, 0, '2019-12-20 19:00:00'),
-(2, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 16, 2, '', '', '', 0, '', '', '', '', 0, 0, 0, '2019-12-20 20:00:00'),
-(3, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 16, 2, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
-(4, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 18, 2, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
-(5, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 19, 1, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
-(6, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 20, 1, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
-(7, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 21, 1, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
-(8, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 22, 1, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
-(9, 'Mã nguồn code game tôm cua bầu 2019', 77, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 23, 3, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
-(10, 'Mã nguồn code game tôm cua bầu 2019', 486, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 24, 3, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
-(11, 'Mã nguồn code game tôm cua bầu 2019', 35, 0, '', 300, 'https://topcode.vn/FilesUpload/CodeLarge/ma-nguon-code-game-tom-cua-bau-2019-105759.jpg', 25, 3, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
-(12, 'Mã nguồn code game tôm cua bầu 2019', 411, 0, '', 300, 'https://sharecode.vn/FilesUpload/Code/source-code-bao-cao-xay-dung-phan-mem-quan-ly-luong-nhan-vien-172918.jpg', 26, 1, '', '', '', 0, '', '', '', '', 0, 0, 0, '0000-00-00 00:00:00'),
-(25, 'How do I get the current date and time in PHP?', 0, 0, 'CodeOK', 100, '1580879087.png', 23, 0, 'How do I get the current date and time in PHP?How do I get the current date and time in PHP?', 'https://stackoverflow.com/questions/5632662/saving-timestamp-in-mysql-table-using-php', 'https://stackoverflow.com/questions/5632662/saving-timestamp-in-mysql-table-using-php', 1, ',1580220083.png,1580221537.png,1580226804.png,sample-image.jpg', '&lt;p&gt;How do I get the current date and time in PHP?How do I get the current date and time in PHP?&lt;/p&gt;', '', 'jkkl,kjh,oi[', 1, 22, 0, '2020-02-04 23:04:47'),
-(26, 'Source code website thương mại điện tử giao diện Ecome', 0, 0, 'CodeOK', 150, '1580897539.png', 23, 0, 'Source code website thương mại điện tử giao diện EcomeSource code website thương mại điện tử giao diện Ecome', 'https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm', 'https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm', 1, ',1580220083.png,1580221537.png,1580226804.png', '&lt;p&gt;&lt;a href=\"https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm\"&gt;https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm&lt;/a&gt;&lt;/p&gt;', '&lt;p&gt;&lt;a href=\"https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm\"&gt;https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm&lt;/a&gt;&lt;/p&gt;', 'abc,cba,ccc', 1, 56, 0, '2020-02-05 04:12:19'),
-(27, 'Source code website thương mại điện tử giao diện Ecome', 0, 0, 'Free', 0, '1580898391.png', 15, 0, 'Source code website thương mại điện tử giao diện EcomeSource code website thương mại điện tử giao diện Ecome', 'https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm', 'https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm', 0, ',1580221537.png,1580226804.png,sample-image.jpg', '&lt;p&gt;&lt;a href=\"https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm\"&gt;https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm&lt;/a&gt;&lt;/p&gt;', '&lt;p&gt;&lt;a href=\"https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm\"&gt;https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm&lt;/a&gt;&lt;/p&gt;', 'abc,cba,gg', 1, 56, 0, '2020-02-05 04:26:31'),
-(28, 'Source code website thương mại điện tử giao diện Ecome', 0, 0, 'CodeOK', 100, '1580898793.png', 15, 0, 'Source code website thương mại điện tử giao diện Source code website thương mại điện tử giao diện Ecome', 'https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm', 'https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm', 1, ',1580221537.png,1580226804.png,sample-image.jpg', '&lt;p&gt;&lt;a href=\"https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm\"&gt;https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm&lt;/a&gt;&lt;/p&gt;', '&lt;p&gt;&lt;a href=\"https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm\"&gt;https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm&lt;/a&gt;&lt;/p&gt;', 'yy,gj,kh', 1, 56, 0, '2020-02-05 04:33:13'),
-(29, 'Source code website thương mại điện tử giao diện Ecome', 0, 0, 'Free', 0, '1580899090.png', 23, 0, 'Source code website thương mại điện tử giao diện Ecome Source code website thương mại điện tử giao diện Ecome', 'https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm', 'https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm', 0, ',1580221537.png,1580226804.png,sample-image.jpg', '&lt;p&gt;&lt;a href=\"https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm\"&gt;https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm&lt;/a&gt;&lt;/p&gt;', '&lt;p&gt;&lt;a href=\"https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm\"&gt;https://sharecode.vn/source-code/source-code-website-thuong-mai-dien-tu-giao-dien-ecome-25513.htm&lt;/a&gt;&lt;/p&gt;', 'aaa,bbb,ccc', 1, 56, 0, '2020-02-05 04:38:10');
+INSERT INTO `code` (`id`, `tieudecode`, `luotxem`, `luottai`, `luachonphitai`, `phitai`, `anhdaidien`, `danhmuc`, `theloai`, `motangan`, `linkcode`, `linkdemo`, `camkethotro`, `hinhanhcode`, `motachitiet`, `huongdancaidat`, `tukhoa`, `dadocdieukhoan`, `thanhvienupload`, `duocduyet`, `loaifile`, `dungluong`, `ngayupdate`) VALUES
+(46, 'UPLOAD CODE CHIA SẺ & KIẾM TIỀN CÙNG SHARECODE.VN', 0, 0, 'Free', 0, '1581070669.png', 15, 0, 'UPLOAD CODE CHIA SẺ & KIẾM TIỀN CÙNG SHARECODE.VNUPLOAD CODE CHIA SẺ & KIẾM TIỀN CÙNG SHARECODE.VN', 'https://sharecode.vn/thanh-vien-upload.htm', 'https://sharecode.vn/thanh-vien-upload.htm', 0, '1581070669-TranTam1555569db24b66a9c93c2ca8d.jpg,1581070669-TranTam15555mau-web-cong-ty-luat-meilin.jpg,1581070669-TranTam15555mau-web-cong-ty-lua-viet-phuc.jpg', '&lt;p&gt;UPLOAD CODE CHIA SẺ &amp;amp; KIẾM TIỀN C&amp;Ugrave;NG SHARECODE.VN&lt;/p&gt;', '&lt;p&gt;UPLOAD CODE CHIA SẺ &amp;amp; KIẾM TIỀN C&amp;Ugrave;NG SHARECODE.VN&lt;/p&gt;', 'aaa,bbb,ccc', 1, 56, 0, '', '', '2020-02-07 04:17:49');
 
 -- --------------------------------------------------------
 
@@ -218,7 +204,7 @@ ALTER TABLE `theloai`
 -- AUTO_INCREMENT cho bảng `code`
 --
 ALTER TABLE `code`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT cho bảng `danhmuc`
