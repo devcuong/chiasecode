@@ -5269,7 +5269,7 @@ i.BAB {
 }
 
 .dt-social {
-    width: 215px;
+    width: 100px;
     margin: 7px auto 10px auto;
 }
 
@@ -5761,11 +5761,9 @@ i.BAB {
 }
 
 .share-email {
-    width: 50%;
-    text-align: center;
-    float: left;
+  text-align: center;
     padding: 0px 20px;
-    border-right: 1px solid #e2d8c7;
+    line-height: 25px;
 }
 
 .share-save {
@@ -5971,4 +5969,15 @@ i.BAB {
     float: left;
     background: #fff;
 	margin-right: 5px;
+}
+
+.dt-img-small img {
+    max-height: 68px;
+    max-width: 68px;
+    margin: auto auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }

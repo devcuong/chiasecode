@@ -20,7 +20,7 @@
 			<div class="container" id="columns">
 				<div class="row">
 					<div class="center_column col-xs-12 col-sm-12" id="center_column">
-							<div id="mainbody_contentbody_contentpage_upPannel">
+							<div id="up-pannel">
 								<a id="mainbody_contentbody_contentpage_btnViewBase"
 									href="javascript:__doPostBack(&#39;ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$btnViewBase&#39;,&#39;&#39;)"></a>
 								<a id="mainbody_contentbody_contentpage_bntViewDetail"

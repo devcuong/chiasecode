@@ -3,6 +3,7 @@
 <div id="view-content-page" class="view-content-page">
 	<div class="container" id="columns">
 	 <?php
+	 $arrImg = [];
 while ($row = mysqli_fetch_array($data["InforSourceCode"])) {
     ?>
 		<div class="breadcrumb clearfix" itemscope=""
@@ -10,36 +11,28 @@ while ($row = mysqli_fetch_array($data["InforSourceCode"])) {
 			<span itemprop="itemListElement" itemscope=""
 				itemtype="http://schema.org/ListItem"> <a itemprop="item"
 				class="agreen" href="/" title="Trở lại trang chủ">Trang chủ
-					<meta itemprop="name" content="sharecode.vn">
 			</a>
-				<meta itemprop="position" content="1">
-			</span> <span class="navigation-pipe">&nbsp;</span> <span
+			</span><span class="navigation-pipe">&nbsp;</span><span
 				itemprop="itemListElement" itemscope=""
 				itemtype="http://schema.org/ListItem"> <a
 				href="/ngon-ngu-lap-trinh/wordpress-29.htm" id="path-cate"
 				itemprop="item" class="agreen" title="Danh mục WordPress"><span
 					itemprop="name">WordPress</span></a>
-				<meta itemprop="position" content="2">
 			</span> <span class="navigation-pipe">&nbsp;</span> <span
 				itemprop="itemListElement" itemscope=""
 				itemtype="http://schema.org/ListItem"> <a
 				href="/the-loai-source-code/website-1" id="path-type"
 				itemprop="item" class="agreen" title="Thể loại Website"><span
 					itemprop="name">Website</span></a>
-				<meta itemprop="position" content="3">
-			</span> <span class="navigation-pipe">&nbsp;</span><a
+			</span><span class="navigation-pipe">&nbsp;</span><a
 				href="/source-code/source-code-website-ban-may-tinh-laptop-19470.htm"
 				id="path-link" class="agreen" itemprop="item"> <span
 				id="mainbody_breadcrumb_PathLinkTitle" itemprop="name">Source code
 					website bán máy tính laptop Wordpress</span>
 			</a>
-			<meta itemprop="position" content="4">
-			</span>
 
 		</div>
 		<div class="row" itemscope="" itemtype="http://schema.org/Product">
-			<meta itemprop="url"
-				content="https://sharecode.vn/source-code/source-code-website-ban-may-tinh-laptop-19470.htm">
 			<div class="center_column col-xs-12 col-sm-9" id="center_column">
 
 				<div id="mainbody_contentbody_upPannel">
@@ -55,7 +48,7 @@ while ($row = mysqli_fetch_array($data["InforSourceCode"])) {
 							</div>
 							<div class="text-center dt-gallery">
 								<a href="#anh-demo" class="aorange"><span
-									id="mainbody_contentbody_CountGallery">Xem 1 Ảnh demo</span></a>
+									id="count-gallery">Xem tất cả ảnh demo</span></a>
 							</div>
 
 						</div>
@@ -89,7 +82,7 @@ while ($row = mysqli_fetch_array($data["InforSourceCode"])) {
 							<div class="row">
 								<div class="col-sm-10 col-md-8 dt-price">
 									<span class="bold">Phí tải: <span
-										id="mainbody_contentbody_Copyright" class="green"><?php
+										id="copyright" class="green"><?php
     
 if (intval($row["phitai"]) == 0) {
         echo "Miễn Phí";
@@ -206,10 +199,7 @@ if (intval($row["phitai"]) == 0) {
 					</div>
 					<br>
 					<div class="dt-sub" title="Mô tả ngắn">
-						<h4 class="title1" itemprop="description">Source code website buôn
-							bán các loại máy tính, laptop, điện thoại,... Source code đã được
-							tối ưu về tốc độ, cho tốc độ tải nhanh và dễ sử dụng, ko biết
-							code vẫn có thể sử dụng tốt.</h4>
+						<h4 class="title1" itemprop="description"><?php echo $row["motangan"]?></h4>
 					</div>
 					<br> <span class="dt-box-title bold">MÔ TẢ CHI TIẾT</span>
 					<div class="dt-box entry-detail">
@@ -217,71 +207,7 @@ if (intval($row["phitai"]) == 0) {
 							<strong>THÔNG TIN CHUNG:</strong>
 						</div>
 						<div>&nbsp;</div>
-						<div>
-							<span style="color: rgb(255, 0, 0);"><strong>- Mặt hàng buôn bán
-									theo DEMO: Đây chỉ là các mặt hàng mẫu, có thể thay đổi sang
-									mọi mặt hàng khác theo yêu cầu của bạn.</strong></span>
-						</div>
-						<div>&nbsp;</div>
-						<div>- Code thiết kế bằng mã nguồn mở WordPress</div>
-						<div>&nbsp;</div>
-						<div>- Giao diện dễ chỉnh sửa, không cần biết nhiều về code</div>
-						<div>&nbsp;</div>
-						<div>- Chuẩn SEO, đầy đủ các chức năng cần thiết cho 1 cửa hàng
-							online.</div>
-						<div>&nbsp;</div>
-						<div>- Tương thích với mọi thiết bị</div>
-						<div>&nbsp;</div>
-						<div>- Giao diện dễ tùy chỉnh, sử dụng 100% giao diện mà ko phải
-							đụng tới code. Phù hợp với mọi đối tượng.</div>
-						<div>&nbsp;</div>
-						<div>- Tối ưu SEO</div>
-						<div>&nbsp;</div>
-						<div>- Hạn chế tối đa việc sử dụng plugin nhằm tránh ảnh hưởng tới
-							tốc độ tải trang.</div>
-						<div>&nbsp;</div>
-						<div>- Code sạch, đảm bảo ko có mã độc.</div>
-						<div>&nbsp;</div>
-						<div>&nbsp;</div>
-						<div>
-							<strong>MỘT SỐ TÍNH NĂNG CHÍNH:</strong>
-						</div>
-						<div>&nbsp;</div>
-						<div>- Thống kê/theo dõi đơn hàng</div>
-						<div>&nbsp;</div>
-						<div>- So sánh sản phẩm</div>
-						<div>&nbsp;</div>
-						<div>- Hỗ trợ giỏ hàng</div>
-						<div>&nbsp;</div>
-						<div>- Có mục thông tin chi tiết và thuộc tính sản phẩm</div>
-						<div>&nbsp;</div>
-						<div>- Có mục đăng ký email nhận thông tin khuyến mãi</div>
-						<div>&nbsp;</div>
-						<div>- Tùy chỉnh lại với giá 0 đồng thành chữ Liên hệ. Khi mặt
-							hàng nào đó bạn chưa có giá cụ thể hoặc giá thay đổi tùy thời giá
-							thì bạn có thể cho nó 0đ. Khi đó website sẽ hiển thị là chữ "Liên
-							hệ"</div>
-						<div>&nbsp;</div>
-						<div>- Hỗ trợ chia sẽ sản phẩm lên mạng xã hội</div>
-						<div>&nbsp;</div>
-						<div>- Hỗ trợ đánh giá sản phẩm</div>
-						<div>&nbsp;</div>
-						<div>- Giao diện thêm sản phẩm đơn giản, dễ hiểu, dễ sử dụng</div>
-						<div>&nbsp;</div>
-						<div>- Có đủ chức năng bán hàng cơ bản</div>
-						<div>&nbsp;</div>
-						<div>... và còn nhiều tính năng khác</div>
-						<div>&nbsp;</div>
-						<div>&nbsp;</div>
-						<div>
-							<strong>HỖ TRỢ KHI MUA CODE:</strong>
-						</div>
-						<div>&nbsp;</div>
-						<div>- Cài đặt lên hosting nếu bạn chưa rành thao tác.</div>
-						<div>&nbsp;</div>
-						<div>- Tư vấn/hướng dẫn chỉnh sửa website.</div>
-						<div>&nbsp;</div>
-						<div>- Tư vấn/hướng dẫn đưa website lên Google.</div>
+						<?php echo html_entity_decode($row["motachitiet"]) ?>
 
 						<p id="box-text-config">
 							<br> XEM THÊM ==&gt; <a href="#huong-dan-cai-dat" class="aorange">Hướng
@@ -289,17 +215,24 @@ if (intval($row["phitai"]) == 0) {
 						</p>
 						<p id="anh-demo">&nbsp;</p>
 						<div id="div-gallery-image" class="dt-img">
-							<b>HÌNH ẢNH DEMO</b> <br> <br>
-
-							<div class="text-center">
+							<b>HÌNH ẢNH DEMO</b> <br> <br>			
+								<?php
+								for($i=0;$i<count($arrImg);$i++){
+								?>
+									<div class="text-center">
 								<img
-									src="https://sharecode.vn/FilesUpload/CodeUpload/source-code-website-ban-may-tinh-laptop-wordpress-83248.jpg"
-									alt="share code bán hàng php,code bán hàng wordpress,code web bán máy tính,code bán máy tính php,web bán hàng bằng wordpress,code bán hàng php"
+									src="<?php echo $servername ?>/mvc/public/member/code/<?php echo $arrImg[$i] ?>"
+									alt="<?php  ?>"
 									title="Download Source code website bán máy tính laptop Wordpress ngay!"
 									class="dt-max-img">
-							</div>
+									</div>
+									<br>
+									<?php } ?>
+							
 							<br>
 						</div>
+						<p class="alignright" id="huong-dan-cai-dat">Nguồn: Code4v.com</p>
+						
 					</div>
 					<?php if($row["huongdancaidat"] != ""){ ?>
 					<br> <br> <span class="dt-box-title bold">HƯỚNG DẪN CÀI ĐẶT</span>
@@ -321,7 +254,7 @@ if (intval($row["phitai"]) == 0) {
 									aria-expanded="false" aria-controls="collError"><i
 									class="fa fa-paper-plane" aria-hidden="true"></i>&nbsp;Báo lỗi
 									(or) Gửi hỗ trợ</a> &nbsp;&nbsp;&nbsp; <a
-									href="/bao-code-trung.htm?code=19470" id="lnk-copyright"
+									href="bao-code-trung/<?php echo $row["id"] ?>" id="lnk-copyright"
 									class="aorange text-nowrap dt-action"><i
 									class="fa fa-exclamation-triangle" aria-hidden="true"></i>&nbsp;Báo
 									vi phạm bản quyền</a>
@@ -335,8 +268,13 @@ if (intval($row["phitai"]) == 0) {
 									role="button" data-toggle="modal"><div class="btn-box">
 										<div class="btn-ic"></div>
 										<div class="btn-txt bold">
-											DOWNLOAD<br> <span id="mainbody_contentbody_divPrice2">(300
+											DOWNLOAD<br>
+											<?php if($row["phitai"] != 0) {?>
+											<span id="div-price2">(<?php echo $row["phitai"] ?>
 												Xu)</span>
+											<?php } else { ?>
+											<span id="div-price2">(Miễn phí)</span>
+											<?php } ?>
 										</div>
 									</div></a>
 
@@ -479,7 +417,8 @@ if (intval($row["phitai"]) == 0) {
 
 						</div>
 						<div class="clear us-pad">&nbsp;</div>
-						<div id="mainbody_contentbody_divInfoContact" class="us-contact">
+						<?php if ($row["phitai"] != 0) {?>
+						<div id="info-contact" class="us-contact">
 							<div class="red item_lable">Thông tin liên hệ &amp; hỗ trợ</div>
 							<div class="item">
 								Email: <a href="../#" id="mainbody_contentbody_lblEmail"
@@ -490,39 +429,27 @@ if (intval($row["phitai"]) == 0) {
 									title="Click gọi ngay!" class="item_detail">Đang ẩn...</a>
 							</div>
 							<div class="text-center">
-								<em id="mainbody_contentbody_lblInfoContactNote"
+								<em id="lbl-info-contact-note"
 									class="txt-colo">(Chỉ hiển thị khi đã mua code)</em>
 							</div>
 						</div>
+						<?php } ?>
 					</div>
-					<meta itemprop="priceCurrency" content="XU">
-					<meta itemprop="price" content="300">
-					<meta itemprop="priceValidUntil" content="5/11/2033 9:33:36 PM">
-					<link itemprop="availability" href="http://schema.org/InStock">
-					<meta itemprop="url"
-						content="https://sharecode.vn/source-code/source-code-website-ban-may-tinh-laptop-19470.htm">
 					<div class="left-module box-border2 bg-colo" id="boxShareFast">
 						<div id="mainbody_contentbody_Div1" class="us-head">
 							<b>CHIA SẺ NHANH</b> (CODE <span
-								id="mainbody_contentbody_lblIDCode">19470</span>)
+								id="lbl-idcode"><?php echo $row["id"] ?></span>)
 						</div>
-						<div id="mainbody_contentbody_UpdatePanel1">
+						<div id="update-panel1">
 
 							<div class="share-box">
 								<a role="button" data-toggle="collapse" href="#boxSendEmail"
 									aria-expanded="false" aria-controls="boxSendEmail">
 									<div class="share-email">
-										<img src="https://sharecode.vn/assets/images/share-email.png"
+										<img src="https://topcode.vn/assets/images/share-email.png"
 											style="margin-right: 5px"><br> Gửi code tới email bạn bè
 									</div>
-								</a> <a id="mainbody_contentbody_btnSave"
-									title="Lưu lại code cho tôi" class="SaveSuccess"
-									href="javascript:__doPostBack('ctl00$ctl00$mainbody$contentbody$btnSave','')"><div
-										style="width: 50%; text-align: center; float: left; padding: 0px 20px">
-										<img src="https://sharecode.vn/assets/images/share-save.png"><br>Lưu
-										lại code cho tôi
-									</div></a>
-
+								</a>
 							</div>
 							<div class="collapse" id="boxSendEmail" style="margin: 0px 10px">
 								<input name="ctl00$ctl00$mainbody$contentbody$txtSendEmail"

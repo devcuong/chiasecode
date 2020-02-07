@@ -18,7 +18,7 @@
 				href="https://sharecode.vn/code-upload-cua-toi.htm">
 				<h2 class="abread">Code tải lên</h2>
 			</a> <span class="navigation-pipe">&nbsp;</span> <a
-				href="https://sharecode.vn/thanh-vien-upload.htm"
+				href="/thanh-vien-upload"
 				id="path-link" class="agreen">
 				<h2 id="path-title" class="abread">Tải
 					code lên</h2>
