@@ -50,7 +50,6 @@
         public function GetCodeById($Id){
             $qr = "SELECT * FROM code WHERE id = $Id";
             return mysqli_query($this->con, $qr);
-//return $qr;
         }
         
     }

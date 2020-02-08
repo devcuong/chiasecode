@@ -109,19 +109,19 @@ if (intval($row["phitai"]) == 0) {
 									<div class="dt-col">Danh mục</div>
 									<div itemprop="material">
 										<a href="/ngon-ngu-lap-trinh/wordpress-29.htm"
-											id="mainbody_contentbody_Lang2" class="red" target="_blank">WordPress</a>
+											id="lang2" class="red" target="_blank"><?php echo $arrDanhMuc[$row["danhmuc"]]?></a>
 									</div>
 									<div class="dt-col">Thể loại</div>
 									<div itemprop="category">
 										<a href="/the-loai-source-code/website-1.htm"
-											id="mainbody_contentbody_Category2" class="red"
-											target="_blank">Website</a>
+											id="category2" class="red"
+											target="_blank"><?php echo $arrTheLoai[$row["theloai"]]?></a>
 									</div>
 									<div class="dt-col">Nhóm code</div>
 									<div>
-										<a href="/code-chat-luong.htm"
+										<a href="/<?php echo to_slug($arrNhomCode[$row["luachonphitai"]]) ?>"
 											id="mainbody_contentbody_Group2" class="agreen"
-											target="_blank">Code chất lượng</a> <span class="txt-colo"
+											target="_blank"><?php echo $arrNhomCode[$row["luachonphitai"]]?></a> <span class="txt-colo"
 											data-toggle="tooltip" data-placement="top"
 											title="1-CODE MIỄN PHÍ (0Xu): Code học hỏi. 2-CODE THAM KHẢO (2Xu đến 99Xu): Phí tải code để tham khảo và phát triển. 3-CODE CHẤT LƯỢNG (>=100Xu): Code đảm bảo, thường có demo trực tiếp và được cam kết hỗ trợ từ tác giả."><i
 											class="fa fa-info-circle" aria-hidden="true"></i></span>
@@ -208,11 +208,12 @@ if (intval($row["phitai"]) == 0) {
 						</div>
 						<div>&nbsp;</div>
 						<?php echo html_entity_decode($row["motachitiet"]) ?>
-
+						<?php if($row["huongdancaidat"] != "") {?>
 						<p id="box-text-config">
 							<br> XEM THÊM ==&gt; <a href="#huong-dan-cai-dat" class="aorange">Hướng
 								dẫn cài đặt chi tiết</a>
 						</p>
+						<?php } ?>
 						<p id="anh-demo">&nbsp;</p>
 						<div id="div-gallery-image" class="dt-img">
 							<b>HÌNH ẢNH DEMO</b> <br> <br>			

@@ -89,6 +89,7 @@
 											<div class="alignleft u_image_txt">
 												<div class="true-ic">Ảnh đẹp sẽ giúp code có nhiều lượt xem</div>
 												<div class="true-ic">Dung lượng tối đa 2MB</div>
+												<div class="true-ic">Nếu không có ảnh sẽ lấy ảnh mặc định</div>
 												<span id="img_error" class="text-error "></span>
 											</div>
 										</div>
