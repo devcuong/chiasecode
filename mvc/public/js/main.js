@@ -405,7 +405,7 @@ $image_crop = $('#image_demo').croppie({
   
   // tab code upload của tôi
   $('#liAll').click(function(){
-	  
+	  $(location).attr('href', 'tat-ca');
   });
  
 /*function like source code*/

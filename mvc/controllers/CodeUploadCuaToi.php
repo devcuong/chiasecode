@@ -16,5 +16,18 @@ class CodeUploadCuaToi extends Controller{
             exit();
         }
     }
+    
+    /*lấy tất cả code */
+    function TatCa(){
+        if(isset($_SESSION["userid"])){
+            $kq = $this->CodeModel->GetAllCodeByUserId($_SESSION["userid"]);
+            //View
+            $this->view("cat-template", ["Page"=>"code-upload-cua-toi",
+                "AllCodeByUser" => $kq]);
+        }else{
+            header("Location: http://localhost/chiasecode", 301);
+            exit();
+        }
+    }
 }
     ?>

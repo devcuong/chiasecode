@@ -106,8 +106,41 @@
 					</div>
 				</div>
 				<div class="clear"></div>
-				<div id="mainbody_contentbody_contentpage_noResult" class="noresult"></div>
-
+				<?php while ($row = mysqli_fetch_array($data["AllCodeByUser"])) { ?>
+					<div class="col-xs-12 pro-row">
+                        <div class="col-md-6 pro-col">
+                            <div class="pro-20" title="Mã code"><?php echo $row["id"] ?></div>
+                            <div class="pro-80 bold">
+                                <a class="agreen titlecode" href="https://sharecode.vn/source-code/full-code-giao-dien-android-studio-du-an-dat-hang-mon-an-25510.htm">
+                                    <h3 class="title1"><?php echo $row["tieudecode"] ?></h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pro-col pro-line14">
+                        <?php if($row["phitai"] != 0) {?>
+                        <span title="Phí tải" class="pro-20 orange"><b><?php echo $row["phitai"] ?></b> Xu</span>
+                        <?php } else {?>
+                         <span title="Phí tải" class="pro-20 orange"><b>Miễn Phí</b></span>
+                        <?php } ?>
+                            
+                             
+                             <span title="Lượt tải" class="pro-20"><b><?php echo $row["luottai"] ?></b></span>
+                            <span title="Lượt xem" class="pro-20"><b><?php echo $row["luotxem"] ?></b></span>
+                            <?php if($row["duocduyet"] == 0) {?>
+                            <span class="pro-15" title="Đang chờ BQT duyệt"><span class="label label-warning">Chờ</span></span>
+                            <?php }else{ ?>
+                            <span class="pro-15" title="Đã được BQT duyệt"><span class="label label-success">Được duyệt</span></span>
+                            <?php } ?>
+                            <span class="pro-25 text-center">
+                                <a onclick="return confirm('Bạn có muốn chuyển trạng thái hay không?');" id="mainbody_contentbody_contentpage_rptList_lbtDisplay_0" data-toggle="tooltip" data-placement="top" title="Click để Hiển thị (or) Ẩn với mọi người" href="javascript:__doPostBack('ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$rptList$ctl00$lbtDisplay','')"><i class="fa fa-eye green" aria-hidden="true"></i></a>
+                                &nbsp;
+                        <a href="https://sharecode.vn/sua-code/full-code-giao-dien-android-studio-du-an-dat-hang-mon-an-25510.htm" data-toggle="tooltip" data-placement="top" title="Sửa thông tin của code"><i class="fa fa-pencil orange" aria-hidden="true"></i></a>
+                                &nbsp;
+                                
+                            </span>
+                        </div>
+                    </div>
+                    <?php } ?>
 				<div class="col-xs-12 bold pro-row-foot"></div>
 				<div class="clear"></div>
 				<div class="sortPagiBar clearfix clear">

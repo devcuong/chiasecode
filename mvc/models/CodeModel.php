@@ -62,5 +62,11 @@
             return $result;
         }
         
+        /*LẤY TẤT CẢ CODE UPLOAD BỞI THÀNH VIÊN*/
+        public function GetAllCodeByUserId($userId){
+            $qr = "SELECT * FROM code WHERE thanhvienupload = $userId";
+            return mysqli_query($this->con, $qr);
+        }
+        
     }
 ?>
