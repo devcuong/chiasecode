@@ -405,24 +405,28 @@ $image_crop = $('#image_demo').croppie({
  
 /*function like source code*/
 function likeSourceCode(a){
-
-	$.ajax({
-          type: "POST",
-          url: "http://localhost/chiasecode/source-code/like-code",
-          data: {"id": a},
-          //dataType: "json",
-          success: function(data)
-          {
-              if(data){
-            	  $( "#btn-like" ).removeClass( "button-green" );
-            	  $( "#btn-like" ).addClass( "button-orange" );
-            	  var likesCount = $("#likes-count").text();
-            	  $("#likes-count").html(parseInt(likesCount) + 1);
-              }else{
-           	   alert("THẤT BẠI");
-              }
-          }
-        });
+	var allClass =  document.getElementById("btn-like");
+	if(allClass.classList.contains("button-green"))
+	{
+		$.ajax({
+	          type: "POST",
+	          url: "http://localhost/chiasecode/source-code/like-code",
+	          data: {"id": a},
+	          //dataType: "json",
+	          success: function(data)
+	          {
+	              if(data){
+	            	  $( "#btn-like" ).removeClass( "button-green" );
+	            	  $( "#btn-like" ).addClass( "button-orange" );
+	            	  var likesCount = $("#likes-count").text();
+	            	  $("#likes-count").html(parseInt(likesCount) + 1);
+	              }else{
+	           	   alert("THẤT BẠI");
+	              }
+	          }
+	        });
+	}
+	
 }
   
 function isEmail(email) {

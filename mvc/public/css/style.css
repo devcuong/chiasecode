@@ -4443,13 +4443,12 @@ i.BAB {
 .bg-title {
     background: #f0ecdd;
     padding: 8px 15px;
-    border-radius: 5px;
     overflow: auto;
 }
 
 .search_textbox {
     padding-right: 35px;
-    background: url('/assets/images/ic_search1.png') #ffffff;
+    background: url('https://sharecode.vn/assets/images/ic_search1.png') #ffffff;
     background-position: right 15px top 9px;
     background-repeat: no-repeat;
     -webkit-transition: width 1s;
@@ -5905,7 +5904,46 @@ i.BAB {
  	padding:20px;
 	text-align:center;
 }
-
+.pro-col2 {
+    padding: 4px 0px;
+    overflow: hidden;
+}
+.pro-20 {
+    width: 20%;
+    float: left;
+}
+.pro-15 {
+    width: 15%;
+    float: left;
+}
+.pro-25 {
+    width: 25%;
+    float: left;
+}
+.pro-line14 {
+    line-height: 14px;
+}
+.pro-80 {
+    width: 80%;
+    float: left;
+    overflow: hidden;
+    padding-right: 5px;
+}
+.pro-row-head {
+    background: #ff0000;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.btn-option {
+    border: 1px solid #cebda2;
+    background: #f0ecdd;
+    color: #8c6635;
+}
+.btn-option.select {
+    background: #F5A9A9;
+    color: #648d03;
+}
 /*UPLOAD SUCCESS*/
 .thank-you-pop img{
 	width:76px;
