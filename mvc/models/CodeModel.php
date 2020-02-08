@@ -54,13 +54,12 @@
         
         /*UPDATE YÊU THÍCH*/
         public function UpdateYeuThich($Id){
-            $qr = "UPDATE CATEGORY SET yeuthich = yeuthich + 1 WHERE id = '$Id'";
+            $qr = "UPDATE code SET yeuthich = yeuthich + 1 WHERE id = $Id";
             $result = false;
             if(mysqli_query($this->con, $qr)){
                 $result = true;
             }
-            
-            return json_encode($result);
+            return $result;
         }
         
     }

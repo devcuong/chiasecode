@@ -405,18 +405,19 @@ $image_crop = $('#image_demo').croppie({
  
 /*function like source code*/
 function likeSourceCode(a){
-	$( "#btn-like" ).removeClass( "button-green" );
-	$( "#btn-like" ).addClass( "button-orange" );
+
 	$.ajax({
           type: "POST",
           url: "http://localhost/chiasecode/source-code/like-code",
           data: {"id": a},
-          dataType: "json",
+          //dataType: "json",
           success: function(data)
           {
-        	  alert(data);
               if(data){
-           	   alert(data); 
+            	  $( "#btn-like" ).removeClass( "button-green" );
+            	  $( "#btn-like" ).addClass( "button-orange" );
+            	  var likesCount = $("#likes-count").text();
+            	  $("#likes-count").html(parseInt(likesCount) + 1);
               }else{
            	   alert("THẤT BẠI");
               }

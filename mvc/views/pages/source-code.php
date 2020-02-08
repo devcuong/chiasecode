@@ -72,10 +72,10 @@ while ($row = mysqli_fetch_array($data["InforSourceCode"])) {
 								<div class="col-md-6 col-lg-5 dt-sta-vie2 red">
 									<i class="fa fa-download" aria-hidden="true"></i>&nbsp;<b
 										id="download-count"><?php echo $row["luottai"] ?></b>&nbsp;&nbsp;&nbsp;&nbsp;
-									<span class="dt-vie-ic">&nbsp;<b id="views"><?php echo $row["luotxem"] ?></b></span>&nbsp;&nbsp;&nbsp;&nbsp;
+									<span class="dt-vie-ic">&nbsp;<b id="views-count"><?php echo $row["luotxem"] ?></b></span>&nbsp;&nbsp;&nbsp;&nbsp;
 									<span class="text-nowrap"><i class="fa fa-heart"
 										aria-hidden="true"></i>&nbsp;<b
-										id="mainbody_contentbody_Likes">11</b></span>
+										id="likes-count"><?php echo $row["yeuthich"] ?></b></span>
 								</div>
 							</div>
 							<div class="line"></div>
