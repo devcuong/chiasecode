@@ -402,6 +402,11 @@ $image_crop = $('#image_demo').croppie({
       else
           document.getElementById("errFileMax2").innerHTML = "";
   });
+  
+  // tab code upload của tôi
+  $('#liAll').click(function(){
+	  
+  });
  
 /*function like source code*/
 function likeSourceCode(a){

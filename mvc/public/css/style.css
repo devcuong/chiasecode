@@ -4249,7 +4249,8 @@ textarea:hover {
 }
 
 .nav>li>a {
-    background-color: #e2d8c7;
+    background-color: #ddd;
+	border-radius: 0px;
 }
 
 .nav-tabs {
@@ -5878,7 +5879,7 @@ i.BAB {
     padding: 0px 15px;
 }
 .pro-list {
-    background: #EEEEEE;
+    background: #fff;
     padding: 10px 0px;
     margin-top: 10px;
 }
@@ -5886,7 +5887,7 @@ i.BAB {
     height: 32px;
     font-size: 14px;
     text-align: center;
-    background: #faf8f1;
+    background: #fff;
     margin: 5px;
     border: 1px solid #d5c6ae;
 }
