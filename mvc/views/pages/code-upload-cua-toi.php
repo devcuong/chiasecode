@@ -111,7 +111,7 @@
                         <div class="col-md-6 pro-col">
                             <div class="pro-20" title="Mã code"><?php echo $row["id"] ?></div>
                             <div class="pro-80 bold">
-                                <a class="agreen titlecode" href="https://sharecode.vn/source-code/full-code-giao-dien-android-studio-du-an-dat-hang-mon-an-25510.htm">
+                                <a class="agreen titlecode" href="<?php echo $servername ?>/source-code/<?php echo to_slug($row["tieudecode"]).'-'.$row["id"]?>">
                                     <h3 class="title1"><?php echo $row["tieudecode"] ?></h3>
                                 </a>
                             </div>
@@ -132,7 +132,11 @@
                             <span class="pro-15" title="Đã được BQT duyệt"><span class="label label-success">Được duyệt</span></span>
                             <?php } ?>
                             <span class="pro-25 text-center">
-                                <a onclick="return confirm('Bạn có muốn chuyển trạng thái hay không?');" id="mainbody_contentbody_contentpage_rptList_lbtDisplay_0" data-toggle="tooltip" data-placement="top" title="Click để Hiển thị (or) Ẩn với mọi người" href="javascript:__doPostBack('ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$rptList$ctl00$lbtDisplay','')"><i class="fa fa-eye green" aria-hidden="true"></i></a>
+                            <?php if($row["hienthi"] !=0 ){ ?>
+                                <a id="code-upload-display" data-toggle="tooltip" data-placement="top" title="Click để Hiển thị (or) Ẩn với mọi người" onclick="anCode(<?php echo $row["id"] ?>)" ><i class="fa fa-eye green" aria-hidden="true"></i></a>
+                            <?php } else{ ?>
+                              <a id="code-upload-display" data-toggle="tooltip" data-placement="top" title="Click để Hiển thị (or) Ẩn với mọi người" onclick="hienThiCode(<?php echo $row["id"] ?>)" ><i class="fa fa-eye gray" aria-hidden="true"></i></a>
+                              <?php } ?>
                                 &nbsp;
                         <a href="https://sharecode.vn/sua-code/full-code-giao-dien-android-studio-du-an-dat-hang-mon-an-25510.htm" data-toggle="tooltip" data-placement="top" title="Sửa thông tin của code"><i class="fa fa-pencil orange" aria-hidden="true"></i></a>
                                 &nbsp;

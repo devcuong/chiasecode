@@ -2885,7 +2885,7 @@ span.notify-right {
 
 #left_column .block .block_content {
     padding: 15px 15px;
-    border: 1px solid #e2d8c7;
+    border: 1px solid #ddd;
     overflow: hidden;
 }
 
@@ -3980,7 +3980,7 @@ span.notify-right {
 }
 
 .pro-money {
-    background: #f0ecdd;
+    background: #ddd;
     padding: 6px 0px 6px 10px;
     line-height: 18px;
 }
@@ -4442,7 +4442,7 @@ i.BAB {
 }
 
 .bg-title {
-    background: #f0ecdd;
+    background: #ddd;
     padding: 8px 15px;
     overflow: auto;
 }
@@ -4735,7 +4735,7 @@ i.BAB {
 }
 
 .box-border2 {
-    border: 1px solid #e2d8c7;
+    border: 1px solid #ddd;
 }
 
 
@@ -5889,7 +5889,7 @@ i.BAB {
     text-align: center;
     background: #fff;
     margin: 5px;
-    border: 1px solid #d5c6ae;
+    border: 1px solid #ddd;
 }
 .pro-list li a {
     display: block;

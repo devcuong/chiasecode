@@ -68,5 +68,25 @@
             return mysqli_query($this->con, $qr);
         }
         
+        /*UPDATE HIỂN THỊ CODE*/
+        public function UpdateHienThiCode($Id){
+            $qr = "UPDATE code SET hienthi = 1 WHERE id = $Id";
+            $result = false;
+            if(mysqli_query($this->con, $qr)){
+                $result = true;
+            }
+            return $result;
+        }
+        
+        /*UPDATE ẨN CODE*/
+        public function UpdateAnCode($Id){
+            $qr = "UPDATE code SET hienthi = 0 WHERE id = $Id";
+            $result = false;
+            if(mysqli_query($this->con, $qr)){
+                $result = true;
+            }
+            return $result;
+        }
+        
     }
 ?>

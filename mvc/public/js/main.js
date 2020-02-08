@@ -403,10 +403,50 @@ $image_crop = $('#image_demo').croppie({
           document.getElementById("errFileMax2").innerHTML = "";
   });
   
-  // tab code upload của tôi
+  // all code upload của tôi
   $('#liAll').click(function(){
-	  $(location).attr('href', 'tat-ca');
+	  $(location).attr('href', 'http://localhost/chiasecode/code-upload-cua-toi/');
   });
+  
+  // code upload cua toi dang hien thi
+  $('#liShow').click(function(){
+	  $(location).attr('href', 'http://localhost/chiasecode/code-upload-cua-toi/dang-hien-thi');
+  });
+
+/*function hiển thị code*/
+function hienThiCode(a){
+	$.ajax({
+        type: "POST",
+        url: "http://localhost/chiasecode/code-upload-cua-toi/hien-thi-code",
+        data: {"id": a},
+        //dataType: "json",
+        success: function(data)
+        {
+            if(data){
+            	$(location).attr('href', 'http://localhost/chiasecode/code-upload-cua-toi/');
+            }else{
+         	   alert("THẤT BẠI");
+            }
+        }
+      });
+}
+/*function hiển thị code*/
+function anCode(a){
+	$.ajax({
+        type: "POST",
+        url: "http://localhost/chiasecode/code-upload-cua-toi/an-code",
+        data: {"id": a},
+        //dataType: "json",
+        success: function(data)
+        {
+            if(data){
+            	$(location).attr('href', 'http://localhost/chiasecode/code-upload-cua-toi/');
+            }else{
+         	   alert("THẤT BẠI");
+            }
+        }
+      });
+}
  
 /*function like source code*/
 function likeSourceCode(a){
