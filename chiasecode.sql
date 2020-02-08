@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th2 07, 2020 lúc 11:34 AM
+-- Thời gian đã tạo: Th2 08, 2020 lúc 06:36 PM
 -- Phiên bản máy phục vụ: 10.4.10-MariaDB
 -- Phiên bản PHP: 7.3.12
 
@@ -33,6 +33,7 @@ CREATE TABLE `code` (
   `tieudecode` varchar(100) NOT NULL,
   `luotxem` int(11) NOT NULL,
   `luottai` int(11) NOT NULL,
+  `yeuthich` int(11) NOT NULL,
   `luachonphitai` varchar(100) NOT NULL,
   `phitai` int(11) NOT NULL,
   `anhdaidien` varchar(200) NOT NULL,
@@ -58,8 +59,9 @@ CREATE TABLE `code` (
 -- Đang đổ dữ liệu cho bảng `code`
 --
 
-INSERT INTO `code` (`id`, `tieudecode`, `luotxem`, `luottai`, `luachonphitai`, `phitai`, `anhdaidien`, `danhmuc`, `theloai`, `motangan`, `linkcode`, `linkdemo`, `camkethotro`, `hinhanhcode`, `motachitiet`, `huongdancaidat`, `tukhoa`, `dadocdieukhoan`, `thanhvienupload`, `duocduyet`, `loaifile`, `dungluong`, `ngayupdate`) VALUES
-(46, 'UPLOAD CODE CHIA SẺ & KIẾM TIỀN CÙNG SHARECODE.VN', 0, 0, 'Free', 0, '1581070669.png', 15, 0, 'UPLOAD CODE CHIA SẺ & KIẾM TIỀN CÙNG SHARECODE.VNUPLOAD CODE CHIA SẺ & KIẾM TIỀN CÙNG SHARECODE.VN', 'https://sharecode.vn/thanh-vien-upload.htm', 'https://sharecode.vn/thanh-vien-upload.htm', 0, '1581070669-TranTam1555569db24b66a9c93c2ca8d.jpg,1581070669-TranTam15555mau-web-cong-ty-luat-meilin.jpg,1581070669-TranTam15555mau-web-cong-ty-lua-viet-phuc.jpg', '&lt;p&gt;UPLOAD CODE CHIA SẺ &amp;amp; KIẾM TIỀN C&amp;Ugrave;NG SHARECODE.VN&lt;/p&gt;', '&lt;p&gt;UPLOAD CODE CHIA SẺ &amp;amp; KIẾM TIỀN C&amp;Ugrave;NG SHARECODE.VN&lt;/p&gt;', 'aaa,bbb,ccc', 1, 56, 0, '', '', '2020-02-07 04:17:49');
+INSERT INTO `code` (`id`, `tieudecode`, `luotxem`, `luottai`, `yeuthich`, `luachonphitai`, `phitai`, `anhdaidien`, `danhmuc`, `theloai`, `motangan`, `linkcode`, `linkdemo`, `camkethotro`, `hinhanhcode`, `motachitiet`, `huongdancaidat`, `tukhoa`, `dadocdieukhoan`, `thanhvienupload`, `duocduyet`, `loaifile`, `dungluong`, `ngayupdate`) VALUES
+(57, 'Souce code quản lý cửa hàng máy lạnh + Database (C#, devexpres)', 0, 0, 0, 'Free', 0, '1581075141.png', 15, 2, 'Souce code quản lý cửa hàng máy lạnh + Database (C#, devexpres) Souce code quản lý cửa hàng máy lạnh + Database (C#, devexpres)', 'https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm', 'https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm', 0, '1581075141-TranTam1555576765581_151682822881437_436085359755919360_n.jpg,1581075141-TranTam1555576779511_151682799548106_2485182985020637184_n.jpg,1581075141-TranTam1555576902983_151682632881456_2364455873851424768_n.jpg', '&lt;p&gt;&lt;a href=\"https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm\"&gt;https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm&lt;/a&gt;&lt;/p&gt;', '&lt;p&gt;&lt;a href=\"https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm\"&gt;https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm&lt;/a&gt;&lt;/p&gt;', 'aaa,bbb,ccc', 1, 56, 0, '', '', '2020-02-07 05:32:21'),
+(58, 'Đề tài quản lý thư viện full code c# + báo cáo', 0, 0, 15, 'CodeOK', 100, '1581085309.png', 17, 2, 'Đề tài quản lý thư viện full code c# + báo cáoĐề tài quản lý thư viện full code c# + báo cáoĐề tài quản lý thư viện full code c# + báo cáo', 'https://sharecode.vn/source-code/de-tai-quan-ly-thu-vien-full-code-c-bao-cao-165.htm', 'https://sharecode.vn/source-code/de-tai-quan-ly-thu-vien-full-code-c-bao-cao-165.htm', 1, '1581085309-TranTam15555DSC00092.jpg', '&lt;p&gt;Đề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;oĐề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;oĐề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;o&lt;/p&gt;', '&lt;p&gt;Đề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;oĐề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;oĐề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;o&lt;/p&gt;', 'aaa,bbb,ccc', 1, 56, 1, '', '', '2020-02-07 08:21:49');
 
 -- --------------------------------------------------------
 
@@ -204,7 +206,7 @@ ALTER TABLE `theloai`
 -- AUTO_INCREMENT cho bảng `code`
 --
 ALTER TABLE `code`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT cho bảng `danhmuc`
