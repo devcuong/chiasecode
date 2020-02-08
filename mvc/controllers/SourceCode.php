@@ -19,5 +19,11 @@
             $this->view("cat-template", ["Page"=>"source-code",
                 "InforSourceCode" => $kq]);
         }
+        
+        function LikeCode(){
+            $idCode = $_POST["id"];
+            $kq = $this->CodeModel->UpdateYeuThich($idCode);
+            echo $kq;
+        }
     }
 ?>

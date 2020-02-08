@@ -93,19 +93,15 @@ if (intval($row["phitai"]) == 0) {
     ?> </span></span>
 								</div>
 								<div class="col-sm-2 col-md-4 dt-pri-btn text-center">
-									<a id="mainbody_contentbody_btnLike" title="Yêu thích code này"
-										class="button-orange button-small LikeSuccess"
-										href="javascript:__doPostBack('ctl00$ctl00$mainbody$contentbody$btnLike','')"><i
+									<a id="btn-like" title="Yêu thích code này"
+										class="button-green button-small LikeSuccess" onclick="likeSourceCode(<?php echo $row["id"]?>)"><i
 										class="fa fa-heart line-h20" aria-hidden="true"></i><span
 										class="hidden-sm">&nbsp; YÊU THÍCH</span></a>&nbsp;
-
 								</div>
 							</div>
 							<div class="line"></div>
 							<div class="row">
 								<div class="col-md-7 dt-des">
-									<meta itemprop="brand" content="code4v.com">
-									<meta itemprop="releaseDate" content="5/11/2018 9:33:36 PM">
 									<div class="dt-col">Danh mục</div>
 									<div itemprop="material">
 										<a href="/ngon-ngu-lap-trinh/wordpress-29.htm"

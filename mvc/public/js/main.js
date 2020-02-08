@@ -402,7 +402,27 @@ $image_crop = $('#image_demo').croppie({
       else
           document.getElementById("errFileMax2").innerHTML = "";
   });
-
+ 
+/*function like source code*/
+function likeSourceCode(a){
+	$( "#btn-like" ).removeClass( "button-green" );
+	$( "#btn-like" ).addClass( "button-orange" );
+	$.ajax({
+          type: "POST",
+          url: "http://localhost/chiasecode/source-code/like-code",
+          data: {"id": a},
+          dataType: "json",
+          success: function(data)
+          {
+        	  alert(data);
+              if(data){
+           	   alert(data); 
+              }else{
+           	   alert("THẤT BẠI");
+              }
+          }
+        });
+}
   
 function isEmail(email) {
 	var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -789,6 +809,9 @@ function SubmitForm(){
 	         });
 	}
 }
+
+/*POPUP LIKE*/
+
 
 
 
