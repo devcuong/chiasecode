@@ -67,20 +67,20 @@
 			<br>
 			<ul id="contentpage_divOption" class="nav nav-tabs nav-tabs-lg bold">
 				<li id="liAll"><a id="dashboard-btn-all">Tất
-						cả <span id="contentpage_badAll" class="badge bagde-red">0</span>
+						cả <span id="bad-all" class="badge bagde-red"><?php echo $data["TatCaCode"] ?></span>
 				</a></li>
 				<li id="liShow"><a id="dashboard-btn-show">Đang
-						hiển thị <span id="contentpage_badShow" class="badge bagde-green">0</span>
+						hiển thị <span id="bad-show" class="badge bagde-green"><?php echo $data["CodeHienThi"] ?></span>
 				</a></li>
 				<li id="liHide"><a id="dashboard-btn-hide">Đang
-						ẩn <span id="contentpage_badHide" class="badge bagde-green">0</span>
+						ẩn <span id="contentpage_badHide" class="badge bagde-green"><?php echo $data["CodeDangAn"] ?></span>
 				</a></li>
 				<li id="liWait"><a id="dashboard-btn-wait">Chờ
-						duyệt <span id="contentpage_badWait" class="badge bagde-green">0</span>
+						duyệt <span id="bad-wait" class="badge bagde-green"><?php echo $data["CodeChoDuyet"] ?></span>
 				</a></li>
 				<li id="liPrice"><a id="dashboard-btn-wait-price">Chờ
-						duyệt phí download <span id="contentpage_badWaitPrice"
-						class="badge bagde-green">0</span>
+						duyệt phí download <span id="bad-wait-price"
+						class="badge bagde-green"><?php echo $data["CodeChoDuyetPhi"] ?></span>
 				</a></li>
 
 			</ul>

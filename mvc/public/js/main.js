@@ -418,9 +418,13 @@ $image_crop = $('#image_demo').croppie({
 	  $(location).attr('href',SiteName +'/code-upload-cua-toi/code-dang-an');
   });
   
-//code upload cua toi dang an
+//code upload cua toi cho duyet
   $('#liWait').click(function(){
 	  $(location).attr('href',SiteName +'/code-upload-cua-toi/code-cho-duyet');
+  });
+//code upload cua toi cho duyet phi 
+  $('#liPrice').click(function(){
+	  $(location).attr('href',SiteName +'/code-upload-cua-toi/code-cho-duyet-phi');
   });
   
 

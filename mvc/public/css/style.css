@@ -4244,8 +4244,8 @@ textarea:hover {
 
 .nav>li>a:focus,
 .nav>li>a:hover {
-    background-color: #cbf592;
-    color: #648d03;
+    background-color: #FA5858;
+    color: #fff;
 }
 
 .nav>li>a {
@@ -5620,7 +5620,9 @@ i.BAB {
     background: #84c52c;
     color: white;
 }
-
+.bagde-red {
+    background: #ff0000;
+}
 .badge {
     padding: 2px 7px 4px 7px;
 }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th2 09, 2020 lúc 12:34 PM
+-- Thời gian đã tạo: Th2 09, 2020 lúc 06:52 PM
 -- Phiên bản máy phục vụ: 10.4.10-MariaDB
 -- Phiên bản PHP: 7.3.12
 
@@ -50,6 +50,7 @@ CREATE TABLE `code` (
   `dadocdieukhoan` int(2) NOT NULL,
   `thanhvienupload` int(11) NOT NULL,
   `duocduyet` int(1) NOT NULL,
+  `duocduyetphi` int(11) NOT NULL,
   `hienthi` int(1) NOT NULL,
   `loaifile` varchar(100) NOT NULL,
   `dungluong` varchar(100) NOT NULL,
@@ -60,9 +61,9 @@ CREATE TABLE `code` (
 -- Đang đổ dữ liệu cho bảng `code`
 --
 
-INSERT INTO `code` (`id`, `tieudecode`, `luotxem`, `luottai`, `yeuthich`, `luachonphitai`, `phitai`, `anhdaidien`, `danhmuc`, `theloai`, `motangan`, `linkcode`, `linkdemo`, `camkethotro`, `hinhanhcode`, `motachitiet`, `huongdancaidat`, `tukhoa`, `dadocdieukhoan`, `thanhvienupload`, `duocduyet`, `hienthi`, `loaifile`, `dungluong`, `ngayupdate`) VALUES
-(57, 'Souce code quản lý cửa hàng máy lạnh + Database (C#, devexpres)', 0, 0, 0, 'Free', 0, '1581075141.png', 15, 2, 'Souce code quản lý cửa hàng máy lạnh + Database (C#, devexpres) Souce code quản lý cửa hàng máy lạnh + Database (C#, devexpres)', 'https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm', 'https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm', 0, '1581075141-TranTam1555576765581_151682822881437_436085359755919360_n.jpg,1581075141-TranTam1555576779511_151682799548106_2485182985020637184_n.jpg,1581075141-TranTam1555576902983_151682632881456_2364455873851424768_n.jpg', '&lt;p&gt;&lt;a href=\"https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm\"&gt;https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm&lt;/a&gt;&lt;/p&gt;', '&lt;p&gt;&lt;a href=\"https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm\"&gt;https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm&lt;/a&gt;&lt;/p&gt;', 'aaa,bbb,ccc', 1, 56, 0, 0, '', '', '2020-02-07 05:32:21'),
-(58, 'Đề tài quản lý thư viện full code c# + báo cáo', 0, 0, 15, 'CodeOK', 100, '1581085309.png', 17, 2, 'Đề tài quản lý thư viện full code c# + báo cáoĐề tài quản lý thư viện full code c# + báo cáoĐề tài quản lý thư viện full code c# + báo cáo', 'https://sharecode.vn/source-code/de-tai-quan-ly-thu-vien-full-code-c-bao-cao-165.htm', 'https://sharecode.vn/source-code/de-tai-quan-ly-thu-vien-full-code-c-bao-cao-165.htm', 1, '1581085309-TranTam15555DSC00092.jpg', '&lt;p&gt;Đề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;oĐề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;oĐề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;o&lt;/p&gt;', '&lt;p&gt;Đề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;oĐề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;oĐề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;o&lt;/p&gt;', 'aaa,bbb,ccc', 1, 56, 1, 1, '', '', '2020-02-07 08:21:49');
+INSERT INTO `code` (`id`, `tieudecode`, `luotxem`, `luottai`, `yeuthich`, `luachonphitai`, `phitai`, `anhdaidien`, `danhmuc`, `theloai`, `motangan`, `linkcode`, `linkdemo`, `camkethotro`, `hinhanhcode`, `motachitiet`, `huongdancaidat`, `tukhoa`, `dadocdieukhoan`, `thanhvienupload`, `duocduyet`, `duocduyetphi`, `hienthi`, `loaifile`, `dungluong`, `ngayupdate`) VALUES
+(57, 'Souce code quản lý cửa hàng máy lạnh + Database (C#, devexpres)', 0, 0, 0, 'Free', 0, '1581075141.png', 15, 2, 'Souce code quản lý cửa hàng máy lạnh + Database (C#, devexpres) Souce code quản lý cửa hàng máy lạnh + Database (C#, devexpres)', 'https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm', 'https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm', 0, '1581075141-TranTam1555576765581_151682822881437_436085359755919360_n.jpg,1581075141-TranTam1555576779511_151682799548106_2485182985020637184_n.jpg,1581075141-TranTam1555576902983_151682632881456_2364455873851424768_n.jpg', '&lt;p&gt;&lt;a href=\"https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm\"&gt;https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm&lt;/a&gt;&lt;/p&gt;', '&lt;p&gt;&lt;a href=\"https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm\"&gt;https://sharecode.vn/source-code/souce-code-quan-ly-cua-hang-may-lanh-database-c-devexpres-25509.htm&lt;/a&gt;&lt;/p&gt;', 'aaa,bbb,ccc', 1, 56, 0, 0, 1, '', '', '2020-02-07 05:32:21'),
+(58, 'Đề tài quản lý thư viện full code c# + báo cáo', 0, 0, 15, 'CodeOK', 100, '1581085309.png', 17, 2, 'Đề tài quản lý thư viện full code c# + báo cáoĐề tài quản lý thư viện full code c# + báo cáoĐề tài quản lý thư viện full code c# + báo cáo', 'https://sharecode.vn/source-code/de-tai-quan-ly-thu-vien-full-code-c-bao-cao-165.htm', 'https://sharecode.vn/source-code/de-tai-quan-ly-thu-vien-full-code-c-bao-cao-165.htm', 1, '1581085309-TranTam15555DSC00092.jpg', '&lt;p&gt;Đề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;oĐề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;oĐề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;o&lt;/p&gt;', '&lt;p&gt;Đề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;oĐề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;oĐề t&amp;agrave;i quản l&amp;yacute; thư viện full code c# + b&amp;aacute;o c&amp;aacute;o&lt;/p&gt;', 'aaa,bbb,ccc', 1, 56, 1, 0, 1, '', '', '2020-02-07 08:21:49');
 
 -- --------------------------------------------------------
 
@@ -126,7 +127,7 @@ INSERT INTO `thanhvien` (`id`, `password`, `email`, `hoten`, `username`, `sdt`, 
 (53, '$2y$10$oQPqYKEGqz0c3MbWQ3j1AuBxm07OK7ThV6jGTq3GOy4jdbMWGu0ve', 'abcdef@gmail.com', 'Tran Tam', 'TranTam150366', '0337085585', 0, 0, 0, 0, 0),
 (54, '$2y$10$7BTTqX5e1YJBaLkSsX/g9eB9LVdJZm0jNKC2S5VSFbx70lYMrvaai', 'abcdef@gmail.com', 'Tran Tam', 'TranTam1503', '0337085569', 0, 0, 0, 0, 0),
 (55, '$2y$10$BeLpNik60BA7qVbu0h.6QOHTdhmvOmfwhVQJKgj7hg6E6MBdmtXry', 'teoem@gmail.com', 'Trần Tâm', 'TranTam1555', '0337085654', 0, 0, 0, 0, 0),
-(56, '$2y$10$BQ9sSUT9kyOWjb.bD6/9/OAI9y161O/enLDhY2Bcv058zHm9BLRRi', 'viettxt@gmail.com', 'Tran Tam', 'TranTam15555', '0337085578', 0, 0, 0, 0, 0),
+(56, '$2y$10$BQ9sSUT9kyOWjb.bD6/9/OAI9y161O/enLDhY2Bcv058zHm9BLRRi', 'viettxt@gmail.com', 'Tran Tam', 'TranTam15555', '0337085578', 2, 0, 2, 1, 2),
 (57, '$2y$10$usCoo11G44PPM6Wc2fKV0.8r7wwMSkawafGTPhQKEz8zYn5Qrr7X.', 'teoem@gmail.com', 'doãn cường', 'doancuong1503', '0337085587', 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------
