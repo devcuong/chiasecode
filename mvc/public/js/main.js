@@ -188,7 +188,7 @@ $("#btn-dang-ky-ngay").click(function() {
            {
                if(data){
             	   alert("ĐĂNG KÝ THÀNH CÔNG");
-            	   $(location).attr('href', 'http://localhost/chiasecode/dang-ky/dang-ky-thanh-cong');
+            	   $(location).attr('href', SiteName+'/dang-ky/dang-ky-thanh-cong');
                }else{
             	   alert("ĐĂNG KÝ THẤT BẠI");
                }
@@ -208,7 +208,7 @@ $("#btn-login").click(function() {
           success: function(data)
           {
              if(data){
-            	  $(location).attr('href', 'http://localhost/chiasecode/');
+            	  $(location).attr('href', SiteName);
              }
           }
         });
@@ -218,11 +218,11 @@ $("#btn-login").click(function() {
 $('#btn-exit').click(function(){
 	 $.ajax({
          type: "POST",
-         url: "http://localhost/chiasecode/api/ThanhVienLogout",
+         url: SiteName+"/api/ThanhVienLogout",
          success: function(data)
          {
             if(data){
-           	  $(location).attr('href', 'http://localhost/chiasecode/');
+           	  $(location).attr('href', SiteName);
             }
          }
        });
@@ -259,7 +259,7 @@ $image_crop = $('#image_demo').croppie({
       size: 'viewport'
     }).then(function(response){
       $.ajax({
-        url:"http://localhost/chiasecode/thanh-vien-upload/crop-file",
+        url:SiteName+"/thanh-vien-upload/crop-file",
         type: "POST",
         data:{"image": response},
         success:function(data)
@@ -443,7 +443,7 @@ function anCode(a){
 	var $currentUrl = window.location.href;
 	$.ajax({
         type: "POST",
-        url: "http://localhost/chiasecode/code-upload-cua-toi/an-code",
+        url: SiteName+"/code-upload-cua-toi/an-code",
         data: {"id": a},
         //dataType: "json",
         success: function(data)
@@ -464,7 +464,7 @@ function likeSourceCode(a){
 	{
 		$.ajax({
 	          type: "POST",
-	          url: "http://localhost/chiasecode/source-code/like-code",
+	          url: SiteName+"/source-code/like-code",
 	          data: {"id": a},
 	          //dataType: "json",
 	          success: function(data)
@@ -513,7 +513,7 @@ function ValidateTitle(){
         }
         else{
         	$.ajax({
-                url:"http://localhost/chiasecode/api/CheckCodeTitle",
+                url:SiteName+"/api/CheckCodeTitle",
                 type: "POST",
                 data:{"title": title},
                 success:function(data)
