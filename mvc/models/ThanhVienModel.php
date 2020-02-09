@@ -2,7 +2,7 @@
     class ThanhVienModel extends DB{
         /*THÊM USER*/
         public function InsertThanhVien($email, $password, $hoten, $username, $sdt){
-            $qr = "INSERT INTO thanhvien VALUES(null, '$email', '$password', '$hoten', '$username', '$sdt')";
+            $qr = "INSERT INTO thanhvien VALUES(null, '$email', '$password', '$hoten', '$username', '$sdt',0,0,0,0,0)";
             $result = false;
             if(mysqli_query($this->con, $qr)){
                 $result = true;
@@ -22,7 +22,7 @@
                      $_SESSION['username'] = $r["username"];
                      $_SESSION['userid'] = $r["id"];
                      $kq=true;
-                } 
+                }
             }
             return json_encode($kq);
         }

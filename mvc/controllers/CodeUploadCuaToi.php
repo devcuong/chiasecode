@@ -69,5 +69,20 @@ class CodeUploadCuaToi extends Controller{
         }
     }
     
+    /*CODE ĐANG CHỜ DUYỆT*/
+    function CodeChoDuyet(){
+        if(isset($_SESSION["userid"])){
+            $kq = $this->CodeModel->GetAllCodeDangChoDuyetByUserId($_SESSION["userid"]);
+            
+            //View
+            $this->view("cat-template", ["Page"=>"code-upload-cua-toi",
+                "AllCodeByUser" => $kq]);
+        }
+        else{
+            header("Location: http://localhost/chiasecode", 301);
+            exit();
+        }
+    }
+    
 }
     ?>

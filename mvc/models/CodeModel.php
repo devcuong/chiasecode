@@ -80,6 +80,12 @@
             return mysqli_query($this->con, $qr);
         }
         
+        /*LẤY TẤT CẢ CODE ĐANG CHỜ DUYỆT*/
+        public function GetAllCodeDangChoDuyetByUserId($userId){
+            $qr = "SELECT * FROM code WHERE thanhvienupload = $userId AND duocduyet = 0";
+            return mysqli_query($this->con, $qr);
+        }
+        
         /*UPDATE HIỂN THỊ CODE*/
         public function UpdateHienThiCode($Id){
             $qr = "UPDATE code SET hienthi = 1 WHERE id = $Id";

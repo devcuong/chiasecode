@@ -32,12 +32,18 @@ class API extends Controller
 
     public function ThanhVienDangNhap()
     {
+        $kq = "";
         if(isset($_POST["log-email"]) && isset($_POST["log-password"])){
             $logEmail = $_POST["log-email"];
             $logPassword = $_POST["log-password"];
             $kq = $this->ThanhVienModel->LayThanhVienByEmail($logEmail, $logPassword);
-            echo $kq;
         }
+        if(isset($_SESSION["userid"])){
+            $tatCaCode = count($this->CodeModel->GetAllCodeByUserId($_SESSION["userid"]));
+            $codeDangHienThi = count($this->CodeModel->GetAllCodeDangHienThiByUserId($_SESSION["userid"]));
+            $codeDangAn = count($this->CodeModel->GetAllCodeDangAnByUserId($_SESSION["userid"]));
+        }
+        echo $kq;
     }
     
    public function ThanhVienLogout(){

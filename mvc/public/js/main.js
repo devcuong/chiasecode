@@ -418,6 +418,11 @@ $image_crop = $('#image_demo').croppie({
 	  $(location).attr('href',SiteName +'/code-upload-cua-toi/code-dang-an');
   });
   
+//code upload cua toi dang an
+  $('#liWait').click(function(){
+	  $(location).attr('href',SiteName +'/code-upload-cua-toi/code-cho-duyet');
+  });
+  
 
 
 /*function hiển thị code*/
