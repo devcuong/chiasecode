@@ -405,16 +405,24 @@ $image_crop = $('#image_demo').croppie({
   
   // all code upload của tôi
   $('#liAll').click(function(){
-	  $(location).attr('href', 'http://localhost/chiasecode/code-upload-cua-toi/');
+	  $(location).attr('href',SiteName + '/code-upload-cua-toi/');
   });
   
   // code upload cua toi dang hien thi
   $('#liShow').click(function(){
-	  $(location).attr('href', 'http://localhost/chiasecode/code-upload-cua-toi/dang-hien-thi');
+	  $(location).attr('href',SiteName +'/code-upload-cua-toi/code-dang-hien-thi');
   });
+  
+  // code upload cua toi dang an
+  $('#liHide').click(function(){
+	  $(location).attr('href',SiteName +'/code-upload-cua-toi/code-dang-an');
+  });
+  
+
 
 /*function hiển thị code*/
 function hienThiCode(a){
+	var $currentUrl = window.location.href;
 	$.ajax({
         type: "POST",
         url: "http://localhost/chiasecode/code-upload-cua-toi/hien-thi-code",
@@ -423,7 +431,7 @@ function hienThiCode(a){
         success: function(data)
         {
             if(data){
-            	$(location).attr('href', 'http://localhost/chiasecode/code-upload-cua-toi/');
+            	$(location).attr('href', $currentUrl);
             }else{
          	   alert("THẤT BẠI");
             }
@@ -432,6 +440,7 @@ function hienThiCode(a){
 }
 /*function hiển thị code*/
 function anCode(a){
+	var $currentUrl = window.location.href;
 	$.ajax({
         type: "POST",
         url: "http://localhost/chiasecode/code-upload-cua-toi/an-code",
@@ -440,7 +449,7 @@ function anCode(a){
         success: function(data)
         {
             if(data){
-            	$(location).attr('href', 'http://localhost/chiasecode/code-upload-cua-toi/');
+            	$(location).attr('href', $currentUrl);
             }else{
          	   alert("THẤT BẠI");
             }

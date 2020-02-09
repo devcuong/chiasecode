@@ -43,5 +43,31 @@ class CodeUploadCuaToi extends Controller{
         
     }
     
+    /*LẤY CODE ĐANG HIỂN THỊ*/
+    function CodeDangHienThi(){
+        if(isset($_SESSION["userid"])){
+            $kq = $this->CodeModel->GetAllCodeDangHienThiByUserId($_SESSION["userid"]);
+            //View
+            $this->view("cat-template", ["Page"=>"code-upload-cua-toi",
+                "AllCodeByUser" => $kq]);
+        }else{
+            header("Location: http://localhost/chiasecode", 301);
+            exit();
+        }
+    }
+    
+    /*LẤY CODE ĐANG ẨN*/
+    function CodeDangAn(){
+        if(isset($_SESSION["userid"])){
+            $kq = $this->CodeModel->GetAllCodeDangAnByUserId($_SESSION["userid"]);
+            //View
+            $this->view("cat-template", ["Page"=>"code-upload-cua-toi",
+                "AllCodeByUser" => $kq]);
+        }else{
+            header("Location: http://localhost/chiasecode", 301);
+            exit();
+        }
+    }
+    
 }
     ?>

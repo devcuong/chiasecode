@@ -68,6 +68,18 @@
             return mysqli_query($this->con, $qr);
         }
         
+        /*LẤY TẤT CẢ CODE ĐANG HIỂN THỊ BỞI THÀNH VIÊN*/
+        public function GetAllCodeDangHienThiByUserId($userId){
+            $qr = "SELECT * FROM code WHERE thanhvienupload = $userId AND hienthi = 1";
+            return mysqli_query($this->con, $qr);
+        }
+        
+        /*LẤY TẤT CẢ CODE ĐANG ẨN BỞI THÀNH VIÊN*/
+        public function GetAllCodeDangAnByUserId($userId){
+            $qr = "SELECT * FROM code WHERE thanhvienupload = $userId AND hienthi = 0";
+            return mysqli_query($this->con, $qr);
+        }
+        
         /*UPDATE HIỂN THỊ CODE*/
         public function UpdateHienThiCode($Id){
             $qr = "UPDATE code SET hienthi = 1 WHERE id = $Id";
