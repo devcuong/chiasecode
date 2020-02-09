@@ -11,11 +11,11 @@
 			</a>
 				<meta itemprop="position" content="1">
 			</span> <span class="navigation-pipe">&nbsp;</span>
-			<form action="<?php echo $servername ?>/api/ThanhVienDangKy"
+			<form action="<?php echo $servername ?>/dang-ky/thanh-vien-dang-ky"
 				method="post" id="frm-dang-ky" name="frm-dang-ky" enctype="multipart/form-data">
 				<span itemprop="itemListElement" itemscope=""
 					itemtype="http://schema.org/ListItem"> <a itemprop="item"
-					class="agreen" href="/dang-ki-tai-khoan"
+					class="agreen" href="/dang-ky"
 					title="Đăng kí tài khoản">
 						<h2 class="abread" itemprop="name">Đăng kí tài khoản</h2>
 				</a>

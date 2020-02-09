@@ -10,7 +10,7 @@
                     <?php if(!isset($_SESSION['username'])) {?>
                      <div id="LoginBox" class="support-link">
                         <a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" role="button">Đăng nhập</a>
-                        <a href="dang-ki-tai-khoan">Đăng kí</a>
+                        <a href="dang-ky">Đăng kí</a>
                     </div>
                     <div id="user-info-top" class="user-info pull-right">
                     <?php } else { ?>
@@ -41,7 +41,7 @@
                             <a class="current-open" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="index.html"><span></span></a>
                             <ul class="dropdown-menu mega_dropdown" role="menu">
                                 <li><a data-toggle="modal" data-target="#LoginForm" onclick="createCaptcha();" role="button"><i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;&nbsp;Đăng nhập</a></li>
-                                <li><a href="dang-ki-tai-khoan.html"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Đăng kí</a></li>
+                                <li><a href="dang-ky"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Đăng kí</a></li>
                             </ul>
                         </div>
                     </div>

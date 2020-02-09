@@ -30,20 +30,6 @@ class API extends Controller
         echo $this->ThanhVienModel->CheckSdtThanhVien($sdt);
     }
 
-    public function ThanhVienDangKy()
-    {
-        if (isset($_POST["email-dang-ky"]) && $_POST["ho-ten-dang-ky"] && $_POST["ten-hien-thi"] && $_POST["sdt-dang-ky"] && $_POST["password-dang-ky"]) {
-            $emailDangKy = $_POST["email-dang-ky"];
-            $hoTenDangKy = $_POST["ho-ten-dang-ky"];
-            $tenHienThi = $_POST["ten-hien-thi"];
-            $sdtDangKy = $_POST["sdt-dang-ky"];
-            $passDangKy = password_hash($_POST["password-dang-ky"], PASSWORD_DEFAULT);
-            // 2. Insert database bang chu kenh
-            $kq = $this->ThanhVienModel->InsertThanhVien($passDangKy, $emailDangKy, $hoTenDangKy, $tenHienThi, $sdtDangKy);
-            echo $kq;
-        }
-    }
-    
     public function ThanhVienDangNhap()
     {
         if(isset($_POST["log-email"]) && isset($_POST["log-password"])){
