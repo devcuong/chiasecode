@@ -449,6 +449,9 @@ function hienThiCode(a){
 }
 /*function hiển thị code*/
 function anCode(a){
+	var confirmHide = confirm("Bạn có chắc chắn muốn ẩn code này không!");
+	if(confirmHide == true)
+		{
 	var $currentUrl = window.location.href;
 	$.ajax({
         type: "POST",
@@ -464,6 +467,7 @@ function anCode(a){
             }
         }
       });
+		}
 }
  
 /*function like source code*/

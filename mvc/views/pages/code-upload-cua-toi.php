@@ -138,7 +138,7 @@
                               <a id="code-upload-display" data-toggle="tooltip" data-placement="top" title="Click để Hiển thị (or) Ẩn với mọi người" onclick="hienThiCode(<?php echo $row["id"] ?>)" ><i class="fa fa-eye gray" aria-hidden="true"></i></a>
                               <?php } ?>
                                 &nbsp;
-                        <a href="https://sharecode.vn/sua-code/full-code-giao-dien-android-studio-du-an-dat-hang-mon-an-25510.htm" data-toggle="tooltip" data-placement="top" title="Sửa thông tin của code"><i class="fa fa-pencil orange" aria-hidden="true"></i></a>
+                        <a href="<?php echo $servername ?>/sua-code/<?php echo to_slug($row["tieudecode"])."-".$row["id"] ?>" data-toggle="tooltip" data-placement="top" title="Sửa thông tin của code"><i class="fa fa-pencil orange" aria-hidden="true"></i></a>
                                 &nbsp;
                                 
                             </span>
