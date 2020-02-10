@@ -150,25 +150,7 @@
 				<div class="sortPagiBar clearfix clear">
 					<span class="page-noite"><b
 						id="mainbody_contentbody_contentpage_lblTotalPage">0 - 0</b>&nbsp;/
-						Tổng số <b id="mainbody_contentbody_contentpage_lblTotalCode">0</b>&nbsp;CODE</span>
-					<div class="bottom-pagination">
-						<nav id="mainbody_contentbody_contentpage_PaggingBottom"></nav>
-					</div>
-					<div id="mainbody_contentbody_contentpage_divSort"
-						class="sort-product">
-						<select
-							name="ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$ddlSort"
-							onchange="javascript:setTimeout('__doPostBack(\'ctl00$ctl00$ctl00$mainbody$contentbody$contentpage$ddlSort\',\'\')', 0)"
-							id="mainbody_contentbody_contentpage_ddlSort">
-							<option selected="selected" value="New">Mới nhất</option>
-							<option value="View">Xem nhiều</option>
-							<option value="Down">Tải nhiều</option>
-
-						</select>
-						<div class="sort-product-icon">
-							<i class="fa fa-sort-alpha-asc"></i>
-						</div>
-					</div>
+						Tổng số <b id="lbl-total-code">0</b>&nbsp;CODE</span>
 				</div>
 				<br>
 

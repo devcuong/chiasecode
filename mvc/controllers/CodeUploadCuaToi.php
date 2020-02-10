@@ -55,6 +55,7 @@ class CodeUploadCuaToi extends Controller{
             $idCode = $_POST["id"];
             $kq = $this->CodeModel->UpdateHienThiCode($idCode);
             if($kq){
+               $this->ThongKeCode();
                $kq = $this->ThanhVienModel->UpdateCodeHienThi($_SESSION["userid"], $this->codeHienThi+1);
                $kq = $this->ThanhVienModel->UpdateCodeDangAn($_SESSION["userid"], $this->codeDangAn-1);
             }
@@ -70,6 +71,7 @@ class CodeUploadCuaToi extends Controller{
             $idCode = $_POST["id"];
             $kq = $this->CodeModel->UpdateAnCode($idCode);
             if($kq){
+                $this->ThongKeCode();
                 $kq = $this->ThanhVienModel->UpdateCodeDangAn($_SESSION["userid"], $this->codeDangAn+1);
                 $kq = $this->ThanhVienModel->UpdateCodeHienThi($_SESSION["userid"], $this->codeHienThi-1);
             }
