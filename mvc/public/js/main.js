@@ -881,6 +881,36 @@ function SubmitForm(){
 	         });
 	}
 }
+//Submit form
+function SubmitUpdateCode(){
+	if(ValidateUpload()){
+		for ( instance in CKEDITOR.instances ) {
+	            CKEDITOR.instances[instance].updateElement();
+	    }
+	    var form = $("#frm-upload")[0];
+	    var indexForm = $("#frm-upload");
+	    var formData = new FormData(form);
+        event.preventDefault();
+	    var url = indexForm.attr('action');
+	    $.ajax({
+	           type: "POST",
+	           url: url,
+	           processData: false,
+	           contentType: false,
+	           data: formData,
+	           dataType: "json",
+	           success: function(data)
+	           {
+	        	   var dt = JSON.stringify(data);	        	   
+	               if(data){
+	            	   $('#ignismyModal').modal('show'); 
+	               }else{
+	            	   alert("THẤT BẠI");
+	               }
+	           }
+	         });
+	}
+}
 
 /*POPUP LIKE*/
 

@@ -127,22 +127,9 @@
 												id="ddl-category-lang"
 												class="form-control">
 												<option value="0">--Chọn danh mục--</option>
-												<option value="15">Android</option>
-												<option value="23">iOS</option>
-												<option value="26">Windows phone</option>
-												<option value="21">PHP &amp; MySQL</option>
-												<option value="29">WordPress</option>
-												<option value="28">Joomla</option>
-												<option value="17">Visual C#</option>
-												<option value="16">Asp/Asp.Net</option>
-												<option value="20">Java/JSP</option>
-												<option value="19">Visual Basic</option>
-												<option value="24">Cocos2D</option>
-												<option value="27">Unity</option>
-												<option value="18">Visual C++</option>
-												<option value="25">Html &amp; Template</option>
-												<option value="22">Khác</option>
-
+												<?php foreach ($arrDanhMuc as $key => $value) {?>
+                                                    <option value="<?php echo $key ?>" <?php if($row["danhmuc"] == $key){ echo "selected"; } ?>><?php echo $value ?></option>
+                                                <?php } ?>
 											</select> <span
 												class="glyphicon glyphicon-ok form-control-feedback success-ic3"
 												aria-hidden="true" id="successCate" style="display: none;"></span>
@@ -221,6 +208,7 @@
 										<label class="col-md-2 control-label bold">Đặt phí tải</label>
 										<div class="col-md-10">
 											<div class="btn-group" data-toggle="buttons">
+											<?php if($row["luachonphitai"] == "Free") {?>
 												<label class="btn btn-warning active" id="lblCheckFree"> <input
 													type="radio" name="options" id="idFree" value="Free"
 													checked> Miễn phí (0 Xu)
@@ -231,6 +219,29 @@
 													id="lblCheckCodeOK"> <input type="radio" name="options"
 													id="idCodeOK" value="CodeOK"> Chất lượng (&gt;= 100 Xu)
 												</label>
+												<?php } if($row["luachonphitai"] == "Code" ){?>
+												<label class="btn btn-warning" id="lblCheckFree"> <input
+													type="radio" name="options" id="idFree" value="Free"
+													checked> Miễn phí (0 Xu)
+												</label> <label class="btn btn-warning active" id="lblCheckCode"> <input
+													type="radio" name="options" id="idCode" value="Code"> Tham
+													khảo (2Xu - 99Xu)
+												</label> <label class="btn btn-warning"
+													id="lblCheckCodeOK"> <input type="radio" name="options"
+													id="idCodeOK" value="CodeOK"> Chất lượng (&gt;= 100 Xu)
+												</label>
+												<?php } if($row["luachonphitai"] == "CodeOK" ){?>
+												<label class="btn btn-warning" id="lblCheckFree"> <input
+													type="radio" name="options" id="idFree" value="Free"
+													checked> Miễn phí (0 Xu)
+												</label> <label class="btn btn-warning active" id="lblCheckCode"> <input
+													type="radio" name="options" id="idCode" value="Code"> Tham
+													khảo (2Xu - 99Xu)
+												</label> <label class="btn btn-warning"
+													id="lblCheckCodeOK"> <input type="radio" name="options"
+													id="idCodeOK" value="CodeOK"> Chất lượng (&gt;= 100 Xu)
+												</label>
+												<?php } ?>
 											</div>
 										</div>
 									</div>
@@ -264,7 +275,7 @@
 													type="text" maxlength="4"
 													id="txt-price-other"
 													class="bold form-control"
-													placeholder="Tự nhập phí tải"> <span
+													placeholder="Tự nhập phí tải" <?php if($row["phitai"] != 0){ echo "value=".$row["phitai"]; } ?>> <span
 													class="glyphicon glyphicon-ok form-control-feedback success-ic"
 													aria-hidden="true" id="successPrice"
 													style="right: 60px; display: none;"></span> <span
