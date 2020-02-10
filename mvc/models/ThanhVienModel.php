@@ -20,6 +20,25 @@
             return $result;
         }
         
+        public function UpdateCodeHienThi($userId, $codeHienThi){
+            $qr = "UPDATE thanhvien SET codehienthi = $codeHienThi WHERE id = $userId";
+            $result = false;
+            if(mysqli_query($this->con, $qr)){
+                $result = true;
+            }
+            return $result;
+        }
+        
+        public function UpdateCodeDangAn($userId, $codeDangAn){
+            $qr = "UPDATE thanhvien SET codedangan = $codeDangAn WHERE id = $userId";
+            $result = false;
+            if(mysqli_query($this->con, $qr)){
+                $result = true;
+            }
+            return $result;
+        }
+        
+        
         /*LẤY USER BẰNG EMAIL VÀ PASSWORD*/
         public function LayThanhVienByEmail($email, $password){
             $qr = "SELECT id, password, username FROM thanhvien WHERE email='$email'";

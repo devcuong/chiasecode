@@ -51,12 +51,12 @@ class CodeUploadCuaToi extends Controller{
     /*HIỂN THỊ CODE*/
     function HienThiCode(){
         $kq = false;
-        $kq2 = false;
         if (isset($_SESSION["userid"])){
             $idCode = $_POST["id"];
             $kq = $this->CodeModel->UpdateHienThiCode($idCode);
             if($kq){
-                
+               $kq = $this->ThanhVienModel->UpdateCodeHienThi($_SESSION["userid"], $this->codeHienThi+1);
+               $kq = $this->ThanhVienModel->UpdateCodeDangAn($_SESSION["userid"], $this->codeDangAn-1);
             }
         }
         echo $kq;
@@ -69,6 +69,10 @@ class CodeUploadCuaToi extends Controller{
         if (isset($_SESSION["userid"])){
             $idCode = $_POST["id"];
             $kq = $this->CodeModel->UpdateAnCode($idCode);
+            if($kq){
+                $kq = $this->ThanhVienModel->UpdateCodeDangAn($_SESSION["userid"], $this->codeDangAn+1);
+                $kq = $this->ThanhVienModel->UpdateCodeHienThi($_SESSION["userid"], $this->codeHienThi-1);
+            }
         }
         echo $kq;
         
