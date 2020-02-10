@@ -434,7 +434,7 @@ function hienThiCode(a){
 	var $currentUrl = window.location.href;
 	$.ajax({
         type: "POST",
-        url: "http://localhost/chiasecode/code-upload-cua-toi/hien-thi-code",
+        url: SiteName+"/code-upload-cua-toi/hien-thi-code",
         data: {"id": a},
         //dataType: "json",
         success: function(data)
