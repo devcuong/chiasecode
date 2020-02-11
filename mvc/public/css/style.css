@@ -4864,17 +4864,17 @@ i.BAB {
     background: url('/assets/images/ic_true.png') no-repeat 0px 3px;
     padding-left: 20px;
     margin-bottom: 5px;
-    color: #a9834f;
+    color: #000;
 }
 
 .note-col {
-    color: #d5c6ae;
+    color: #000;
 }
 
 .up-idea {
     padding-left: 38px;
     background: url(/assets/images/ic_idea2.png) no-repeat;
-    color: #d5c6ae;
+    color: #000;
 }
 
 .upload_file {

@@ -778,6 +778,10 @@ function ValidateDemo(){
     }
     return true;
 }
+// Fucntion validate file upload 2
+function ValidateFileUpload2(){
+	var kt = true;
+}
 
 // Function check numeric input
 function CheckNumeric(e){
@@ -868,12 +872,14 @@ function SubmitForm(){
 	           processData: false,
 	           contentType: false,
 	           data: formData,
+	           dataType: "JSON",
 	           success: function(data)
 	           {
+	        	   alert(data);
 	               if(data){
 	            	   $('#ignismyModal').modal('show'); 
 	               }else{
-	            	   alert("THẤT BẠI");
+	            	   alert(data);
 	               }
 	           }
 	         });

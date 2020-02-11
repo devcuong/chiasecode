@@ -103,18 +103,18 @@ class ThanhVienUpload extends Controller{
         else {
             $camKetHoTro = 0;
         }
-        $total = count($_FILES['file-upload-2']['name']);
-        if($total > 0){
-            $fileName = "";
-            for($i=0 ;$i<$total; $i++){
-                $fileName = $_FILES['file-upload-2']['name'][$i];
-                $fileName = time().'-'.$_SESSION['username'].$fileName;
-                $duongDanHinhAnh = 'mvc/public/member/code/'.$fileName;
-                array_push($arrImage,$fileName);
-                // Upload file
-                move_uploaded_file($_FILES['file-upload-2']['tmp_name'][$i],$duongDanHinhAnh);
+            $total = count($_FILES['file-upload-2']['name']);
+            if($total > 0){
+                $fileName = "";
+                for($i=0 ;$i<$total; $i++){
+                    $fileName = $_FILES['file-upload-2']['name'][$i];
+                    $fileName = time().'-'.$_SESSION['username'].$fileName;
+                    $duongDanHinhAnh = 'mvc/public/member/code/'.$fileName;
+                    array_push($arrImage,$fileName);
+                    // Upload file
+                    move_uploaded_file($_FILES['file-upload-2']['tmp_name'][$i],$duongDanHinhAnh);
+                }
             }
-        }
         if(isset($_POST["ck-detail"])){
             $moTaChiTiet = trim($_POST["ck-detail"]);
         }
@@ -130,7 +130,8 @@ class ThanhVienUpload extends Controller{
         }
         $created_date = date("Y-m-d H:i:s");
         $kq = $this->CodeModel->InsertCode($imageDaiDien, $tieuDeCode, $danhMuc, $moTaNgan, $linkCode, $linkDemo, $luaChonPhiTai, $phiTai, $camKetHoTro,implode(",",$arrImage), $moTaChiTiet, $huongDanCaiDat, $tuKhoa, $daDocDieuKhoan, intval($_SESSION['userid']), $created_date);
-    }
+        echo $kq;
+   }
     
     
 }
