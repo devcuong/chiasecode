@@ -780,7 +780,20 @@ function ValidateDemo(){
 }
 // Fucntion validate file upload 2
 function ValidateFileUpload2(){
-	var kt = true;
+	$('#errFileMax2').html('');
+	$('#upload_file').removeClass('validation-failed');
+	$('#upload_file').removeClass('validation-success');
+	var fileCount = document.getElementById("file-upload-2").files.length;
+	if(fileCount > 10){
+		$('#upload_file').addClass('validation-failed');
+		$('#file_2_error').html('Chọn quá 10 file cho một lần upload');
+		return false;
+	}
+	else{
+		$('#upload_file').addClass('validation-success');
+		$('#file_2_error').html('');
+		return true;
+	}
 }
 
 // Function check numeric input
@@ -815,9 +828,11 @@ function ValidateUpload(){
 	}
 	//TH tự đặt giá
 	if(!ValidatePrice()){
-		alert(ValidatePrice());
 		$('#txt-price-other').focus();
         ktt = false;
+	}
+	if(!ValidateFileUpload2()){
+		 ktt = false;
 	}
 	
 	if (!ValidateDemo()) {
@@ -875,7 +890,6 @@ function SubmitForm(){
 	           dataType: "JSON",
 	           success: function(data)
 	           {
-	        	   alert(data);
 	               if(data){
 	            	   $('#ignismyModal').modal('show'); 
 	               }else{

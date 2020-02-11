@@ -4881,7 +4881,7 @@ i.BAB {
     margin-top: 5px;
     overflow: hidden;
     padding: 10px 0px;
-	border: 1px dashed #ff0000;
+	border: 1px dashed #000;
 }
 
 .upload_file .f_control {
@@ -4897,11 +4897,11 @@ i.BAB {
     overflow: hidden;
     width: 120px;
     height: 33px;
-    border: 1px solid #ff0000;
+    border: 1px solid #000;
     padding-left: 33px;
     padding-top: 6px;
     border-radius: 3px;
-    color: #ff0000;
+    color: #000;
     background: url('/assets/images/ic_add.png') no-repeat 10px 7px;
     float: left;
 }

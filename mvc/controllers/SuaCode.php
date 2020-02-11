@@ -19,6 +19,10 @@
             $this->view("cat-template", ["Page"=>"sua-code",
                 "InforSourceCode" => $kq]);
         }
+        
+        function UpdateCode(){
+            
+        }
        
     }
 ?>

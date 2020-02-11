@@ -288,7 +288,7 @@
 									<div class="form-group">
 										<label class="col-md-2 control-label bold">Hình ảnh về code</label>
 										<div class="col-md-7">
-											<div class="upload_file">
+											<div class="upload_file" id="upload_file">
 												<div class="f_control">
 													<div class="f_upload_file">
 														Thêm ảnh... <input type="file" multiple="multiple"
@@ -313,9 +313,7 @@
 											</div>
 										</div>
 										<div class="col-md-3 hidden-xs">
-											<div class="up-idea">Hoàn thành đầy đủ thông tin giúp code
-												của bạn được nhiều người biết đến và có thứ hạng cao trên
-												kết quả tìm kiếm</div>
+											<span id="file_2_error" class="text-error"></span>
 										</div>
 									</div>
 									<div class="form-group">
