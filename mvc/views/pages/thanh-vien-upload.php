@@ -1,4 +1,3 @@
-<?php require_once "./mvc/core/String.php"?>
 <?php require_once "./mvc/core/Config.php"?>
 <div id="view-content-page" class="view-content-page">
 	<div class="container" id="columns">
