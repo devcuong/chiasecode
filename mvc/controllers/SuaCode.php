@@ -19,11 +19,11 @@
             while ($r = mysqli_fetch_array($kq)) {
                 $imageDaiDien = $r["anhdaidien"];
             }
-            var_dump($imageDaiDien);
             $img = file_get_contents('http://localhost/chiasecode/mvc/public/member/thumbnail/' . $imageDaiDien);
             $data = base64_encode($img);
-            $showData = "data:image/png".$data;
+            $showData = "data:image/png;base64,".$data;
             //View
+            echo $showData;
             $this->view("cat-template", ["Page"=>"sua-code",
                 "InforSourceCode" => $kq,
                 "ImageEncode" => $showData]);
