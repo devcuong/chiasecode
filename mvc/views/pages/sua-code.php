@@ -25,7 +25,7 @@
 					code lên</h2>
 			</a>
 		</div>
-<form method="post" action="<?php echo $servername ?>/thanh-vien-upload/upload-code" id="frm-upload" enctype="multipart/form-data">
+<form method="post" action="<?php echo $servername ?>/sua-code/update-code" id="frm-upload" enctype="multipart/form-data">
 		<div class="row">
 			<div class="center_column col-xs-12 col-sm-9" id="center_column">
 				<div class="box-bg">
@@ -421,7 +421,7 @@
 									<br>
 									<div class="form-group">
 										<div class="col-md-offset-2 col-md-10 line-h">
-											<a onclick="SubmitForm()"
+											<a onclick="SubmitUpdateCode()"
 												id="btn-upload"
 												class="button-orange" ><i
 												class="fa fa-cloud-upload fa-lg" aria-hidden="true"></i>&nbsp;<span
