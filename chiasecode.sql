@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th2 12, 2020 lúc 01:24 AM
+-- Thời gian đã tạo: Th2 12, 2020 lúc 05:17 AM
 -- Phiên bản máy phục vụ: 10.4.10-MariaDB
 -- Phiên bản PHP: 7.3.12
 
@@ -129,7 +129,7 @@ INSERT INTO `thanhvien` (`id`, `password`, `email`, `hoten`, `username`, `sdt`, 
 (53, '$2y$10$oQPqYKEGqz0c3MbWQ3j1AuBxm07OK7ThV6jGTq3GOy4jdbMWGu0ve', 'abcdef@gmail.com', 'Tran Tam', 'TranTam150366', '0337085585', 0, 0, 0, 0, 0),
 (54, '$2y$10$7BTTqX5e1YJBaLkSsX/g9eB9LVdJZm0jNKC2S5VSFbx70lYMrvaai', 'abcdef@gmail.com', 'Tran Tam', 'TranTam1503', '0337085569', 0, 0, 0, 0, 0),
 (55, '$2y$10$BeLpNik60BA7qVbu0h.6QOHTdhmvOmfwhVQJKgj7hg6E6MBdmtXry', 'teoem@gmail.com', 'Trần Tâm', 'TranTam1555', '0337085654', 0, 0, 0, 0, 0),
-(56, '$2y$10$BQ9sSUT9kyOWjb.bD6/9/OAI9y161O/enLDhY2Bcv058zHm9BLRRi', 'viettxt@gmail.com', 'Tran Tam', 'TranTam15555', '0337085578', 15, 1, 14, 14, 15),
+(56, '$2y$10$BQ9sSUT9kyOWjb.bD6/9/OAI9y161O/enLDhY2Bcv058zHm9BLRRi', 'viettxt@gmail.com', 'Tran Tam', 'TranTam15555', '0337085578', 4, 0, 4, 4, 4),
 (57, '$2y$10$usCoo11G44PPM6Wc2fKV0.8r7wwMSkawafGTPhQKEz8zYn5Qrr7X.', 'teoem@gmail.com', 'doãn cường', 'doancuong1503', '0337085587', 0, 0, 0, 0, 0);
 
 -- --------------------------------------------------------

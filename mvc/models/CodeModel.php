@@ -47,8 +47,9 @@
         }
         
         /*THÊM CODE BY THÀNH VIÊN*/
-        public function InsertCode($imageDaiDien, $tieuDeCode, $danhMuc, $moTaNgan, $linkCode, $linkDemo, $luaChonPhiTai, $phiTai, $camKetHoTro, $hinhAnhCode, $moTaChiTiet, $huongDanCaiDat, $tuKhoa, $daDocDieuKhoan, $thanhVienUpload, $ngayUpdate){
-            $qr = "INSERT INTO code VALUES(null, '$tieuDeCode', 0, 0, 0, '$luaChonPhiTai', $phiTai, '$imageDaiDien', '$danhMuc', 0, '$moTaNgan', '$linkCode', '$linkDemo',$camKetHoTro,'$hinhAnhCode', '$moTaChiTiet', '$huongDanCaiDat','$tuKhoa',$daDocDieuKhoan, $thanhVienUpload,0,0,0,'','','$ngayUpdate')";
+        public function UpdateCode($imageDaiDien, $tieuDeCode, $danhMuc, $moTaNgan, $linkCode, $linkDemo, $luaChonPhiTai, $phiTai, $camKetHoTro, $hinhAnhCode, $moTaChiTiet, $huongDanCaiDat, $tuKhoa, $daDocDieuKhoan, $thanhVienUpload, $ngayUpdate){
+            $qr = "UPDATE code SET tieudecode = '$tieuDeCode', luachonphitai = '$luaChonPhiTai', phitai = $phiTai, imagedaidien = '$imageDaiDien', danhmuc = '$danhMuc', motangan = '$moTaNgan', linkcode = '$linkCode', linkdemo = '$linkDemo', camkethotro = $camKetHoTro, hinhanhcode = '$hinhAnhCode', motachitiet = '$moTaChiTiet', huongdancaidat = '$huongDanCaiDat', tukhoa = $tuKhoa";
+            $qr += ", dadocdieukhoa = '$daDocDieuKhoan', thanhvienupload = $thanhVienUpload, ngayupdate = $ngayUpdate";
             $result = false;
             if(mysqli_query($this->con, $qr)){
                 $result = true;

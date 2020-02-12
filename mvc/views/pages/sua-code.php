@@ -82,8 +82,11 @@
 											class="text-error">*</span></label>
 										<div class="col-md-10">
 											<div class="u_image validation-success">
-											<div id="uploaded_image"><img id="mainbody_contentbody_contentpage_imgUpdateCode"
-													class="u_image_edit" src="<?php echo $servername ?>/mvc/public/member/thumbnail/<?php echo $row["anhdaidien"] ?>"></div>
+											<div id="uploaded_image">
+											<img id="mainbody_contentbody_contentpage_imgUpdateCode"
+													class="u_image_edit" src="<?php echo $servername ?>/mvc/public/member/thumbnail/<?php echo $row["anhdaidien"] ?>">
+											<input type="hidden" id="img-dai-dien-hidden" name="img-dai-dien-hidden" value="<?php echo $data["ImageEncode"]; ?>" >
+											</div>
 												<input type="file" id="file-upload-1" class="img_upload"
 													accept=".jpg,.png,.gif">
 											</div>
