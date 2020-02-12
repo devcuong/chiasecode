@@ -15,18 +15,19 @@
             $arrTenSourceCode = explode("-",$b);
             $maSourceCode = end($arrTenSourceCode);
             $kq = $this->CodeModel->GetCodeById($maSourceCode);
+            $kq2 =  $this->CodeModel->GetCodeById($maSourceCode);
             $imageDaiDien = "";
-            while ($r = mysqli_fetch_array($kq)) {
-                $imageDaiDien = $r["anhdaidien"];
-            }
+          while($row = mysqli_fetch_array($kq2)){
+              $imageDaiDien = $row['anhdaidien'];
+          }
             $img = file_get_contents('http://localhost/chiasecode/mvc/public/member/thumbnail/' . $imageDaiDien);
             $data = base64_encode($img);
             $showData = "data:image/png;base64,".$data;
             //View
-            echo $showData;
             $this->view("cat-template", ["Page"=>"sua-code",
                 "InforSourceCode" => $kq,
-                "ImageEncode" => $showData]);
+                "ImageEncode" => $showData
+            ]);
         }
         
         function UpdateCode(){
@@ -86,6 +87,7 @@
                 $camKetHoTro = 0;
             }
             $total = count($_FILES['file-upload-2']['name']);
+            echo $total;
             if($total > 0){
                 $fileName = "";
                 for($i=0 ;$i<$total; $i++){

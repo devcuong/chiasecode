@@ -916,14 +916,13 @@ function SubmitUpdateCode(){
 	           processData: false,
 	           contentType: false,
 	           data: formData,
-	           dataType: "json",
+	           dataType: "JSON",
 	           success: function(data)
 	           {
-	        	   var dt = JSON.stringify(data);	        	   
 	               if(data){
 	            	   $('#ignismyModal').modal('show'); 
 	               }else{
-	            	   alert("THẤT BẠI");
+	            	   alert(data);
 	               }
 	           }
 	         });

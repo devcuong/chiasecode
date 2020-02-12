@@ -311,6 +311,7 @@
 															name="file-upload-2[]"
 															id="file-upload-2"
 															class="upload" accept="image/gif, image/jpeg, image/png">
+															<input type="hidden" id="hidden-image-code" name="hidden-image-code" value="<?php echo $row["hinhanhcode"] ?>">
 													</div>
 													<div class="mess alignleft" id="count-files"></div>
 
