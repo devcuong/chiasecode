@@ -916,14 +916,16 @@ function SubmitUpdateCode(){
 	           processData: false,
 	           contentType: false,
 	           data: formData,
-	           dataType: "JSON",
+	           //dataType: "JSON",
 	           success: function(data)
 	           {
-	               if(data){
+	        	   alert(data);
+	        	   $("#upload_error").html(data);
+	               /*if(data){
 	            	   $('#ignismyModal').modal('show'); 
 	               }else{
 	            	   alert(data);
-	               }
+	               }*/
 	           }
 	         });
 	}

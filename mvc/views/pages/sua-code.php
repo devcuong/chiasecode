@@ -30,53 +30,11 @@
 			<div class="center_column col-xs-12 col-sm-9" id="center_column">
 				<div class="box-bg">
 					<div class="upload_form">
-						<h1 class="title3 bold text-center up-title" id="up-title">UPLOAD CODE CHIA SẺ
-							&amp; KIẾM TIỀN CÙNG CODE4V</h1>
-						<div class="up-note hidden-xs">
-							<div class="col-md-6 up-left">
-								<div class="title3 orange">Lợi ích code4v đem lại</div>
-								<ul class="introduce-list">
-									<li>Tiếp cận <span class="green">trăm nghìn khách hàng</span>
-										tiềm năng mỗi ngày
-									</li>
-									<li>Code được marketting đưa lên <span class="green">top 5
-											google</span></li>
-									<li>Hưởng <span class="green">70% doanh thu</span> trên mỗi
-										code được bán
-									</li>
-									<li>Bạn <span class="green">tự đặt phí</span> cho source code
-										của mình
-									</li>
-								</ul>
-							</div>
-							<div class="col-md-6 up-right">
-								<div class="title3 orange">Mẹo giúp bạn tăng doanh thu</div>
-								<ul class="introduce-list">
-									<li><a
-										href="https://sharecode.vn/cau-hoi/meo-giup-ban-tang-doanh-thu-ban-source-code-9.htm#meo-nhap-thong-tin">Cách
-											nhập thông tin đầy đủ, rõ ràng và hữu ích</a></li>
-									<li><a
-										href="https://sharecode.vn/cau-hoi/meo-giup-ban-tang-doanh-thu-ban-source-code-9.htm#meo-gia-hop-ly">Đưa
-											ra mức phí hợp lý và có sức thu hút</a></li>
-									<li><a
-										href="https://sharecode.vn/cau-hoi/meo-giup-ban-tang-doanh-thu-ban-source-code-9.htm#meo-gioi-thieu">Tạo
-											chiến lược quảng bá, giới thiệu</a></li>
-									<li><a
-										href="https://sharecode.vn/cau-hoi/meo-giup-ban-tang-doanh-thu-ban-source-code-9.htm#meo-tham-gia-event">Tham
-											gia đầy đủ các sự kiện của Sharecode.vn</a></li>
-								</ul>
-							</div>
-						</div>
+						<h1 class="title3 bold text-center up-title" id="up-title">UPDATE CODE</h1>
+						<input type="hidden" id="hidden-code-id" name="hidden-code-id" value="<?php echo $row["id"] ?>">
 						<div class="up-box">
 							<div id="mainbody_contentbody_contentpage_panDefaultButton">
 								<div class="form-horizontal">
-									<div class="form-group">
-										<div class="col-md-offset-2 col-md-10">
-											<div id="mainbody_contentbody_contentpage_lblEvent"
-												class="bold orange">Tặng thưởng ngay 5 Point cho mỗi upload
-												được duyệt (5 Point = 1 XU).</div>
-										</div>
-									</div>
 									<div class="form-group">
 										<label class="col-md-2 control-label bold">Ảnh đại diện <span
 											class="text-error">*</span></label>

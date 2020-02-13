@@ -47,15 +47,14 @@
         }
         
         /*THÊM CODE BY THÀNH VIÊN*/
-        public function UpdateCode($imageDaiDien, $tieuDeCode, $danhMuc, $moTaNgan, $linkCode, $linkDemo, $luaChonPhiTai, $phiTai, $camKetHoTro, $hinhAnhCode, $moTaChiTiet, $huongDanCaiDat, $tuKhoa, $daDocDieuKhoan, $thanhVienUpload, $ngayUpdate){
-            $qr = "UPDATE code SET tieudecode = '$tieuDeCode', luachonphitai = '$luaChonPhiTai', phitai = $phiTai, imagedaidien = '$imageDaiDien', danhmuc = '$danhMuc', motangan = '$moTaNgan', linkcode = '$linkCode', linkdemo = '$linkDemo', camkethotro = $camKetHoTro, hinhanhcode = '$hinhAnhCode', motachitiet = '$moTaChiTiet', huongdancaidat = '$huongDanCaiDat', tukhoa = $tuKhoa";
-            $qr += ", dadocdieukhoa = '$daDocDieuKhoan', thanhvienupload = $thanhVienUpload, ngayupdate = $ngayUpdate";
+        public function UpdateCode($idCode, $imageDaiDien, $tieuDeCode, $danhMuc, $moTaNgan, $linkCode, $linkDemo, $luaChonPhiTai, $phiTai, $camKetHoTro, $hinhAnhCode, $moTaChiTiet, $huongDanCaiDat, $tuKhoa, $daDocDieuKhoan, $thanhVienUpload, $ngayUpdate){
+            $qr = "UPDATE code SET tieudecode = '$tieuDeCode', luachonphitai = '$luaChonPhiTai', phitai = $phiTai, anhdaidien = '$imageDaiDien', danhmuc = '$danhMuc', motangan = '$moTaNgan', linkcode = '$linkCode', linkdemo = '$linkDemo', camkethotro = $camKetHoTro, hinhanhcode = '$hinhAnhCode', motachitiet = '$moTaChiTiet', huongdancaidat = '$huongDanCaiDat', tukhoa = '$tuKhoa', dadocdieukhoan = $daDocDieuKhoan, thanhvienupload = $thanhVienUpload, ngayupdate = '$ngayUpdate' WHERE id = $idCode";
             $result = false;
             if(mysqli_query($this->con, $qr)){
                 $result = true;
             }
             //return json_encode($result);
-            return $result;
+            return $qr;
         }
         
         /*LẤY CODE BỞI ID CODE*/
