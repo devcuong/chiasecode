@@ -439,17 +439,16 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label=""><span>×</span></button>
                      </div>
-					
                     <div class="modal-body">
-                       
 						<div class="thank-you-pop">
 							<img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">
-							<h1>UPLOAD THÀNH CÔNG!</h1>
+							<h1>CẬP NHẬT THÀNH CÔNG!</h1>
 							<p>code của bạn đã upload thành công lên hệ thống, code sẽ hiển thị sau khi ban quản trị kiểm duyệt</p>
 							<h3 class="cupon-pop">TÀI KHOẢN: <span><?php echo $_SESSION["username"] ?></span></h3>
-							
  						</div>
-                         
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" id="modal-update-success" onclick="UpdateSucess()">OK</button>
                     </div>
 					
                 </div>

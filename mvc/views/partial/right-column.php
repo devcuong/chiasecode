@@ -7,7 +7,7 @@
         </a>
     </div>
     <div class="pro-right">
-        <h2 id="pro-title" class="pro-title red bold">sen đỏ TV</h2>
+        <h2 id="pro-title" class="pro-title red bold"><?php if(isset($_SESSION["username"])){ echo $_SESSION["username"];} ?></h2>
         <div class="line"></div>
         <div class="pro-money">
             <div>Tài khoản&nbsp;<strong id="mainbody_contentbody_ucProfile_Money">0</strong> Xu</div>

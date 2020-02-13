@@ -929,6 +929,11 @@ function SubmitUpdateCode(){
 	}
 }
 
+//Update success modal
+function UpdateSucess(){
+	$(location).attr('href', SiteName + "/code-upload-cua-toi/");
+}
+
 /*POPUP LIKE*/
 
 
