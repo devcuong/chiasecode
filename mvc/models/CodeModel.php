@@ -42,8 +42,7 @@
             if(mysqli_query($this->con, $qr)){
                 $result = true;
             }
-            //return json_encode($result);
-            return $result;
+            return json_encode($result);
         }
         
         /*THÊM CODE BY THÀNH VIÊN*/
@@ -53,8 +52,7 @@
             if(mysqli_query($this->con, $qr)){
                 $result = true;
             }
-            //return json_encode($result);
-            return $qr;
+            return json_encode($result);
         }
         
         /*LẤY CODE BỞI ID CODE*/

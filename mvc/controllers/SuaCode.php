@@ -103,6 +103,11 @@
                     move_uploaded_file($_FILES['file-upload-2']['tmp_name'][$i],$duongDanHinhAnh);
                 }
             }
+            if(!preg_match('~\.(png|gif|jpe?g)~i', $arrImage[0])){
+                if (isset($_POST["hidden-image-code"])){
+                    $arrImage = explode(',',$_POST["hidden-image-code"]);
+                }
+            }
             if(isset($_POST["ck-detail"])){
                 $moTaChiTiet = trim($_POST["ck-detail"]);
             }
