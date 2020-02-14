@@ -126,7 +126,6 @@ $(document)
 $("#btn-dang-ky-ngay").click(function() {
 	var email = $('#email-dang-ky').val();
 	if (email == '') {
-		alert(email);
 		$('#registerError').html('Vui lòng nhập địa chỉ email.');
 		$('#email-dang-ky').addClass('validation-failed');
 		$('#email-dang-ky').focus();

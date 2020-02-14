@@ -73,6 +73,9 @@ class ThanhVienUpload extends Controller{
             file_put_contents('mvc/public/member/thumbnail/'.$imageName, $data);
             $imageDaiDien = $imageName;
         }
+        if(!preg_match('~\.(png|gif|jpe?g)~i', $arrImage[0])){
+            $arrImage = "";
+        }
         if (isset($_POST["txt-title"])){
             $tieuDeCode = trim($_POST["txt-title"]);
         }

@@ -45,7 +45,7 @@
             return json_encode($result);
         }
         
-        /*THÊM CODE BY THÀNH VIÊN*/
+        /*UPDATE CODE BY THÀNH VIÊN*/
         public function UpdateCode($idCode, $imageDaiDien, $tieuDeCode, $danhMuc, $moTaNgan, $linkCode, $linkDemo, $luaChonPhiTai, $phiTai, $camKetHoTro, $hinhAnhCode, $moTaChiTiet, $huongDanCaiDat, $tuKhoa, $daDocDieuKhoan, $thanhVienUpload, $ngayUpdate){
             $qr = "UPDATE code SET tieudecode = '$tieuDeCode', luachonphitai = '$luaChonPhiTai', phitai = $phiTai, anhdaidien = '$imageDaiDien', danhmuc = '$danhMuc', motangan = '$moTaNgan', linkcode = '$linkCode', linkdemo = '$linkDemo', camkethotro = $camKetHoTro, hinhanhcode = '$hinhAnhCode', motachitiet = '$moTaChiTiet', huongdancaidat = '$huongDanCaiDat', tukhoa = '$tuKhoa', dadocdieukhoan = $daDocDieuKhoan, thanhvienupload = $thanhVienUpload, ngayupdate = '$ngayUpdate' WHERE id = $idCode";
             $result = false;
