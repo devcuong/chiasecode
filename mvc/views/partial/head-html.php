@@ -27,3 +27,4 @@
 <link rel="stylesheet" type="text/css" href="<?php echo $servername ?>/mvc/public/css/jquery.bxslider.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo $servername ?>/mvc/public/css/responsive.css" /></head>
 <script type="text/javascript" src="<?php echo $servername ?>/mvc/public/js/ckeditor/ckeditor.js"></script>
+

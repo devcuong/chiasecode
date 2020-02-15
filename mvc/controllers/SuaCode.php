@@ -31,6 +31,7 @@
         }
         
         function UpdateCode(){
+            if (isset($_SESSION["userid"])){
             $idCode = "";
             $imageDaiDien = "";
             $tieuDeCode = "";
@@ -125,6 +126,7 @@
             $created_date = date("Y-m-d H:i:s");
             $kq = $this->CodeModel->UpdateCode($idCode, $imageDaiDien, $tieuDeCode, $danhMuc, $moTaNgan, $linkCode, $linkDemo, $luaChonPhiTai, $phiTai, $camKetHoTro,implode(",",$arrImage), $moTaChiTiet, $huongDanCaiDat, $tuKhoa, $daDocDieuKhoan, intval($_SESSION['userid']), $created_date);
             echo $kq;
+            }
         }
        
     }
