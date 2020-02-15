@@ -51,9 +51,17 @@
             if(isset($_POST["hidden-code-id"])){
                 $idCode = $_POST["hidden-code-id"];
             }
-            
-            
-            if(isset($_POST["img-dai-dien-hidden"])){
+            if(isset($_POST["img-dai-dien"])){
+                $data = $_POST["img-dai-dien"];
+                $image_array_1 = explode(";", $data);
+                $image_array_2 = explode(",", $image_array_1[1]);
+                $data = base64_decode($image_array_2[1]);
+                $imageName = time() . '.png';
+                file_put_contents('mvc/public/member/thumbnail/'.$imageName, $data);
+                $imageDaiDien = $imageName;
+                
+                // Xóa image đại diện cũ
+            }else{
                 $data = $_POST["img-dai-dien-hidden"];
                 $image_array_1 = explode(";", $data);
                 $image_array_2 = explode(",", $image_array_1[1]);
@@ -62,6 +70,7 @@
                 file_put_contents('mvc/public/member/thumbnail/'.$imageName, $data);
                 $imageDaiDien = $imageName;
             }
+            
             if (isset($_POST["txt-title"])){
                 $tieuDeCode = trim($_POST["txt-title"]);
             }
@@ -105,10 +114,10 @@
                     move_uploaded_file($_FILES['file-upload-2']['tmp_name'][$i],$duongDanHinhAnh);
                 }
             }
-            if(!preg_match('~\.(png|gif|jpe?g)~i', $arrImage[0])){
-                if (isset($_POST["hidden-image-code"])){
-                    $arrImage = explode(',',$_POST["hidden-image-code"]);
-                }
+             if (! preg_match('~\.(png|gif|jpe?g)~i', $arrImage[0])) {
+                $hinhAnhCode = "";
+            } else {
+                $hinhAnhCode = implode(",", $arrImage);
             }
             if(isset($_POST["ck-detail"])){
                 $moTaChiTiet = trim($_POST["ck-detail"]);
