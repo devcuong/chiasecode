@@ -880,7 +880,6 @@ function SubmitForm(){
 	    var formData = new FormData(form);
         event.preventDefault();
 	    var url = indexForm.attr('action');
-	    alert(url);
 	    $.ajax({
 	           type: "POST",
 	           url: url,
@@ -891,7 +890,7 @@ function SubmitForm(){
 	           success: function(data)
 	           {
 	               if(data){
-	            	   $('#ignismyModal').modal('show'); 
+            	   $('#ignismyModal').modal('show');
 	               }else{
 	            	   alert(data);
 	               }
@@ -919,6 +918,7 @@ function SubmitUpdateCode(){
 	           dataType: "JSON",
 	           success: function(data)
 	           {
+	        	   alert(data);
 	               if(data){
 	            	   $('#ignismyModal').modal('show'); 
 	               }else{
