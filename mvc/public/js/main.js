@@ -915,7 +915,7 @@ function SubmitUpdateCode(){
 	           processData: false,
 	           contentType: false,
 	           data: formData,
-	           dataType: "JSON",
+	           //dataType: "JSON",
 	           success: function(data)
 	           {
 	        	   alert(data);

@@ -68,8 +68,8 @@ class ThanhVienUpload extends Controller
             $huongDanCaiDat = "";
             $tuKhoa = "";
             $daDocDieuKhoan = "";
-            if (isset($_POST["img-dai-dien"])) {
-                $data = $_POST["img-dai-dien"];
+            if (isset($_POST["img-dai-dien-hidden"])) {
+                $data = $_POST["img-dai-dien-hidden"];
                 $image_array_1 = explode(";", $data);
                 $image_array_2 = explode(",", $image_array_1[1]);
                 $data = base64_decode($image_array_2[1]);

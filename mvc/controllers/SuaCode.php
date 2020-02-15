@@ -51,17 +51,17 @@
             if(isset($_POST["hidden-code-id"])){
                 $idCode = $_POST["hidden-code-id"];
             }
-            if(isset($_POST["img-dai-dien"])){
-                $data = $_POST["img-dai-dien"];
-                $image_array_1 = explode(";", $data);
-                $image_array_2 = explode(",", $image_array_1[1]);
-                $data = base64_decode($image_array_2[1]);
-                $imageName = time() . '.png';
-                file_put_contents('mvc/public/member/thumbnail/'.$imageName, $data);
-                $imageDaiDien = $imageName;
+            if(isset($_POST["img-dai-dien-hidden"])){
                 
-                // Xóa image đại diện cũ
-            }else{
+                // Thao tác xóa image đại diện cũ
+                $codeById=$this->CodeModel->GetCodeById($idCode);
+                $imageDaiDienCu = "";
+                while($r2 = mysqli_fetch_array($codeById)){
+                    $imageDaiDienCu= $r2['anhdaidien'];
+                }
+                // Xóa
+                $isDelete = unlink("mvc/public/member/thumbnail/".$imageDaiDienCu);
+                
                 $data = $_POST["img-dai-dien-hidden"];
                 $image_array_1 = explode(";", $data);
                 $image_array_2 = explode(",", $image_array_1[1]);
@@ -69,6 +69,7 @@
                 $imageName = time() . '.png';
                 file_put_contents('mvc/public/member/thumbnail/'.$imageName, $data);
                 $imageDaiDien = $imageName;
+                
             }
             
             if (isset($_POST["txt-title"])){
@@ -114,11 +115,20 @@
                     move_uploaded_file($_FILES['file-upload-2']['tmp_name'][$i],$duongDanHinhAnh);
                 }
             }
-             if (! preg_match('~\.(png|gif|jpe?g)~i', $arrImage[0])) {
+            if (!preg_match('~\.(png|gif|jpe?g)~i', $arrImage[0])) {
                 $hinhAnhCode = "";
             } else {
                 $hinhAnhCode = implode(",", $arrImage);
             }
+            if(isset($_POST["hidden-image-code"])){
+                $arrImageCode = explode(",", $_POST["hidden-image-code"]);
+                if (count($arrImage)>0){
+                    for($i=0; $i<count($arrImageCode); $i++){
+                        unlink("mvc/public/member/code/".$arrImageCode[$i]);
+                    }
+                }
+            }
+            
             if(isset($_POST["ck-detail"])){
                 $moTaChiTiet = trim($_POST["ck-detail"]);
             }
@@ -127,14 +137,14 @@
             }
             if(isset($_POST["txt-tag"])){
                 $tuKhoa = trim($_POST["txt-tag"]);
-            }
+            }   
             if(isset($_POST["chk-require"])){
                 $daDocDieuKhoan = $_POST["chk-require"];
                 $daDocDieuKhoan = intval($daDocDieuKhoan);
             }
             $created_date = date("Y-m-d H:i:s");
-            $kq = $this->CodeModel->UpdateCode($idCode, $imageDaiDien, $tieuDeCode, $danhMuc, $moTaNgan, $linkCode, $linkDemo, $luaChonPhiTai, $phiTai, $camKetHoTro,implode(",",$arrImage), $moTaChiTiet, $huongDanCaiDat, $tuKhoa, $daDocDieuKhoan, intval($_SESSION['userid']), $created_date);
-            echo $kq;
+            $kq = $this->CodeModel->UpdateCode($idCode, $imageDaiDien, $tieuDeCode, $danhMuc, $moTaNgan, $linkCode, $linkDemo, $luaChonPhiTai, $phiTai, $camKetHoTro,$hinhAnhCode, $moTaChiTiet, $huongDanCaiDat, $tuKhoa, $daDocDieuKhoan, intval($_SESSION['userid']), $created_date);
+            echo $hinhAnhCode;
             }
         }
        
