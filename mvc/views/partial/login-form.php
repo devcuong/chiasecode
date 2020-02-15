@@ -32,10 +32,10 @@
                                             <input name="log-password" type="password" id="log-password" placeholder="******" class="form-control" />
                                         </div>
                                     </div>
-                                    <div class="form-group" >
+                                    <!--  <div class="form-group" >
                                     <div class="g-recaptcha" data-sitekey="6LdzGtkUAAAAAPbjiQfk8z3AbWKKjRWNE_MXxcOQ"></div>
                                     
-                                    </div>
+                                    </div>-->
                                     <div class="form-group">
                                         <div class="col-sm-offset-4 col-sm-6">
     
