@@ -62,8 +62,6 @@ class ThanhVienUpload extends Controller{
         $huongDanCaiDat = "";
         $tuKhoa = "";
         $daDocDieuKhoan = "";
-        
-        $arrImage = [];
         if(isset($_POST["img-dai-dien-hidden"])){
             $data = $_POST["img-dai-dien-hidden"];
             $image_array_1 = explode(";", $data);
@@ -73,9 +71,7 @@ class ThanhVienUpload extends Controller{
             file_put_contents('mvc/public/member/thumbnail/'.$imageName, $data);
             $imageDaiDien = $imageName;
         }
-        if(!preg_match('~\.(png|gif|jpe?g)~i', $arrImage[0])){
-            $arrImage = "";
-        }
+       
         if (isset($_POST["txt-title"])){
             $tieuDeCode = trim($_POST["txt-title"]);
         }
@@ -106,8 +102,9 @@ class ThanhVienUpload extends Controller{
         else {
             $camKetHoTro = 0;
         }
-            $total = count($_FILES['file-upload-2']['name']);
-            if($total > 0){
+        $arrImage = [];
+        $total = count($_FILES['file-upload-2']['name']);
+        if($total > 0){
                 $fileName = "";
                 for($i=0 ;$i<$total; $i++){
                     $fileName = $_FILES['file-upload-2']['name'][$i];
@@ -117,6 +114,9 @@ class ThanhVienUpload extends Controller{
                     // Upload file
                     move_uploaded_file($_FILES['file-upload-2']['tmp_name'][$i],$duongDanHinhAnh);
                 }
+            }
+            if(!preg_match('~\.(png|gif|jpe?g)~i', $arrImage[0])){
+                $arrImage = [];
             }
         if(isset($_POST["ck-detail"])){
             $moTaChiTiet = trim($_POST["ck-detail"]);

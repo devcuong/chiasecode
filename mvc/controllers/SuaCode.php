@@ -51,7 +51,7 @@
                 $idCode = $_POST["hidden-code-id"];
             }
             
-            $arrImage = [];
+            
             if(isset($_POST["img-dai-dien-hidden"])){
                 $data = $_POST["img-dai-dien-hidden"];
                 $image_array_1 = explode(";", $data);
@@ -91,6 +91,7 @@
             else {
                 $camKetHoTro = 0;
             }
+            $arrImage = [];
             $total = count($_FILES['file-upload-2']['name']);
             if($total > 0){
                 $fileName = "";

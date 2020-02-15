@@ -880,15 +880,17 @@ function SubmitForm(){
 	    var formData = new FormData(form);
         event.preventDefault();
 	    var url = indexForm.attr('action');
+	    alert(url);
 	    $.ajax({
 	           type: "POST",
 	           url: url,
 	           processData: false,
 	           contentType: false,
 	           data: formData,
-	           dataType: "JSON",
+	           //dataType: "JSON",
 	           success: function(data)
 	           {
+	        	   alert(data);
 	               if(data){
 	            	   $('#ignismyModal').modal('show'); 
 	               }else{
