@@ -33,13 +33,13 @@
                                         </div>
                                     </div>
                                     <div class="form-group" >
-                                    <div class="g-recaptcha" data-sitekey="6LdBEtkUAAAAAFkOvjYavqXYz3ZWWJxU79Yo9AY7" data-callback="google-recaptcha/verify-captcha"></div>
+                                    <div class="g-recaptcha" data-sitekey="6LdzGtkUAAAAAPbjiQfk8z3AbWKKjRWNE_MXxcOQ"></div>
                                     
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-offset-4 col-sm-6">
     
-                                            <a href="quen-mat-khau.html" target="_blank" class="aorange">Quên mật khẩu?</a>
+                                            <a href="quen-mat-khau" target="_blank" class="aorange">Quên mật khẩu?</a>
                                         </div>
                                     </div>
                                     <div class="form-group">
