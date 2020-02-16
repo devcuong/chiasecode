@@ -886,7 +886,7 @@ function SubmitForm(){
 	           processData: false,
 	           contentType: false,
 	           data: formData,
-	           dataType: "JSON",
+	           //dataType: "JSON",
 	           success: function(data)
 	           {
 	               if(data){
@@ -915,10 +915,9 @@ function SubmitUpdateCode(){
 	           processData: false,
 	           contentType: false,
 	           data: formData,
-	           //dataType: "JSON",
+	           dataType: "JSON",
 	           success: function(data)
 	           {
-	        	   alert(data);
 	               if(data){
 	            	   $('#ignismyModal').modal('show'); 
 	               }else{
